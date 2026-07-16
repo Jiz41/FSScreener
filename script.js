@@ -297,12 +297,15 @@ function showDetail(horse) {
 
   let historyHtml;
   if (hist) {
+    const sourcesHtml = (hist.sources || [])
+      .map(url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`)
+      .join("<br>");
     historyHtml = `
       <h4>現役時代の主な戦績</h4>
       <p>${hist.achievements || ""}</p>
       <h4>ミニコラム</h4>
       <p>${hist.column || ""}</p>
-      <p class="source-link">出典: <a href="${hist.source}" target="_blank" rel="noopener">${hist.source}</a></p>
+      <p class="source-link">出典:<br>${sourcesHtml}</p>
     `;
   } else {
     historyHtml = `<p>史実紹介は準備中です。</p>`;
