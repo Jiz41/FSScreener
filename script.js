@@ -29,6 +29,7 @@ const STAT_AXES = [
 
 let horses = [];
 let historyData = {};
+let datasetMaxRating = 80;
 
 // ---- CSV parsing (handles quoted fields) ----
 function parseCSV(text) {
@@ -145,6 +146,25 @@ async function loadHorses() {
       estimated_price: estimated
     };
   }).filter(h => h.name_jp && !isNaN(h.turf_rating) && !isNaN(h.dirt_rating));
+
+  // ---- データロード時に一度だけ算出するキャッシュ値 ----
+  datasetMaxRating = 80;
+  horses.forEach(h => {
+    if (h.turf_rating > datasetMaxRating) datasetMaxRating = h.turf_rating;
+    if (h.dirt_rating > datasetMaxRating) datasetMaxRating = h.dirt_rating;
+  });
+
+  horses.forEach(h => {
+    const statSum = h.acceleration + h.start_score + h.cornering_score + h.hill_score +
+      h.heavy_track_score + h.fighting_spirit + h.consistency + h.health;
+    h.cospa = statSum / h.estimated_price;
+  });
+
+  const cospaValues = horses.map(h => h.cospa);
+  horses.forEach(h => {
+    const countLE = cospaValues.filter(c => c <= h.cospa).length;
+    h.priceValue = countLE / cospaValues.length;
+  });
 }
 
 async function loadHistory() {
@@ -189,6 +209,57 @@ function tierLowerBound(tier) {
   // tier 1 => 0, 2 => 0.2, 3 => 0.4, 4 => 0.6, 5 => 0.8
   // 浮動小数点誤差対策のため小数第4位で丸める
   return Math.round((tier - 1) * 0.2 * 10000) / 10000;
+}
+
+// ---- おすすめ度スコア ----
+function computeMatchStrength(h, criteria) {
+  const strengths = [];
+
+  if (criteria.styleVal !== "") {
+    const idx = parseInt(criteria.styleVal, 10);
+    strengths.push(h.running_style[idx]);
+  }
+
+  if (criteria.distance !== null) {
+    const range = h.max_distance - h.min_distance;
+    let s;
+    if (range === 0) {
+      s = 1;
+    } else {
+      s = 1 - Math.abs(criteria.distance - h.optimal_distance) / range;
+      s = Math.max(0, Math.min(1, s));
+    }
+    strengths.push(s);
+  }
+
+  if (criteria.surface === "turf" || criteria.surface === "dirt") {
+    const rating = criteria.surface === "turf" ? h.turf_rating : h.dirt_rating;
+    const denom = datasetMaxRating - 80;
+    let s;
+    if (denom === 0) {
+      s = 1;
+    } else {
+      s = (rating - 80) / denom;
+      s = Math.max(0, Math.min(1, s));
+    }
+    strengths.push(s);
+  }
+
+  criteria.statFilters.forEach(f => {
+    strengths.push(h[f.key]);
+  });
+
+  if (strengths.length === 0) return 1;
+  const sum = strengths.reduce((a, b) => a + b, 0);
+  return sum / strengths.length;
+}
+
+function computeScore(h, criteria) {
+  const f = computeMatchStrength(h, criteria);
+  const v = h.priceValue;
+  const score = Math.sqrt(f * v);
+  const stars = Math.max(1, Math.min(10, Math.round(score * 10)));
+  return { score, stars };
 }
 
 // ---- Filtering ----
@@ -244,7 +315,8 @@ function runSearch() {
     return true;
   });
 
-  renderResults(results);
+  const criteria = { styleVal, distance, surface, statFilters };
+  renderResults(results, criteria);
 }
 
 function dominantStyleLabel(styleArr) {
@@ -259,7 +331,11 @@ function dominantStyleLabel(styleArr) {
   return RUNNING_STYLE_LABELS[maxIdx] || "-";
 }
 
-function renderResults(results) {
+function starsText(stars) {
+  return "★".repeat(stars) + "☆".repeat(10 - stars) + ` (${stars}/10)`;
+}
+
+function renderResults(results, criteria) {
   const container = document.getElementById("results");
   const countEl = document.getElementById("result-count");
   countEl.textContent = `(${results.length}件)`;
@@ -270,14 +346,20 @@ function renderResults(results) {
     return;
   }
 
-  results.sort((a, b) => a.estimated_price - b.estimated_price);
+  const scored = results.map(h => {
+    const { score, stars } = computeScore(h, criteria);
+    return { h, score, stars };
+  });
 
-  results.forEach(h => {
+  scored.sort((a, b) => b.score - a.score);
+
+  scored.forEach(({ h, stars }) => {
     const card = document.createElement("div");
     card.className = "horse-card";
     card.innerHTML = `
       <h3>${h.name_jp}</h3>
       <div class="horse-meta">
+        <div class="recommend-stars">${starsText(stars)}</div>
         <div>推定価格: ${priceRangeText(h.estimated_price)} pt</div>
         <div>脚質: ${dominantStyleLabel(h.running_style)}</div>
         <div>芝: ${h.turf_rating} / ダート: ${h.dirt_rating}</div>
