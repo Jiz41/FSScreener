@@ -332,7 +332,7 @@ function dominantStyleLabel(styleArr) {
 }
 
 function starsText(stars) {
-  return "★".repeat(stars) + "☆".repeat(10 - stars) + ` (${stars}/10)`;
+  return "🥕".repeat(stars) + ` (${stars}/10)`;
 }
 
 function renderResults(results, criteria) {
