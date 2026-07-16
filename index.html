@@ -84,6 +84,17 @@
 
   <section id="results-panel">
     <h2>検索結果 <span id="result-count"></span></h2>
+    <p class="hint-text">おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。</p>
+    <div class="field">
+      <label for="sort-select">並び替え</label>
+      <select id="sort-select">
+        <option value="score_desc">おすすめ度順（高い→低い）</option>
+        <option value="rating_desc">レーティング高い順</option>
+        <option value="rating_asc">レーティング低い順</option>
+        <option value="name_asc">あいうえお順</option>
+        <option value="name_desc">あいうえお逆順</option>
+      </select>
+    </div>
     <div id="results"></div>
   </section>
 </main>

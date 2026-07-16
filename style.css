@@ -227,3 +227,9 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.hint-text {
+  font-size: 0.8em;
+  color: var(--muted);
+  margin: 4px 0 12px;
+}

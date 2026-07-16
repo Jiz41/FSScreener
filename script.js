@@ -42,6 +42,8 @@ const STAT_AXES = [
 let horses = [];
 let historyData = {};
 let datasetMaxRating = 80;
+let currentResults = [];
+let currentCriteria = null;
 
 // ---- CSV parsing (handles quoted fields) ----
 function parseCSV(text) {
@@ -168,17 +170,6 @@ async function loadHorses() {
     if (h.dirt_rating > datasetMaxRating) datasetMaxRating = h.dirt_rating;
   });
 
-  horses.forEach(h => {
-    const statSum = h.acceleration + h.start_score + h.cornering_score + h.hill_score +
-      h.heavy_track_score + h.fighting_spirit + h.consistency + h.health;
-    h.cospa = statSum / h.estimated_price;
-  });
-
-  const cospaValues = horses.map(h => h.cospa);
-  horses.forEach(h => {
-    const countLE = cospaValues.filter(c => c <= h.cospa).length;
-    h.priceValue = countLE / cospaValues.length;
-  });
 }
 
 async function loadHistory() {
@@ -270,10 +261,8 @@ function computeMatchStrength(h, criteria) {
 
 function computeScore(h, criteria) {
   const f = computeMatchStrength(h, criteria);
-  const v = h.priceValue;
-  const score = Math.sqrt(f * v);
-  const stars = Math.max(1, Math.min(10, Math.round(score * 10)));
-  return { score, stars };
+  const stars = Math.max(1, Math.min(10, Math.round(f * 10)));
+  return { score: f, stars };
 }
 
 // ---- Filtering ----
@@ -335,7 +324,35 @@ function runSearch() {
   });
 
   const criteria = { styleVal, distance, surface, statFilters };
-  renderResults(results, criteria);
+  currentResults = results;
+  currentCriteria = criteria;
+  renderResults(currentResults, currentCriteria);
+}
+
+// ---- Sorting ----
+function sortResults(results, criteria, sortKey) {
+  const sorted = results.slice();
+  switch (sortKey) {
+    case "rating_desc":
+      sorted.sort((a, b) => Math.max(b.turf_rating, b.dirt_rating) - Math.max(a.turf_rating, a.dirt_rating));
+      break;
+    case "rating_asc":
+      sorted.sort((a, b) => Math.max(a.turf_rating, a.dirt_rating) - Math.max(b.turf_rating, b.dirt_rating));
+      break;
+    case "name_asc":
+      sorted.sort((a, b) => a.name_jp.localeCompare(b.name_jp, "ja"));
+      break;
+    case "name_desc":
+      sorted.sort((a, b) => b.name_jp.localeCompare(a.name_jp, "ja"));
+      break;
+    case "score_desc":
+    default: {
+      const scored = sorted.map(h => ({ h, score: computeScore(h, criteria).score }));
+      scored.sort((a, b) => b.score - a.score);
+      return scored.map(s => s.h);
+    }
+  }
+  return sorted;
 }
 
 function dominantStyleLabel(styleArr) {
@@ -365,14 +382,11 @@ function renderResults(results, criteria) {
     return;
   }
 
-  const scored = results.map(h => {
-    const { score, stars } = computeScore(h, criteria);
-    return { h, score, stars };
-  });
+  const sortKey = document.getElementById("sort-select").value;
+  const sorted = sortResults(results, criteria, sortKey);
 
-  scored.sort((a, b) => b.score - a.score);
-
-  scored.forEach(({ h, stars }) => {
+  sorted.forEach(h => {
+    const { stars } = computeScore(h, criteria);
     const card = document.createElement("div");
     card.className = "horse-card";
     card.innerHTML = `
@@ -434,6 +448,11 @@ function hideModal() {
 async function init() {
   buildStatGrid();
   document.getElementById("search-btn").addEventListener("click", runSearch);
+  document.getElementById("sort-select").addEventListener("change", () => {
+    if (currentCriteria !== null) {
+      renderResults(currentResults, currentCriteria);
+    }
+  });
   document.getElementById("modal-close").addEventListener("click", hideModal);
   document.getElementById("detail-modal").addEventListener("click", (e) => {
     if (e.target.id === "detail-modal") hideModal();
