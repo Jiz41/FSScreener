@@ -1,0 +1,347 @@
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/13IQo9cfL1mwZ8aLp3Xwy9Hm3DZaZ1psJvu-chlwDQK8/gviz/tq?tqx=out:csv&sheet=horse_list_updated";
+
+const GROWTH_MULTIPLIER = {
+  prodigy: 1.0215,
+  early: 1.0056,
+  normal: 1.0014,
+  late: 0.9711
+};
+
+const GROWTH_LABEL_JP = {
+  prodigy: "怪物級",
+  early: "早熟",
+  normal: "普通",
+  late: "晩成"
+};
+
+const RUNNING_STYLE_LABELS = ["逃げ", "先行", "差し", "追込"];
+
+const STAT_AXES = [
+  { key: "acceleration", label: "加速力" },
+  { key: "start_score", label: "スタート" },
+  { key: "cornering_score", label: "コーナリング" },
+  { key: "hill_score", label: "坂" },
+  { key: "heavy_track_score", label: "重馬場" },
+  { key: "fighting_spirit", label: "闘争心" },
+  { key: "consistency", label: "安定感" },
+  { key: "health", label: "健康" }
+];
+
+let horses = [];
+let historyData = {};
+
+// ---- CSV parsing (handles quoted fields) ----
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') {
+          field += '"';
+          i++;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        field += c;
+      }
+    } else {
+      if (c === '"') {
+        inQuotes = true;
+      } else if (c === ',') {
+        row.push(field);
+        field = "";
+      } else if (c === '\n') {
+        row.push(field);
+        rows.push(row);
+        row = [];
+        field = "";
+      } else if (c === '\r') {
+        // skip
+      } else {
+        field += c;
+      }
+    }
+  }
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+  return rows;
+}
+
+function rowsToObjects(rows) {
+  const header = rows[0];
+  const objs = [];
+  for (let i = 1; i < rows.length; i++) {
+    const r = rows[i];
+    if (r.length === 1 && r[0] === "") continue;
+    const obj = {};
+    for (let j = 0; j < header.length; j++) {
+      obj[header[j]] = r[j] !== undefined ? r[j] : "";
+    }
+    objs.push(obj);
+  }
+  return objs;
+}
+
+// ---- Price estimation ----
+function estimatePrice(turfRating, dirtRating, growthCurve) {
+  const r = Math.max(turfRating, dirtRating);
+  const base = 1.766 * Math.pow(1.0817, r);
+  const mult = GROWTH_MULTIPLIER[growthCurve] || 1.0;
+  return base * mult;
+}
+
+function roundToTen(n) {
+  return Math.round(n / 10) * 10;
+}
+
+function priceRangeText(estimated) {
+  const low = roundToTen(estimated * 0.98);
+  const high = roundToTen(estimated * 1.08);
+  return `${low}〜${high}`;
+}
+
+// ---- Data loading ----
+async function loadHorses() {
+  const res = await fetch(SHEET_URL);
+  if (!res.ok) {
+    throw new Error("シート取得失敗: HTTP " + res.status);
+  }
+  const text = await res.text();
+  const rows = parseCSV(text);
+  const objs = rowsToObjects(rows);
+
+  horses = objs.map(o => {
+    const turf = parseFloat(o.turf_rating);
+    const dirt = parseFloat(o.dirt_rating);
+    const growth = (o.growth_curve || "").trim();
+    const estimated = estimatePrice(turf, dirt, growth);
+    const styleParts = (o.running_style || "0/0/0/0").split("/").map(v => parseFloat(v));
+    return {
+      name_jp: o.name_jp,
+      name_en: o.name_en,
+      gender: o.gender,
+      turf_rating: turf,
+      dirt_rating: dirt,
+      min_distance: parseFloat(o.min_distance),
+      max_distance: parseFloat(o.max_distance),
+      optimal_distance: parseFloat(o.optimal_distance),
+      acceleration: parseFloat(o.acceleration),
+      start_score: parseFloat(o.start_score),
+      cornering_score: parseFloat(o.cornering_score),
+      hill_score: parseFloat(o.hill_score),
+      heavy_track_score: parseFloat(o.heavy_track_score),
+      fighting_spirit: parseFloat(o.fighting_spirit),
+      consistency: parseFloat(o.consistency),
+      health: parseFloat(o.health),
+      running_style: styleParts,
+      growth_curve: growth,
+      estimated_price: estimated
+    };
+  }).filter(h => h.name_jp && !isNaN(h.turf_rating) && !isNaN(h.dirt_rating));
+}
+
+async function loadHistory() {
+  try {
+    const res = await fetch("data/horse_history.json");
+    if (res.ok) {
+      historyData = await res.json();
+    }
+  } catch (e) {
+    historyData = {};
+  }
+}
+
+// ---- Stat grid UI ----
+function buildStatGrid() {
+  const grid = document.getElementById("stat-grid");
+  grid.innerHTML = "";
+  STAT_AXES.forEach(axis => {
+    const row = document.createElement("div");
+    row.className = "stat-row";
+    const label = document.createElement("label");
+    label.textContent = axis.label;
+    label.setAttribute("for", `stat-${axis.key}`);
+    const select = document.createElement("select");
+    select.id = `stat-${axis.key}`;
+    select.innerHTML = `
+      <option value="">指定しない</option>
+      <option value="1">1以上</option>
+      <option value="2">2以上</option>
+      <option value="3">3以上</option>
+      <option value="4">4以上</option>
+      <option value="5">5以上（0.8以上）</option>
+    `;
+    row.appendChild(label);
+    row.appendChild(select);
+    grid.appendChild(row);
+  });
+}
+
+// 5段階の下限値（生値）を返す
+function tierLowerBound(tier) {
+  // tier 1 => 0, 2 => 0.2, 3 => 0.4, 4 => 0.6, 5 => 0.8
+  // 浮動小数点誤差対策のため小数第4位で丸める
+  return Math.round((tier - 1) * 0.2 * 10000) / 10000;
+}
+
+// ---- Filtering ----
+function runSearch() {
+  const budgetInput = document.getElementById("budget").value;
+  const budget = budgetInput === "" ? null : parseFloat(budgetInput);
+
+  if (budget === null || isNaN(budget)) {
+    alert("予算上限を入力してください");
+    return;
+  }
+
+  const styleVal = document.getElementById("running-style").value;
+  const distanceInput = document.getElementById("distance").value;
+  const distance = distanceInput === "" ? null : parseFloat(distanceInput);
+  const surface = document.getElementById("surface").value;
+
+  const growthChecked = Array.from(document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked')).map(el => el.value);
+
+  const statFilters = STAT_AXES.map(axis => {
+    const v = document.getElementById(`stat-${axis.key}`).value;
+    return { key: axis.key, tier: v === "" ? null : parseInt(v, 10) };
+  }).filter(f => f.tier !== null);
+
+  const results = horses.filter(h => {
+    if (h.estimated_price > budget) return false;
+
+    if (styleVal !== "") {
+      const idx = parseInt(styleVal, 10);
+      if (!(h.running_style[idx] > 0)) return false;
+    }
+
+    if (distance !== null) {
+      if (!(h.min_distance <= distance && distance <= h.max_distance)) return false;
+    }
+
+    if (surface === "turf") {
+      if (!(h.turf_rating > 80)) return false;
+    } else if (surface === "dirt") {
+      if (!(h.dirt_rating > 80)) return false;
+    }
+
+    if (growthChecked.length > 0) {
+      if (!growthChecked.includes(h.growth_curve)) return false;
+    }
+
+    for (const f of statFilters) {
+      const val = h[f.key];
+      const lowerBound = tierLowerBound(f.tier);
+      if (!(val >= lowerBound)) return false;
+    }
+
+    return true;
+  });
+
+  renderResults(results);
+}
+
+function dominantStyleLabel(styleArr) {
+  let maxIdx = 0;
+  let maxVal = -Infinity;
+  styleArr.forEach((v, i) => {
+    if (v > maxVal) {
+      maxVal = v;
+      maxIdx = i;
+    }
+  });
+  return RUNNING_STYLE_LABELS[maxIdx] || "-";
+}
+
+function renderResults(results) {
+  const container = document.getElementById("results");
+  const countEl = document.getElementById("result-count");
+  countEl.textContent = `(${results.length}件)`;
+  container.innerHTML = "";
+
+  if (results.length === 0) {
+    container.innerHTML = '<div class="no-results">条件に合致する馬が見つかりませんでした。</div>';
+    return;
+  }
+
+  results.sort((a, b) => a.estimated_price - b.estimated_price);
+
+  results.forEach(h => {
+    const card = document.createElement("div");
+    card.className = "horse-card";
+    card.innerHTML = `
+      <h3>${h.name_jp}</h3>
+      <div class="horse-meta">
+        <div>推定価格: ${priceRangeText(h.estimated_price)} pt</div>
+        <div>脚質: ${dominantStyleLabel(h.running_style)}</div>
+        <div>芝: ${h.turf_rating} / ダート: ${h.dirt_rating}</div>
+        <div>成長: ${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</div>
+        <div>距離適性: ${h.min_distance}〜${h.max_distance}m</div>
+      </div>
+    `;
+    card.addEventListener("click", () => showDetail(h));
+    container.appendChild(card);
+  });
+}
+
+function showDetail(horse) {
+  const modal = document.getElementById("detail-modal");
+  const body = document.getElementById("modal-body");
+  const hist = historyData[horse.name_jp];
+
+  let historyHtml;
+  if (hist) {
+    historyHtml = `
+      <h4>現役時代の主な戦績</h4>
+      <p>${hist.achievements || ""}</p>
+      <h4>ミニコラム</h4>
+      <p>${hist.column || ""}</p>
+      <p class="source-link">出典: <a href="${hist.source}" target="_blank" rel="noopener">${hist.source}</a></p>
+    `;
+  } else {
+    historyHtml = `<p>史実紹介は準備中です。</p>`;
+  }
+
+  body.innerHTML = `
+    <h3>${horse.name_jp}（${horse.name_en}）</h3>
+    <p>推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
+    <p>脚質: ${dominantStyleLabel(horse.running_style)} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
+    <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
+    <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
+    <hr>
+    ${historyHtml}
+  `;
+  modal.classList.remove("hidden");
+}
+
+function hideModal() {
+  document.getElementById("detail-modal").classList.add("hidden");
+}
+
+// ---- Init ----
+async function init() {
+  buildStatGrid();
+  document.getElementById("search-btn").addEventListener("click", runSearch);
+  document.getElementById("modal-close").addEventListener("click", hideModal);
+  document.getElementById("detail-modal").addEventListener("click", (e) => {
+    if (e.target.id === "detail-modal") hideModal();
+  });
+
+  const resultsPanel = document.getElementById("results");
+  resultsPanel.innerHTML = '<div class="no-results">馬データを読み込み中...</div>';
+
+  try {
+    await Promise.all([loadHorses(), loadHistory()]);
+    resultsPanel.innerHTML = '<div class="no-results">検索条件を入力して「検索する」を押してください。</div>';
+  } catch (e) {
+    resultsPanel.innerHTML = `<div class="no-results">馬データの読み込みに失敗しました: ${e.message}</div>`;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
