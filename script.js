@@ -16,6 +16,18 @@ const GROWTH_LABEL_JP = {
 
 const RUNNING_STYLE_LABELS = ["逃げ", "先行", "差し", "追込"];
 
+const COLOR_LABEL_JP = {
+  "0": "鹿毛",
+  "1": "黒鹿毛",
+  "2": "青鹿毛",
+  "3": "青毛",
+  "4": "栗毛",
+  "5": "栃栗毛",
+  "6": "尾花栗毛",
+  "7": "芦毛",
+  "8": "白毛"
+};
+
 const STAT_AXES = [
   { key: "acceleration", label: "加速力" },
   { key: "start_score", label: "スタート" },
@@ -122,6 +134,7 @@ async function loadHorses() {
     const turf = parseFloat(o.turf_rating);
     const dirt = parseFloat(o.dirt_rating);
     const growth = (o.growth_curve || "").trim();
+    const horseColor = (o.horse_color || "").trim();
     const estimated = estimatePrice(turf, dirt, growth);
     const styleParts = (o.running_style || "0/0/0/0").split("/").map(v => parseFloat(v));
     return {
@@ -143,6 +156,7 @@ async function loadHorses() {
       health: parseFloat(o.health),
       running_style: styleParts,
       growth_curve: growth,
+      horse_color: horseColor,
       estimated_price: estimated
     };
   }).filter(h => h.name_jp && !isNaN(h.turf_rating) && !isNaN(h.dirt_rating));
@@ -276,6 +290,7 @@ function runSearch() {
   const distanceInput = document.getElementById("distance").value;
   const distance = distanceInput === "" ? null : parseFloat(distanceInput);
   const surface = document.getElementById("surface").value;
+  const colorVal = document.getElementById("horse-color").value;
 
   const growthChecked = Array.from(document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked')).map(el => el.value);
 
@@ -304,6 +319,10 @@ function runSearch() {
 
     if (growthChecked.length > 0) {
       if (!growthChecked.includes(h.growth_curve)) return false;
+    }
+
+    if (colorVal !== "") {
+      if (h.horse_color !== colorVal) return false;
     }
 
     for (const f of statFilters) {
@@ -364,6 +383,7 @@ function renderResults(results, criteria) {
         <div>脚質: ${dominantStyleLabel(h.running_style)}</div>
         <div>芝: ${h.turf_rating} / ダート: ${h.dirt_rating}</div>
         <div>成長: ${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</div>
+        <div>毛色: ${COLOR_LABEL_JP[h.horse_color] || h.horse_color}</div>
         <div>距離適性: ${h.min_distance}〜${h.max_distance}m</div>
       </div>
     `;
@@ -397,6 +417,7 @@ function showDetail(horse) {
     <h3>${horse.name_jp}（${horse.name_en}）</h3>
     <p>推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
     <p>脚質: ${dominantStyleLabel(horse.running_style)} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
+    <p>毛色: ${COLOR_LABEL_JP[horse.horse_color] || horse.horse_color}</p>
     <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
     <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
     <hr>
