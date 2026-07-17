@@ -322,7 +322,7 @@ function runSearch() {
 
     if (styleVal !== "") {
       const idx = parseInt(styleVal, 10);
-      if (!(h.running_style[idx] > 0)) return false;
+      if (dominantStyleLabel(h.running_style) !== RUNNING_STYLE_LABELS[idx]) return false;
     }
 
     if (distance !== null) {
