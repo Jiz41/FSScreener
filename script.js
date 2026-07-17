@@ -198,6 +198,20 @@ async function loadHistory() {
   }
 }
 
+async function loadChangelog() {
+  try {
+    const res = await fetch("data/changelog.json");
+    if (!res.ok) return;
+    const entries = await res.json();
+    const list = document.getElementById("changelog-list");
+    list.innerHTML = entries
+      .map(e => `<li><span class="mono" style="color:var(--muted);">${e.date}</span> ${e.text}</li>`)
+      .join("");
+  } catch (e) {
+    // 更新履歴が読めなくても致命的ではないため無視
+  }
+}
+
 // ---- Stat grid UI ----
 function buildStatGrid() {
   const grid = document.getElementById("stat-grid");
@@ -550,7 +564,7 @@ async function init() {
   resultsPanel.innerHTML = '<div class="no-results">馬データを読み込み中...</div>';
 
   try {
-    await Promise.all([loadHorses(), loadHistory()]);
+    await Promise.all([loadHorses(), loadHistory(), loadChangelog()]);
     resultsPanel.innerHTML = '<div class="no-results">検索条件を入力して「検索する」を押してください。</div>';
   } catch (e) {
     resultsPanel.innerHTML = `<div class="no-results">馬データの読み込みに失敗しました: ${e.message}</div>`;
