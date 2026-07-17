@@ -766,8 +766,32 @@ function showDetail(horse) {
       .split(/(?<!・)(?=\d{4}(?:・\d{4})?年)/)
       .map(s => s.replace(/、\s*$/, "").trim())
       .filter(Boolean);
-    const achievementsHtml = achievementLines.length
-      ? achievementLines.map(line => `<p class="achievement-line">${line}</p>`).join("")
+    const MAX_ACHIEVEMENT_LINES = 3;
+    const isTopGradeLine = line => /GI(?!I)|G1(?!\d)|JpnI(?!I)/.test(line);
+    let displayLines = achievementLines;
+    let achievementsTruncated = false;
+    if (achievementLines.length > MAX_ACHIEVEMENT_LINES) {
+      const giCount = achievementLines.filter(isTopGradeLine).length;
+      const otherBudget = Math.max(0, MAX_ACHIEVEMENT_LINES - giCount);
+      let otherUsed = 0;
+      const kept = [];
+      for (const line of achievementLines) {
+        if (isTopGradeLine(line)) {
+          kept.push(line);
+        } else if (otherUsed < otherBudget) {
+          kept.push(line);
+          otherUsed++;
+        } else {
+          achievementsTruncated = true;
+        }
+      }
+      displayLines = kept;
+    }
+    const achievementsHtml = displayLines.length
+      ? displayLines.map((line, i) => {
+          const text = (achievementsTruncated && i === displayLines.length - 1) ? `${line}など` : line;
+          return `<p class="achievement-line">${text}</p>`;
+        }).join("")
       : `<p>${hist.achievements || ""}</p>`;
     historyHtml = `
       <div class="detail-block">

@@ -1,4 +1,6 @@
 [
+  { "date": "2026-07-17", "text": "戦績表示を最大3行に整理（GI/G1級のレースは行数上限に関わらず全て表示、それ以外は3行になどと省略表記）", "text_en": "Achievements now show up to 3 lines (GI/G1-grade races are always shown in full regardless of the limit; other lines are truncated with \"etc.\")" },
+  { "date": "2026-07-17", "text": "ロゴアイコン追加後にスマホ幅でヘッダーがはみ出す不具合を修正（画面幅に応じてロゴサイズを自動調整）", "text_en": "Fixed the header overflowing on narrow phone screens after adding the logo icon (the logo now auto-scales with viewport width)" },
   { "date": "2026-07-17", "text": "タイトル横にロゴアイコンを追加", "text_en": "Added a logo icon next to the title" },
   { "date": "2026-07-17", "text": "詳細プレビューの見やすさを改善（項目間に区切り線を追加、戦績を1行1レース表示に変更）", "text_en": "Improved detail preview readability (added divider lines between sections, achievements now shown one race per line)" },
   { "date": "2026-07-17", "text": "検索条件に性別（牡・牝・せん馬）フィルタを追加", "text_en": "Added a sex filter (colt/filly/gelding) to search conditions" },

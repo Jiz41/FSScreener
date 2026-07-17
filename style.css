@@ -102,10 +102,11 @@ header {
   gap: 0.12em;
   font-family: "Staatliches", Impact, "Arial Narrow Bold", "Hiragino Sans", sans-serif;
   font-weight: 900;
-  font-size: 2.6em;
+  font-size: clamp(1.6em, 8vw, 2.6em);
   letter-spacing: 0.02em;
   color: var(--ink);
   line-height: 1;
+  min-width: 0;
 }
 
 .wordmark .logo-icon {
