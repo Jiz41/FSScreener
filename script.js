@@ -233,6 +233,15 @@ function colorLabelFor(colorKey) {
   return dict[colorKey] || colorKey;
 }
 
+// 一覧カード等、一つだけ表示する場面用（英語モードはname_en優先、無ければname_jpにフォールバック）
+function displayName(horse) {
+  const lang = currentLang();
+  if (lang === "en") {
+    return horse.name_en && horse.name_en.trim() ? horse.name_en : horse.name_jp;
+  }
+  return horse.name_jp;
+}
+
 function growthLabelFor(growthKey) {
   const lang = currentLang();
   const dict = lang === "en" ? GROWTH_LABEL_EN : GROWTH_LABEL_JP;
@@ -694,7 +703,7 @@ function renderResults(results, criteria) {
         <span class="num">${idx + 1}</span>
       </div>
       <div class="card-body">
-        <h3>${h.name_jp}</h3>
+        <h3>${displayName(h)}</h3>
         <div class="card-tags">
           <span class="tag">${dominantStyleLabel(h.running_style)}</span>
           ${sub ? `<span class="tag sub-tag">${t("sub_prefix")}${sub}</span>` : ""}
@@ -745,7 +754,7 @@ function showDetail(horse) {
   window.__currentDetailHorse = horse;
 
   body.innerHTML = `
-    <h3>${horse.name_jp}（${horse.name_en}）</h3>
+    <h3>${lang === "en" ? `${displayName(horse)}（${horse.name_jp}）` : `${horse.name_jp}（${horse.name_en}）`}</h3>
     <p class="price-line mono">${t("price_range_label")} ${priceRangeText(horse.estimated_price)} pt</p>
     <p>${t("style_colon")} ${dominantStyleLabel(horse.running_style)}${sub ? `（${t("sub_prefix")} ${sub}）` : ""} / ${t("growth_colon")} ${growthLabelFor(horse.growth_curve)}</p>
     <p>${t("color_colon")} ${colorLabelFor(horse.horse_color)}</p>
