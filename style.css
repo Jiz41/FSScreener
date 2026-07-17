@@ -509,6 +509,11 @@ footer {
   border-top: 2px solid var(--line);
 }
 
+footer a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
 .theme-toggle {
   width: 32px;
   height: 32px;
