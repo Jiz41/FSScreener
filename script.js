@@ -282,6 +282,7 @@ function applyLanguage(lang) {
   if (modal && !modal.classList.contains("hidden") && window.__currentDetailHorse) {
     showDetail(window.__currentDetailHorse);
   }
+  renderChangelog();
 }
 
 let horses = [];
@@ -447,18 +448,29 @@ async function loadHistory() {
   }
 }
 
+let changelogEntries = [];
+
 async function loadChangelog() {
   try {
     const res = await fetch("data/changelog.json");
     if (!res.ok) return;
-    const entries = await res.json();
-    const list = document.getElementById("changelog-list");
-    list.innerHTML = entries
-      .map(e => `<li><span class="mono" style="color:var(--muted);">${e.date}</span> ${e.text}</li>`)
-      .join("");
+    changelogEntries = await res.json();
+    renderChangelog();
   } catch (e) {
     // 更新履歴が読めなくても致命的ではないため無視
   }
+}
+
+function renderChangelog() {
+  const list = document.getElementById("changelog-list");
+  if (!list) return;
+  const lang = currentLang();
+  list.innerHTML = changelogEntries
+    .map(e => {
+      const text = lang === "en" ? (e.text_en || e.text) : e.text;
+      return `<li><span class="mono" style="color:var(--muted);">${e.date}</span> ${text}</li>`;
+    })
+    .join("");
 }
 
 // ---- Stat grid UI ----
