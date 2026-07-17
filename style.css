@@ -427,6 +427,11 @@ select {
   letter-spacing: 0.02em;
 }
 
+.tag.sub-tag {
+  border-style: dashed;
+  font-style: italic;
+}
+
 .data-grid {
   display: grid;
   grid-template-columns: 1fr auto;

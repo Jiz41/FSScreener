@@ -402,6 +402,16 @@ function dominantStyleLabel(styleArr) {
   return RUNNING_STYLE_LABELS[maxIdx] || "-";
 }
 
+// 2番目に高い脚質適性(非ゼロの場合のみ)を返す。単一適性の馬はnull
+function subStyleLabel(styleArr) {
+  const indexed = styleArr.map((v, i) => [v, i]);
+  indexed.sort((a, b) => b[0] - a[0]);
+  if (indexed.length > 1 && indexed[1][0] > 0) {
+    return RUNNING_STYLE_LABELS[indexed[1][1]];
+  }
+  return null;
+}
+
 function starsText(stars) {
   return "🥕".repeat(stars) + ` (${stars}/10)`;
 }
@@ -424,6 +434,7 @@ function renderResults(results, criteria) {
     const { stars } = computeScore(h, criteria);
     const stubClass = "stub-" + ((idx % 4) + 1);
     const peakText = isNaN(h.peak_age) ? "-" : formatPeakSeason(h.peak_age);
+    const sub = subStyleLabel(h.running_style);
     const card = document.createElement("div");
     card.className = "horse-card";
     card.innerHTML = `
@@ -435,6 +446,7 @@ function renderResults(results, criteria) {
         <h3>${h.name_jp}</h3>
         <div class="card-tags">
           <span class="tag">${dominantStyleLabel(h.running_style)}</span>
+          ${sub ? `<span class="tag sub-tag">サブ:${sub}</span>` : ""}
           <span class="tag">${COLOR_LABEL_JP[h.horse_color] || h.horse_color}</span>
           <span class="tag">${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</span>
         </div>
@@ -475,11 +487,12 @@ function showDetail(horse) {
   }
 
   const peakText = isNaN(horse.peak_age) ? "-" : formatPeakSeason(horse.peak_age);
+  const sub = subStyleLabel(horse.running_style);
 
   body.innerHTML = `
     <h3>${horse.name_jp}（${horse.name_en}）</h3>
     <p class="price-line mono">推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
-    <p>脚質: ${dominantStyleLabel(horse.running_style)} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
+    <p>脚質: ${dominantStyleLabel(horse.running_style)}${sub ? `（サブ: ${sub}）` : ""} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
     <p>毛色: ${COLOR_LABEL_JP[horse.horse_color] || horse.horse_color}</p>
     <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
     <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
