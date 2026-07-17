@@ -1,4 +1,5 @@
 [
+  { "date": "2026-07-17", "text": "以下の馬の詳細情報を更新しました：ミツカネベネラ、ストームサンダー、スターアニス、ショウナンカリス、ジーネキング、ウイナーズナイン、アンヘリータス、アランカール、アスクエジンバラ、ジェンティルドンナ、ゴールドシップ、ジャスタウェイ、ホッコータルマエ、フェノーメノ、ヴィルシーナ、ハクサンムーン、カレンブラックヒル、ストレイトガール、ワールドエース、スピルバーグ", "text_en": "Added real-world profiles for 20 horses (born 2009/2023)" },
   { "date": "2026-07-17", "text": "英語モードで馬名が日本語のまま表示されていた不具合を修正（一覧・詳細ともname_enを使用）", "text_en": "Fixed a bug where horse names stayed in Japanese in English mode (now uses name_en in both the list and detail view)" },
   { "date": "2026-07-17", "text": "JPN/ENG言語切替を追加（史実コラムは日本語のまま）", "text_en": "Added a JPN/ENG language toggle (real-world profile columns remain Japanese-only)" },
   { "date": "2026-07-17", "text": "複合適性を持つ馬に「サブ脚質」タグを追加表示", "text_en": "Added a \"sub running style\" tag for horses with mixed style aptitude" },
