@@ -65,7 +65,7 @@ const I18N = {
     subtitle: "Full Stride 馬情報検索ツール",
     howto_summary: "使い方",
     howto_1: "予算上限を入力します（必須）",
-    howto_2: "脚質・距離・芝ダート・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます",
+    howto_2: "脚質・距離・芝ダート・性別・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます",
     howto_3: "「検索する」を押すと、条件に合う候補馬が一覧で出てきます",
     howto_4: "気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます",
     eng_note: "",
@@ -83,6 +83,11 @@ const I18N = {
     surface_any: "どちらでも",
     surface_turf: "芝",
     surface_dirt: "ダート",
+    gender_label: "性別",
+    gender_any: "どれでも",
+    gender_0: "牡",
+    gender_1: "牝",
+    gender_2: "せん馬",
     color_label: "毛色",
     color_0: "鹿毛",
     color_1: "黒鹿毛",
@@ -140,7 +145,7 @@ const I18N = {
     subtitle: "Full Stride Horse Search Tool",
     howto_summary: "How to Use",
     howto_1: "Enter your budget limit (required)",
-    howto_2: "Running style, distance, turf/dirt, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about",
+    howto_2: "Running style, distance, turf/dirt, sex, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about",
     howto_3: "Press \"Search\" to get a list of matching horses",
     howto_4: "Tap a horse you like to see its real-world racing history and story",
     eng_note: "Heads up — translating every single horse profile into English would take forever, so we didn't. Please just hit Google Translate or DeepL on this page. Sorry about that! Peace! ✌️",
@@ -158,6 +163,11 @@ const I18N = {
     surface_any: "Either",
     surface_turf: "Turf",
     surface_dirt: "Dirt",
+    gender_label: "Sex",
+    gender_any: "Either",
+    gender_0: "Colt / Stallion",
+    gender_1: "Filly / Mare",
+    gender_2: "Gelding",
     color_label: "Coat Color",
     color_0: "Bay",
     color_1: "Dark Bay",
@@ -576,6 +586,7 @@ function runSearch() {
   const distance = distanceInput === "" ? null : parseFloat(distanceInput);
   const surface = document.getElementById("surface").value;
   const colorVal = document.getElementById("horse-color").value;
+  const genderVal = document.getElementById("horse-gender").value;
 
   const growthChecked = Array.from(document.querySelectorAll('#growth-chips .chip.active')).map(el => el.dataset.value);
 
@@ -608,6 +619,10 @@ function runSearch() {
 
     if (colorVal !== "") {
       if (h.horse_color !== colorVal) return false;
+    }
+
+    if (genderVal !== "") {
+      if (h.gender !== genderVal) return false;
     }
 
     for (const f of statFilters) {
@@ -747,15 +762,28 @@ function showDetail(horse) {
     const sourcesHtml = (hist.sources || [])
       .map(url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`)
       .join("<br>");
+    const achievementLines = (hist.achievements || "")
+      .split(/(?<!・)(?=\d{4}(?:・\d{4})?年)/)
+      .map(s => s.replace(/、\s*$/, "").trim())
+      .filter(Boolean);
+    const achievementsHtml = achievementLines.length
+      ? achievementLines.map(line => `<p class="achievement-line">${line}</p>`).join("")
+      : `<p>${hist.achievements || ""}</p>`;
     historyHtml = `
-      <h4>${t("achievements_title")}</h4>
-      <p>${hist.achievements || ""}</p>
-      <h4>${t("column_title")}</h4>
-      <p>${hist.column || ""}</p>
-      <p class="source-link">${t("sources_label")}<br>${sourcesHtml}</p>
+      <div class="detail-block">
+        <h4>${t("achievements_title")}</h4>
+        ${achievementsHtml}
+      </div>
+      <div class="detail-block">
+        <h4>${t("column_title")}</h4>
+        <p>${hist.column || ""}</p>
+      </div>
+      <div class="detail-block">
+        <p class="source-link">${t("sources_label")}<br>${sourcesHtml}</p>
+      </div>
     `;
   } else {
-    historyHtml = `<p>${t("history_pending")}</p>`;
+    historyHtml = `<div class="detail-block"><p>${t("history_pending")}</p></div>`;
   }
 
   const peakText = isNaN(horse.peak_age) ? "-" : formatPeakSeason(horse.peak_age);
@@ -768,11 +796,13 @@ function showDetail(horse) {
   body.innerHTML = `
     <h3>${lang === "en" ? `${displayName(horse)}（${horse.name_jp}）` : `${horse.name_jp}（${horse.name_en}）`}</h3>
     <p class="price-line mono">${t("price_range_label")} ${priceRangeText(horse.estimated_price)} pt</p>
-    <p>${t("style_colon")} ${dominantStyleLabel(horse.running_style)}${sub ? `（${t("sub_prefix")} ${sub}）` : ""} / ${t("growth_colon")} ${growthLabelFor(horse.growth_curve)}</p>
-    <p>${t("color_colon")} ${colorLabelFor(horse.horse_color)}</p>
-    <p>${t("surface_turf")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.turf_rating} / ${t("surface_dirt")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.dirt_rating}</p>
-    <p>${t("distance_aptitude")}: ${horse.min_distance}〜${horse.max_distance}m（${t("optimal")} ${horse.optimal_distance}m）</p>
-    <p>${t("peak_season")}: ${peakText} ／ ${t("birth_year")}: ${birthText}</p>
+    <div class="detail-stats">
+      <p>${t("style_colon")} ${dominantStyleLabel(horse.running_style)}${sub ? `（${t("sub_prefix")} ${sub}）` : ""} / ${t("growth_colon")} ${growthLabelFor(horse.growth_curve)}</p>
+      <p>${t("color_colon")} ${colorLabelFor(horse.horse_color)}</p>
+      <p>${t("surface_turf")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.turf_rating} / ${t("surface_dirt")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.dirt_rating}</p>
+      <p>${t("distance_aptitude")}: ${horse.min_distance}〜${horse.max_distance}m（${t("optimal")} ${horse.optimal_distance}m）</p>
+      <p>${t("peak_season")}: ${peakText} ／ ${t("birth_year")}: ${birthText}</p>
+    </div>
     ${historyHtml}
   `;
   modal.classList.remove("hidden");

@@ -97,12 +97,23 @@ header {
 
 .wordmark {
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.12em;
   font-family: "Staatliches", Impact, "Arial Narrow Bold", "Hiragino Sans", sans-serif;
   font-weight: 900;
   font-size: 2.6em;
   letter-spacing: 0.02em;
   color: var(--ink);
   line-height: 1;
+}
+
+.wordmark .logo-icon {
+  height: 1em;
+  width: 1em;
+  object-fit: contain;
+  border-radius: 0.18em;
+  flex-shrink: 0;
 }
 
 .wordmark span {
@@ -519,6 +530,24 @@ select {
 .detail-preview p {
   margin: 0;
   font-size: 0.9em;
+}
+
+.detail-stats p {
+  margin: 3px 0;
+}
+
+.detail-block {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--hair);
+}
+
+.detail-block h4 {
+  margin-top: 0;
+}
+
+.achievement-line {
+  margin: 2px 0;
 }
 
 .source-link {

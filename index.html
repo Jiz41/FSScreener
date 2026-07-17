@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="app-version" content="1.5.0">
+<meta name="app-version" content="1.6.0">
 <title>FSScreener - Full Stride 馬市場検索ツール</title>
 <meta name="description" content="予算・脚質・ステータスでFull Strideの馬市場を検索。史実紹介コラム付きのファン制作ツール">
 <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
 <body>
 <header>
   <div class="header-top">
-    <h1 class="wordmark">FS<span>Screener</span><span id="app-version-badge" class="version-badge"></span></h1>
+    <h1 class="wordmark"><img src="images/favicon-192.png" alt="" class="logo-icon">FS<span>Screener</span><span id="app-version-badge" class="version-badge"></span></h1>
     <div class="header-buttons">
       <button class="lang-toggle" id="lang-toggle" aria-label="言語切り替え">ENG</button>
       <button class="theme-toggle" id="theme-toggle" aria-label="テーマ切り替え">☀️</button>
@@ -80,6 +80,16 @@
         <option value="" data-i18n="surface_any">どちらでも</option>
         <option value="turf" data-i18n="surface_turf">芝</option>
         <option value="dirt" data-i18n="surface_dirt">ダート</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="horse-gender" data-i18n="gender_label">性別</label>
+      <select id="horse-gender">
+        <option value="" data-i18n="gender_any">どれでも</option>
+        <option value="0" data-i18n="gender_0">牡</option>
+        <option value="1" data-i18n="gender_1">牝</option>
+        <option value="2" data-i18n="gender_2">せん馬</option>
       </select>
     </div>
 

@@ -1,4 +1,7 @@
 [
+  { "date": "2026-07-17", "text": "タイトル横にロゴアイコンを追加", "text_en": "Added a logo icon next to the title" },
+  { "date": "2026-07-17", "text": "詳細プレビューの見やすさを改善（項目間に区切り線を追加、戦績を1行1レース表示に変更）", "text_en": "Improved detail preview readability (added divider lines between sections, achievements now shown one race per line)" },
+  { "date": "2026-07-17", "text": "検索条件に性別（牡・牝・せん馬）フィルタを追加", "text_en": "Added a sex filter (colt/filly/gelding) to search conditions" },
   { "date": "2026-07-17", "text": "以下の馬の詳細情報を更新しました：サンビスタ、クラレント、マーティンボロ、ディサイファ、フィエロ、ハナズゴール、グランデッツァ、ダイワマッジョーレ、ヒストリカル、エキストラエンド、リトルゲルダ、アンバルブライベン、ヴァンセンヌ、フーラブライド、キャトルフィーユ、サトノギャラント、サドンストーム、ブライトライン、トーホウアマポーラ、クリールカイザー", "text_en": "Added real-world profiles for 20 horses (born 2009)" },
   { "date": "2026-07-17", "text": "OGP画像を設定（SNSでリンクを共有した際にバナーが表示されるように）", "text_en": "Added an OGP image (link shares on social media now show a banner)" },
   { "date": "2026-07-17", "text": "ファビコン（サイトアイコン）を追加", "text_en": "Added a favicon (site icon)" },
