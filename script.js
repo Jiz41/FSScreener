@@ -8,7 +8,7 @@ const GROWTH_MULTIPLIER = {
 };
 
 const GROWTH_LABEL_JP = {
-  prodigy: "怪物級",
+  prodigy: "天才",
   early: "早熟",
   normal: "普通",
   late: "晩成"
@@ -122,6 +122,19 @@ function priceRangeText(estimated) {
   return `${low}〜${high}`;
 }
 
+// ---- Peak season formatting ----
+function formatPeakSeason(peakAge) {
+  const years = Math.floor(peakAge);
+  const monthFrac = peakAge - years;
+  const monthIndex = Math.round(monthFrac * 12) % 12; // 0=1月, 11=12月
+  let season;
+  if (monthIndex >= 2 && monthIndex <= 4) season = "春";
+  else if (monthIndex >= 5 && monthIndex <= 7) season = "夏";
+  else if (monthIndex >= 8 && monthIndex <= 10) season = "秋";
+  else season = "冬";
+  return `${years}歳${season}頃`;
+}
+
 // ---- Data loading ----
 async function loadHorses() {
   const res = await fetch(SHEET_URL);
@@ -159,7 +172,8 @@ async function loadHorses() {
       running_style: styleParts,
       growth_curve: growth,
       horse_color: horseColor,
-      estimated_price: estimated
+      estimated_price: estimated,
+      peak_age: parseFloat(o.peak_age)
     };
   }).filter(h => h.name_jp && !isNaN(h.turf_rating) && !isNaN(h.dirt_rating));
 
@@ -275,13 +289,13 @@ function runSearch() {
     return;
   }
 
-  const styleVal = document.getElementById("running-style").value;
+  const styleVal = document.getElementById("running-style-chips").dataset.value;
   const distanceInput = document.getElementById("distance").value;
   const distance = distanceInput === "" ? null : parseFloat(distanceInput);
   const surface = document.getElementById("surface").value;
   const colorVal = document.getElementById("horse-color").value;
 
-  const growthChecked = Array.from(document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked')).map(el => el.value);
+  const growthChecked = Array.from(document.querySelectorAll('#growth-chips .chip.active')).map(el => el.dataset.value);
 
   const statFilters = STAT_AXES.map(axis => {
     const v = document.getElementById(`stat-${axis.key}`).value;
@@ -374,7 +388,7 @@ function starsText(stars) {
 function renderResults(results, criteria) {
   const container = document.getElementById("results");
   const countEl = document.getElementById("result-count");
-  countEl.textContent = `(${results.length}件)`;
+  countEl.textContent = `${results.length}件`;
   container.innerHTML = "";
 
   if (results.length === 0) {
@@ -385,20 +399,31 @@ function renderResults(results, criteria) {
   const sortKey = document.getElementById("sort-select").value;
   const sorted = sortResults(results, criteria, sortKey);
 
-  sorted.forEach(h => {
+  sorted.forEach((h, idx) => {
     const { stars } = computeScore(h, criteria);
+    const stubClass = "stub-" + ((idx % 4) + 1);
+    const peakText = isNaN(h.peak_age) ? "-" : formatPeakSeason(h.peak_age);
     const card = document.createElement("div");
     card.className = "horse-card";
     card.innerHTML = `
-      <h3>${h.name_jp}</h3>
-      <div class="horse-meta">
-        <div class="recommend-stars">${starsText(stars)}</div>
-        <div>推定価格: ${priceRangeText(h.estimated_price)} pt</div>
-        <div>脚質: ${dominantStyleLabel(h.running_style)}</div>
-        <div>芝: ${h.turf_rating} / ダート: ${h.dirt_rating}</div>
-        <div>成長: ${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</div>
-        <div>毛色: ${COLOR_LABEL_JP[h.horse_color] || h.horse_color}</div>
-        <div>距離適性: ${h.min_distance}〜${h.max_distance}m</div>
+      <div class="stub ${stubClass}">
+        <span class="no-label">NO.</span>
+        <span class="num">${idx + 1}</span>
+      </div>
+      <div class="card-body">
+        <h3>${h.name_jp}</h3>
+        <div class="card-tags">
+          <span class="tag">${dominantStyleLabel(h.running_style)}</span>
+          <span class="tag">${COLOR_LABEL_JP[h.horse_color] || h.horse_color}</span>
+          <span class="tag">${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</span>
+        </div>
+        <div class="data-grid mono">
+          <span class="k">推定価格</span><span class="v">${priceRangeText(h.estimated_price)} pt</span>
+          <span class="k">芝 / ダート</span><span class="v">${h.turf_rating} / ${h.dirt_rating}</span>
+          <span class="k">距離適性</span><span class="v">${h.min_distance}〜${h.max_distance}m</span>
+          <span class="k">本格化</span><span class="v">${peakText}</span>
+        </div>
+        <div class="carrot-row">${starsText(stars)}</div>
       </div>
     `;
     card.addEventListener("click", () => showDetail(h));
@@ -427,14 +452,16 @@ function showDetail(horse) {
     historyHtml = `<p>史実紹介は準備中です。</p>`;
   }
 
+  const peakText = isNaN(horse.peak_age) ? "-" : formatPeakSeason(horse.peak_age);
+
   body.innerHTML = `
     <h3>${horse.name_jp}（${horse.name_en}）</h3>
-    <p>推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
+    <p class="price-line mono">推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
     <p>脚質: ${dominantStyleLabel(horse.running_style)} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
     <p>毛色: ${COLOR_LABEL_JP[horse.horse_color] || horse.horse_color}</p>
     <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
     <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
-    <hr>
+    <p>本格化: ${peakText}</p>
     ${historyHtml}
   `;
   modal.classList.remove("hidden");
@@ -444,9 +471,62 @@ function hideModal() {
   document.getElementById("detail-modal").classList.add("hidden");
 }
 
+// ---- Chip interactions ----
+function setupStyleChips() {
+  const container = document.getElementById("running-style-chips");
+  container.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const val = chip.dataset.value;
+      const current = container.dataset.value;
+      const next = (current === val && val !== "") ? "" : val;
+      container.dataset.value = next;
+      container.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      const activeChip = container.querySelector(`.chip[data-value="${next}"]`);
+      if (activeChip) activeChip.classList.add("active");
+    });
+  });
+}
+
+function setupGrowthChips() {
+  const container = document.getElementById("growth-chips");
+  container.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      chip.classList.toggle("active");
+    });
+  });
+}
+
+// ---- Theme toggle ----
+function setupThemeToggle() {
+  const root = document.documentElement;
+  const btn = document.getElementById("theme-toggle");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  function effectiveTheme() {
+    const forced = root.getAttribute("data-theme");
+    if (forced) return forced;
+    return systemDark ? "dark" : "light";
+  }
+
+  function updateIcon() {
+    btn.textContent = effectiveTheme() === "dark" ? "🌙" : "☀️";
+  }
+
+  btn.addEventListener("click", () => {
+    const next = effectiveTheme() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    updateIcon();
+  });
+
+  updateIcon();
+}
+
 // ---- Init ----
 async function init() {
   buildStatGrid();
+  setupStyleChips();
+  setupGrowthChips();
+  setupThemeToggle();
   document.getElementById("search-btn").addEventListener("click", runSearch);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
