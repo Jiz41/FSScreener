@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="app-version" content="1.2.0">
+<meta name="app-version" content="1.3.0">
 <title>FSScreener - Full Stride 馬市場検索ツール</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,109 +14,113 @@
 <header>
   <div class="header-top">
     <h1 class="wordmark">FS<span>Screener</span><span id="app-version-badge" class="version-badge"></span></h1>
-    <button class="theme-toggle" id="theme-toggle" aria-label="テーマ切り替え">☀️</button>
+    <div class="header-buttons">
+      <button class="lang-toggle" id="lang-toggle" aria-label="言語切り替え">ENG</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="テーマ切り替え">☀️</button>
+    </div>
   </div>
-  <p class="subtitle">Full Stride 馬情報検索ツール</p>
+  <p class="subtitle" data-i18n="subtitle">Full Stride 馬情報検索ツール</p>
 </header>
 
 <details class="usage-details">
-  <summary>使い方</summary>
+  <summary data-i18n="howto_summary">使い方</summary>
   <ol>
-    <li>予算上限を入力します（必須）</li>
-    <li>脚質・距離・芝ダート・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます</li>
-    <li>「検索する」を押すと、条件に合う候補馬が一覧で出てきます</li>
-    <li>気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます</li>
+    <li data-i18n="howto_1">予算上限を入力します（必須）</li>
+    <li data-i18n="howto_2">脚質・距離・芝ダート・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます</li>
+    <li data-i18n="howto_3">「検索する」を押すと、条件に合う候補馬が一覧で出てきます</li>
+    <li data-i18n="howto_4">気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます</li>
+    <li id="eng-note" data-i18n="eng_note" class="eng-only-note" style="display:none;"></li>
   </ol>
 </details>
 
 <main>
   <section id="search-panel" class="panel">
     <p class="ticket-label">Entry Form No.01</p>
-    <h2>検索条件</h2>
+    <h2 data-i18n="search_conditions">検索条件</h2>
 
     <div class="field-row">
       <div class="field">
-        <label for="budget">予算上限（pt）<span class="required">必須</span></label>
+        <label for="budget"><span data-i18n="budget_label">予算上限（pt）</span><span class="required" data-i18n="required">必須</span></label>
         <input type="number" id="budget" min="0" step="1" placeholder="例: 10000">
       </div>
       <div class="field">
-        <label for="distance">希望距離（m）</label>
+        <label for="distance" data-i18n="distance_label">希望距離（m）</label>
         <input type="number" id="distance" min="0" step="100" placeholder="例: 1800">
       </div>
     </div>
 
     <div class="field">
-      <label>脚質</label>
+      <label data-i18n="style_label">脚質</label>
       <div class="chip-row" id="running-style-chips" data-value="">
-        <span class="chip active" data-value="">指定しない</span>
-        <span class="chip" data-value="0">逃げ</span>
-        <span class="chip" data-value="1">先行</span>
-        <span class="chip" data-value="2">差し</span>
-        <span class="chip" data-value="3">追込</span>
+        <span class="chip active" data-value="" data-i18n="no_pref">指定しない</span>
+        <span class="chip" data-value="0" data-i18n="style_0">逃げ</span>
+        <span class="chip" data-value="1" data-i18n="style_1">先行</span>
+        <span class="chip" data-value="2" data-i18n="style_2">差し</span>
+        <span class="chip" data-value="3" data-i18n="style_3">追込</span>
       </div>
     </div>
 
     <div class="field">
-      <label for="surface">芝・ダート</label>
+      <label for="surface" data-i18n="surface_label">芝・ダート</label>
       <select id="surface">
-        <option value="">どちらでも</option>
-        <option value="turf">芝</option>
-        <option value="dirt">ダート</option>
+        <option value="" data-i18n="surface_any">どちらでも</option>
+        <option value="turf" data-i18n="surface_turf">芝</option>
+        <option value="dirt" data-i18n="surface_dirt">ダート</option>
       </select>
     </div>
 
     <div class="field">
-      <label for="horse-color">毛色</label>
+      <label for="horse-color" data-i18n="color_label">毛色</label>
       <select id="horse-color">
-        <option value="">指定しない</option>
-        <option value="0">鹿毛</option>
-        <option value="1">黒鹿毛</option>
-        <option value="2">青鹿毛</option>
-        <option value="3">青毛</option>
-        <option value="4">栗毛</option>
-        <option value="5">栃栗毛</option>
-        <option value="6">尾花栗毛</option>
-        <option value="7">芦毛</option>
-        <option value="8">白毛</option>
+        <option value="" data-i18n="no_pref">指定しない</option>
+        <option value="0" data-i18n="color_0">鹿毛</option>
+        <option value="1" data-i18n="color_1">黒鹿毛</option>
+        <option value="2" data-i18n="color_2">青鹿毛</option>
+        <option value="3" data-i18n="color_3">青毛</option>
+        <option value="4" data-i18n="color_4">栗毛</option>
+        <option value="5" data-i18n="color_5">栃栗毛</option>
+        <option value="6" data-i18n="color_6">尾花栗毛</option>
+        <option value="7" data-i18n="color_7">芦毛</option>
+        <option value="8" data-i18n="color_8">白毛</option>
       </select>
     </div>
 
     <div class="field">
-      <label>成長タイプ（複数選択可）</label>
+      <label data-i18n="growth_label">成長タイプ（複数選択可）</label>
       <div class="chip-row" id="growth-chips">
-        <span class="chip" data-value="prodigy">天才</span>
-        <span class="chip" data-value="early">早熟</span>
-        <span class="chip" data-value="normal">普通</span>
-        <span class="chip" data-value="late">晩成</span>
+        <span class="chip" data-value="prodigy" data-i18n="growth_prodigy">天才</span>
+        <span class="chip" data-value="early" data-i18n="growth_early">早熟</span>
+        <span class="chip" data-value="normal" data-i18n="growth_normal">普通</span>
+        <span class="chip" data-value="late" data-i18n="growth_late">晩成</span>
       </div>
     </div>
 
     <div class="field">
-      <h3>8軸ステータス（任意・N以上で抽出）</h3>
+      <h3 data-i18n="stat_section_title">8軸ステータス（任意・N以上で抽出）</h3>
       <div class="stat-grid" id="stat-grid">
         <!-- generated by script.js -->
       </div>
     </div>
 
-    <button id="search-btn" class="search-btn">検索する</button>
+    <button id="search-btn" class="search-btn" data-i18n="search_btn">検索する</button>
   </section>
 
   <section id="results-panel" class="panel">
     <div class="results-head">
-      <h2>検索結果</h2>
+      <h2 data-i18n="results_title">検索結果</h2>
       <span class="results-count" id="result-count"></span>
     </div>
-    <p class="hint">おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。</p>
+    <p class="hint" data-i18n="hint">おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。</p>
     <div class="sort-row">
-      <label for="sort-select" class="sr-only">並び替え</label>
+      <label for="sort-select" class="sr-only" data-i18n="sort_label">並び替え</label>
       <select id="sort-select">
-        <option value="score_desc">おすすめ度順（高い→低い）</option>
-        <option value="rating_desc">レーティング高い順</option>
-        <option value="rating_asc">レーティング低い順</option>
-        <option value="name_asc">あいうえお順</option>
-        <option value="name_desc">あいうえお逆順</option>
-        <option value="birth_desc">生まれ年が新しい順</option>
-        <option value="birth_asc">生まれ年が古い順</option>
+        <option value="score_desc" data-i18n="sort_score_desc">おすすめ度順（高い→低い）</option>
+        <option value="rating_desc" data-i18n="sort_rating_desc">レーティング高い順</option>
+        <option value="rating_asc" data-i18n="sort_rating_asc">レーティング低い順</option>
+        <option value="name_asc" data-i18n="sort_name_asc">あいうえお順</option>
+        <option value="name_desc" data-i18n="sort_name_desc">あいうえお逆順</option>
+        <option value="birth_desc" data-i18n="sort_birth_desc">生まれ年が新しい順</option>
+        <option value="birth_asc" data-i18n="sort_birth_asc">生まれ年が古い順</option>
       </select>
     </div>
     <div class="card-stack" id="results"></div>
@@ -126,19 +130,19 @@
 <div id="detail-modal" class="modal hidden">
   <div class="modal-content panel detail-preview">
     <button id="modal-close" class="modal-close">×</button>
-    <p class="ticket-label">詳細プレビュー</p>
+    <p class="ticket-label" data-i18n="detail_preview">詳細プレビュー</p>
     <div id="modal-body"></div>
   </div>
 </div>
 
 <details class="usage-details">
-  <summary>更新履歴</summary>
+  <summary data-i18n="changelog_summary">更新履歴</summary>
   <ol id="changelog-list"></ol>
 </details>
 
 <footer>
-  本ツールはファンによる非公式検索ツールです。<br>
-  『FULL STRIDE』の名称は、<a href="https://x.com/BlueBullet_Inc" target="_blank" rel="noopener">BLUE BULLET</a>の商標または登録商標です。<br>
+  <span data-i18n="footer_unofficial">本ツールはファンによる非公式検索ツールです。</span><br>
+  <span data-i18n="footer_trademark_pre">『FULL STRIDE』の名称は、</span><a href="https://x.com/BlueBullet_Inc" target="_blank" rel="noopener">BLUE BULLET</a><span data-i18n="footer_trademark_post">の商標または登録商標です。</span><br>
   Created by ©<a href="https://x.com/Mushyn_Reagan" target="_blank" rel="noopener">Musyn Reagan</a> / <a href="https://x.com/Kayoutouidou01" target="_blank" rel="noopener">華耀東夷堂</a>
 </footer>
 

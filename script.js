@@ -15,6 +15,7 @@ const GROWTH_LABEL_JP = {
 };
 
 const RUNNING_STYLE_LABELS = ["逃げ", "先行", "差し", "追込"];
+const RUNNING_STYLE_LABELS_EN = ["Front-runner", "Stalker", "Closer", "Deep Closer"];
 
 const COLOR_LABEL_JP = {
   "0": "鹿毛",
@@ -28,16 +29,251 @@ const COLOR_LABEL_JP = {
   "8": "白毛"
 };
 
+const COLOR_LABEL_EN = {
+  "0": "Bay",
+  "1": "Dark Bay",
+  "2": "Brown",
+  "3": "Black",
+  "4": "Chestnut",
+  "5": "Liver Chestnut",
+  "6": "Flaxen Chestnut",
+  "7": "Gray",
+  "8": "White"
+};
+
+const GROWTH_LABEL_EN = {
+  prodigy: "Prodigy",
+  early: "Early Bloomer",
+  normal: "Normal",
+  late: "Late Bloomer"
+};
+
 const STAT_AXES = [
-  { key: "acceleration", label: "加速力" },
-  { key: "start_score", label: "スタート" },
-  { key: "cornering_score", label: "コーナリング" },
-  { key: "hill_score", label: "坂" },
-  { key: "heavy_track_score", label: "重馬場" },
-  { key: "fighting_spirit", label: "闘争心" },
-  { key: "consistency", label: "安定感" },
-  { key: "health", label: "健康" }
+  { key: "acceleration", label: "加速力", label_en: "Acceleration" },
+  { key: "start_score", label: "スタート", label_en: "Start" },
+  { key: "cornering_score", label: "コーナリング", label_en: "Cornering" },
+  { key: "hill_score", label: "坂", label_en: "Hill" },
+  { key: "heavy_track_score", label: "重馬場", label_en: "Heavy Track" },
+  { key: "fighting_spirit", label: "闘争心", label_en: "Fighting Spirit" },
+  { key: "consistency", label: "安定感", label_en: "Consistency" },
+  { key: "health", label: "健康", label_en: "Health" }
 ];
+
+// ---- i18n ----
+const I18N = {
+  ja: {
+    subtitle: "Full Stride 馬情報検索ツール",
+    howto_summary: "使い方",
+    howto_1: "予算上限を入力します（必須）",
+    howto_2: "脚質・距離・芝ダート・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます",
+    howto_3: "「検索する」を押すと、条件に合う候補馬が一覧で出てきます",
+    howto_4: "気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます",
+    eng_note: "",
+    search_conditions: "検索条件",
+    budget_label: "予算上限（pt）",
+    required: "必須",
+    distance_label: "希望距離（m）",
+    style_label: "脚質",
+    no_pref: "指定しない",
+    style_0: "逃げ",
+    style_1: "先行",
+    style_2: "差し",
+    style_3: "追込",
+    surface_label: "芝・ダート",
+    surface_any: "どちらでも",
+    surface_turf: "芝",
+    surface_dirt: "ダート",
+    color_label: "毛色",
+    color_0: "鹿毛",
+    color_1: "黒鹿毛",
+    color_2: "青鹿毛",
+    color_3: "青毛",
+    color_4: "栗毛",
+    color_5: "栃栗毛",
+    color_6: "尾花栗毛",
+    color_7: "芦毛",
+    color_8: "白毛",
+    growth_label: "成長タイプ（複数選択可）",
+    growth_prodigy: "天才",
+    growth_early: "早熟",
+    growth_normal: "普通",
+    growth_late: "晩成",
+    stat_section_title: "8軸ステータス（任意・N以上で抽出）",
+    search_btn: "検索する",
+    results_title: "検索結果",
+    hint: "おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。",
+    sort_label: "並び替え",
+    sort_score_desc: "おすすめ度順（高い→低い）",
+    sort_rating_desc: "レーティング高い順",
+    sort_rating_asc: "レーティング低い順",
+    sort_name_asc: "あいうえお順",
+    sort_name_desc: "あいうえお逆順",
+    sort_birth_desc: "生まれ年が新しい順",
+    sort_birth_asc: "生まれ年が古い順",
+    result_unit: "件",
+    estimated_price: "推定価格",
+    distance_aptitude: "距離適性",
+    peak_season: "本格化",
+    birth_year: "生まれ年",
+    detail_preview: "詳細プレビュー",
+    achievements_title: "現役時代の主な戦績",
+    column_title: "ミニコラム",
+    history_pending: "史実紹介は準備中です。",
+    sources_label: "出典:",
+    price_range_label: "推定価格帯:",
+    style_colon: "脚質:",
+    sub_prefix: "サブ:",
+    growth_colon: "成長タイプ:",
+    color_colon: "毛色:",
+    turf_dirt_aptitude: "芝適性 / ダート適性",
+    optimal: "最適",
+    footer_unofficial: "本ツールはファンによる非公式検索ツールです。",
+    footer_trademark_pre: "『FULL STRIDE』の名称は、",
+    footer_trademark_post: "の商標または登録商標です。",
+    changelog_summary: "更新履歴",
+    no_results: "条件に合致する馬が見つかりませんでした。",
+    loading: "馬データを読み込み中...",
+    prompt_search: "検索条件を入力して「検索する」を押してください。",
+    load_failed: "馬データの読み込みに失敗しました: "
+  },
+  en: {
+    subtitle: "Full Stride Horse Search Tool",
+    howto_summary: "How to Use",
+    howto_1: "Enter your budget limit (required)",
+    howto_2: "Running style, distance, turf/dirt, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about",
+    howto_3: "Press \"Search\" to get a list of matching horses",
+    howto_4: "Tap a horse you like to see its real-world racing history and story",
+    eng_note: "Heads up — translating every single horse profile into English would take forever, so we didn't. Please just hit Google Translate or DeepL on this page. Sorry about that! Peace! ✌️",
+    search_conditions: "Search Conditions",
+    budget_label: "Budget Limit (pt)",
+    required: "Required",
+    distance_label: "Preferred Distance (m)",
+    style_label: "Running Style",
+    no_pref: "No Preference",
+    style_0: "Front-runner",
+    style_1: "Stalker",
+    style_2: "Closer",
+    style_3: "Deep Closer",
+    surface_label: "Turf / Dirt",
+    surface_any: "Either",
+    surface_turf: "Turf",
+    surface_dirt: "Dirt",
+    color_label: "Coat Color",
+    color_0: "Bay",
+    color_1: "Dark Bay",
+    color_2: "Brown",
+    color_3: "Black",
+    color_4: "Chestnut",
+    color_5: "Liver Chestnut",
+    color_6: "Flaxen Chestnut",
+    color_7: "Gray",
+    color_8: "White",
+    growth_label: "Growth Type (multiple OK)",
+    growth_prodigy: "Prodigy",
+    growth_early: "Early Bloomer",
+    growth_normal: "Normal",
+    growth_late: "Late Bloomer",
+    stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
+    search_btn: "Search",
+    results_title: "Search Results",
+    hint: "\"Recommend Score\" shows how strongly a horse matches your selected search conditions.",
+    sort_label: "Sort by",
+    sort_score_desc: "Recommend Score (High to Low)",
+    sort_rating_desc: "Rating (High to Low)",
+    sort_rating_asc: "Rating (Low to High)",
+    sort_name_asc: "Name (A→Z)",
+    sort_name_desc: "Name (Z→A)",
+    sort_birth_desc: "Birth Year (Newest First)",
+    sort_birth_asc: "Birth Year (Oldest First)",
+    result_unit: "results",
+    estimated_price: "Estimated Price",
+    distance_aptitude: "Distance Aptitude",
+    peak_season: "Peak Season",
+    birth_year: "Birth Year",
+    detail_preview: "Horse Details",
+    achievements_title: "Major Career Achievements",
+    column_title: "Mini Column",
+    history_pending: "Real-world profile coming soon.",
+    sources_label: "Sources:",
+    price_range_label: "Estimated Price Range:",
+    style_colon: "Running Style:",
+    sub_prefix: "Sub:",
+    growth_colon: "Growth Type:",
+    color_colon: "Coat Color:",
+    turf_dirt_aptitude: "Turf Aptitude / Dirt Aptitude",
+    optimal: "optimal",
+    footer_unofficial: "This is an unofficial, fan-made search tool.",
+    footer_trademark_pre: "\"FULL STRIDE\" is a trademark or registered trademark of ",
+    footer_trademark_post: ".",
+    changelog_summary: "Update Log",
+    no_results: "No horses matched your search conditions.",
+    loading: "Loading horse data...",
+    prompt_search: "Enter your search conditions and press \"Search\".",
+    load_failed: "Failed to load horse data: "
+  }
+};
+
+function currentLang() {
+  return document.documentElement.getAttribute("data-lang") || "ja";
+}
+
+function t(key) {
+  const lang = currentLang();
+  return (I18N[lang] && I18N[lang][key] !== undefined) ? I18N[lang][key] : (I18N.ja[key] || "");
+}
+
+function styleLabelFor(idx) {
+  const lang = currentLang();
+  return (lang === "en" ? RUNNING_STYLE_LABELS_EN : RUNNING_STYLE_LABELS)[idx] || "-";
+}
+
+function colorLabelFor(colorKey) {
+  const lang = currentLang();
+  const dict = lang === "en" ? COLOR_LABEL_EN : COLOR_LABEL_JP;
+  return dict[colorKey] || colorKey;
+}
+
+function growthLabelFor(growthKey) {
+  const lang = currentLang();
+  const dict = lang === "en" ? GROWTH_LABEL_EN : GROWTH_LABEL_JP;
+  return dict[growthKey] || growthKey;
+}
+
+function statAxisLabel(axis) {
+  const lang = currentLang();
+  return lang === "en" ? axis.label_en : axis.label;
+}
+
+function tierOptionLabel(tier) {
+  const lang = currentLang();
+  if (lang === "en") {
+    return tier === 5 ? "5 or above (0.8+)" : `${tier} or above`;
+  }
+  return tier === 5 ? "5以上（0.8以上）" : `${tier}以上`;
+}
+
+function applyLanguage(lang) {
+  document.documentElement.setAttribute("data-lang", lang);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const val = t(key);
+    el.textContent = val;
+  });
+  const engNote = document.getElementById("eng-note");
+  if (engNote) {
+    engNote.style.display = lang === "en" ? "" : "none";
+  }
+  buildStatGrid();
+  if (currentCriteria !== null) {
+    renderResults(currentResults, currentCriteria);
+  } else {
+    renderResultsPlaceholder();
+  }
+  const modal = document.getElementById("detail-modal");
+  if (modal && !modal.classList.contains("hidden") && window.__currentDetailHorse) {
+    showDetail(window.__currentDetailHorse);
+  }
+}
 
 let horses = [];
 let historyData = {};
@@ -215,23 +451,29 @@ async function loadChangelog() {
 // ---- Stat grid UI ----
 function buildStatGrid() {
   const grid = document.getElementById("stat-grid");
+  const prevValues = {};
+  STAT_AXES.forEach(axis => {
+    const existing = document.getElementById(`stat-${axis.key}`);
+    if (existing) prevValues[axis.key] = existing.value;
+  });
   grid.innerHTML = "";
   STAT_AXES.forEach(axis => {
     const row = document.createElement("div");
     row.className = "stat-row";
     const label = document.createElement("label");
-    label.textContent = axis.label;
+    label.textContent = statAxisLabel(axis);
     label.setAttribute("for", `stat-${axis.key}`);
     const select = document.createElement("select");
     select.id = `stat-${axis.key}`;
     select.innerHTML = `
-      <option value="">指定しない</option>
-      <option value="1">1以上</option>
-      <option value="2">2以上</option>
-      <option value="3">3以上</option>
-      <option value="4">4以上</option>
-      <option value="5">5以上（0.8以上）</option>
+      <option value="">${t("no_pref")}</option>
+      <option value="1">${tierOptionLabel(1)}</option>
+      <option value="2">${tierOptionLabel(2)}</option>
+      <option value="3">${tierOptionLabel(3)}</option>
+      <option value="4">${tierOptionLabel(4)}</option>
+      <option value="5">${tierOptionLabel(5)}</option>
     `;
+    if (prevValues[axis.key] !== undefined) select.value = prevValues[axis.key];
     row.appendChild(label);
     row.appendChild(select);
     grid.appendChild(row);
@@ -322,7 +564,7 @@ function runSearch() {
 
     if (styleVal !== "") {
       const idx = parseInt(styleVal, 10);
-      if (dominantStyleLabel(h.running_style) !== RUNNING_STYLE_LABELS[idx]) return false;
+      if (dominantStyleIndex(h.running_style) !== idx) return false;
     }
 
     if (distance !== null) {
@@ -390,7 +632,7 @@ function sortResults(results, criteria, sortKey) {
   return sorted;
 }
 
-function dominantStyleLabel(styleArr) {
+function dominantStyleIndex(styleArr) {
   let maxIdx = 0;
   let maxVal = -Infinity;
   styleArr.forEach((v, i) => {
@@ -399,7 +641,11 @@ function dominantStyleLabel(styleArr) {
       maxIdx = i;
     }
   });
-  return RUNNING_STYLE_LABELS[maxIdx] || "-";
+  return maxIdx;
+}
+
+function dominantStyleLabel(styleArr) {
+  return styleLabelFor(dominantStyleIndex(styleArr));
 }
 
 // 2番目に高い脚質適性(非ゼロの場合のみ)を返す。単一適性の馬はnull
@@ -407,7 +653,7 @@ function subStyleLabel(styleArr) {
   const indexed = styleArr.map((v, i) => [v, i]);
   indexed.sort((a, b) => b[0] - a[0]);
   if (indexed.length > 1 && indexed[1][0] > 0) {
-    return RUNNING_STYLE_LABELS[indexed[1][1]];
+    return styleLabelFor(indexed[1][1]);
   }
   return null;
 }
@@ -419,11 +665,12 @@ function starsText(stars) {
 function renderResults(results, criteria) {
   const container = document.getElementById("results");
   const countEl = document.getElementById("result-count");
-  countEl.textContent = `${results.length}件`;
+  const lang = currentLang();
+  countEl.textContent = lang === "en" ? `${results.length} ${t("result_unit")}` : `${results.length}${t("result_unit")}`;
   container.innerHTML = "";
 
   if (results.length === 0) {
-    container.innerHTML = '<div class="no-results">条件に合致する馬が見つかりませんでした。</div>';
+    container.innerHTML = `<div class="no-results">${t("no_results")}</div>`;
     return;
   }
 
@@ -446,16 +693,16 @@ function renderResults(results, criteria) {
         <h3>${h.name_jp}</h3>
         <div class="card-tags">
           <span class="tag">${dominantStyleLabel(h.running_style)}</span>
-          ${sub ? `<span class="tag sub-tag">サブ:${sub}</span>` : ""}
-          <span class="tag">${COLOR_LABEL_JP[h.horse_color] || h.horse_color}</span>
-          <span class="tag">${GROWTH_LABEL_JP[h.growth_curve] || h.growth_curve}</span>
+          ${sub ? `<span class="tag sub-tag">${t("sub_prefix")}${sub}</span>` : ""}
+          <span class="tag">${colorLabelFor(h.horse_color)}</span>
+          <span class="tag">${growthLabelFor(h.growth_curve)}</span>
         </div>
         <div class="data-grid mono">
-          <span class="k">推定価格</span><span class="v">${priceRangeText(h.estimated_price)} pt</span>
-          <span class="k">芝 / ダート</span><span class="v">${h.turf_rating} / ${h.dirt_rating}</span>
-          <span class="k">距離適性</span><span class="v">${h.min_distance}〜${h.max_distance}m</span>
-          <span class="k">本格化</span><span class="v">${peakText}</span>
-          <span class="k">生まれ年</span><span class="v">${isNaN(h.birth_year) ? "-" : h.birth_year + "年"}</span>
+          <span class="k">${t("estimated_price")}</span><span class="v">${priceRangeText(h.estimated_price)} pt</span>
+          <span class="k">${t("surface_turf")} / ${t("surface_dirt")}</span><span class="v">${h.turf_rating} / ${h.dirt_rating}</span>
+          <span class="k">${t("distance_aptitude")}</span><span class="v">${h.min_distance}〜${h.max_distance}m</span>
+          <span class="k">${t("peak_season")}</span><span class="v">${peakText}</span>
+          <span class="k">${t("birth_year")}</span><span class="v">${isNaN(h.birth_year) ? "-" : (currentLang() === "en" ? h.birth_year : h.birth_year + "年")}</span>
         </div>
         <div class="carrot-row">${starsText(stars)}</div>
       </div>
@@ -476,27 +723,31 @@ function showDetail(horse) {
       .map(url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`)
       .join("<br>");
     historyHtml = `
-      <h4>現役時代の主な戦績</h4>
+      <h4>${t("achievements_title")}</h4>
       <p>${hist.achievements || ""}</p>
-      <h4>ミニコラム</h4>
+      <h4>${t("column_title")}</h4>
       <p>${hist.column || ""}</p>
-      <p class="source-link">出典:<br>${sourcesHtml}</p>
+      <p class="source-link">${t("sources_label")}<br>${sourcesHtml}</p>
     `;
   } else {
-    historyHtml = `<p>史実紹介は準備中です。</p>`;
+    historyHtml = `<p>${t("history_pending")}</p>`;
   }
 
   const peakText = isNaN(horse.peak_age) ? "-" : formatPeakSeason(horse.peak_age);
   const sub = subStyleLabel(horse.running_style);
+  const lang = currentLang();
+  const birthText = isNaN(horse.birth_year) ? "-" : (lang === "en" ? horse.birth_year : horse.birth_year + "年");
+
+  window.__currentDetailHorse = horse;
 
   body.innerHTML = `
     <h3>${horse.name_jp}（${horse.name_en}）</h3>
-    <p class="price-line mono">推定価格帯: ${priceRangeText(horse.estimated_price)} pt</p>
-    <p>脚質: ${dominantStyleLabel(horse.running_style)}${sub ? `（サブ: ${sub}）` : ""} / 成長タイプ: ${GROWTH_LABEL_JP[horse.growth_curve] || horse.growth_curve}</p>
-    <p>毛色: ${COLOR_LABEL_JP[horse.horse_color] || horse.horse_color}</p>
-    <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
-    <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
-    <p>本格化: ${peakText} ／ 生まれ年: ${isNaN(horse.birth_year) ? "-" : horse.birth_year + "年"}</p>
+    <p class="price-line mono">${t("price_range_label")} ${priceRangeText(horse.estimated_price)} pt</p>
+    <p>${t("style_colon")} ${dominantStyleLabel(horse.running_style)}${sub ? `（${t("sub_prefix")} ${sub}）` : ""} / ${t("growth_colon")} ${growthLabelFor(horse.growth_curve)}</p>
+    <p>${t("color_colon")} ${colorLabelFor(horse.horse_color)}</p>
+    <p>${t("surface_turf")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.turf_rating} / ${t("surface_dirt")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.dirt_rating}</p>
+    <p>${t("distance_aptitude")}: ${horse.min_distance}〜${horse.max_distance}m（${t("optimal")} ${horse.optimal_distance}m）</p>
+    <p>${t("peak_season")}: ${peakText} ／ ${t("birth_year")}: ${birthText}</p>
     ${historyHtml}
   `;
   modal.classList.remove("hidden");
@@ -556,16 +807,53 @@ function setupThemeToggle() {
   updateIcon();
 }
 
+// ---- Lang toggle ----
+let resultsPlaceholderState = null; // { type: "loading" | "prompt" | "error", message: "" }
+
+function renderResultsPlaceholder() {
+  if (!currentCriteria && resultsPlaceholderState) {
+    const resultsPanel = document.getElementById("results");
+    if (resultsPlaceholderState.type === "loading") {
+      resultsPanel.innerHTML = `<div class="no-results">${t("loading")}</div>`;
+    } else if (resultsPlaceholderState.type === "prompt") {
+      resultsPanel.innerHTML = `<div class="no-results">${t("prompt_search")}</div>`;
+    } else if (resultsPlaceholderState.type === "error") {
+      resultsPanel.innerHTML = `<div class="no-results">${t("load_failed")}${resultsPlaceholderState.message}</div>`;
+    }
+  }
+}
+
+function setupLangToggle() {
+  const root = document.documentElement;
+  const btn = document.getElementById("lang-toggle");
+
+  function updateLabel() {
+    const lang = root.getAttribute("data-lang") || "ja";
+    btn.textContent = lang === "ja" ? "ENG" : "JPN";
+  }
+
+  btn.addEventListener("click", () => {
+    const current = root.getAttribute("data-lang") || "ja";
+    const next = current === "ja" ? "en" : "ja";
+    applyLanguage(next);
+    updateLabel();
+    renderResultsPlaceholder();
+  });
+
+  updateLabel();
+}
+
 // ---- Init ----
 async function init() {
   const versionMeta = document.querySelector('meta[name="app-version"]');
   if (versionMeta) {
     document.getElementById("app-version-badge").textContent = "v" + versionMeta.content;
   }
-  buildStatGrid();
+  applyLanguage("ja");
   setupStyleChips();
   setupGrowthChips();
   setupThemeToggle();
+  setupLangToggle();
   document.getElementById("search-btn").addEventListener("click", runSearch);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
@@ -578,13 +866,16 @@ async function init() {
   });
 
   const resultsPanel = document.getElementById("results");
-  resultsPanel.innerHTML = '<div class="no-results">馬データを読み込み中...</div>';
+  resultsPlaceholderState = { type: "loading" };
+  resultsPanel.innerHTML = `<div class="no-results">${t("loading")}</div>`;
 
   try {
     await Promise.all([loadHorses(), loadHistory(), loadChangelog()]);
-    resultsPanel.innerHTML = '<div class="no-results">検索条件を入力して「検索する」を押してください。</div>';
+    resultsPlaceholderState = { type: "prompt" };
+    resultsPanel.innerHTML = `<div class="no-results">${t("prompt_search")}</div>`;
   } catch (e) {
-    resultsPanel.innerHTML = `<div class="no-results">馬データの読み込みに失敗しました: ${e.message}</div>`;
+    resultsPlaceholderState = { type: "error", message: e.message };
+    resultsPanel.innerHTML = `<div class="no-results">${t("load_failed")}${e.message}</div>`;
   }
 }
 
