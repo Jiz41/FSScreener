@@ -545,6 +545,10 @@ function setupThemeToggle() {
 
 // ---- Init ----
 async function init() {
+  const versionMeta = document.querySelector('meta[name="app-version"]');
+  if (versionMeta) {
+    document.getElementById("app-version-badge").textContent = "v" + versionMeta.content;
+  }
   buildStatGrid();
   setupStyleChips();
   setupGrowthChips();
