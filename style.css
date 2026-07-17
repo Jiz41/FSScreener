@@ -99,7 +99,7 @@ header {
   margin: 0;
   font-family: "Staatliches", Impact, "Arial Narrow Bold", "Hiragino Sans", sans-serif;
   font-weight: 900;
-  font-size: 1.9em;
+  font-size: 2.6em;
   letter-spacing: 0.02em;
   color: var(--ink);
   line-height: 1;
@@ -112,7 +112,7 @@ header {
 .subtitle {
   margin: 0;
   color: var(--muted);
-  font-size: 0.74em;
+  font-size: 0.62em;
 }
 
 .usage-details {
@@ -145,10 +145,20 @@ header {
 
 .usage-details ol {
   margin: 0;
-  padding: 0 14px 14px 32px;
+  padding: 0 14px 4px 32px;
   font-size: 0.82em;
   color: var(--muted);
   line-height: 1.7;
+  border-top: 1px solid var(--hair);
+}
+
+.usage-details ol li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--hair);
+}
+
+.usage-details ol li:last-child {
+  border-bottom: none;
 }
 
 main {
