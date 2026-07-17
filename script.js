@@ -363,12 +363,16 @@ function formatPeakSeason(peakAge) {
   const years = Math.floor(peakAge);
   const monthFrac = peakAge - years;
   const monthIndex = Math.round(monthFrac * 12) % 12; // 0=1月, 11=12月
+  const lang = currentLang();
+  const seasons = lang === "en"
+    ? { spring: "spring", summer: "summer", autumn: "autumn", winter: "winter" }
+    : { spring: "春", summer: "夏", autumn: "秋", winter: "冬" };
   let season;
-  if (monthIndex >= 2 && monthIndex <= 4) season = "春";
-  else if (monthIndex >= 5 && monthIndex <= 7) season = "夏";
-  else if (monthIndex >= 8 && monthIndex <= 10) season = "秋";
-  else season = "冬";
-  return `${years}歳${season}頃`;
+  if (monthIndex >= 2 && monthIndex <= 4) season = seasons.spring;
+  else if (monthIndex >= 5 && monthIndex <= 7) season = seasons.summer;
+  else if (monthIndex >= 8 && monthIndex <= 10) season = seasons.autumn;
+  else season = seasons.winter;
+  return lang === "en" ? `Age ${years}, ${season}` : `${years}歳${season}頃`;
 }
 
 // ---- Data loading ----
