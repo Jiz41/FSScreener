@@ -173,7 +173,8 @@ async function loadHorses() {
       growth_curve: growth,
       horse_color: horseColor,
       estimated_price: estimated,
-      peak_age: parseFloat(o.peak_age)
+      peak_age: parseFloat(o.peak_age),
+      birth_year: parseFloat(o.birth_year)
     };
   }).filter(h => h.name_jp && !isNaN(h.turf_rating) && !isNaN(h.dirt_rating));
 
@@ -359,6 +360,12 @@ function sortResults(results, criteria, sortKey) {
     case "name_desc":
       sorted.sort((a, b) => b.name_jp.localeCompare(a.name_jp, "ja"));
       break;
+    case "birth_desc":
+      sorted.sort((a, b) => b.birth_year - a.birth_year);
+      break;
+    case "birth_asc":
+      sorted.sort((a, b) => a.birth_year - b.birth_year);
+      break;
     case "score_desc":
     default: {
       const scored = sorted.map(h => ({ h, score: computeScore(h, criteria).score }));
@@ -422,6 +429,7 @@ function renderResults(results, criteria) {
           <span class="k">芝 / ダート</span><span class="v">${h.turf_rating} / ${h.dirt_rating}</span>
           <span class="k">距離適性</span><span class="v">${h.min_distance}〜${h.max_distance}m</span>
           <span class="k">本格化</span><span class="v">${peakText}</span>
+          <span class="k">生まれ年</span><span class="v">${isNaN(h.birth_year) ? "-" : h.birth_year + "年"}</span>
         </div>
         <div class="carrot-row">${starsText(stars)}</div>
       </div>
@@ -461,7 +469,7 @@ function showDetail(horse) {
     <p>毛色: ${COLOR_LABEL_JP[horse.horse_color] || horse.horse_color}</p>
     <p>芝適性: ${horse.turf_rating} / ダート適性: ${horse.dirt_rating}</p>
     <p>距離適性: ${horse.min_distance}〜${horse.max_distance}m（最適 ${horse.optimal_distance}m）</p>
-    <p>本格化: ${peakText}</p>
+    <p>本格化: ${peakText} ／ 生まれ年: ${isNaN(horse.birth_year) ? "-" : horse.birth_year + "年"}</p>
     ${historyHtml}
   `;
   modal.classList.remove("hidden");
