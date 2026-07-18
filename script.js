@@ -68,6 +68,7 @@ const I18N = {
     howto_2: "脚質・距離・芝ダート・性別・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます",
     howto_3: "「検索する」を押すと、条件に合う候補馬が一覧で出てきます",
     howto_4: "気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます",
+    howto_5: "気になる馬は詳細画面の「厩舎に入れる」でマイ厩舎に登録できます（最大6頭）。厩舎タブの「タップして分析結果を見る」からは、距離・芝ダート・脚質の傾向を診断できます",
     eng_note: "",
     search_conditions: "検索条件",
     budget_label: "予算上限（pt）",
@@ -114,7 +115,7 @@ const I18N = {
     stable_full: "厩舎が満員です（最大6頭）",
     stable_head_unit: "頭",
     stable_missing: "現在の馬データに見つかりません",
-    diag_title: "厩舎診断",
+    diag_toggle: "タップして分析結果を見る",
     diag_coordinator: "診断寸評",
     diag_dist_label: "距離カバレッジ",
     diag_band_sprint: "短距離",
@@ -167,6 +168,7 @@ const I18N = {
     howto_2: "Running style, distance, turf/dirt, sex, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about",
     howto_3: "Press \"Search\" to get a list of matching horses",
     howto_4: "Tap a horse you like to see its real-world racing history and story",
+    howto_5: "Add horses you like to My Stable via \"Add to Stable\" in the detail view (up to 6). In the Stable tab, \"Tap to see the analysis\" checks your roster's distance, turf/dirt, and running-style balance",
     eng_note: "Heads up — translating every single horse profile into English would take forever, so we didn't. Please just hit Google Translate or DeepL on this page. Sorry about that! Peace! ✌️",
     search_conditions: "Search Conditions",
     budget_label: "Budget Limit (pt)",
@@ -213,7 +215,7 @@ const I18N = {
     stable_full: "Stable is full (max 6)",
     stable_head_unit: "horses",
     stable_missing: "Not found in the current horse data",
-    diag_title: "Stable Report",
+    diag_toggle: "Tap to see the analysis",
     diag_coordinator: "Diagnostic Notes",
     diag_dist_label: "Distance Coverage",
     diag_band_sprint: "Sprint",
@@ -1442,19 +1444,21 @@ function renderDiagnosis() {
     .join("");
 
   box.innerHTML = `
-    <h3 class="diag-title">${t("diag_title")}</h3>
-    <div class="diag-section">
-      <p class="diag-label">${t("diag_dist_label")}</p>
-      ${bandRows}
-    </div>
-    <div class="diag-section diag-inline mono">
-      <span>${t("diag_surface_label")}: ${diag.turfCount} / ${diag.dirtCount}</span>
-      <span>${t("diag_style_label")}: ${styleSummary}</span>
-    </div>
-    <div class="diag-section diag-comments">
-      <p class="diag-label">${t("diag_coordinator")}</p>
-      ${commentsHtml}
-    </div>
+    <details class="diag-details">
+      <summary class="diag-summary">${t("diag_toggle")}</summary>
+      <div class="diag-section">
+        <p class="diag-label">${t("diag_dist_label")}</p>
+        ${bandRows}
+      </div>
+      <div class="diag-section diag-inline mono">
+        <span>${t("diag_surface_label")}: ${diag.turfCount} / ${diag.dirtCount}</span>
+        <span>${t("diag_style_label")}: ${styleSummary}</span>
+      </div>
+      <div class="diag-section diag-comments">
+        <p class="diag-label">${t("diag_coordinator")}</p>
+        ${commentsHtml}
+      </div>
+    </details>
   `;
 }
 
