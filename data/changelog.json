@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-07-18",
+    "text": "以下の馬の詳細情報を更新しました：ワイドバッハ、ロンギングダンサー、レイカーラ、ラブラドライト、ラブイズブーシェ、ファントムライト、バクシンテイオー、サンレイレーザー、サンライズメジャー、サンシャイン、ケイアイエレガント",
+    "text_en": "Added real-world profiles for 11 horses (born 2009)"
+  },
+  {
+    "date": "2026-07-18",
     "text": "マイ厩舎に「厩舎診断」を追加。距離カバレッジ・芝ダート傾向・脚質構成を戦略コーディネーターが講評します",
     "text_en": "Added a \"Stable Report\" to My Stable — your Strategy Coordinator reviews distance coverage, turf/dirt balance, and running-style composition"
   },
