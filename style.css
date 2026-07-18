@@ -214,7 +214,6 @@ header {
   padding: 0 14px;
   display: flex;
   gap: 6px;
-  background: var(--ink);
 }
 
 .tab-btn {
@@ -224,8 +223,8 @@ header {
   font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--muted);
-  background: var(--hair);
+  color: var(--bg);
+  background: var(--ink);
   border: 1px solid var(--line);
   border-bottom: none;
   cursor: pointer;
@@ -293,8 +292,9 @@ header {
 }
 
 .stable-toggle-btn.in-stable {
-  background: var(--bg-panel);
-  color: var(--ink);
+  background: var(--muted);
+  border-color: var(--muted);
+  color: var(--bg);
 }
 
 .stable-toggle-btn:disabled {
