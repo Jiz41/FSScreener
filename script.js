@@ -1160,6 +1160,7 @@ function renderStable() {
 
   if (stableNames.length === 0) {
     list.innerHTML = `<div class="no-results">${t("stable_empty")}</div>`;
+    renderDiagnosis();
     return;
   }
 
@@ -1208,6 +1209,7 @@ function renderStable() {
     });
     list.appendChild(card);
   });
+  renderDiagnosis();
 }
 
 // ---- 厩舎診断 ----
