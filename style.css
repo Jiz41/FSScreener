@@ -241,6 +241,10 @@ header {
   color: #3B2C33;
 }
 
+.tab-btn.active [data-i18n]::before {
+  content: "✔ ";
+}
+
 .tab-badge {
   display: inline-block;
   min-width: 1.5em;
