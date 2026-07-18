@@ -107,11 +107,11 @@ const I18N = {
     tab_search: "検索",
     tab_stable: "マイ厩舎",
     stable_title: "マイ厩舎",
-    stable_hint: "検索結果の馬の詳細から「厩舎に入れる」で追加できます（最大7頭）。データはこの端末のブラウザ内に保存されます。",
+    stable_hint: "検索結果の馬の詳細から「厩舎に入れる」で追加できます（最大6頭）。データはこの端末のブラウザ内に保存されます。",
     stable_empty: "まだ馬がいません。",
     stable_add: "厩舎に入れる",
     stable_remove: "厩舎から外す",
-    stable_full: "厩舎が満員です（最大7頭）",
+    stable_full: "厩舎が満員です（最大6頭）",
     stable_head_unit: "頭",
     stable_missing: "現在の馬データに見つかりません",
     search_btn: "検索する",
@@ -197,11 +197,11 @@ const I18N = {
     tab_search: "Search",
     tab_stable: "My Stable",
     stable_title: "My Stable",
-    stable_hint: "Add horses via \"Add to Stable\" in a horse's detail view (max 7). Data is saved in this browser only.",
+    stable_hint: "Add horses via \"Add to Stable\" in a horse's detail view (max 6). Data is saved in this browser only.",
     stable_empty: "No horses yet.",
     stable_add: "Add to Stable",
     stable_remove: "Remove from Stable",
-    stable_full: "Stable is full (max 7)",
+    stable_full: "Stable is full (max 6)",
     stable_head_unit: "horses",
     stable_missing: "Not found in the current horse data",
     search_btn: "Search",
@@ -1083,14 +1083,14 @@ function setupLangToggle() {
 }
 
 // ---- マイ厩舎 ----
-const STABLE_MAX = 7;
+const STABLE_MAX = 6;
 const STABLE_STORAGE_KEY = "fsscreener_stable";
 
 function loadStable() {
   try {
     const raw = localStorage.getItem(STABLE_STORAGE_KEY);
     const arr = raw ? JSON.parse(raw) : [];
-    return Array.isArray(arr) ? arr.filter(n => typeof n === "string") : [];
+    return Array.isArray(arr) ? arr.filter(n => typeof n === "string").slice(0, STABLE_MAX) : [];
   } catch (e) {
     return [];
   }
