@@ -792,3 +792,92 @@ footer a {
   flex-shrink: 0;
   color: var(--ink);
 }
+
+/* ---- 厩舎診断 ---- */
+.diag-box {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hair);
+}
+
+.diag-title {
+  font-size: 0.82em;
+  color: var(--muted);
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.diag-section {
+  margin-bottom: 14px;
+}
+
+.diag-label {
+  font-size: 0.72em;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.diag-band-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.diag-band-name {
+  flex: 0 0 56px;
+  font-size: 0.76em;
+  color: var(--ink);
+}
+
+.diag-band-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--hair);
+  position: relative;
+}
+
+.diag-band-fill {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+}
+
+.diag-band-count {
+  flex: 0 0 20px;
+  text-align: right;
+  font-size: 0.76em;
+  color: var(--ink);
+}
+
+.diag-band-row.is-zero .diag-band-name,
+.diag-band-row.is-zero .diag-band-count {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.diag-inline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78em;
+  color: var(--muted);
+  padding: 8px 0;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.diag-comments {
+  padding-top: 4px;
+}
+
+.diag-comment {
+  font-size: 0.82em;
+  color: var(--ink);
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.diag-comment:last-child {
+  margin-bottom: 0;
+}
