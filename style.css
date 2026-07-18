@@ -214,6 +214,7 @@ header {
   padding: 0 14px;
   display: flex;
   gap: 6px;
+  background: var(--ink);
 }
 
 .tab-btn {
@@ -262,8 +263,8 @@ header {
   width: 28px;
   height: 28px;
   border: 1px solid var(--line);
-  background: var(--bg-panel);
-  color: var(--muted);
+  background: var(--ink);
+  color: var(--bg);
   font-size: 1em;
   line-height: 1;
   cursor: pointer;
