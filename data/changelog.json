@@ -1,5 +1,5 @@
 [
-  { "date": "2026-07-18", "text": "マイ厩舎機能を追加（最大7頭）。馬の詳細から「厩舎に入れる」で登録でき、タブ切り替えで一覧を確認できます。データは端末内に保存されます", "text_en": "Added the My Stable feature (max 7 horses). Register horses via \"Add to Stable\" in the detail view and check the list with the new tab. Data is saved in your browser" },
+  { "date": "2026-07-18", "text": "マイ厩舎機能を追加（最大6頭）。馬の詳細から「厩舎に入れる」で登録でき、タブ切り替えで一覧を確認できます。データは端末内に保存されます", "text_en": "Added the My Stable feature (max 6 horses). Register horses via \"Add to Stable\" in the detail view and check the list with the new tab. Data is saved in your browser" },
   { "date": "2026-07-18", "text": "背景に光の粒子エフェクトを追加し、パネルを半透明のガラス調デザインに変更", "text_en": "Added floating light particles to the background and switched panels to a translucent glass design" },
   { "date": "2026-07-18", "text": "8軸ステータスの指定を文字（セレクトボックス）からゲーム風のレーダーチャート表記に変更（タップ／ドラッグで下限値を指定、中心に戻すと指定なし）", "text_en": "The 8-axis stat filter is now a game-style radar chart instead of text select boxes (tap/drag to set a minimum value; drag back to the center to clear)" },
   { "date": "2026-07-17", "text": "戦績表示を最大3行に整理（GI/G1級のレースは行数上限に関わらず全て表示、それ以外は3行になどと省略表記）", "text_en": "Achievements now show up to 3 lines (GI/G1-grade races are always shown in full regardless of the limit; other lines are truncated with \"etc.\")" },
