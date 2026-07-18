@@ -114,6 +114,15 @@ const I18N = {
     stable_full: "厩舎が満員です（最大6頭）",
     stable_head_unit: "頭",
     stable_missing: "現在の馬データに見つかりません",
+    diag_title: "厩舎診断",
+    diag_coordinator: "戦略コーディネーターより",
+    diag_dist_label: "距離カバレッジ",
+    diag_band_sprint: "短距離",
+    diag_band_mile: "マイル",
+    diag_band_middle: "中距離",
+    diag_band_long: "長距離",
+    diag_surface_label: "芝 / ダート",
+    diag_style_label: "脚質構成",
     search_btn: "検索する",
     results_title: "検索結果",
     hint: "おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。",
@@ -204,6 +213,15 @@ const I18N = {
     stable_full: "Stable is full (max 6)",
     stable_head_unit: "horses",
     stable_missing: "Not found in the current horse data",
+    diag_title: "Stable Report",
+    diag_coordinator: "From your Strategy Coordinator",
+    diag_dist_label: "Distance Coverage",
+    diag_band_sprint: "Sprint",
+    diag_band_mile: "Mile",
+    diag_band_middle: "Middle",
+    diag_band_long: "Long",
+    diag_surface_label: "Turf / Dirt",
+    diag_style_label: "Running Styles",
     search_btn: "Search",
     results_title: "Search Results",
     hint: "\"Recommend Score\" shows how strongly a horse matches your selected search conditions.",
@@ -1190,6 +1208,252 @@ function renderStable() {
     });
     list.appendChild(card);
   });
+}
+
+// ---- 厩舎診断 ----
+const DIST_BANDS = [
+  { key: "sprint", min: 0, max: 1400 },
+  { key: "mile", min: 1401, max: 1800 },
+  { key: "middle", min: 1801, max: 2400 },
+  { key: "long", min: 2401, max: 9999 }
+];
+
+// 戦略コーディネーターの講評。各条件5パターンからランダム表示
+const DIAG_COMMENTS = {
+  ja: {
+    dist_gap: [
+      "{band}をカバーできると、ローテの選択肢がぐっと広がりますね。",
+      "{band}に一頭置けると、番組表の景色が変わってきますよ。",
+      "{band}は今後の楽しみに取っておきましょう。埋まると強いですよ。",
+      "{band}を走れる子が入ると、出走プランに厚みが出そうです。",
+      "次に迎えるなら{band}向きの子も面白いかもしれません。"
+    ],
+    dist_full: [
+      "どの距離でも戦える、隙のない布陣です。",
+      "全距離帯をカバー。番組選び放題ですね。",
+      "距離の穴がありません。見事な編成です。",
+      "短距離から長距離まで、どこでも勝負になりますね。",
+      "距離適性のパズルが綺麗にはまっています。"
+    ],
+    dirt_gap: [
+      "砂の方にも少し食指を伸ばしてみたいですね。ダート路線は妙味があります。",
+      "ダートの一頭がいると、荒れ馬場の週でも仕事ができますよ。",
+      "砂を叩ける子が入ると、選べるレースが一気に増えますね。",
+      "ダート路線は競争相手も違います。狙ってみる価値はありますよ。",
+      "芝が中心の編成ですね。砂の隠し玉、そろそろどうです？"
+    ],
+    turf_gap: [
+      "芝の大舞台にも一頭置いておきたいところです。",
+      "ダートに強い編成ですね。芝の華やかな舞台も覗いてみたくなりませんか。",
+      "芝向きの子が入ると、大レースの選択肢が広がりますよ。",
+      "砂で稼いで、芝で夢を見る。そんな編成も面白いですよ。",
+      "次の補強は芝馬でしょうか。ターフの景色も良いものですよ。"
+    ],
+    surface_both: [
+      "芝もダートも押さえた、バランスの良い構成です。",
+      "馬場を問わず出番が作れる編成ですね。",
+      "芝・ダートの両にらみ。運用の幅が広いですね。",
+      "どちらの馬場でも戦える。補強の自由度が高い状態です。",
+      "芝と砂、両方に矢が用意されています。良い形です。"
+    ],
+    style_skew: [
+      "脚質が{style}に寄っています。違う脚の子がいると展開の保険になりますよ。",
+      "{style}揃いですね。ハマれば圧巻ですが、違う色も一枚あると安心です。",
+      "全員{style}の潔さ、嫌いじゃないです。ただ別の脚も面白いですよ。",
+      "{style}中心の編成ですね。展開が向かない日のプランBはどうしましょう。",
+      "脚質に幅が出ると、どんなペースのレースでも見せ場が作れますよ。"
+    ],
+    style_spread: [
+      "脚質に幅があり、どんな展開でも見せ場が作れそうです。",
+      "脚質のバリエーションが豊か。展開読みが楽しくなりますね。",
+      "ペースを問わず誰かが台頭できる、良い散らばり方です。",
+      "脚質の色が揃っていて、レース選びに困りませんね。",
+      "展開への対応力は十分。あとは運を待つだけです。"
+    ],
+    slots_open: [
+      "残り{n}枠。ここをどう使うかが腕の見せどころですね。",
+      "あと{n}頭迎えられます。次の一頭、じっくり選びましょう。",
+      "空きは{n}枠。補強のテーマを決めてから探すと良いですよ。",
+      "{n}枠の余白があります。夢の詰め込み方は自由です。",
+      "残り{n}枠は伸びしろです。検索タブでお待ちしています。"
+    ],
+    stable_full: [
+      "6枠フル稼働。あとは走らせるだけですね。",
+      "満口です。ここからは入れ替えの妙を楽しみましょう。",
+      "フルメンバーが揃いました。良い布陣です。",
+      "厩舎は満員御礼。全頭の出番をどう作るかが次の課題ですね。",
+      "6頭出揃いました。ここからが本番です。"
+    ]
+  },
+  en: {
+    dist_gap: [
+      "Covering {band} races would really open up your rotation options.",
+      "One {band} runner would change what your race calendar looks like.",
+      "{band} is a gap worth filling — it pays off when it's covered.",
+      "A horse that handles {band} distances would add real depth to your plans.",
+      "For your next signing, a {band} type could be interesting."
+    ],
+    dist_full: [
+      "You can compete at any distance — an airtight lineup.",
+      "Every distance band covered. Pick any race you like.",
+      "No gaps in distance coverage. Impressive roster building.",
+      "From sprints to staying races, you're competitive everywhere.",
+      "The distance-aptitude puzzle fits together beautifully."
+    ],
+    dirt_gap: [
+      "The dirt side could be worth a look — there's real value there.",
+      "One dirt runner means you still have work on heavy-track weeks.",
+      "A horse that handles the sand would open up a lot more races.",
+      "Dirt races draw a different crowd of rivals. Worth targeting.",
+      "A turf-heavy roster. Time for a dirt ace up the sleeve?"
+    ],
+    turf_gap: [
+      "You'll want at least one horse for the big turf stages.",
+      "Strong on dirt. Curious about the glamour of the turf side?",
+      "A turf runner would widen your options for the marquee races.",
+      "Earn on dirt, dream on turf — that's a fun way to build.",
+      "Maybe a turf horse next? The view from the lawn is lovely."
+    ],
+    surface_both: [
+      "Turf and dirt both covered — a well-balanced roster.",
+      "You can find work on any surface. Nicely set up.",
+      "Two-way coverage of turf and dirt. Great flexibility.",
+      "Competitive on either surface, which keeps your options open.",
+      "Arrows ready for both grass and sand. A good shape."
+    ],
+    style_skew: [
+      "Your styles lean toward {style}. A different type would be nice insurance.",
+      "All-{style}, I see. Spectacular when it works — one other flavor adds safety.",
+      "A full {style} lineup — bold. Another style could be interesting though.",
+      "A {style}-centric roster. What's plan B when the pace doesn't cooperate?",
+      "More variety in styles means someone always fits the race shape."
+    ],
+    style_spread: [
+      "A good spread of styles — someone will suit any race shape.",
+      "Nice variety in running styles. Reading the pace gets fun.",
+      "Whatever the pace, somebody in this barn can capitalize.",
+      "A full palette of styles. Race selection will be easy.",
+      "Tactically flexible. Now you just need the racing luck."
+    ],
+    slots_open: [
+      "{n} slots open. How you use them is where the craft shows.",
+      "Room for {n} more. Take your time picking the next one.",
+      "{n} empty stalls. Decide your recruiting theme, then go hunting.",
+      "You have {n} slots of blank canvas. Dream freely.",
+      "{n} slots of upside left. The Search tab awaits."
+    ],
+    stable_full: [
+      "All six stalls working. Nothing left but to race.",
+      "Full house. From here, enjoy the art of the swap.",
+      "A complete roster. It looks good from here.",
+      "The stable is at capacity. Finding starts for everyone is the next puzzle.",
+      "All six assembled. Now the real fun begins."
+    ]
+  }
+};
+
+function pickComment(pool, vars) {
+  let text = pool[Math.floor(Math.random() * pool.length)];
+  Object.entries(vars || {}).forEach(([k, v]) => { text = text.split(`{${k}}`).join(v); });
+  return text;
+}
+
+function bandLabel(key) {
+  return t(`diag_band_${key}`);
+}
+
+function computeDiagnosis(list) {
+  const bandCounts = DIST_BANDS.map(b =>
+    list.filter(h => h.min_distance <= b.max && h.max_distance >= b.min).length
+  );
+  const turfCount = list.filter(h => h.turf_rating > 80).length;
+  const dirtCount = list.filter(h => h.dirt_rating > 80).length;
+  const styleCounts = [0, 0, 0, 0];
+  list.forEach(h => { styleCounts[dominantStyleIndex(h.running_style)]++; });
+  return { bandCounts, turfCount, dirtCount, styleCounts };
+}
+
+function buildDiagComments(diag, list) {
+  const lang = currentLang();
+  const P = DIAG_COMMENTS[lang] || DIAG_COMMENTS.ja;
+  const comments = [];
+
+  const gapBands = DIST_BANDS.filter((b, i) => diag.bandCounts[i] === 0);
+  if (gapBands.length === 0) {
+    comments.push(pickComment(P.dist_full));
+  } else {
+    // 穴が多くても最大2件まで（ランダムに選ぶ）
+    const picked = [...gapBands].sort(() => Math.random() - 0.5).slice(0, 2);
+    picked.forEach(b => comments.push(pickComment(P.dist_gap, { band: bandLabel(b.key) })));
+  }
+
+  if (diag.turfCount > 0 && diag.dirtCount === 0) comments.push(pickComment(P.dirt_gap));
+  else if (diag.dirtCount > 0 && diag.turfCount === 0) comments.push(pickComment(P.turf_gap));
+  else if (diag.turfCount > 0 && diag.dirtCount > 0) comments.push(pickComment(P.surface_both));
+
+  const usedStyles = diag.styleCounts.filter(c => c > 0).length;
+  if (list.length >= 2 && usedStyles === 1) {
+    const idx = diag.styleCounts.findIndex(c => c > 0);
+    const labels = lang === "en" ? RUNNING_STYLE_LABELS_EN : RUNNING_STYLE_LABELS;
+    comments.push(pickComment(P.style_skew, { style: labels[idx] }));
+  } else if (usedStyles >= 3) {
+    comments.push(pickComment(P.style_spread));
+  }
+
+  const open = STABLE_MAX - stableNames.length;
+  comments.push(open > 0 ? pickComment(P.slots_open, { n: open }) : pickComment(P.stable_full));
+
+  return comments;
+}
+
+function renderDiagnosis() {
+  const box = document.getElementById("stable-diag");
+  if (!box) return;
+  const list = stableNames.map(n => horses.find(x => x.name_jp === n)).filter(Boolean);
+  if (list.length === 0) {
+    box.style.display = "none";
+    return;
+  }
+  box.style.display = "";
+  const lang = currentLang();
+  const diag = computeDiagnosis(list);
+  const styleLabels = lang === "en" ? RUNNING_STYLE_LABELS_EN : RUNNING_STYLE_LABELS;
+
+  const maxCount = Math.max(1, ...diag.bandCounts);
+  const bandRows = DIST_BANDS.map((b, i) => {
+    const c = diag.bandCounts[i];
+    const pct = Math.round((c / maxCount) * 100);
+    return `
+      <div class="diag-band-row${c === 0 ? " is-zero" : ""}">
+        <span class="diag-band-name">${bandLabel(b.key)}</span>
+        <span class="diag-band-bar"><span class="diag-band-fill" style="width:${pct}%"></span></span>
+        <span class="diag-band-count mono">${c}</span>
+      </div>`;
+  }).join("");
+
+  const styleSummary = styleLabels
+    .map((label, i) => `${label}${diag.styleCounts[i]}`)
+    .join(lang === "en" ? " / " : "・");
+
+  const commentsHtml = buildDiagComments(diag, list)
+    .map(c => `<p class="diag-comment">${c}</p>`)
+    .join("");
+
+  box.innerHTML = `
+    <h3 class="diag-title">${t("diag_title")}</h3>
+    <div class="diag-section">
+      <p class="diag-label">${t("diag_dist_label")}</p>
+      ${bandRows}
+    </div>
+    <div class="diag-section diag-inline mono">
+      <span>${t("diag_surface_label")}: ${diag.turfCount} / ${diag.dirtCount}</span>
+      <span>${t("diag_style_label")}: ${styleSummary}</span>
+    </div>
+    <div class="diag-section diag-comments">
+      <p class="diag-label">${t("diag_coordinator")}</p>
+      ${commentsHtml}
+    </div>
+  `;
 }
 
 // ---- タブ切り替え ----
