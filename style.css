@@ -95,6 +95,7 @@ select {
 
 /* ---- masthead ---- */
 header {
+  background: var(--bg);
   padding: 18px 16px 14px;
   border-top: 5px solid var(--line);
   border-bottom: 2px solid var(--line);
