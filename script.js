@@ -102,6 +102,8 @@ const I18N = {
     growth_normal: "普通",
     growth_late: "晩成",
     stat_section_title: "8軸ステータス（任意・N以上で抽出）",
+    stat_hint: "グラフをタップ／ドラッグして下限値（1〜5）を指定できます。中心まで戻すと指定なしになります。",
+    stat_reset: "リセット",
     search_btn: "検索する",
     results_title: "検索結果",
     hint: "おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。",
@@ -180,6 +182,8 @@ const I18N = {
     growth_normal: "Normal",
     growth_late: "Late Bloomer",
     stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
+    stat_hint: "Tap or drag on the chart to set a minimum value (1-5). Drag back to the center to clear.",
+    stat_reset: "Reset",
     search_btn: "Search",
     results_title: "Search Results",
     hint: "\"Recommend Score\" shows how strongly a horse matches your selected search conditions.",
@@ -257,14 +261,6 @@ function growthLabelFor(growthKey) {
 function statAxisLabel(axis) {
   const lang = currentLang();
   return lang === "en" ? axis.label_en : axis.label;
-}
-
-function tierOptionLabel(tier) {
-  const lang = currentLang();
-  if (lang === "en") {
-    return tier === 5 ? "5 or above (0.8+)" : `${tier} or above`;
-  }
-  return tier === 5 ? "5以上（0.8以上）" : `${tier}以上`;
 }
 
 function applyLanguage(lang) {
@@ -479,36 +475,163 @@ function renderChangelog() {
     .join("");
 }
 
-// ---- Stat grid UI ----
+// ---- Stat radar chart UI ----
+// ゲーム内表示と同じ軸順（上から時計回り）
+const RADAR_AXIS_ORDER = [
+  "acceleration", "start_score", "hill_score", "heavy_track_score",
+  "health", "consistency", "fighting_spirit", "cornering_score"
+];
+// 各軸の下限tier（0 = 指定なし）。言語切替で再構築しても保持される
+const statTierState = {};
+STAT_AXES.forEach(axis => { statTierState[axis.key] = 0; });
+
+const RADAR_SIZE = 360;
+const RADAR_CX = RADAR_SIZE / 2;
+const RADAR_CY = RADAR_SIZE / 2;
+const RADAR_R = 105;
+
+function radarAxes() {
+  return RADAR_AXIS_ORDER.map(key => STAT_AXES.find(a => a.key === key));
+}
+
+function radarPoint(axisIndex, ratio) {
+  const angle = -Math.PI / 2 + axisIndex * (Math.PI / 4);
+  return {
+    x: RADAR_CX + RADAR_R * ratio * Math.cos(angle),
+    y: RADAR_CY + RADAR_R * ratio * Math.sin(angle)
+  };
+}
+
+function radarPolygonPoints(ratioFn) {
+  return radarAxes()
+    .map((axis, i) => {
+      const p = radarPoint(i, ratioFn(axis, i));
+      return `${p.x.toFixed(1)},${p.y.toFixed(1)}`;
+    })
+    .join(" ");
+}
+
 function buildStatGrid() {
   const grid = document.getElementById("stat-grid");
-  const prevValues = {};
-  STAT_AXES.forEach(axis => {
-    const existing = document.getElementById(`stat-${axis.key}`);
-    if (existing) prevValues[axis.key] = existing.value;
-  });
   grid.innerHTML = "";
-  STAT_AXES.forEach(axis => {
-    const row = document.createElement("div");
-    row.className = "stat-row";
-    const label = document.createElement("label");
-    label.textContent = statAxisLabel(axis);
-    label.setAttribute("for", `stat-${axis.key}`);
-    const select = document.createElement("select");
-    select.id = `stat-${axis.key}`;
-    select.innerHTML = `
-      <option value="">${t("no_pref")}</option>
-      <option value="1">${tierOptionLabel(1)}</option>
-      <option value="2">${tierOptionLabel(2)}</option>
-      <option value="3">${tierOptionLabel(3)}</option>
-      <option value="4">${tierOptionLabel(4)}</option>
-      <option value="5">${tierOptionLabel(5)}</option>
-    `;
-    if (prevValues[axis.key] !== undefined) select.value = prevValues[axis.key];
-    row.appendChild(label);
-    row.appendChild(select);
-    grid.appendChild(row);
+
+  const wrap = document.createElement("div");
+  wrap.className = "stat-radar-wrap";
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", `0 0 ${RADAR_SIZE} ${RADAR_SIZE}`);
+  svg.classList.add("stat-radar");
+  svg.id = "stat-radar";
+
+  // 下地の8角形と目盛りリング（1〜5）
+  let staticLayer = `<polygon class="radar-base" points="${radarPolygonPoints(() => 1)}"/>`;
+  for (let tier = 1; tier <= 4; tier++) {
+    staticLayer += `<polygon class="radar-ring" points="${radarPolygonPoints(() => tier / 5)}"/>`;
+  }
+  // 軸のスポーク
+  radarAxes().forEach((axis, i) => {
+    const p = radarPoint(i, 1);
+    staticLayer += `<line class="radar-spoke" x1="${RADAR_CX}" y1="${RADAR_CY}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"/>`;
   });
+  svg.innerHTML = staticLayer
+    + `<polygon class="radar-value" id="radar-value-poly" points=""/>`
+    + `<g id="radar-handles"></g>`
+    + `<g id="radar-labels"></g>`;
+
+  wrap.appendChild(svg);
+
+  const hint = document.createElement("p");
+  hint.className = "stat-radar-hint";
+  hint.textContent = t("stat_hint");
+  wrap.appendChild(hint);
+
+  const resetBtn = document.createElement("button");
+  resetBtn.type = "button";
+  resetBtn.className = "stat-radar-reset";
+  resetBtn.textContent = t("stat_reset");
+  resetBtn.addEventListener("click", () => {
+    STAT_AXES.forEach(axis => { statTierState[axis.key] = 0; });
+    updateRadarDynamic();
+  });
+  wrap.appendChild(resetBtn);
+
+  grid.appendChild(wrap);
+
+  attachRadarPointerHandlers(svg);
+  updateRadarDynamic();
+}
+
+function updateRadarDynamic() {
+  const poly = document.getElementById("radar-value-poly");
+  const handles = document.getElementById("radar-handles");
+  const labels = document.getElementById("radar-labels");
+  if (!poly || !handles || !labels) return;
+
+  const anySet = STAT_AXES.some(axis => statTierState[axis.key] > 0);
+  poly.setAttribute("points", radarPolygonPoints(axis => statTierState[axis.key] / 5));
+  poly.style.display = anySet ? "" : "none";
+
+  let handleHtml = "";
+  let labelHtml = "";
+  radarAxes().forEach((axis, i) => {
+    const tier = statTierState[axis.key];
+    if (tier > 0) {
+      const p = radarPoint(i, tier / 5);
+      handleHtml += `<circle class="radar-handle" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="6"/>`;
+    }
+    const lp = radarPoint(i, 1);
+    // ラベルは頂点の外側へ押し出す
+    const lx = RADAR_CX + (lp.x - RADAR_CX) * 1.22;
+    const ly = RADAR_CY + (lp.y - RADAR_CY) * 1.22;
+    let anchor = "middle";
+    if (lx < RADAR_CX - 10) anchor = "end";
+    else if (lx > RADAR_CX + 10) anchor = "start";
+    const dy = ly < RADAR_CY - 10 ? -2 : (ly > RADAR_CY + 10 ? 12 : 5);
+    const tierText = tier > 0 ? ` <tspan class="radar-label-tier">${tier}</tspan>` : "";
+    labelHtml += `<text class="radar-label${tier > 0 ? " is-set" : ""}" x="${lx.toFixed(1)}" y="${(ly + dy).toFixed(1)}" text-anchor="${anchor}">${statAxisLabel(axis)}${tierText}</text>`;
+  });
+  handles.innerHTML = handleHtml;
+  labels.innerHTML = labelHtml;
+}
+
+function attachRadarPointerHandlers(svg) {
+  let dragging = false;
+
+  function applyPointer(evt) {
+    const rect = svg.getBoundingClientRect();
+    // viewBox座標へ変換（正方形前提）
+    const scale = RADAR_SIZE / rect.width;
+    const x = (evt.clientX - rect.left) * scale;
+    const y = (evt.clientY - rect.top) * scale;
+    const dx = x - RADAR_CX;
+    const dy = y - RADAR_CY;
+    // 最寄りの軸（上=0から時計回り45度刻み）
+    let deg = Math.atan2(dy, dx) * 180 / Math.PI + 90;
+    if (deg < 0) deg += 360;
+    const axisIndex = Math.round(deg / 45) % 8;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    // チャートの外側すぎるタップは無視（ラベル部分の誤操作防止）
+    if (dist > RADAR_R * 1.35) return;
+    const tier = Math.max(0, Math.min(5, Math.round((dist / RADAR_R) * 5)));
+    const key = RADAR_AXIS_ORDER[axisIndex];
+    if (statTierState[key] !== tier) {
+      statTierState[key] = tier;
+      updateRadarDynamic();
+    }
+  }
+
+  svg.addEventListener("pointerdown", evt => {
+    dragging = true;
+    svg.setPointerCapture(evt.pointerId);
+    applyPointer(evt);
+    evt.preventDefault();
+  });
+  svg.addEventListener("pointermove", evt => {
+    if (dragging) applyPointer(evt);
+  });
+  const stop = () => { dragging = false; };
+  svg.addEventListener("pointerup", stop);
+  svg.addEventListener("pointercancel", stop);
 }
 
 // 5段階の下限値（生値）を返す
@@ -586,10 +709,9 @@ function runSearch() {
 
   const growthChecked = Array.from(document.querySelectorAll('#growth-chips .chip.active')).map(el => el.dataset.value);
 
-  const statFilters = STAT_AXES.map(axis => {
-    const v = document.getElementById(`stat-${axis.key}`).value;
-    return { key: axis.key, tier: v === "" ? null : parseInt(v, 10) };
-  }).filter(f => f.tier !== null);
+  const statFilters = STAT_AXES
+    .map(axis => ({ key: axis.key, tier: statTierState[axis.key] }))
+    .filter(f => f.tier > 0);
 
   const results = horses.filter(h => {
     if (h.estimated_price > budget) return false;

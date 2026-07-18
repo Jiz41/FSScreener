@@ -11,6 +11,7 @@
   --gold: #F0B15C;
   --red: #EF8A93;
   --green: #7FC29B;
+  --radar-accent: #EF8A93;
 }
 
 :root[data-theme="dark"] {
@@ -27,6 +28,7 @@
   --red: #D1505C;
   --green: #2E9468;
   --active: #A8C24E;
+  --radar-accent: #6EC9E8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +45,7 @@
     --red: #D1505C;
     --green: #2E9468;
     --active: #A8C24E;
+    --radar-accent: #6EC9E8;
   }
 }
 
@@ -342,28 +345,96 @@ select {
   font-family: "IBM Plex Mono", monospace;
 }
 
-.stat-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.stat-row {
+.stat-radar-wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
 }
 
-.stat-row label {
-  flex: 1;
-  font-size: 0.85em;
-  color: var(--muted);
-  margin-bottom: 0;
+.stat-radar {
+  width: 100%;
+  max-width: 360px;
+  overflow: visible;
+  touch-action: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.stat-row select {
-  width: 150px;
+.radar-base {
+  fill: var(--hair);
+  stroke: var(--muted);
+  stroke-width: 1.5;
+}
+
+.radar-ring {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 0.8;
+  opacity: 0.55;
+}
+
+.radar-spoke {
+  stroke: var(--muted);
+  stroke-width: 0.8;
+  opacity: 0.4;
+}
+
+.radar-value {
+  fill: var(--radar-accent);
+  fill-opacity: 0.4;
+  stroke: var(--radar-accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.radar-handle {
+  fill: var(--radar-accent);
+  stroke: var(--bg-panel);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.radar-label {
+  fill: var(--muted);
+  font-size: 13px;
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  pointer-events: none;
+}
+
+.radar-label.is-set {
+  fill: var(--ink);
+  font-weight: 700;
+}
+
+.radar-label-tier {
+  fill: var(--radar-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+
+.stat-radar-hint {
+  margin: 0;
+  font-size: 0.78em;
+  color: var(--muted);
+  text-align: center;
+}
+
+.stat-radar-reset {
+  padding: 6px 18px;
+  font-size: 0.85em;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-panel);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.stat-radar-reset:hover {
+  background: var(--hair);
 }
 
 .card-stack {
