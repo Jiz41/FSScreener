@@ -1081,17 +1081,17 @@ function initParticles() {
     attributeFilter: ["data-theme"]
   });
 
-  const COUNT = Math.max(18, Math.min(42, Math.round(window.innerWidth * window.innerHeight / 28000)));
+  const COUNT = Math.max(24, Math.min(56, Math.round(window.innerWidth * window.innerHeight / 18000)));
   function makeParticle(anywhere) {
     return {
       x: Math.random() * width,
       y: anywhere ? Math.random() * height : height + 10,
-      r: 1 + Math.random() * 2.2,
+      r: 0.6 + Math.random() * 1.1,
       speed: 0.12 + Math.random() * 0.3,          // 上昇速度(px/frame)
       swayAmp: 8 + Math.random() * 22,             // 横ゆらぎの幅
       swayFreq: 0.002 + Math.random() * 0.004,
       phase: Math.random() * Math.PI * 2,
-      baseAlpha: 0.25 + Math.random() * 0.4,
+      baseAlpha: 0.5 + Math.random() * 0.4,
       twinkleFreq: 0.008 + Math.random() * 0.02
     };
   }
@@ -1118,12 +1118,17 @@ function initParticles() {
         Object.assign(p, makeParticle(false));
         continue;
       }
-      const glow = ctx.createRadialGradient(x, p.y, 0, x, p.y, p.r * 4);
-      glow.addColorStop(0, `rgba(${cr},${cg},${cb},${alpha.toFixed(3)})`);
+      // きりっとした芯 + ごく薄いにじみ
+      const glow = ctx.createRadialGradient(x, p.y, 0, x, p.y, p.r * 2.2);
+      glow.addColorStop(0, `rgba(${cr},${cg},${cb},${(alpha * 0.35).toFixed(3)})`);
       glow.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
       ctx.fillStyle = glow;
       ctx.beginPath();
-      ctx.arc(x, p.y, p.r * 4, 0, Math.PI * 2);
+      ctx.arc(x, p.y, p.r * 2.2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = `rgba(${cr},${cg},${cb},${alpha.toFixed(3)})`;
+      ctx.beginPath();
+      ctx.arc(x, p.y, p.r, 0, Math.PI * 2);
       ctx.fill();
     }
     requestAnimationFrame(frame);

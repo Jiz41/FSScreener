@@ -12,7 +12,7 @@
   --red: #EF8A93;
   --green: #7FC29B;
   --radar-accent: #EF8A93;
-  --glass-panel: rgba(255, 255, 255, 0.68);
+  --glass-panel: rgba(255, 255, 255, 0.45);
 }
 
 :root[data-theme="dark"] {
@@ -30,7 +30,7 @@
   --green: #2E9468;
   --active: #A8C24E;
   --radar-accent: #6EC9E8;
-  --glass-panel: rgba(27, 32, 41, 0.66);
+  --glass-panel: rgba(27, 32, 41, 0.45);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@
     --green: #2E9468;
     --active: #A8C24E;
     --radar-accent: #6EC9E8;
-    --glass-panel: rgba(27, 32, 41, 0.66);
+    --glass-panel: rgba(27, 32, 41, 0.45);
   }
 }
 
