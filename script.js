@@ -104,6 +104,16 @@ const I18N = {
     stat_section_title: "8軸ステータス（任意・N以上で抽出）",
     stat_hint: "グラフをタップ／ドラッグして下限値（1〜5）を指定できます。中心まで戻すと指定なしになります。",
     stat_reset: "リセット",
+    tab_search: "検索",
+    tab_stable: "マイ厩舎",
+    stable_title: "マイ厩舎",
+    stable_hint: "検索結果の馬の詳細から「厩舎に入れる」で追加できます（最大7頭）。データはこの端末のブラウザ内に保存されます。",
+    stable_empty: "まだ馬がいません。",
+    stable_add: "厩舎に入れる",
+    stable_remove: "厩舎から外す",
+    stable_full: "厩舎が満員です（最大7頭）",
+    stable_head_unit: "頭",
+    stable_missing: "現在の馬データに見つかりません",
     search_btn: "検索する",
     results_title: "検索結果",
     hint: "おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。",
@@ -184,6 +194,16 @@ const I18N = {
     stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
     stat_hint: "Tap or drag on the chart to set a minimum value (1-5). Drag back to the center to clear.",
     stat_reset: "Reset",
+    tab_search: "Search",
+    tab_stable: "My Stable",
+    stable_title: "My Stable",
+    stable_hint: "Add horses via \"Add to Stable\" in a horse's detail view (max 7). Data is saved in this browser only.",
+    stable_empty: "No horses yet.",
+    stable_add: "Add to Stable",
+    stable_remove: "Remove from Stable",
+    stable_full: "Stable is full (max 7)",
+    stable_head_unit: "horses",
+    stable_missing: "Not found in the current horse data",
     search_btn: "Search",
     results_title: "Search Results",
     hint: "\"Recommend Score\" shows how strongly a horse matches your selected search conditions.",
@@ -284,6 +304,7 @@ function applyLanguage(lang) {
   if (modal && !modal.classList.contains("hidden") && window.__currentDetailHorse) {
     showDetail(window.__currentDetailHorse);
   }
+  renderStable();
   renderChangelog();
 }
 
@@ -947,6 +968,27 @@ function showDetail(horse) {
     </div>
     ${historyHtml}
   `;
+
+  const stableBtn = document.createElement("button");
+  stableBtn.className = "stable-toggle-btn";
+  function refreshStableBtn() {
+    const inStable = isInStable(horse.name_jp);
+    const full = !inStable && stableNames.length >= STABLE_MAX;
+    stableBtn.textContent = inStable ? t("stable_remove") : (full ? t("stable_full") : t("stable_add"));
+    stableBtn.disabled = full;
+    stableBtn.classList.toggle("in-stable", inStable);
+  }
+  refreshStableBtn();
+  stableBtn.addEventListener("click", () => {
+    if (isInStable(horse.name_jp)) {
+      removeFromStable(horse.name_jp);
+    } else {
+      addToStable(horse.name_jp);
+    }
+    refreshStableBtn();
+  });
+  body.querySelector(".price-line").after(stableBtn);
+
   modal.classList.remove("hidden");
 }
 
@@ -1038,6 +1080,143 @@ function setupLangToggle() {
   });
 
   updateLabel();
+}
+
+// ---- マイ厩舎 ----
+const STABLE_MAX = 7;
+const STABLE_STORAGE_KEY = "fsscreener_stable";
+
+function loadStable() {
+  try {
+    const raw = localStorage.getItem(STABLE_STORAGE_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr.filter(n => typeof n === "string") : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+let stableNames = loadStable();
+
+function saveStable() {
+  try {
+    localStorage.setItem(STABLE_STORAGE_KEY, JSON.stringify(stableNames));
+  } catch (e) { /* プライベートモード等で保存不可でも動作は継続 */ }
+}
+
+function isInStable(name) {
+  return stableNames.includes(name);
+}
+
+function addToStable(name) {
+  if (isInStable(name) || stableNames.length >= STABLE_MAX) return false;
+  stableNames.push(name);
+  saveStable();
+  renderStable();
+  return true;
+}
+
+function removeFromStable(name) {
+  stableNames = stableNames.filter(n => n !== name);
+  saveStable();
+  renderStable();
+}
+
+function updateStableBadge() {
+  const badge = document.getElementById("stable-count-badge");
+  if (!badge) return;
+  badge.textContent = stableNames.length;
+  badge.style.display = stableNames.length > 0 ? "" : "none";
+}
+
+function renderStable() {
+  updateStableBadge();
+  const list = document.getElementById("stable-list");
+  const countEl = document.getElementById("stable-count");
+  if (!list) return;
+  const lang = currentLang();
+  countEl.textContent = lang === "en"
+    ? `${stableNames.length} / ${STABLE_MAX} ${t("stable_head_unit")}`
+    : `${stableNames.length} / ${STABLE_MAX}${t("stable_head_unit")}`;
+  list.innerHTML = "";
+
+  if (stableNames.length === 0) {
+    list.innerHTML = `<div class="no-results">${t("stable_empty")}</div>`;
+    return;
+  }
+
+  stableNames.forEach((name, idx) => {
+    const h = horses.find(x => x.name_jp === name);
+    const card = document.createElement("div");
+    card.className = "horse-card stable-card";
+    if (h) {
+      const sub = subStyleLabel(h.running_style);
+      card.innerHTML = `
+        <div class="stub stub-${(idx % 4) + 1}">
+          <span class="no-label">NO.</span>
+          <span class="num">${idx + 1}</span>
+        </div>
+        <div class="card-body">
+          <h3>${displayName(h)}</h3>
+          <div class="card-tags">
+            <span class="tag">${dominantStyleLabel(h.running_style)}</span>
+            ${sub ? `<span class="tag sub-tag">${t("sub_prefix")}${sub}</span>` : ""}
+            <span class="tag">${growthLabelFor(h.growth_curve)}</span>
+          </div>
+          <div class="data-grid mono">
+            <span class="k">${t("estimated_price")}</span><span class="v">${priceRangeText(h.estimated_price)} pt</span>
+            <span class="k">${t("distance_aptitude")}</span><span class="v">${h.min_distance}〜${h.max_distance}m</span>
+          </div>
+        </div>
+        <button class="stable-remove-btn" aria-label="${t("stable_remove")}">×</button>
+      `;
+      card.addEventListener("click", () => showDetail(h));
+    } else {
+      card.innerHTML = `
+        <div class="stub stub-${(idx % 4) + 1}">
+          <span class="no-label">NO.</span>
+          <span class="num">${idx + 1}</span>
+        </div>
+        <div class="card-body">
+          <h3>${name}</h3>
+          <p class="hint" style="margin:0;">${t("stable_missing")}</p>
+        </div>
+        <button class="stable-remove-btn" aria-label="${t("stable_remove")}">×</button>
+      `;
+    }
+    card.querySelector(".stable-remove-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      removeFromStable(name);
+    });
+    list.appendChild(card);
+  });
+}
+
+// ---- タブ切り替え ----
+function switchTab(tab, updateHash) {
+  const isStable = tab === "stable";
+  document.getElementById("stable-panel").style.display = isStable ? "" : "none";
+  document.getElementById("search-panel").style.display = isStable ? "none" : "";
+  document.getElementById("results-panel").style.display = isStable ? "none" : "";
+  document.getElementById("tab-btn-search").classList.toggle("active", !isStable);
+  document.getElementById("tab-btn-stable").classList.toggle("active", isStable);
+  if (updateHash !== false) {
+    const hash = isStable ? "#stable" : "";
+    if (window.location.hash !== hash) {
+      history.pushState(null, "", hash || window.location.pathname + window.location.search);
+    }
+  }
+  if (isStable) renderStable();
+}
+
+function setupTabs() {
+  document.querySelectorAll("#tab-bar .tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+  });
+  window.addEventListener("popstate", () => {
+    switchTab(window.location.hash === "#stable" ? "stable" : "search", false);
+  });
+  if (window.location.hash === "#stable") switchTab("stable", false);
 }
 
 // ---- 背景の光粒子エフェクト ----
@@ -1144,6 +1323,7 @@ async function init() {
   }
   applyLanguage("ja");
   initParticles();
+  setupTabs();
   setupStyleChips();
   setupGrowthChips();
   setupThemeToggle();
@@ -1165,6 +1345,7 @@ async function init() {
 
   try {
     await Promise.all([loadHorses(), loadHistory(), loadChangelog()]);
+    renderStable();
     resultsPlaceholderState = { type: "prompt" };
     resultsPanel.innerHTML = `<div class="no-results">${t("prompt_search")}</div>`;
   } catch (e) {
