@@ -236,9 +236,9 @@ header {
 }
 
 .tab-btn.active {
-  background: #fff;
-  border-color: #fff;
-  color: #3B2C33;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
 }
 
 .tab-btn.active [data-i18n]::before {
