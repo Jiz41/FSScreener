@@ -1,4 +1,5 @@
 [
+  { "date": "2026-07-18", "text": "8軸ステータスの指定を文字（セレクトボックス）からゲーム風のレーダーチャート表記に変更（タップ／ドラッグで下限値を指定、中心に戻すと指定なし）", "text_en": "The 8-axis stat filter is now a game-style radar chart instead of text select boxes (tap/drag to set a minimum value; drag back to the center to clear)" },
   { "date": "2026-07-17", "text": "戦績表示を最大3行に整理（GI/G1級のレースは行数上限に関わらず全て表示、それ以外は3行になどと省略表記）", "text_en": "Achievements now show up to 3 lines (GI/G1-grade races are always shown in full regardless of the limit; other lines are truncated with \"etc.\")" },
   { "date": "2026-07-17", "text": "ロゴアイコン追加後にスマホ幅でヘッダーがはみ出す不具合を修正（画面幅に応じてロゴサイズを自動調整）", "text_en": "Fixed the header overflowing on narrow phone screens after adding the logo icon (the logo now auto-scales with viewport width)" },
   { "date": "2026-07-17", "text": "タイトル横にロゴアイコンを追加", "text_en": "Added a logo icon next to the title" },
