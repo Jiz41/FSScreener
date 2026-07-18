@@ -1040,6 +1040,97 @@ function setupLangToggle() {
   updateLabel();
 }
 
+// ---- 背景の光粒子エフェクト ----
+function initParticles() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const canvas = document.createElement("canvas");
+  canvas.id = "fx-particles";
+  canvas.setAttribute("aria-hidden", "true");
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext("2d");
+
+  let width = 0, height = 0, dpr = 1;
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  // テーマのアクセント色（--radar-accent）に追従
+  let accent = { r: 239, g: 138, b: 147 };
+  function readAccent() {
+    const v = getComputedStyle(document.documentElement).getPropertyValue("--radar-accent").trim();
+    const m = v.match(/^#([0-9a-f]{6})$/i);
+    if (m) {
+      accent = {
+        r: parseInt(m[1].slice(0, 2), 16),
+        g: parseInt(m[1].slice(2, 4), 16),
+        b: parseInt(m[1].slice(4, 6), 16)
+      };
+    }
+  }
+  readAccent();
+  new MutationObserver(readAccent).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"]
+  });
+
+  const COUNT = Math.max(18, Math.min(42, Math.round(window.innerWidth * window.innerHeight / 28000)));
+  function makeParticle(anywhere) {
+    return {
+      x: Math.random() * width,
+      y: anywhere ? Math.random() * height : height + 10,
+      r: 1 + Math.random() * 2.2,
+      speed: 0.12 + Math.random() * 0.3,          // 上昇速度(px/frame)
+      swayAmp: 8 + Math.random() * 22,             // 横ゆらぎの幅
+      swayFreq: 0.002 + Math.random() * 0.004,
+      phase: Math.random() * Math.PI * 2,
+      baseAlpha: 0.25 + Math.random() * 0.4,
+      twinkleFreq: 0.008 + Math.random() * 0.02
+    };
+  }
+  const particles = [];
+  for (let i = 0; i < COUNT; i++) particles.push(makeParticle(true));
+
+  let tick = 0;
+  let running = true;
+  document.addEventListener("visibilitychange", () => {
+    running = !document.hidden;
+    if (running) requestAnimationFrame(frame);
+  });
+
+  function frame() {
+    if (!running) return;
+    tick++;
+    ctx.clearRect(0, 0, width, height);
+    const { r: cr, g: cg, b: cb } = accent;
+    for (const p of particles) {
+      p.y -= p.speed;
+      const x = p.x + Math.sin(tick * p.swayFreq + p.phase) * p.swayAmp;
+      const alpha = p.baseAlpha * (0.55 + 0.45 * Math.sin(tick * p.twinkleFreq + p.phase));
+      if (p.y < -12) {
+        Object.assign(p, makeParticle(false));
+        continue;
+      }
+      const glow = ctx.createRadialGradient(x, p.y, 0, x, p.y, p.r * 4);
+      glow.addColorStop(0, `rgba(${cr},${cg},${cb},${alpha.toFixed(3)})`);
+      glow.addColorStop(1, `rgba(${cr},${cg},${cb},0)`);
+      ctx.fillStyle = glow;
+      ctx.beginPath();
+      ctx.arc(x, p.y, p.r * 4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
 // ---- Init ----
 async function init() {
   const versionMeta = document.querySelector('meta[name="app-version"]');
@@ -1047,6 +1138,7 @@ async function init() {
     document.getElementById("app-version-badge").textContent = "v" + versionMeta.content;
   }
   applyLanguage("ja");
+  initParticles();
   setupStyleChips();
   setupGrowthChips();
   setupThemeToggle();
