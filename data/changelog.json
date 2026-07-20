@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-07-20",
+    "text": "推定価格の精度を改善しました。最上位レーティング帯で実売価格より6〜10%高く出ていた誤差を、実測データに基づく再較正で±3%程度に修正",
+    "text_en": "Improved price estimation accuracy: recalibrated the top-rating band, reducing a 6-10% overestimate to within about ±3% based on observed shop prices"
+  },
+  {
     "date": "2026-07-19",
     "text": "以下の馬の詳細情報を更新しました：ダノンカモン、マルカフリート、アドマイヤロイヤル、ムスカテール、ベルシャザール、スギノエンデバー、エクセラントカーヴ、アースソニック、ラブリーデイ、エピファネイア、ロゴタイプ、メイショウマンボ、キズナ、コパノリチャード、ラキシス、ローブティサージュ、フェイムゲーム、スマートレイアー、ラストインパクト、デニムアンドルビー、サトノノブレス",
     "text_en": "Added real-world profiles for 21 horses (born 2006–2010)"
