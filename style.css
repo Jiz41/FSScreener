@@ -765,6 +765,23 @@ footer .fnote {
   max-width: 40em;
 }
 
+.footer-disclaimer {
+  margin: 10px auto 12px;
+  max-width: 40em;
+}
+
+.footer-disclaimer summary {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.footer-disclaimer[open] summary {
+  margin-bottom: 6px;
+}
+
 footer a {
   color: var(--muted);
   text-decoration: underline;
