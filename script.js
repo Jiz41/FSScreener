@@ -402,11 +402,21 @@ function rowsToObjects(rows) {
 }
 
 // ---- Price estimation ----
+// r<=130.5: ショップ実測93頭で検証済みの従来式（成長タイプ補正あり）
+// r>=135.5: 最上位帯の実測15頭で較正した式（補正なしで±2%台。従来式は+6〜10%過大だった）
+// 中間帯: 両式を対数空間で線形ブレンド（境界の段差防止。実測コパノリッキーで+0.2%）
+const PRICE_BLEND_LOW = 130.5;
+const PRICE_BLEND_HIGH = 135.5;
+
 function estimatePrice(turfRating, dirtRating, growthCurve) {
   const r = Math.max(turfRating, dirtRating);
-  const base = 1.766 * Math.pow(1.0817, r);
   const mult = GROWTH_MULTIPLIER[growthCurve] || 1.0;
-  return base * mult;
+  const lowEst = 1.766 * Math.pow(1.0817, r) * mult;
+  if (r <= PRICE_BLEND_LOW) return lowEst;
+  const highEst = 1.3641 * Math.pow(1.08329, r);
+  if (r >= PRICE_BLEND_HIGH) return highEst;
+  const t = (r - PRICE_BLEND_LOW) / (PRICE_BLEND_HIGH - PRICE_BLEND_LOW);
+  return Math.exp(Math.log(lowEst) * (1 - t) + Math.log(highEst) * t);
 }
 
 function roundToTen(n) {
