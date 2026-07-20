@@ -758,6 +758,13 @@ footer {
   border-top: 2px solid var(--line);
 }
 
+footer .fnote {
+  display: block;
+  text-wrap: balance;
+  margin: 0 auto 2px;
+  max-width: 40em;
+}
+
 footer a {
   color: var(--muted);
   text-decoration: underline;
