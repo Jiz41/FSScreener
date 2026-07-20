@@ -127,7 +127,6 @@ const I18N = {
     sort_dirt_rating_desc: "ダートレーティング高い順",
     sort_dirt_rating_asc: "ダートレーティング低い順",
     sort_name_asc: "あいうえお順",
-    sort_name_desc: "あいうえお逆順",
     sort_birth_desc: "生まれ年が新しい順",
     sort_birth_asc: "生まれ年が古い順",
     result_unit: "件",
@@ -234,7 +233,6 @@ const I18N = {
     sort_dirt_rating_desc: "Dirt Rating (High to Low)",
     sort_dirt_rating_asc: "Dirt Rating (Low to High)",
     sort_name_asc: "Name (A→Z)",
-    sort_name_desc: "Name (Z→A)",
     sort_birth_desc: "Birth Year (Newest First)",
     sort_birth_asc: "Birth Year (Oldest First)",
     result_unit: "results",
@@ -839,13 +837,6 @@ function sortResults(results, criteria, sortKey) {
       sorted.sort((a, b) => lang === "en"
         ? displayName(a).localeCompare(displayName(b), "en")
         : a.name_jp.localeCompare(b.name_jp, "ja"));
-      break;
-    }
-    case "name_desc": {
-      const lang = currentLang();
-      sorted.sort((a, b) => lang === "en"
-        ? displayName(b).localeCompare(displayName(a), "en")
-        : b.name_jp.localeCompare(a.name_jp, "ja"));
       break;
     }
     case "birth_desc":
