@@ -122,8 +122,10 @@ const I18N = {
     hint: "おすすめ度は、選択した検索条件にどれだけ強く合致しているかを示す指標です。",
     sort_label: "並び替え",
     sort_score_desc: "おすすめ度順（高い→低い）",
-    sort_rating_desc: "レーティング高い順",
-    sort_rating_asc: "レーティング低い順",
+    sort_turf_rating_desc: "芝レーティング高い順",
+    sort_turf_rating_asc: "芝レーティング低い順",
+    sort_dirt_rating_desc: "ダートレーティング高い順",
+    sort_dirt_rating_asc: "ダートレーティング低い順",
     sort_name_asc: "あいうえお順",
     sort_name_desc: "あいうえお逆順",
     sort_birth_desc: "生まれ年が新しい順",
@@ -227,8 +229,10 @@ const I18N = {
     hint: "\"Recommend Score\" shows how strongly a horse matches your selected search conditions.",
     sort_label: "Sort by",
     sort_score_desc: "Recommend Score (High to Low)",
-    sort_rating_desc: "Rating (High to Low)",
-    sort_rating_asc: "Rating (Low to High)",
+    sort_turf_rating_desc: "Turf Rating (High to Low)",
+    sort_turf_rating_asc: "Turf Rating (Low to High)",
+    sort_dirt_rating_desc: "Dirt Rating (High to Low)",
+    sort_dirt_rating_asc: "Dirt Rating (Low to High)",
     sort_name_asc: "Name (A→Z)",
     sort_name_desc: "Name (Z→A)",
     sort_birth_desc: "Birth Year (Newest First)",
@@ -818,11 +822,17 @@ function runSearch() {
 function sortResults(results, criteria, sortKey) {
   const sorted = results.slice();
   switch (sortKey) {
-    case "rating_desc":
-      sorted.sort((a, b) => Math.max(b.turf_rating, b.dirt_rating) - Math.max(a.turf_rating, a.dirt_rating));
+    case "turf_rating_desc":
+      sorted.sort((a, b) => b.turf_rating - a.turf_rating);
       break;
-    case "rating_asc":
-      sorted.sort((a, b) => Math.max(a.turf_rating, a.dirt_rating) - Math.max(b.turf_rating, b.dirt_rating));
+    case "turf_rating_asc":
+      sorted.sort((a, b) => a.turf_rating - b.turf_rating);
+      break;
+    case "dirt_rating_desc":
+      sorted.sort((a, b) => b.dirt_rating - a.dirt_rating);
+      break;
+    case "dirt_rating_asc":
+      sorted.sort((a, b) => a.dirt_rating - b.dirt_rating);
       break;
     case "name_asc": {
       const lang = currentLang();
