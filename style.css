@@ -711,6 +711,12 @@ select {
   font-family: "IBM Plex Mono", monospace;
 }
 
+.price-caveat {
+  font-size: 0.72em;
+  color: var(--muted);
+  margin: -6px 0 10px;
+}
+
 .detail-preview h4 {
   margin: 12px 0 4px;
   font-size: 0.76em;

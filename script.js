@@ -1,12 +1,5 @@
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/13IQo9cfL1mwZ8aLp3Xwy9Hm3DZaZ1psJvu-chlwDQK8/gviz/tq?tqx=out:csv&sheet=horse_list_updated";
 
-const GROWTH_MULTIPLIER = {
-  prodigy: 1.0215,
-  early: 1.0056,
-  normal: 1.0014,
-  late: 0.9711
-};
-
 const GROWTH_LABEL_JP = {
   prodigy: "天才",
   early: "早熟",
@@ -146,6 +139,7 @@ const I18N = {
     history_pending: "史実紹介は準備中です。",
     sources_label: "出典:",
     price_range_label: "推定価格帯:",
+    price_caveat: "※同条件の馬でも実売価格には数%のばらつきがあり、目安としてご覧ください。",
     style_colon: "脚質:",
     sub_prefix: "サブ:",
     growth_colon: "成長タイプ:",
@@ -250,6 +244,7 @@ const I18N = {
     history_pending: "Real-world profile coming soon.",
     sources_label: "Sources:",
     price_range_label: "Estimated Price Range:",
+    price_caveat: "*Actual shop prices can vary by a few percent even for horses with identical stats. Treat this as a rough guide.",
     style_colon: "Running Style:",
     sub_prefix: "Sub:",
     growth_colon: "Growth Type:",
@@ -402,21 +397,23 @@ function rowsToObjects(rows) {
 }
 
 // ---- Price estimation ----
-// r<=130.5: ショップ実測93頭で検証済みの従来式（成長タイプ補正あり）
-// r>=135.5: 最上位帯の実測15頭で較正した式（補正なしで±2%台。従来式は+6〜10%過大だった）
-// 中間帯: 両式を対数空間で線形ブレンド（境界の段差防止。実測コパノリッキーで+0.2%）
-const PRICE_BLEND_LOW = 130.5;
-const PRICE_BLEND_HIGH = 135.5;
+// 2026-07-20、ショップ実測96頭（r=105.3〜141）で再較正した式。
+// 3次多項式(log価格 vs maxレート)＋成長タイプ補正の二段構成。
+// 成長タイプ係数は交差検証で効果を確認済み（早熟ほど価格が高い＝即戦力プレミアム）。
+// 8軸ステータス・馬齢・体格等は回帰で一見効くように見えても交差検証で消える過学習で、採用していない。
+// 【重要】この式を通しても同条件で±2〜4%の説明不能な個体差が実測で確認されている
+// （例：ゴールドシップ+5.3% / デアリングタクト-4.5%、同レーティング・同成長タイプでもこの差）。
+// ゲーム内に価格式では説明できない個体乱数または非公開ステータスが存在する可能性が高く、
+// 表示は「目安」であり実売と数%ズレることが常態である旨、UI側で明示すること。
+const PRICE_CURVE = [-4.627651466164864e-6, 0.001429025340468678, -0.06308896337941199, 5.015390892813449];
+const PRICE_GROWTH_ADJ = { prodigy: 0.019, early: 0.033, normal: 0, late: -0.018 };
 
 function estimatePrice(turfRating, dirtRating, growthCurve) {
   const r = Math.max(turfRating, dirtRating);
-  const mult = GROWTH_MULTIPLIER[growthCurve] || 1.0;
-  const lowEst = 1.766 * Math.pow(1.0817, r) * mult;
-  if (r <= PRICE_BLEND_LOW) return lowEst;
-  const highEst = 1.3641 * Math.pow(1.08329, r);
-  if (r >= PRICE_BLEND_HIGH) return highEst;
-  const t = (r - PRICE_BLEND_LOW) / (PRICE_BLEND_HIGH - PRICE_BLEND_LOW);
-  return Math.exp(Math.log(lowEst) * (1 - t) + Math.log(highEst) * t);
+  const [a, b, c, d] = PRICE_CURVE;
+  const logPrice = a * r * r * r + b * r * r + c * r + d;
+  const adj = PRICE_GROWTH_ADJ[growthCurve] || 0;
+  return Math.exp(logPrice + adj);
 }
 
 function roundToTen(n) {
@@ -424,8 +421,8 @@ function roundToTen(n) {
 }
 
 function priceRangeText(estimated) {
-  const low = roundToTen(estimated * 0.98);
-  const high = roundToTen(estimated * 1.08);
+  const low = roundToTen(estimated * 0.95);
+  const high = roundToTen(estimated * 1.05);
   return `${low}〜${high}`;
 }
 
@@ -997,6 +994,7 @@ function showDetail(horse) {
   body.innerHTML = `
     <h3>${lang === "en" ? `${displayName(horse)}（${horse.name_jp}）` : `${horse.name_jp}（${horse.name_en}）`}</h3>
     <p class="price-line mono">${t("price_range_label")} ${priceRangeText(horse.estimated_price)} pt</p>
+    <p class="price-caveat">${t("price_caveat")}</p>
     <div class="detail-stats">
       <p>${t("style_colon")} ${dominantStyleLabel(horse.running_style)}${sub ? `（${t("sub_prefix")} ${sub}）` : ""} / ${t("growth_colon")} ${growthLabelFor(horse.growth_curve)}</p>
       <p>${t("color_colon")} ${colorLabelFor(horse.horse_color)}</p>

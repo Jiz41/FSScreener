@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-07-20",
+    "text": "推定価格の計算式をショップ実測96頭で再較正しました。同条件の馬でも実売価格には数%のばらつきがあり、推定はあくまで目安です",
+    "text_en": "Recalibrated the price estimation formula using 96 observed shop prices. Note that actual prices can vary by a few percent even for horses with identical stats — treat estimates as a rough guide"
+  },
+  {
+    "date": "2026-07-20",
     "text": "推定価格の精度を改善しました。最上位レーティング帯で実売価格より6〜10%高く出ていた誤差を、実測データに基づく再較正で±3%程度に修正",
     "text_en": "Improved price estimation accuracy: recalibrated the top-rating band, reducing a 6-10% overestimate to within about ±3% based on observed shop prices"
   },
