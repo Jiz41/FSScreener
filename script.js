@@ -824,12 +824,20 @@ function sortResults(results, criteria, sortKey) {
     case "rating_asc":
       sorted.sort((a, b) => Math.max(a.turf_rating, a.dirt_rating) - Math.max(b.turf_rating, b.dirt_rating));
       break;
-    case "name_asc":
-      sorted.sort((a, b) => a.name_jp.localeCompare(b.name_jp, "ja"));
+    case "name_asc": {
+      const lang = currentLang();
+      sorted.sort((a, b) => lang === "en"
+        ? displayName(a).localeCompare(displayName(b), "en")
+        : a.name_jp.localeCompare(b.name_jp, "ja"));
       break;
-    case "name_desc":
-      sorted.sort((a, b) => b.name_jp.localeCompare(a.name_jp, "ja"));
+    }
+    case "name_desc": {
+      const lang = currentLang();
+      sorted.sort((a, b) => lang === "en"
+        ? displayName(b).localeCompare(displayName(a), "en")
+        : b.name_jp.localeCompare(a.name_jp, "ja"));
       break;
+    }
     case "birth_desc":
       sorted.sort((a, b) => b.birth_year - a.birth_year);
       break;

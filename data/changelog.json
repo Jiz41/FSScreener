@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-07-20",
+    "text": "英語表示時の「A→Z順」が日本語名の五十音順のままになっていた不具合を修正しました",
+    "text_en": "Fixed a bug where the English \"Name (A→Z)\" sort was actually sorting by Japanese name order instead of English name"
+  },
+  {
+    "date": "2026-07-20",
     "text": "推定価格の計算式をショップ実測96頭で再較正しました。同条件の馬でも実売価格には数%のばらつきがあり、推定はあくまで目安です",
     "text_en": "Recalibrated the price estimation formula using 96 observed shop prices. Note that actual prices can vary by a few percent even for horses with identical stats — treat estimates as a rough guide"
   },
