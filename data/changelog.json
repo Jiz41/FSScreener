@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-07-20",
+    "text": "並び替えの「レーティング順」を「芝レーティング順」「ダートレーティング順」に分割しました",
+    "text_en": "Split the \"Rating\" sort option into separate Turf Rating and Dirt Rating sorts"
+  },
+  {
+    "date": "2026-07-20",
     "text": "英語表示時の「A→Z順」が日本語名の五十音順のままになっていた不具合を修正しました",
     "text_en": "Fixed a bug where the English \"Name (A→Z)\" sort was actually sorting by Japanese name order instead of English name"
   },
