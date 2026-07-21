@@ -829,6 +829,29 @@ footer a {
   color: var(--ink);
 }
 
+.install-toggle {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.install-guide p {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--ink);
+}
+
+.install-guide .ticket-label {
+  margin-bottom: 10px;
+}
+
 /* ---- 厩舎診断 ---- */
 .diag-box {
   margin-top: 16px;
