@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-07-21",
+    "text": "以下の馬の詳細情報を更新しました：タニノエポレット、ファタモルガーナ、キョウワダッフィー、オリービン、アロマティコ、アンコイルド、ゴールデンナンバー、カムフィー、エーシントップ、ディアデラマドレ、レッドアリオン、アウォーディー、ノボリディアーナ、カフェブリリアント、ウリウリ、レッツゴードンキ",
+    "text_en": "Added real-world profiles for 16 horses (born 2007-2010, 2012)"
+  },
+  {
     "date": "2026-07-20",
     "text": "並び替えの「レーティング順」を「芝レーティング順」「ダートレーティング順」に分割しました",
     "text_en": "Split the \"Rating\" sort option into separate Turf Rating and Dirt Rating sorts"
