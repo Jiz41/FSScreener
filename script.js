@@ -155,6 +155,8 @@ const I18N = {
     footer_disclaimer_sources: "史実情報はWikipedia・JBIS等の公開資料に基づき、各馬の詳細画面に出典を明記しています。",
     footer_disclaimer_storage: "マイ厩舎などの保存データはお使いの端末内にのみ保存され、外部には送信されません。",
     changelog_summary: "更新履歴",
+    install_guide_title: "ホーム画面に追加",
+    install_guide_ios: "共有ボタン（□に↑のアイコン）をタップ→「ホーム画面に追加」を選ぶと、アプリのように使えます",
     no_results: "条件に合致する馬が見つかりませんでした。",
     loading: "馬データを読み込み中...",
     prompt_search: "検索条件を入力して「検索する」を押してください。",
@@ -261,6 +263,8 @@ const I18N = {
     footer_disclaimer_sources: "Real-world profiles are based on public sources such as Wikipedia and JBIS, with citations shown in each horse's detail view.",
     footer_disclaimer_storage: "Saved data (e.g. My Stable) is stored only on your device and never transmitted.",
     changelog_summary: "Update Log",
+    install_guide_title: "Add to Home Screen",
+    install_guide_ios: "Tap the Share button (square with an up arrow), then choose \"Add to Home Screen\" to use this like an app.",
     no_results: "No horses matched your search conditions.",
     loading: "Loading horse data...",
     prompt_search: "Enter your search conditions and press \"Search\".",
@@ -1624,6 +1628,71 @@ function initParticles() {
   requestAnimationFrame(frame);
 }
 
+// ---- PWAインストール ----
+let deferredPrompt = null;
+
+function isIOSDevice() {
+  return /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+}
+
+function isStandalone() {
+  return window.navigator.standalone === true;
+}
+
+function showInstallButton() {
+  const btn = document.getElementById("install-btn");
+  if (btn) btn.style.display = "";
+}
+
+function hideInstallButton() {
+  const btn = document.getElementById("install-btn");
+  if (btn) btn.style.display = "none";
+}
+
+function showInstallModal() {
+  const modal = document.getElementById("install-modal");
+  if (modal) modal.classList.remove("hidden");
+}
+
+function hideInstallModal() {
+  const modal = document.getElementById("install-modal");
+  if (modal) modal.classList.add("hidden");
+}
+
+function setupInstallButton() {
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstallButton();
+  });
+
+  window.addEventListener("appinstalled", () => {
+    hideInstallButton();
+    deferredPrompt = null;
+  });
+
+  if (isIOSDevice() && !isStandalone()) {
+    showInstallButton();
+  }
+
+  const btn = document.getElementById("install-btn");
+  btn.addEventListener("click", async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      hideInstallButton();
+    } else if (isIOSDevice() && !isStandalone()) {
+      showInstallModal();
+    }
+  });
+
+  document.getElementById("install-modal-close").addEventListener("click", hideInstallModal);
+  document.getElementById("install-modal").addEventListener("click", (e) => {
+    if (e.target.id === "install-modal") hideInstallModal();
+  });
+}
+
 // ---- Init ----
 async function init() {
   const versionMeta = document.querySelector('meta[name="app-version"]');
@@ -1637,6 +1706,7 @@ async function init() {
   setupGrowthChips();
   setupThemeToggle();
   setupLangToggle();
+  setupInstallButton();
   document.getElementById("search-btn").addEventListener("click", runSearch);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
