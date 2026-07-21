@@ -644,9 +644,23 @@ function updateRadarDynamic() {
     let anchor = "middle";
     if (lx < RADAR_CX - 10) anchor = "end";
     else if (lx > RADAR_CX + 10) anchor = "start";
+    const isVerticalEdge = lx >= RADAR_CX - 10 && lx <= RADAR_CX + 10;
     const dy = ly < RADAR_CY - 10 ? -2 : (ly > RADAR_CY + 10 ? 12 : 5);
     const tierText = tier > 0 ? ` <tspan class="radar-label-tier">${tier}</tspan>` : "";
-    labelHtml += `<text class="radar-label${tier > 0 ? " is-set" : ""}" x="${lx.toFixed(1)}" y="${(ly + dy).toFixed(1)}" text-anchor="${anchor}">${statAxisLabel(axis)}${tierText}</text>`;
+    const labelText = statAxisLabel(axis);
+    const words = labelText.split(" ");
+    // 英語の複数単語ラベル（Fighting Spirit等）は横に長くなり画面端からはみ出すため2行に分割する
+    let textBody;
+    if (words.length > 1 && !isVerticalEdge) {
+      const lineDy = 13;
+      const startDy = ly < RADAR_CY - 10 ? -(lineDy * (words.length - 1)) : 0;
+      textBody = words
+        .map((w, wi) => `<tspan x="${lx.toFixed(1)}" dy="${wi === 0 ? startDy : lineDy}">${w}${wi === words.length - 1 ? tierText : ""}</tspan>`)
+        .join("");
+    } else {
+      textBody = `${labelText}${tierText}`;
+    }
+    labelHtml += `<text class="radar-label${tier > 0 ? " is-set" : ""}" x="${lx.toFixed(1)}" y="${(ly + dy).toFixed(1)}" text-anchor="${anchor}">${textBody}</text>`;
   });
   handles.innerHTML = handleHtml;
   labels.innerHTML = labelHtml;
