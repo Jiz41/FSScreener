@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-07-22",
+    "text": "以下の馬の詳細情報を更新しました：ウキヨノカゼ、ダンスディレクター、タマモベストプレイ、スマートオリオン、ティーハーフ、ダービーフィズ、ウインプリメーラ、ラインミーティア、シャトーブランシュ、スイートサルサ",
+    "text_en": "Added real-world profiles for 10 horses (born 2010)"
+  },
+  {
     "date": "2026-07-21",
     "text": "ホーム画面にアプリとして追加できるようになりました（インストールボタンを追加）",
     "text_en": "Added an install button to add this app to your home screen"
