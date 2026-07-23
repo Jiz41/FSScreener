@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-07-23",
+    "text": "ヘッダーにミニコラム実装進捗（n/全頭数・達成率）を表示するようになりました（自動集計）",
+    "text_en": "Added a mini-column coverage indicator to the header (auto-calculated)"
+  },
+  {
+    "date": "2026-07-23",
     "text": "以下の馬の詳細情報を更新しました：クロワデュノール、マスカレードボール、ミュージアムマイル、エンブロイダリー、カムニャック、パンジャタワー、エネルジコ、アルマヴェローチェ、アドマイヤズーム、エリキング",
     "text_en": "Added real-world profiles for 10 horses (born 2022)"
   },

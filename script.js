@@ -1725,12 +1725,22 @@ async function init() {
   try {
     await Promise.all([loadHorses(), loadHistory(), loadChangelog()]);
     renderStable();
+    updateColumnProgress();
     resultsPlaceholderState = { type: "prompt" };
     resultsPanel.innerHTML = `<div class="no-results">${t("prompt_search")}</div>`;
   } catch (e) {
     resultsPlaceholderState = { type: "error", message: e.message };
     resultsPanel.innerHTML = `<div class="no-results">${t("load_failed")}${e.message}</div>`;
   }
+}
+
+function updateColumnProgress() {
+  const el = document.getElementById("column-progress-text");
+  if (!el || horses.length === 0) return;
+  const done = Object.keys(historyData).length;
+  const total = horses.length;
+  const pct = (done / total * 100).toFixed(1);
+  el.innerHTML = `${done}/${total}頭 完了（${pct}%）`;
 }
 
 document.addEventListener("DOMContentLoaded", init);

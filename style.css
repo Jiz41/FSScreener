@@ -137,6 +137,33 @@ header {
   color: var(--blue);
 }
 
+.header-sub-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.column-progress {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: right;
+  color: color-mix(in srgb, var(--gold) 55%, var(--muted) 45%);
+}
+
+.progress-mark {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  background: color-mix(in srgb, var(--gold) 55%, var(--muted) 45%);
+  margin-right: 0.35em;
+  vertical-align: middle;
+}
+
 .version-badge {
   display: inline-block;
   font-family: "IBM Plex Mono", monospace;
