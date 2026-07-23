@@ -154,6 +154,8 @@ const I18N = {
     footer_disclaimer_accuracy: "掲載する史実情報・推定価格は独自調査に基づくものであり、正確性を保証しません。",
     footer_disclaimer_sources: "史実情報はWikipedia・JBIS等の公開資料に基づき、各馬の詳細画面に出典を明記しています。",
     footer_disclaimer_storage: "マイ厩舎などの保存データはお使いの端末内にのみ保存され、外部には送信されません。",
+    column_progress_label: "ミニコラム進捗",
+    column_progress_unit: "頭 完了",
     changelog_summary: "更新履歴",
     install_guide_title: "ホーム画面に追加",
     install_guide_ios: "共有ボタン（□に↑のアイコン）をタップ→「ホーム画面に追加」を選ぶと、アプリのように使えます",
@@ -262,6 +264,8 @@ const I18N = {
     footer_disclaimer_accuracy: "All real-world profiles and price estimates are based on independent research and are not guaranteed to be accurate.",
     footer_disclaimer_sources: "Real-world profiles are based on public sources such as Wikipedia and JBIS, with citations shown in each horse's detail view.",
     footer_disclaimer_storage: "Saved data (e.g. My Stable) is stored only on your device and never transmitted.",
+    column_progress_label: "Mini-Column Progress",
+    column_progress_unit: "horses done",
     changelog_summary: "Update Log",
     install_guide_title: "Add to Home Screen",
     install_guide_ios: "Tap the Share button (square with an up arrow), then choose \"Add to Home Screen\" to use this like an app.",
@@ -1140,6 +1144,7 @@ function setupLangToggle() {
     applyLanguage(next);
     updateLabel();
     renderResultsPlaceholder();
+    updateColumnProgress();
   });
 
   updateLabel();
@@ -1740,7 +1745,7 @@ function updateColumnProgress() {
   const done = Object.keys(historyData).length;
   const total = horses.length;
   const pct = (done / total * 100).toFixed(1);
-  el.innerHTML = `${done}/${total}頭 完了（${pct}%）`;
+  el.textContent = `${done}/${total} ${t("column_progress_unit")}（${pct}%）`;
 }
 
 document.addEventListener("DOMContentLoaded", init);
