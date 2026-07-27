@@ -783,6 +783,24 @@ select {
   word-break: break-all;
 }
 
+.related-tools {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 14px 14px 0;
+  text-align: center;
+}
+
+.related-tools .fnote {
+  font-size: 0.72em;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+
+.related-tools a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
 footer {
   text-align: center;
   padding: 18px;
