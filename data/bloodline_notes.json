@@ -28,5 +28,149 @@
     "mother": "セクシーシューズ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": "バンドオンザラン、ヴィブエアー"
+  },
+  "キョウワダッフィー": {
+    "father": "キングカメハメハ",
+    "mother": "アサカプティット",
+    "sire_line": "Mr. Prospector系（キングカメハメハ系）",
+    "close_relatives": ""
+  },
+  "オリービン": {
+    "father": "ダイワメジャー",
+    "mother": "シャンクシー",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "アロマティコ": {
+    "father": "キングカメハメハ",
+    "mother": "ナスカ",
+    "sire_line": "Mr. Prospector系（キングカメハメハ系）",
+    "close_relatives": ""
+  },
+  "アンコイルド": {
+    "father": "Giant's Causeway",
+    "mother": "Tanzania",
+    "sire_line": "Storm Bird系（ストームキャット系）",
+    "close_relatives": ""
+  },
+  "ゴールデンナンバー": {
+    "father": "ダイワメジャー",
+    "mother": "アークティックシルク",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ティソーナ": {
+    "father": "ダイワメジャー",
+    "mother": "ラドラーダ",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": "半兄レイデオロ（2017年日本ダービー等）、半弟レイエンダ（2019年エプソムカップ）"
+  },
+  "マイネグレヴィル": {
+    "father": "ブライアンズタイム",
+    "mother": "マイネポリーヌ（母父スペシャルウィーク）",
+    "sire_line": "Roberto系",
+    "close_relatives": ""
+  },
+  "ショウナンバッハ": {
+    "father": "ステイゴールド",
+    "mother": "シュガーハート（母父サクラバクシンオー）",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": "近親にキタサンブラック（keibalab「兄弟馬」表記のみ、続柄未確認）"
+  },
+  "ヴォルシェーブ": {
+    "father": "ネオユニヴァース",
+    "mother": "ヴェイルオブアヴァロン（父Thunder Gulch）",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "モズハツコイ": {
+    "father": "クロフネ",
+    "mother": "クールアンフルール",
+    "sire_line": "Vice Regent系（フレンチデピュティ系）",
+    "close_relatives": ""
+  },
+  "ベルルミエール": {
+    "father": "スウェプトオーヴァーボード",
+    "mother": "フレンチビキニ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "パシフィックギャル": {
+    "father": "ゼンノロブロイ",
+    "mother": "不明",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "キングズオブザサン": {
+    "father": "チチカステナンゴ",
+    "mother": "スティンガー",
+    "sire_line": "Nureyev系",
+    "close_relatives": ""
+  },
+  "ウインフェニックス": {
+    "father": "スズカフェニックス",
+    "mother": "シャインプレジャー",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "アルマエルナト": {
+    "father": "ネオユニヴァース",
+    "mother": "キャメロンガール(USA)（母父With Approval）",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": "半兄アルマスティング、ゴーズオン"
+  },
+  "サングラス": {
+    "father": "スタチューオブリバティ",
+    "mother": "ノッティングギャル",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "レッドアルヴィス": {
+    "father": "ゴールドアリュール",
+    "mother": "チャールストンハーバー",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": "半兄カレンブラックヒル（NHKマイルC・安田記念勝ち馬）"
+  },
+  "メイショウスミトモ": {
+    "father": "ゴールドアリュール",
+    "mother": "ムゲン",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ニシケンモノノフ": {
+    "father": "メイショウボーラー",
+    "mother": "グリーンヒルコマチ（母父Afleet(USA)）",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "コーリンベリー": {
+    "father": "サウスヴィグラス(USA)",
+    "mother": "コーリンラヴィアン（母父ミシックトライブ(USA)）",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "カゼノコ": {
+    "father": "アグネスデジタル(USA)",
+    "mother": "タフネススター（母父ラグビーボール）",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "エキマエ": {
+    "father": "メイショウボーラー",
+    "mother": "ローレルシャイン（母父コマンダーインチーフ(GB)）",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "アスカノロマン": {
+    "father": "アグネスデジタル(USA)",
+    "mother": "アスカノヒミコ（母父タバスコキャット(USA)）",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "キングズガード": {
+    "father": "シニスターミニスター(USA)",
+    "mother": "キングスベリー（母父キングヘイロー）",
+    "sire_line": "不明",
+    "close_relatives": ""
   }
 }
