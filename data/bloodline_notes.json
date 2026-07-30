@@ -2,19 +2,19 @@
   "インプレスウィナー": {
     "father": "フサイチコンコルド",
     "mother": "ケリーズビューティ",
-    "sire_line": "Nijinsky系",
+    "sire_line": "ニジンスキー系",
     "close_relatives": "ナランフレグ、パブリックフレンド"
   },
   "プリンセスメモリー": {
     "father": "スウェプトオーヴァーボード",
     "mother": "リトルブレッシング",
-    "sire_line": "フォーティナイナー系（エンドスウィープ系）",
+    "sire_line": "エンドスウィープ系",
     "close_relatives": "ダンシングプリンス、コウギョウブライト"
   },
   "アフォード": {
     "father": "サクラバクシンオー",
     "mother": "プリティメイズ",
-    "sire_line": "Princely Gift系",
+    "sire_line": "プリンスリーギフト系",
     "close_relatives": "スマッシングハーツ、アイディドゥイット"
   },
   "サトノシュレン": {
@@ -32,61 +32,61 @@
   "キョウワダッフィー": {
     "father": "キングカメハメハ",
     "mother": "アサカプティット",
-    "sire_line": "Mr. Prospector系（キングカメハメハ系）",
+    "sire_line": "キングカメハメハ系",
     "close_relatives": ""
   },
   "オリービン": {
     "father": "ダイワメジャー",
     "mother": "シャンクシー",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "アロマティコ": {
     "father": "キングカメハメハ",
     "mother": "ナスカ",
-    "sire_line": "Mr. Prospector系（キングカメハメハ系）",
+    "sire_line": "キングカメハメハ系",
     "close_relatives": ""
   },
   "アンコイルド": {
     "father": "Giant's Causeway",
     "mother": "Tanzania",
-    "sire_line": "Storm Bird系（ストームキャット系）",
+    "sire_line": "ストームキャット系",
     "close_relatives": ""
   },
   "ゴールデンナンバー": {
     "father": "ダイワメジャー",
     "mother": "アークティックシルク",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ティソーナ": {
     "father": "ダイワメジャー",
     "mother": "ラドラーダ",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": "半兄レイデオロ（2017年日本ダービー等）、半弟レイエンダ（2019年エプソムカップ）"
   },
   "マイネグレヴィル": {
     "father": "ブライアンズタイム",
     "mother": "マイネポリーヌ（母父スペシャルウィーク）",
-    "sire_line": "Roberto系",
+    "sire_line": "ロベルト系",
     "close_relatives": ""
   },
   "ショウナンバッハ": {
     "father": "ステイゴールド",
     "mother": "シュガーハート（母父サクラバクシンオー）",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": "近親にキタサンブラック（keibalab「兄弟馬」表記のみ、続柄未確認）"
   },
   "ヴォルシェーブ": {
     "father": "ネオユニヴァース",
     "mother": "ヴェイルオブアヴァロン（父Thunder Gulch）",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "モズハツコイ": {
     "father": "クロフネ",
     "mother": "クールアンフルール",
-    "sire_line": "Vice Regent系（フレンチデピュティ系）",
+    "sire_line": "フレンチデピュティ系",
     "close_relatives": ""
   },
   "ベルルミエール": {
@@ -98,25 +98,25 @@
   "パシフィックギャル": {
     "father": "ゼンノロブロイ",
     "mother": "不明",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "キングズオブザサン": {
     "father": "チチカステナンゴ",
     "mother": "スティンガー",
-    "sire_line": "Nureyev系",
+    "sire_line": "ヌレイエフ系",
     "close_relatives": ""
   },
   "ウインフェニックス": {
     "father": "スズカフェニックス",
     "mother": "シャインプレジャー",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "アルマエルナト": {
     "father": "ネオユニヴァース",
     "mother": "キャメロンガール(USA)（母父With Approval）",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": "半兄アルマスティング、ゴーズオン"
   },
   "サングラス": {
@@ -128,13 +128,13 @@
   "レッドアルヴィス": {
     "father": "ゴールドアリュール",
     "mother": "チャールストンハーバー",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": "半兄カレンブラックヒル（NHKマイルC・安田記念勝ち馬）"
   },
   "メイショウスミトモ": {
     "father": "ゴールドアリュール",
     "mother": "ムゲン",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ニシケンモノノフ": {
@@ -188,49 +188,49 @@
   "ジェラシー": {
     "father": "ハービンジャー",
     "mother": "グローリアスデイズ",
-    "sire_line": "Danzig系",
+    "sire_line": "ダンツィヒ系",
     "close_relatives": ""
   },
   "アドマイヤダイオウ": {
     "father": "ディープインパクト",
     "mother": "アドマイヤマリン",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "アジュールローズ": {
     "father": "ヴィクトワールピサ",
     "mother": "ヴィアンローズ",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ワントゥワン": {
     "father": "ディープインパクト",
     "mother": "ワンカラット",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "レイホーロマンス": {
     "father": "ハービンジャー",
     "mother": "スズカローラン",
-    "sire_line": "Danzig系",
+    "sire_line": "ダンツィヒ系",
     "close_relatives": ""
   },
   "ダイワドレッサー": {
     "father": "ネオユニヴァース",
     "mother": "リバティープリント",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "シゲルノコギリザメ": {
     "father": "スーパーホーネット",
     "mother": "シアトルビューティ",
-    "sire_line": "Northern Dancer系",
+    "sire_line": "ノーザンダンサー系",
     "close_relatives": ""
   },
   "ラベンダーヴァレイ": {
     "father": "ディープインパクト",
     "mother": "クロウキャニオン",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ウインファビラス": {
@@ -296,7 +296,7 @@
   "サトノクラウン": {
     "father": "Marju",
     "mother": "ジョコンダII",
-    "sire_line": "Last Tycoon系",
+    "sire_line": "ラストタイクーン系",
     "close_relatives": ""
   },
   "クイーンズリング": {
@@ -314,31 +314,31 @@
   "リアルスティール": {
     "father": "ディープインパクト",
     "mother": "ラヴズオンリーミー",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "メジャータイフーン": {
     "father": "ダイワメジャー",
     "mother": "マザイ",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "メジェルダ": {
     "father": "ディープインパクト",
     "mother": "メリュジーヌ",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ストーミーシー": {
     "father": "アドマイヤムーン",
     "mother": "リーベストラウム",
-    "sire_line": "Mr. Prospector系",
+    "sire_line": "ミスタープロスペクター系",
     "close_relatives": ""
   },
   "サイモンゼーレ": {
     "father": "キンシャサノキセキ",
     "mother": "ポールポジションII",
-    "sire_line": "Halo系（サンデーサイレンス系）",
+    "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
   },
   "ゲッカコウ": {
