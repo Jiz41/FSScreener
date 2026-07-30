@@ -157,6 +157,7 @@ const I18N = {
     column_progress_label: "ミニコラム進捗",
     column_progress_unit: "頭 完了",
     changelog_summary: "更新履歴",
+    horse_additions_summary: "収録馬追加履歴",
     install_guide_title: "ホーム画面に追加",
     install_guide_ios: "共有ボタン（□に↑のアイコン）をタップ→「ホーム画面に追加」を選ぶと、アプリのように使えます",
     no_results: "条件に合致する馬が見つかりませんでした。",
@@ -267,6 +268,7 @@ const I18N = {
     column_progress_label: "Mini-Column Progress",
     column_progress_unit: "horses done",
     changelog_summary: "Update Log",
+    horse_additions_summary: "Added Horses Log",
     install_guide_title: "Add to Home Screen",
     install_guide_ios: "Tap the Share button (square with an up arrow), then choose \"Add to Home Screen\" to use this like an app.",
     no_results: "No horses matched your search conditions.",
@@ -534,6 +536,31 @@ function renderChangelog() {
   if (!list) return;
   const lang = currentLang();
   list.innerHTML = changelogEntries
+    .map(e => {
+      const text = lang === "en" ? (e.text_en || e.text) : e.text;
+      return `<li><span class="mono" style="color:var(--muted);">${e.date}</span> ${text}</li>`;
+    })
+    .join("");
+}
+
+let horseAdditionsEntries = [];
+
+async function loadHorseAdditions() {
+  try {
+    const res = await fetch("data/horse_additions.json");
+    if (!res.ok) return;
+    horseAdditionsEntries = await res.json();
+    renderHorseAdditions();
+  } catch (e) {
+    // 収録馬追加履歴が読めなくても致命的ではないため無視
+  }
+}
+
+function renderHorseAdditions() {
+  const list = document.getElementById("horse-additions-list");
+  if (!list) return;
+  const lang = currentLang();
+  list.innerHTML = horseAdditionsEntries
     .map(e => {
       const text = lang === "en" ? (e.text_en || e.text) : e.text;
       return `<li><span class="mono" style="color:var(--muted);">${e.date}</span> ${text}</li>`;
@@ -1728,7 +1755,7 @@ async function init() {
   resultsPanel.innerHTML = `<div class="no-results">${t("loading")}</div>`;
 
   try {
-    await Promise.all([loadHorses(), loadHistory(), loadChangelog()]);
+    await Promise.all([loadHorses(), loadHistory(), loadChangelog(), loadHorseAdditions()]);
     renderStable();
     updateColumnProgress();
     resultsPlaceholderState = { type: "prompt" };
