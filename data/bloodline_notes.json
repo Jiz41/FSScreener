@@ -316,5 +316,35 @@
     "mother": "",
     "sire_line": "",
     "close_relatives": ""
+  },
+  "メジャータイフーン": {
+    "father": "ダイワメジャー",
+    "mother": "マザイ",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "メジェルダ": {
+    "father": "ディープインパクト",
+    "mother": "メリュジーヌ",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ストーミーシー": {
+    "father": "アドマイヤムーン",
+    "mother": "リーベストラウム",
+    "sire_line": "Mr. Prospector系",
+    "close_relatives": ""
+  },
+  "サイモンゼーレ": {
+    "father": "キンシャサノキセキ",
+    "mother": "ポールポジションII",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ゲッカコウ": {
+    "father": "ロージズインメイ",
+    "mother": "チューベローズ",
+    "sire_line": "",
+    "close_relatives": ""
   }
 }
