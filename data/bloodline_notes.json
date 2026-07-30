@@ -202,5 +202,119 @@
     "mother": "ヴィアンローズ",
     "sire_line": "Halo系（サンデーサイレンス系）",
     "close_relatives": ""
+  },
+  "ワントゥワン": {
+    "father": "ディープインパクト",
+    "mother": "ワンカラット",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "レイホーロマンス": {
+    "father": "ハービンジャー",
+    "mother": "スズカローラン",
+    "sire_line": "Danzig系",
+    "close_relatives": ""
+  },
+  "ダイワドレッサー": {
+    "father": "ネオユニヴァース",
+    "mother": "リバティープリント",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "シゲルノコギリザメ": {
+    "father": "スーパーホーネット",
+    "mother": "シアトルビューティ",
+    "sire_line": "Northern Dancer系",
+    "close_relatives": ""
+  },
+  "ラベンダーヴァレイ": {
+    "father": "ディープインパクト",
+    "mother": "クロウキャニオン",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ウインファビラス": {
+    "father": "ステイゴールド",
+    "mother": "",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "イモータル": {
+    "father": "マンハッタンカフェ",
+    "mother": "ショアー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "リスペクトアース": {
+    "father": "マンハッタンカフェ",
+    "mother": "Earthgreen（USA）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ラニ": {
+    "father": "Tapit（USA）",
+    "mother": "ヘヴンリーロマンス",
+    "sire_line": "",
+    "close_relatives": ""
+  },
+  "ヨシオ": {
+    "father": "Johannesburg（USA）",
+    "mother": "フローラルホーム",
+    "sire_line": "",
+    "close_relatives": ""
+  },
+  "サトノティターン": {
+    "father": "シンボリクリスエス",
+    "mother": "マチカネチコウヨレ",
+    "sire_line": "ロベルト系",
+    "close_relatives": "全兄にマチカネニホンバレ（エルムステークス勝ち馬）、伯父にマチカネキンノホシ（アルゼンチン共和国杯・アメリカジョッキークラブカップ勝ち馬）"
+  },
+  "ワンダーリーデル": {
+    "father": "スタチューオブリバティ",
+    "mother": "アストレアピース",
+    "sire_line": "ストームキャット系",
+    "close_relatives": "8代母ジツホマレは1953年優駿牝馬優勝馬"
+  },
+  "ロンドンタウン": {
+    "father": "カネヒキリ",
+    "mother": "フェアリーバニヤン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "プリンシアコメータ": {
+    "father": "スパイキュール",
+    "mother": "ベルモントフェリス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ヴェンジェンス": {
+    "father": "カジノドライヴ",
+    "mother": "スペシャルクイン",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": ""
+  },
+  "サトノクラウン": {
+    "father": "Marju",
+    "mother": "ジョコンダII",
+    "sire_line": "Last Tycoon系",
+    "close_relatives": ""
+  },
+  "クイーンズリング": {
+    "father": "マンハッタンカフェ",
+    "mother": "アクアリング",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シュヴァルグラン": {
+    "father": "ハーツクライ",
+    "mother": "ハルーワスウィート",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "リアルスティール": {
+    "father": "",
+    "mother": "",
+    "sire_line": "",
+    "close_relatives": ""
   }
 }
