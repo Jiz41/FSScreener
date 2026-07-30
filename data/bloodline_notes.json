@@ -172,5 +172,35 @@
     "mother": "キングスベリー（母父キングヘイロー）",
     "sire_line": "不明",
     "close_relatives": ""
+  },
+  "ショウナンアンセム": {
+    "father": "ジャングルポケット",
+    "mother": "ヴォラドーレス",
+    "sire_line": "ゼダーン系",
+    "close_relatives": ""
+  },
+  "シャドウアプローチ": {
+    "father": "ジャングルポケット",
+    "mother": "マルカアイチャン",
+    "sire_line": "ゼダーン系",
+    "close_relatives": ""
+  },
+  "ジェラシー": {
+    "father": "ハービンジャー",
+    "mother": "グローリアスデイズ",
+    "sire_line": "Danzig系",
+    "close_relatives": ""
+  },
+  "アドマイヤダイオウ": {
+    "father": "ディープインパクト",
+    "mother": "アドマイヤマリン",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "アジュールローズ": {
+    "father": "ヴィクトワールピサ",
+    "mother": "ヴィアンローズ",
+    "sire_line": "Halo系（サンデーサイレンス系）",
+    "close_relatives": ""
   }
 }
