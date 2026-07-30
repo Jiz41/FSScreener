@@ -1,4 +1,5 @@
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/13IQo9cfL1mwZ8aLp3Xwy9Hm3DZaZ1psJvu-chlwDQK8/gviz/tq?tqx=out:csv&sheet=horse_list_updated";
+const APP_VERSION = document.querySelector('meta[name="app-version"]')?.content || "";
 
 const GROWTH_LABEL_JP = {
   prodigy: "天才",
@@ -509,7 +510,7 @@ async function loadHorses() {
 
 async function loadHistory() {
   try {
-    const res = await fetch("data/horse_history.json");
+    const res = await fetch(`data/horse_history.json?v=${APP_VERSION}`);
     if (res.ok) {
       historyData = await res.json();
     }
@@ -522,7 +523,7 @@ let changelogEntries = [];
 
 async function loadChangelog() {
   try {
-    const res = await fetch("data/changelog.json");
+    const res = await fetch(`data/changelog.json?v=${APP_VERSION}`);
     if (!res.ok) return;
     changelogEntries = await res.json();
     renderChangelog();
@@ -547,7 +548,7 @@ let horseAdditionsEntries = [];
 
 async function loadHorseAdditions() {
   try {
-    const res = await fetch("data/horse_additions.json");
+    const res = await fetch(`data/horse_additions.json?v=${APP_VERSION}`);
     if (!res.ok) return;
     horseAdditionsEntries = await res.json();
     renderHorseAdditions();
