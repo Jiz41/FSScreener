@@ -342,6 +342,7 @@ function applyLanguage(lang) {
   }
   renderStable();
   renderChangelog();
+  renderHorseAdditions();
 }
 
 let horses = [];
