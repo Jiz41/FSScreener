@@ -570,8 +570,8 @@ select {
   margin: 8px 0;
 }
 .detail-radar {
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
 }
 .detail-radar .radar-label {
   font-size: 8px;
