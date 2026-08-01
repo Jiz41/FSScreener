@@ -137,6 +137,7 @@ const I18N = {
     birth_year: "生まれ年",
     detail_preview: "詳細プレビュー",
     achievements_title: "現役時代の主な戦績",
+    stats_title: "8軸ステータス",
     column_title: "ミニコラム",
     history_pending: "史実紹介は準備中です。",
     sources_label: "出典:",
@@ -248,6 +249,7 @@ const I18N = {
     birth_year: "Birth Year",
     detail_preview: "Horse Details",
     achievements_title: "Major Career Achievements",
+    stats_title: "8-Axis Stats",
     column_title: "Mini Column",
     history_pending: "Real-world profile coming soon.",
     sources_label: "Sources:",
@@ -585,6 +587,11 @@ const RADAR_CX = RADAR_SIZE / 2;
 const RADAR_CY = RADAR_SIZE / 2;
 const RADAR_R = 105;
 
+const DETAIL_RADAR_SIZE = 180;
+const DETAIL_RADAR_CX = DETAIL_RADAR_SIZE / 2;
+const DETAIL_RADAR_CY = DETAIL_RADAR_SIZE / 2;
+const DETAIL_RADAR_R = DETAIL_RADAR_SIZE * 0.29; // RADAR_R/RADAR_SIZE(105/360)と同比率
+
 function radarAxes() {
   return RADAR_AXIS_ORDER.map(key => STAT_AXES.find(a => a.key === key));
 }
@@ -604,6 +611,65 @@ function radarPolygonPoints(ratioFn) {
       return `${p.x.toFixed(1)},${p.y.toFixed(1)}`;
     })
     .join(" ");
+}
+
+function buildDetailRadarSVG(horse) {
+  const axes = radarAxes();
+
+  const pointAt = (axisIndex, ratio) => {
+    const angle = -Math.PI / 2 + axisIndex * (Math.PI / 4);
+    return {
+      x: DETAIL_RADAR_CX + DETAIL_RADAR_R * ratio * Math.cos(angle),
+      y: DETAIL_RADAR_CY + DETAIL_RADAR_R * ratio * Math.sin(angle)
+    };
+  };
+
+  const polygonPoints = ratioFn => axes
+    .map((axis, i) => {
+      const p = pointAt(i, ratioFn(axis, i));
+      return `${p.x.toFixed(1)},${p.y.toFixed(1)}`;
+    })
+    .join(" ");
+
+  let svg = `<polygon class="radar-base" points="${polygonPoints(() => 1)}"/>`;
+  svg += `<polygon class="radar-ring" points="${polygonPoints(() => 1 / 3)}"/>`;
+  svg += `<polygon class="radar-ring" points="${polygonPoints(() => 2 / 3)}"/>`;
+
+  axes.forEach((axis, i) => {
+    const p = pointAt(i, 1);
+    svg += `<line class="radar-spoke" x1="${DETAIL_RADAR_CX}" y1="${DETAIL_RADAR_CY}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"/>`;
+  });
+
+  svg += `<polygon class="radar-value" points="${polygonPoints(axis => {
+    const v = horse[axis.key];
+    return (typeof v === "number" && !isNaN(v)) ? v : 0;
+  })}"/>`;
+
+  axes.forEach((axis, i) => {
+    const lp = pointAt(i, 1);
+    const lx = DETAIL_RADAR_CX + (lp.x - DETAIL_RADAR_CX) * 1.0;
+    const ly = DETAIL_RADAR_CY + (lp.y - DETAIL_RADAR_CY) * 1.0;
+    let anchor = "middle";
+    if (lx < DETAIL_RADAR_CX - 5) anchor = "end";
+    else if (lx > DETAIL_RADAR_CX + 5) anchor = "start";
+    const isVerticalEdge = lx >= DETAIL_RADAR_CX - 5 && lx <= DETAIL_RADAR_CX + 5;
+    const dy = ly < DETAIL_RADAR_CY - 5 ? -2 : (ly > DETAIL_RADAR_CY + 5 ? 8 : 3);
+    const labelText = statAxisLabel(axis);
+    const words = labelText.split(" ");
+    let textBody;
+    if (words.length > 1 && !isVerticalEdge) {
+      const lineDy = 9;
+      const startDy = ly < DETAIL_RADAR_CY - 5 ? -(lineDy * (words.length - 1)) : 0;
+      textBody = words
+        .map((w, wi) => `<tspan x="${lx.toFixed(1)}" dy="${wi === 0 ? startDy : lineDy}">${w}</tspan>`)
+        .join("");
+      svg += `<text class="radar-label" x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}">${textBody}</text>`;
+    } else {
+      svg += `<text class="radar-label" x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dy="${dy}">${labelText}</text>`;
+    }
+  });
+
+  return `<svg viewBox="0 0 ${DETAIL_RADAR_SIZE} ${DETAIL_RADAR_SIZE}" class="detail-radar">${svg}</svg>`;
 }
 
 function buildStatGrid() {
@@ -1061,6 +1127,10 @@ function showDetail(horse) {
       <p>${t("surface_turf")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.turf_rating} / ${t("surface_dirt")}${lang === "en" ? " Aptitude" : "適性"}: ${horse.dirt_rating}</p>
       <p>${t("distance_aptitude")}: ${horse.min_distance}〜${horse.max_distance}m（${t("optimal")} ${horse.optimal_distance}m）</p>
       <p>${t("peak_season")}: ${peakText} ／ ${t("birth_year")}: ${birthText}</p>
+    </div>
+    <div class="detail-block detail-radar-block">
+      <h4>${t("stats_title")}</h4>
+      <div class="detail-radar-wrap">${buildDetailRadarSVG(horse)}</div>
     </div>
     ${historyHtml}
   `;

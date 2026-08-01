@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-08-01",
+    "text": "馬の詳細画面に8軸ステータス（加速力・スタート・コーナリング・坂・重馬場・闘争心・安定感・健康）のレーダーチャートを追加しました",
+    "text_en": "Added an 8-axis stats radar chart to the horse detail view"
+  },
+  {
     "date": "2026-07-26",
     "text": "フッターに訪問者数カウンターを追加しました",
     "text_en": "Added a visitor counter to the footer"

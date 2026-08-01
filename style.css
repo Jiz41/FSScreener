@@ -564,6 +564,19 @@ select {
   font-weight: 700;
 }
 
+.detail-radar-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+.detail-radar {
+  width: 180px;
+  height: 180px;
+}
+.detail-radar .radar-label {
+  font-size: 8px;
+}
+
 .stat-radar-hint {
   margin: 0;
   font-size: 0.78em;
