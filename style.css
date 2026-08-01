@@ -824,6 +824,10 @@ footer a {
   color: var(--muted);
   text-decoration: underline;
 }
+.related-tools a {
+  color: var(--ink);
+  font-weight: 600;
+}
 
 .theme-toggle {
   width: 32px;
