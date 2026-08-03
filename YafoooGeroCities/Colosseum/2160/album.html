@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>思い出の写真館 〜M.レーガン騎手 応援ページ♥〜</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, table, td, th, div, span, p, h1, h2, h3 {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #000000;
+  background-color: #FFFFCC;
+  background-image:
+    repeating-linear-gradient(45deg, #FFFACD 0px, #FFFACD 10px, #FFFFCC 10px, #FFFFCC 20px),
+    radial-gradient(circle, #99CCFF 2px, transparent 2px);
+  background-size: auto, 20px 20px;
+}
+a:link { color: #0000CC; text-decoration: underline; }
+a:visited { color: #660099; text-decoration: underline; }
+
+#wrapper {
+  width: 94%;
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: #FFFFFF;
+  border: 4px double #0044CC;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.rainbow-title {
+  text-align: center;
+  font-size: clamp(20px, 7vw, 34px);
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowmove 4s linear infinite, blinker 1s step-start infinite;
+  margin: 6px 0 0 0;
+}
+@keyframes rainbowmove {
+  0% { background-position: 0% 0; }
+  100% { background-position: 400% 0; }
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.subcopy {
+  text-align: center;
+  font-size: 16px;
+  color: #CC0066;
+  font-weight: bold;
+  margin: 2px 0 8px 0;
+}
+
+.backlink {
+  text-align: center;
+  margin: 8px 0;
+}
+.backlink a {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.section-heading {
+  background-color: #0044CC;
+  color: #FFFF00;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 2px outset #003399;
+  margin: 14px 0 6px 0;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.gallery-item {
+  width: 44%;
+  min-width: 130px;
+  text-align: center;
+  background-color: #FFFFCC;
+  border: 2px outset #999999;
+  padding: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px #666666;
+}
+.gallery-caption {
+  font-size: 12px;
+  color: #333333;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 999;
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.overlay.active {
+  display: block;
+}
+.overlay img {
+  max-width: 96%;
+  height: auto;
+  border: 5px solid #FFFFFF;
+  box-shadow: 4px 4px 0px #333333;
+  margin-top: 20px;
+}
+.overlay-caption {
+  color: #FFFF00;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.overlay-close {
+  display: inline-block;
+  margin-top: 14px;
+  background-color: #CC0000;
+  color: #FFFFFF;
+  border: 3px outset #FF6666;
+  padding: 6px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-box {
+  border: 2px dashed #0044CC;
+  background-color: #E6F2FF;
+  padding: 8px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 3px double #0044CC;
+}
+
+@media (max-width: 800px) {
+  #wrapper { width: 96%; }
+}
+
+@media (max-width: 480px) {
+  .gallery-item { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+  <h1 class="rainbow-title">📷 思い出の写真館 📷</h1>
+  <p class="subcopy">〜M.レーガン騎手 応援ページ♥〜</p>
+
+  <div class="backlink"><a href="index.html">← トップへ戻る</a></div>
+
+  <hr>
+
+  <div class="section-heading">写真いろいろ</div>
+  <p style="font-size:13px; text-align:center;">サムネイルをタップすると拡大表示するよ(^_-)</p>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item" data-full="img/reagan.jpg?v=1" data-caption="素顔を見せぬ仮面の名手">
+      <img src="img/reagan.jpg?v=1" alt="素顔を見せぬ仮面の名手">
+      <div class="gallery-caption">素顔を見せぬ仮面の名手</div>
+    </div>
+    <div class="gallery-item" data-full="img/fairy_s.jpg?v=1" data-caption="GIIIフェアリーS ゴール前、ディープジュエリーとの鼻差の激戦！">
+      <img src="img/fairy_s.jpg?v=1" alt="GIIIフェアリーS ゴール前">
+      <div class="gallery-caption">GIIIフェアリーS ゴール前、ディープジュエリーとの鼻差の激戦！</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="admin-box">
+    今後も思い出の一枚をどんどん追加していく予定です♪　更新をお楽しみに〜(*´ω`*)<br>
+    ――管理人より
+  </div>
+
+  <div class="footer">
+    <p>Copyright(C) 2026 華耀東夷堂 All Rights Reserved.</p>
+  </div>
+
+</div>
+
+<div class="overlay" id="overlay">
+  <span class="overlay-close" id="overlayClose">✕ とじる</span>
+  <div><img id="overlayImg" src="" alt=""></div>
+  <div class="overlay-caption" id="overlayCaption"></div>
+</div>
+
+<script>
+var overlay = document.getElementById('overlay');
+var overlayImg = document.getElementById('overlayImg');
+var overlayCaption = document.getElementById('overlayCaption');
+var items = document.querySelectorAll('.gallery-item');
+
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function () {
+    var full = this.getAttribute('data-full');
+    var caption = this.getAttribute('data-caption');
+    overlayImg.src = full;
+    overlayImg.alt = caption;
+    overlayCaption.textContent = caption;
+    overlay.className = 'overlay active';
+  });
+}
+
+document.getElementById('overlayClose').addEventListener('click', function () {
+  overlay.className = 'overlay';
+});
+overlay.addEventListener('click', function (e) {
+  if (e.target === overlay) {
+    overlay.className = 'overlay';
+  }
+});
+</script>
+
+</body>
+</html>
