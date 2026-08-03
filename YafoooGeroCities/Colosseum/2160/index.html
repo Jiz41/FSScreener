@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>M.レーガン騎手 応援ページ♥ 〜215勝の壁を越えろ〜</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, table, td, th, div, span, p, h1, h2, h3 {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #000000;
+  background-color: #FFFFCC;
+  background-image:
+    repeating-linear-gradient(45deg, #FFFACD 0px, #FFFACD 10px, #FFFFCC 10px, #FFFFCC 20px),
+    radial-gradient(circle, #99CCFF 2px, transparent 2px);
+  background-size: auto, 20px 20px;
+}
+a:link { color: #0000CC; text-decoration: underline; }
+a:visited { color: #660099; text-decoration: underline; }
+
+#wrapper {
+  width: 94%;
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: #FFFFFF;
+  border: 4px double #0044CC;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.rainbow-title {
+  text-align: center;
+  font-size: clamp(20px, 7vw, 34px);
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowmove 4s linear infinite, blinker 1s step-start infinite;
+  margin: 6px 0 0 0;
+}
+@keyframes rainbowmove {
+  0% { background-position: 0% 0; }
+  100% { background-position: 400% 0; }
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.subcopy {
+  text-align: center;
+  font-size: 16px;
+  color: #CC0066;
+  font-weight: bold;
+  margin: 2px 0 8px 0;
+}
+
+.marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000033;
+  border: 2px solid #FFD700;
+  padding: 4px 0;
+  box-sizing: border-box;
+}
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: #FFFF00;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.kouji {
+  text-align: center;
+  background-color: #FFCC00;
+  border: 3px solid #CC0000;
+  color: #CC0000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px;
+  margin: 8px 0;
+}
+
+.counter-box {
+  text-align: center;
+  background-color: #000033;
+  border: 4px ridge #FFD700;
+  padding: 10px;
+  margin: 8px 0;
+}
+.counter-heading {
+  color: #FFD700;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+.wins-number {
+  font-family: "Courier New", monospace;
+  font-weight: 900;
+  font-size: clamp(32px, 12vw, 56px);
+  color: #FFFFFF;
+  text-shadow: 3px 3px 0 #CC0000, -1px -1px 0 #0044CC;
+  letter-spacing: 4px;
+}
+.wins-target {
+  color: #99CCFF;
+  font-size: 20px;
+}
+.zan-text {
+  color: #FF3399;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 6px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.gauge-wrap {
+  text-align: center;
+  margin: 10px 0;
+  font-size: clamp(12px, 4.5vw, 22px);
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+.gauge-star { color: #FFD700; }
+.gauge-empty { color: #999999; }
+.wall-note {
+  text-align: center;
+  color: #CC0000;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.profile-table, .profile-table tbody, .profile-table tr, .profile-table td {
+  display: block;
+  width: 100%;
+}
+.profile-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+.profile-photo-cell {
+  text-align: center;
+  vertical-align: top;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.profile-photo-cell img {
+  border: 5px solid #000000;
+  box-shadow: 4px 4px 0px #666666;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+.photo-caption {
+  font-size: 12px;
+  color: #333333;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.profile-data-cell {
+  vertical-align: top;
+  padding: 6px;
+}
+.profile-inner-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.profile-inner-table th, .profile-inner-table td {
+  border: 2px outset #999999;
+  padding: 4px 8px;
+  font-size: 13px;
+  text-align: left;
+}
+.profile-inner-table th {
+  background-color: #0044CC;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.profile-inner-table td {
+  background-color: #FFFFCC;
+}
+
+.section-heading {
+  background-color: #0044CC;
+  color: #FFFF00;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 2px outset #003399;
+  margin: 14px 0 6px 0;
+}
+
+.monthly-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.monthly-table th, .monthly-table td {
+  border: 2px outset #999999;
+  padding: 3px 6px;
+  font-size: 13px;
+  text-align: center;
+}
+.monthly-table th {
+  background-color: #000033;
+  color: #FFD700;
+}
+.monthly-table td.month-name {
+  background-color: #99CCFF;
+  font-weight: bold;
+  text-align: left;
+}
+.monthly-table td.month-win {
+  background-color: #FFFFFF;
+}
+.monthly-table td.achieved {
+  background-color: #FFFF00;
+  font-weight: bold;
+}
+.monthly-table tr.total-row td {
+  background-color: #FF3399;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.news-list {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.admin-box {
+  border: 2px dashed #0044CC;
+  background-color: #E6F2FF;
+  padding: 8px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 3px double #0044CC;
+}
+.digit-counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 6px 0;
+}
+.digit-box {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+  background-color: #000000;
+  color: #00FF00;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #666666;
+  margin: 0 1px;
+  padding: 2px 0;
+}
+
+@media (max-width: 800px) {
+  #wrapper { width: 96%; }
+  .profile-photo-cell img { width: 160px; }
+}
+
+@media (max-width: 480px) {
+  .monthly-table th, .monthly-table td {
+    padding: 2px 3px;
+    font-size: 11px;
+  }
+  .profile-inner-table th, .profile-inner-table td {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+  .digit-box {
+    width: 13px;
+    font-size: 15px;
+  }
+  .subcopy { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+  <h1 class="rainbow-title">M.レーガン騎手 応援ページ♥</h1>
+  <p class="subcopy">〜215勝の壁を越えろ〜</p>
+
+  <div class="marquee-wrap">
+    <span class="marquee-text">ようこそ！当ページはリンクフリーです！(^o^)丿 ただいま工事中です！</span>
+  </div>
+
+  <hr>
+
+  <div class="kouji">🚧※※※ このページは工事中です ※※※🚧</div>
+
+  <hr>
+
+  <div class="counter-box">
+    <p class="counter-heading">216勝への道</p>
+    <div class="wins-number" id="winsNumber">---</div>
+    <div class="wins-target">／ 216 勝</div>
+    <div class="zan-text" id="zanText">あと ---勝！！</div>
+  </div>
+
+  <div class="gauge-wrap" id="gaugeWrap">★★★★★★★★★★★★★★★★★★★★</div>
+  <p class="wall-note">▼ ここが「215勝の壁」！</p>
+
+  <hr>
+
+  <table class="profile-table">
+    <tr>
+      <td class="profile-photo-cell">
+        <img src="img/reagan.jpg" alt="M.レーガン騎手">
+        <div class="photo-caption">素顔を見せぬ仮面の名手</div>
+      </td>
+      <td class="profile-data-cell">
+        <table class="profile-inner-table">
+          <tr><th>所属</th><td>メキシコ騎手連盟 中央支部</td></tr>
+          <tr><th>生年月日</th><td>2011年1月1日</td></tr>
+          <tr><th>血液型</th><td>Rh-null型</td></tr>
+          <tr><th>好きな食べ物</th><td>シュールストレミング、ホンオフェ、臭豆腐</td></tr>
+          <tr><th>素顔</th><td>？？？</td></tr>
+          <tr><th>経歴</th><td>不詳</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <div class="section-heading">月別成績表</div>
+  <table class="monthly-table" id="monthlyTable">
+    <tr><th>月</th><th>勝利数</th><th>月</th><th>勝利数</th></tr>
+    <tr>
+      <td class="month-name">1月</td><td class="month-win" id="m0">-</td>
+      <td class="month-name">7月</td><td class="month-win" id="m6">-</td>
+    </tr>
+    <tr>
+      <td class="month-name">2月</td><td class="month-win" id="m1">-</td>
+      <td class="month-name">8月</td><td class="month-win" id="m7">-</td>
+    </tr>
+    <tr>
+      <td class="month-name">3月</td><td class="month-win" id="m2">-</td>
+      <td class="month-name">9月</td><td class="month-win" id="m8">-</td>
+    </tr>
+    <tr>
+      <td class="month-name">4月</td><td class="month-win" id="m3">-</td>
+      <td class="month-name">10月</td><td class="month-win" id="m9">-</td>
+    </tr>
+    <tr>
+      <td class="month-name">5月</td><td class="month-win" id="m4">-</td>
+      <td class="month-name">11月</td><td class="month-win" id="m10">-</td>
+    </tr>
+    <tr>
+      <td class="month-name">6月</td><td class="month-win" id="m5">-</td>
+      <td class="month-name">12月</td><td class="month-win" id="m11">-</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="3">合計</td><td id="mTotal">-</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <div class="section-heading">更新履歴</div>
+  <ul class="news-list" id="newsList">
+    <li>読み込み中…(^^;)</li>
+  </ul>
+
+  <hr>
+
+  <div class="section-heading">管理人より</div>
+  <div class="admin-box">
+    いつも見に来てくれてありがとうございます(^^)<br>
+    レーガン騎手の216勝、一緒に応援しましょう！ BBSも設置予定です！
+  </div>
+
+  <div class="footer">
+    <p>あなたは</p>
+    <div class="digit-counter">
+      <span class="digit-box">0</span><span class="digit-box">0</span><span class="digit-box">1</span><span class="digit-box">2</span><span class="digit-box">3</span><span class="digit-box">4</span><span class="digit-box">5</span>
+    </div>
+    <p>人目のお客様です</p>
+    <p>キリ番踏んだら掲示板に報告してね！</p>
+    <p>相互リンク募集中！</p>
+    <p>Netscape Navigator 4.0以上推奨 / 800x600</p>
+    <p>Copyright(C) 2026 華耀東夷堂 All Rights Reserved.</p>
+  </div>
+
+</div>
+
+<script>
+fetch('data.json?v=' + Date.now())
+  .then(function (res) { return res.json(); })
+  .then(function (data) {
+    var wins = data.wins;
+    var monthly = data.monthly;
+    var news = data.news;
+    var TARGET = 216;
+
+    document.getElementById('winsNumber').textContent = wins;
+    var zan = TARGET - wins;
+    document.getElementById('zanText').textContent = 'あと' + zan + '勝！！';
+
+    var filled = Math.round((wins / TARGET) * 20);
+    if (filled > 20) filled = 20;
+    if (filled < 0) filled = 0;
+    var gauge = '';
+    for (var i = 0; i < 20; i++) {
+      if (i < filled) {
+        gauge += '<span class="gauge-star">★</span>';
+      } else {
+        gauge += '<span class="gauge-empty">☆</span>';
+      }
+    }
+    document.getElementById('gaugeWrap').innerHTML = gauge;
+
+    var total = 0;
+    for (var j = 0; j < 12; j++) {
+      var v = monthly[j];
+      total += v;
+      var cell = document.getElementById('m' + j);
+      cell.textContent = v;
+      if (v >= 18) {
+        cell.className = 'month-win achieved';
+      }
+    }
+    document.getElementById('mTotal').textContent = total;
+
+    var newsHtml = '';
+    for (var k = 0; k < news.length; k++) {
+      newsHtml += '<li>' + news[k] + '</li>';
+    }
+    document.getElementById('newsList').innerHTML = newsHtml;
+  })
+  .catch(function (err) {
+    document.getElementById('newsList').innerHTML = '<li>データの読み込みに失敗しました…(T_T)</li>';
+  });
+</script>
+
+</body>
+</html>
