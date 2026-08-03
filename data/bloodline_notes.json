@@ -808,5 +808,155 @@
     "mother": "ベアフットレディ",
     "sire_line": "War Front系",
     "close_relatives": ""
+  },
+  "シリウスコルト": {
+    "father": "マクフィ",
+    "mother": "オールドフレイム",
+    "sire_line": "Dubawi系",
+    "close_relatives": ""
+  },
+  "ワイドラトゥール": {
+    "father": "カリフォルニアクローム",
+    "mother": "ワイドサファイア",
+    "sire_line": "Pulpit系(A.P.Indy系)",
+    "close_relatives": ""
+  },
+  "ミアネーロ": {
+    "father": "ドゥラメンテ",
+    "mother": "ミスエーニョ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ノーブルロジャー": {
+    "father": "Palace Malice",
+    "mother": "Noble Ready",
+    "sire_line": "Curlin系",
+    "close_relatives": ""
+  },
+  "カルチャーデイ": {
+    "father": "ファインニードル",
+    "mother": "ラルティスタ",
+    "sire_line": "デピュティミニスター系",
+    "close_relatives": ""
+  },
+  "ヤマニンアルリフラ": {
+    "father": "イスラボニータ",
+    "mother": "ヤマニンパピオネ",
+    "sire_line": "フジキセキ系",
+    "close_relatives": ""
+  },
+  "トロヴァトーレ": {
+    "father": "レイデオロ",
+    "mother": "シャルマント",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ディスペランツァ": {
+    "father": "ルーラーシップ",
+    "mother": "ルパン2",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": "父方祖母にエアグルーヴ"
+  },
+  "セットアップ": {
+    "father": "デクラレーションオブウォー",
+    "mother": "",
+    "sire_line": "War Front系",
+    "close_relatives": ""
+  },
+  "コガネノソラ": {
+    "father": "ゴールドシップ",
+    "mother": "",
+    "sire_line": "ステイゴールド系",
+    "close_relatives": ""
+  },
+  "カピリナ": {
+    "father": "ダンカーク(USA)",
+    "mother": "ライトリーチューン",
+    "sire_line": "Unbridled's Song系",
+    "close_relatives": ""
+  },
+  "ウォーターリヒト": {
+    "father": "ドレフォン(USA)",
+    "mother": "ウォーターピオニー",
+    "sire_line": "ストームキャット系(Gio Ponti経由)",
+    "close_relatives": ""
+  },
+  "イフェイオン": {
+    "father": "エピファネイア",
+    "mother": "イチオクノホシ",
+    "sire_line": "ロベルト系(シンボリクリスエス経由)",
+    "close_relatives": ""
+  },
+  "アドマイヤマツリ": {
+    "father": "キタサンブラック",
+    "mother": "",
+    "sire_line": "サンデーサイレンス系(ブラックタイド経由)",
+    "close_relatives": ""
+  },
+  "アスクワンタイム": {
+    "father": "ロードカナロア",
+    "mother": "ディープインアスク",
+    "sire_line": "キングマンボ系(キングカメハメハ経由)",
+    "close_relatives": ""
+  },
+  "ナナオ": {
+    "father": "ロードカナロア",
+    "mother": "レディブラッサム",
+    "sire_line": "Mr. Prospector系（キングカメハメハ系）",
+    "close_relatives": ""
+  },
+  "ドナベティ": {
+    "father": "リアルスティール",
+    "mother": "ドナルチア(USA)",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "シカゴスティング": {
+    "father": "ロゴタイプ",
+    "mother": "マルチスクリーン",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "エコロヴァルツ": {
+    "father": "ブラックタイド",
+    "mother": "プティプランセス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "父ブラックタイドはキタサンブラックの父でもあり、本馬はキタサンブラックの半弟にあたる"
+  },
+  "ヴェロキラプトル": {
+    "father": "スワーヴリチャード",
+    "mother": "ルーヴインペリアル(USA)",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "ボンドガール": {
+    "father": "ダイワメジャー",
+    "mother": "コーステッド(USA)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ペアポルックス": {
+    "father": "キンシャサノキセキ(AUS)",
+    "mother": "ミラクルアスク",
+    "sire_line": "フジキセキ系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ジューンブレア": {
+    "father": "アメリカンファラオ(USA)",
+    "mother": "Lap of Luxury(IRE)",
+    "sire_line": "Pioneerof the Nile系（ニアークティック系）",
+    "close_relatives": ""
+  },
+  "コスモディナー": {
+    "father": "ダノンバラード",
+    "mother": "コスモミール",
+    "sire_line": "ディープインパクト（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "ロジリオン": {
+    "father": "リオンディーズ",
+    "mother": "ビービーバーレル",
+    "sire_line": "キングカメハメハ（キングマンボ系）",
+    "close_relatives": ""
   }
 }
