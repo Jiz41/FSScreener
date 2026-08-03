@@ -658,5 +658,155 @@
     "mother": "アイリッシュシー",
     "sire_line": "Roberto系（スクリーンヒーロー産駒）",
     "close_relatives": "キャリックアリード、マクリール"
+  },
+  "ジョバンニ": {
+    "father": "エピファネイア",
+    "mother": "ベアフットレディ(IRE)",
+    "sire_line": "ロベルト系(父父シンボリクリスエス)",
+    "close_relatives": ""
+  },
+  "ルクソールカフェ": {
+    "father": "American Pharoah(USA)",
+    "mother": "Mary's Follies(USA)",
+    "sire_line": "米国三冠馬(2015年)",
+    "close_relatives": "全兄カフェファラオ(フェブラリーステークス2021・2022連覇、重賞5勝)"
+  },
+  "ナルカミ": {
+    "father": "サンダースノー(IRE)",
+    "mother": "オムニプレゼンス",
+    "sire_line": "Helmet系(豪州血統)、母父ディープインパクト",
+    "close_relatives": ""
+  },
+  "シックスペンス": {
+    "father": "キズナ",
+    "mother": "フィンレイズラッキーチャーム(USA)",
+    "sire_line": "ディープインパクト系",
+    "close_relatives": "母父Twirling Candy(USA)"
+  },
+  "ビザンチンドリーム": {
+    "father": "エピファネイア",
+    "mother": "ジャポニカーラ",
+    "sire_line": "ロベルト系(父父シンボリクリスエス)",
+    "close_relatives": "母父ジャングルポケット"
+  },
+  "クイーンズウォーク": {
+    "father": "キズナ",
+    "mother": "ウェイヴェルアベニュー",
+    "sire_line": "ディープインパクト系",
+    "close_relatives": ""
+  },
+  "シンエンペラー": {
+    "father": "シユーニ",
+    "mother": "スターレッツシスター",
+    "sire_line": "ディープインパクト系ではない欧州型（ヌレイエフ系）",
+    "close_relatives": "全兄ソットサス（2019年仏ダービー・2020年ガネー賞・凱旋門賞優勝）、半姉シスターチャーリー（米国芝GI7勝）"
+  },
+  "コスモキュランダ": {
+    "father": "アルアイン",
+    "mother": "",
+    "sire_line": "ディープインパクト系",
+    "close_relatives": ""
+  },
+  "ダノンマッキンリー": {
+    "father": "モーリス",
+    "mother": "ホームカミングクイーン",
+    "sire_line": "スクリーンヒーロー系",
+    "close_relatives": ""
+  },
+  "オフトレイル": {
+    "father": "Farhh",
+    "mother": "ローズトレイル",
+    "sire_line": "ペネロペイア系（欧州型）",
+    "close_relatives": ""
+  },
+  "コラソンビート": {
+    "father": "スワーヴリチャード",
+    "mother": "ルシェルドール",
+    "sire_line": "ハーツクライ系",
+    "close_relatives": ""
+  },
+  "アドマイヤテラ": {
+    "father": "レイデオロ",
+    "mother": "アドマイヤミヤビ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": "4代母ウインドインハーヘア(名門牝系)"
+  },
+  "ラヴァンダ": {
+    "father": "シルバーステート",
+    "mother": "ゴッドパイレーツ",
+    "sire_line": "ディープインパクト系",
+    "close_relatives": "近親馬ディルブランド"
+  },
+  "ホーエリート": {
+    "father": "ルーラーシップ",
+    "mother": "ゴールデンハープ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": "父方祖母エアグルーヴ(名牝)"
+  },
+  "スウィープフィート": {
+    "father": "スワーヴリチャード",
+    "mother": "ビジュートウショウ",
+    "sire_line": "ハーツクライ系",
+    "close_relatives": ""
+  },
+  "シュトラウス": {
+    "father": "モーリス",
+    "mother": "ブルーメンブラット",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "シュガークン": {
+    "father": "ドゥラメンテ",
+    "mother": "シュガーハート",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "半兄キタサンブラック（父ブラックタイド、天皇賞春連覇・JC連覇等GI7勝）"
+  },
+  "ジューンテイク": {
+    "father": "キズナ",
+    "mother": "アドマイヤサブリナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サンライズアース": {
+    "father": "レイデオロ",
+    "mother": "シャンドランジュ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "サフィラ": {
+    "father": "ハーツクライ",
+    "mother": "サロミナ(GER)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "クリスマスパレード": {
+    "father": "キタサンブラック",
+    "mother": "ミスエリカ（USA）",
+    "sire_line": "ブラックタイド系（サンデーサイレンス系）",
+    "close_relatives": ""
+  },
+  "エトヴプレ": {
+    "father": "Too Darn Hot",
+    "mother": "Nahoodh",
+    "sire_line": "Dubawi系",
+    "close_relatives": ""
+  },
+  "アドマイヤベル": {
+    "father": "スワーヴリチャード",
+    "mother": "ベルアリュールII",
+    "sire_line": "ハーツクライ系",
+    "close_relatives": ""
+  },
+  "ピューロマジック": {
+    "father": "アジアエクスプレス（USA）",
+    "mother": "メジェルダ",
+    "sire_line": "ヘニーヒューズ系",
+    "close_relatives": ""
+  },
+  "セキトバイースト": {
+    "father": "デクラレーションオブウォー",
+    "mother": "ベアフットレディ",
+    "sire_line": "War Front系",
+    "close_relatives": ""
   }
 }
