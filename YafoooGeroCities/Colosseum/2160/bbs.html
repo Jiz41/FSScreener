@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みぽりんの掲示板 〜M.レーガン騎手 応援ページ♥〜</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, table, td, th, div, span, p, h1, h2, h3 {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #000000;
+  background-color: #FFFFCC;
+  background-image:
+    repeating-linear-gradient(45deg, #FFFACD 0px, #FFFACD 10px, #FFFFCC 10px, #FFFFCC 20px),
+    radial-gradient(circle, #99CCFF 2px, transparent 2px);
+  background-size: auto, 20px 20px;
+}
+a:link { color: #0000CC; text-decoration: underline; }
+a:visited { color: #660099; text-decoration: underline; }
+
+#wrapper {
+  width: 94%;
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: #FFFFFF;
+  border: 4px double #0044CC;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.rainbow-title {
+  text-align: center;
+  font-size: clamp(20px, 7vw, 34px);
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowmove 4s linear infinite, blinker 1s step-start infinite;
+  margin: 6px 0 0 0;
+}
+@keyframes rainbowmove {
+  0% { background-position: 0% 0; }
+  100% { background-position: 400% 0; }
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.subcopy {
+  text-align: center;
+  font-size: 16px;
+  color: #CC0066;
+  font-weight: bold;
+  margin: 2px 0 8px 0;
+}
+
+.backlink {
+  text-align: center;
+  margin: 8px 0;
+}
+.backlink a {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.section-heading {
+  background-color: #0044CC;
+  color: #FFFF00;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 2px outset #003399;
+  margin: 14px 0 6px 0;
+}
+
+.admin-box {
+  border: 2px dashed #0044CC;
+  background-color: #E6F2FF;
+  padding: 8px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 3px double #0044CC;
+}
+
+@media (max-width: 800px) {
+  #wrapper { width: 96%; }
+}
+
+.diary-entry {
+  border: 2px dashed #0044CC;
+  background-color: #FFFFF0;
+  padding: 8px 10px;
+  margin: 10px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.diary-date {
+  font-weight: bold;
+  color: #CC0066;
+  margin-bottom: 4px;
+}
+
+.kouji {
+  text-align: center;
+  background-color: #FFCC00;
+  border: 3px solid #CC0000;
+  color: #CC0000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px;
+  margin: 8px 0;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+  <h1 class="rainbow-title">📝 みぽりんの掲示板 📝</h1>
+  <p class="subcopy">〜M.レーガン騎手 応援ページ♥〜</p>
+
+  <div class="backlink"><a href="index.html">← トップへ戻る</a></div>
+
+  <hr>
+
+  <div class="section-heading">みんなの掲示板</div>
+  <p style="font-size:13px; text-align:center;">レーガン選手のファンの方、いつでも遊びに来てくださいませ♪ 初めての方もお気軽にどうぞ(^^)</p>
+
+  <!-- 投稿一覧: 新しい順(No.5が最上部、No.1が最下部) -->
+  <div class="diary-entry">
+    <div class="diary-date">No.5　みぽりん@管理人　2026/04/21(火) 21:03</div>
+    馬三郎さん、ご丁寧にありがとうございます!長年競馬をご覧になっている方にそう言っていただけると、なんだか背筋が伸びる思いですわ(;^^) わたしはまだまだ勉強中の身ですけれど、これからもレーガン選手を追いかけていきますので、どうぞよろしくお願いいたしますね。
+  </div>
+
+  <div class="diary-entry">
+    <div class="diary-date">No.4　馬三郎　2026/04/21(火) 19:47</div>
+    通りすがりの者だが、阪神3R同着の記事を読んで懐かしくなって書き込んだ。わしも長年競馬を見ておるが、同着はそうそうお目にかかれん。しっかり見ておられるようで感心した。またお邪魔する。
+  </div>
+
+  <div class="diary-entry">
+    <div class="diary-date">No.3　みぽりん@管理人　2026/04/14(火) 22:15</div>
+    かおりんさん、はじめまして!わざわざ書き込みまでしてくださって…嬉しくて何度も読み返してしまいましたわ(´ω`)♡ あの桜花賞、本当にドキドキでしたのよね。良かったらまた覗いてくださいませ、お待ちしておりますわ♪
+  </div>
+
+  <div class="diary-entry">
+    <div class="diary-date">No.2　かおりん　2026/04/14(火) 21:30</div>
+    桜花賞、たまたまテレビで見ていて…あのハナ差、鳥肌が立ちました!みぽりんさんのサイトにたどり着いて、思わず書き込んでしまいました。これからちょくちょく覗かせてくださいね!
+  </div>
+
+  <div class="diary-entry">
+    <div class="diary-date">No.1　みぽりん@管理人　2026/01/05(月) 10:02</div>
+    テストですって(^^)
+  </div>
+
+  <hr>
+
+  <div class="section-heading">書き込む</div>
+  <div class="kouji" style="font-size:12px;">🔧 CGI掲示板、設置したばかりでまだ動作確認中ですのよ…うまく送信できなかったらごめんなさいね(;^^)</div>
+
+  <!-- 以下、飾りのみ。送信しても実際には何も起きない -->
+  <table style="width:100%; font-size:13px; margin:10px 0;">
+    <tr><td style="width:80px;">お名前</td><td><input type="text" style="width:90%;"></td></tr>
+    <tr><td>E-mail</td><td><input type="text" style="width:90%;"></td></tr>
+    <tr><td>タイトル</td><td><input type="text" style="width:90%;"></td></tr>
+    <tr><td>コメント</td><td><textarea rows="4" style="width:90%;"></textarea></td></tr>
+  </table>
+  <p style="text-align:center;"><button type="button" style="font-weight:bold; padding:4px 20px;">書き込む</button></p>
+
+  <hr>
+
+  <div class="admin-box">
+    見に来てくださって嬉しいです♪ どんな内容でも大歓迎ですのよ〜(´ω`)<br>
+    ――管理人 みぽりん
+  </div>
+
+  <div class="footer">
+    <p>🏠 このホームページスペースは YafoooGeroCities が提供しています 🏠</p>
+  </div>
+
+</div>
+
+</body>
+</html>
