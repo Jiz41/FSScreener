@@ -1378,5 +1378,185 @@
     "mother": "シンメイミヤビ",
     "sire_line": "サンデーサイレンス系（グラスワンダー系）",
     "close_relatives": ""
+  },
+  "シーウィザード": {
+    "father": "ビーチパトロール",
+    "mother": "メリーウェザー",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "カルロヴェローチェ": {
+    "father": "シルバーステート",
+    "mother": "スサーナトウショウ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ミシシッピテソーロ": {
+    "father": "ダノンバラード",
+    "mother": "ハピネスフォーユー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ジェイパームス": {
+    "father": "ジャスタウェイ",
+    "mother": "キラーグレイシス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "クルゼイロドスル": {
+    "father": "ファインニードル",
+    "mother": "スタリア",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ウメムスビ": {
+    "father": "ファインニードル",
+    "mother": "ヴィオレッタ",
+    "sire_line": "エンドスウィープ系",
+    "close_relatives": ""
+  },
+  "アロマデローサ": {
+    "father": "キンシャサノキセキ",
+    "mother": "ローズウィスパー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ドゥアイズ": {
+    "father": "ルーラーシップ",
+    "mother": "ローズマンブリッジ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "セッション": {
+    "father": "シルバーステート",
+    "mother": "ミスドバウィ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ホールネス": {
+    "father": "Lope de Vega",
+    "mother": "Missunited",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "ヒップホップソウル": {
+    "father": "キタサンブラック",
+    "mother": "ダンスファンタジア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "タッチウッド": {
+    "father": "ドゥラメンテ",
+    "mother": "アメージングムーン",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "セブンマジシャン": {
+    "father": "ジャスタウェイ",
+    "mother": "ハピネスダンサー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "スズハローム": {
+    "father": "サトノダイヤモンド",
+    "mother": "アイライン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "エキマエ、ワンダーディーン"
+  },
+  "ショーモン": {
+    "father": "マインドユアビスケッツ(USA)",
+    "mother": "エポキシ",
+    "sire_line": "Deputy Minister系（要確認）",
+    "close_relatives": ""
+  },
+  "サダムパテック": {
+    "father": "フジキセキ",
+    "mother": "サマーナイトシティ",
+    "sire_line": "",
+    "close_relatives": ""
+  },
+  "グレープブランデー": {
+    "father": "マンハッタンカフェ",
+    "mother": "ワインアンドローゼズ",
+    "sire_line": "",
+    "close_relatives": ""
+  },
+  "カレンミロティック": {
+    "father": "ハーツクライ",
+    "mother": "スターミー",
+    "sire_line": "",
+    "close_relatives": ""
+  },
+  "オーシャンブルー": {
+    "father": "ステイゴールド",
+    "mother": "プアプー",
+    "sire_line": "",
+    "close_relatives": "母父：Dashing Blade。"
+  },
+  "ヴェルデグリーン": {
+    "father": "ジャングルポケット",
+    "mother": "レディーダービー",
+    "sire_line": "",
+    "close_relatives": "母父：スペシャルウィーク。半弟にグリューネグリーン（父：ラブリーデイ、2022年京都2歳ステークス制覇）"
+  },
+  "アドマイヤラクティ": {
+    "father": "ハーツクライ",
+    "mother": "アドマイヤテレサ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半弟にアドマイヤジャスタ（父ジャスタウェイ、2020年函館記念勝ち馬）"
+  },
+  "トーセンレーヴ": {
+    "father": "ディープインパクト",
+    "mother": "ビワハイジ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半兄にアドマイヤジャパン・アドマイヤオーラ、半姉にブエナビスタ（GI6勝）、全妹にジョワドヴィーヴル（GI1勝）、半妹にサングレアル。甥（サングレアル産駒）にメルキオル。半姉アーデルハイト（父アグネスタキオン）の孫に桜花賞・秋華賞・ヴィクトリアマイル勝ちのエンブロイダリー"
+  },
+  "グランプリボス": {
+    "father": "サクラバクシンオー",
+    "mother": "ロージーミスト",
+    "sire_line": "テスコボーイ系",
+    "close_relatives": "母ロージーミストは1勝馬。祖母ビューティフルベーシックの全姉にFine spirit（ブリーダーズカップ・ジュヴェナイルフィリーズ3着）"
+  },
+  "ウインバリアシオン": {
+    "father": "ハーツクライ",
+    "mother": "スーパーバレリーナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "近親に東京新聞杯・関屋記念・京王杯スプリングカップ勝ちのレッドスパーダ、1997年米2歳女王カウンテスダイアナ、2007・2008年米年度代表馬カーリン"
+  },
+  "スノードラゴン": {
+    "father": "アドマイヤコジーン",
+    "mother": "マイネカプリース",
+    "sire_line": "",
+    "close_relatives": "近親にGI2勝のサッカーボーイ、GI香港ヴァーズ勝ちで種牡馬としても活躍したステイゴールド、重賞2勝のレクレドール、重賞2勝のドリームパスポート、GI2勝のショウナンパンドラ。同じくタマモホットプレイ・タマモベストプレイの兄弟、バランスオブゲーム・フェイムゲームの兄弟も近親"
+  },
+  "ショウナンマイティ": {
+    "father": "マンハッタンカフェ",
+    "mother": "ラグジャリー",
+    "close_relatives": "母の父はStorm Cat（米）",
+    "sire_line": ""
+  },
+  "リトルゲルダ": {
+    "father": "Closing Argument（米）",
+    "mother": "ビシューミス",
+    "close_relatives": "母の父はBuddha（米）。米国産（生産：Dapple Bloodstock）",
+    "sire_line": ""
+  },
+  "アンバルブライベン": {
+    "father": "ルールオブロー",
+    "mother": "チェリーコウマン",
+    "close_relatives": "母の父はスプレンディドモーメント",
+    "sire_line": ""
+  },
+  "ヴァンセンヌ": {
+    "father": "ディープインパクト",
+    "mother": "フラワーパーク",
+    "close_relatives": "母の父はニホンピロウイナー。母フラワーパークはスプリントGI2勝馬で、ヴァンセンヌの東京新聞杯制覇は同馬にとって産駒初の重賞勝利だった",
+    "sire_line": ""
+  },
+  "フーラブライド": {
+    "father": "ゴールドアリュール",
+    "mother": "ヒカルカリーナ",
+    "close_relatives": "母の父はメジロマックイーン。半弟にエーティータラント（同厩舎、ダートから芝転向組）",
+    "sire_line": ""
   }
 }
