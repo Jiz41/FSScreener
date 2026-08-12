@@ -1768,5 +1768,125 @@
     "mother": "クリソプレーズ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": "半姉マリアライト(エリザベス女王杯・宝塚記念)、半兄クリソライト(ジャパンダートダービー)、半兄クリソベリル(チャンピオンズカップ・JBCクラシック等)"
+  },
+  "ヤングマンパワー": {
+    "father": "スニッツェル",
+    "mother": "スナップショット",
+    "sire_line": "デインヒル系",
+    "close_relatives": "サキー（4代母の傍系子孫、2001年凱旋門賞馬）"
+  },
+  "マルターズアポジー": {
+    "father": "ゴスホークケン",
+    "mother": "マルターズヒート",
+    "sire_line": "ストームバード系",
+    "close_relatives": ""
+  },
+  "アルバートドック": {
+    "father": "ディープインパクト",
+    "mother": "ゴールデンドックエー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "マキシマムドパリ": {
+    "father": "キングカメハメハ",
+    "mother": "マドモアゼルドパリ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "キンショーユキヒメ（従兄弟、2018年福島牝馬ステークス勝ち馬）"
+  },
+  "タツゴウゲキ": {
+    "father": "マーベラスサンデー",
+    "mother": "ニシノプルメリア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ココロノアイ": {
+    "father": "ステイゴールド",
+    "mother": "ビューティソング",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "マックスビューティ（曾祖母）、マックスジョリー（祖母）"
+  },
+  "アレスバローズ": {
+    "father": "ディープインパクト",
+    "mother": "タイセイエトワール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "グァンチャーレ": {
+    "father": "スクリーンヒーロー",
+    "mother": "チュウオーサーヤ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ミュゼエイリアン": {
+    "father": "スクリーンヒーロー",
+    "mother": "エールスタンス",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ダッシングブレイズ": {
+    "father": "Kitten's Joy",
+    "mother": "Blazing Bliss",
+    "sire_line": "サドラーズウェルズ系",
+    "close_relatives": ""
+  },
+  "ウインガニオン": {
+    "father": "ステイゴールド",
+    "mother": "チャンネルワン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "グレーターロンドン": {
+    "father": "ディープインパクト",
+    "mother": "ロンドンブリッジ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ダイワエルシエーロ（半姉、優駿牝馬勝ち馬）、ビッグプラネット（半兄）、キセキ（甥）"
+  },
+  "グランシルク": {
+    "father": "ステイゴールド",
+    "mother": "ルシルク",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "メラグラーナ": {
+    "father": "Fastnet Rock(AUS)",
+    "mother": "Ghaliah(AUS)",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "ブライトエンブレム": {
+    "father": "ネオユニヴァース",
+    "mother": "ブラックエンブレム",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "トーセンビクトリー": {
+    "father": "キングカメハメハ",
+    "mother": "トゥザヴィクトリー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "トゥザグローリー、トゥザワールド"
+  },
+  "ミュゼスルタン": {
+    "father": "キングカメハメハ",
+    "mother": "アスクデピュティ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ベルラップ": {
+    "father": "ハーツクライ",
+    "mother": "ベルスリーブ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ベルーフ": {
+    "father": "ハービンジャー",
+    "mother": "レクレドール",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "ノットフォーマル": {
+    "father": "ヴァーミリアン",
+    "mother": "リミッターブレイク",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
   }
 }
