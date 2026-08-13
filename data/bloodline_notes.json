@@ -1918,5 +1918,95 @@
     "mother": "ユーアンミー",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "トウショウピスト": {
+    "father": "ヨハネスブルグ",
+    "mother": "シーイズトウショウ",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "レンイングランド": {
+    "father": "クロフネ",
+    "mother": "マリンフェスタ",
+    "sire_line": "ヴァイスリージェント系",
+    "close_relatives": ""
+  },
+  "レオパルディナ": {
+    "father": "スニッツェル",
+    "mother": "ビオンドパンテーラ",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "マテンロウハピネス": {
+    "father": "ダイワメジャー",
+    "mother": "レディハピネス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ナヴィオン": {
+    "father": "ハーツクライ",
+    "mother": "ユキノスイトピー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アンドリエッテ": {
+    "father": "ディープインパクト",
+    "mother": "アナバシュドチャーム",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半妹グレースルビー（父ジャスタウェイ、2024年ブルーリボンマイル・若草賞土古記念勝ち馬）、近親にラーゴム（2021年きさらぎ賞）、エコロブルーム（2024年ニュージーランドトロフィー）"
+  },
+  "ディアマイダーリン": {
+    "father": "ハーツクライ",
+    "mother": "オネストリーダーリン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "主な近親にゴールドアリュール、ゴールスキー、ソロル、ペルシアンナイト、ミッキーヌチバナ"
+  },
+  "ダノンリバティ": {
+    "father": "キングカメハメハ",
+    "mother": "スカーレットベル",
+    "sire_line": "キングマンボ系（ミスタープロスペクター系）",
+    "close_relatives": ""
+  },
+  "ダノンメジャー": {
+    "father": "ダイワメジャー",
+    "mother": "ヴィヤダーナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "クインズミラーグロ": {
+    "father": "マンハッタンカフェ",
+    "mother": "ジャストトゥートゥー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "フミノムーン": {
+    "father": "アドマイヤムーン",
+    "mother": "フミノシンデレラ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "フィドゥーシア": {
+    "father": "Medaglia d'Oro",
+    "mother": "ビリーヴ",
+    "sire_line": "ノーザンダンサー系",
+    "close_relatives": ""
+  },
+  "ペイシャオブロー": {
+    "father": "ルールオブロー",
+    "mother": "ダンスレッスン",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ジャストドゥイング": {
+    "father": "ゼンノロブロイ",
+    "mother": "ストラテジー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ケツァルテナンゴ": {
+    "father": "チチカステナンゴ",
+    "mother": "ダイワオンディーヌ",
+    "sire_line": "カロ系",
+    "close_relatives": ""
   }
 }
