@@ -1888,5 +1888,35 @@
     "mother": "リミッターブレイク",
     "sire_line": "キングマンボ系",
     "close_relatives": ""
+  },
+  "タガノアザガル": {
+    "father": "バゴ",
+    "mother": "ライアメロディー",
+    "sire_line": "ロベルト系",
+    "close_relatives": "アントニオバローズ（2009年シンザン記念優勝）、アスカノロマン（2016年東海ステークス・平安ステークス優勝）"
+  },
+  "クールホタルビ": {
+    "father": "マツリダゴッホ",
+    "mother": "プラセール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "キャットコイン": {
+    "father": "ステイゴールド",
+    "mother": "ストレイキャット",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "オーミアリス": {
+    "father": "ホワイトマズル",
+    "mother": "ポットアカデミー",
+    "sire_line": "ダンシングブレーヴ系",
+    "close_relatives": ""
+  },
+  "ウェスタールンド": {
+    "father": "ネオユニヴァース",
+    "mother": "ユーアンミー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
