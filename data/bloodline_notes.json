@@ -2008,5 +2008,125 @@
     "mother": "ダイワオンディーヌ",
     "sire_line": "カロ系",
     "close_relatives": ""
+  },
+  "トーセンラーク": {
+    "father": "Aldebaran(米)",
+    "mother": "タケイチゼット",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ケントオー": {
+    "father": "ダンスインザダーク",
+    "mother": "ポポチャン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "テンダリーヴォイス": {
+    "father": "ディープインパクト",
+    "mother": "ミスアンコール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ムーンクレスト": {
+    "father": "アドマイヤムーン",
+    "mother": "Beauty Contest(愛)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "マサハヤドリーム": {
+    "father": "メイショウサムソン",
+    "mother": "ランペイア",
+    "sire_line": "サドラーズウェルズ系",
+    "close_relatives": ""
+  },
+  "ベステンダンク": {
+    "father": "タイキシャトル",
+    "mother": "ユキノマーメイド",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "ディープジュエリー": {
+    "father": "ディープインパクト",
+    "mother": "ジュエルオブザナイト(USA)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "スピリッツミノル": {
+    "father": "ディープスカイ",
+    "mother": "バアゼルクローバー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "コンテッサトゥーレ": {
+    "father": "ディープインパクト",
+    "mother": "エアトゥーレ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "クルミナル": {
+    "father": "ディープインパクト",
+    "mother": "クルソラ(ARG)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エフェクト": {
+    "father": "スクワートルスクワート(USA)",
+    "mother": "スペシャルビビー",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "アダムスブリッジ": {
+    "father": "ゼンノロブロイ",
+    "mother": "シンハリーズ(GB)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アスカビレン": {
+    "father": "ブラックタイド",
+    "mother": "スウェプトレジーナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ソールインパクト": {
+    "father": "ディープインパクト",
+    "mother": "クリームオンリー(USA)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アースライズ": {
+    "father": "マンハッタンカフェ",
+    "mother": "ライジングクロス(GB)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シャルール": {
+    "father": "ゼンノロブロイ",
+    "mother": "グレイトフィーヴァー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "キャンベルジュニア": {
+    "father": "Encosta De Lago",
+    "mother": "メリート",
+    "sire_line": "ノーザンダンサー系（フェアリーキング系）",
+    "close_relatives": ""
+  },
+  "アヴニールマルシェ": {
+    "father": "ディープインパクト",
+    "mother": "ヴィートマルシェ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ロカ": {
+    "father": "ハービンジャー",
+    "mother": "ランズエッジ",
+    "sire_line": "ノーザンダンサー系（デインヒル系）",
+    "close_relatives": ""
+  },
+  "ローデッド": {
+    "father": "ディープインパクト",
+    "mother": "ホッコーオウカ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
