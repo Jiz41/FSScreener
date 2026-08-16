@@ -2188,5 +2188,65 @@
     "mother": "グランジョイ",
     "sire_line": "Mr. Prospector系",
     "close_relatives": "カメット、スーサンドン"
+  },
+  "アポロケンタッキー": {
+    "father": "Langfuhr",
+    "mother": "Dixiana Delight",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": "特記すべき近親馬は確認できず"
+  },
+  "ミツバ": {
+    "father": "カネヒキリ",
+    "mother": "セントクリスマス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "特記すべき近親馬は確認できず"
+  },
+  "テイエムジンソク": {
+    "father": "クロフネ",
+    "mother": "マイディスカバリー",
+    "sire_line": "フレンチデピュティ系",
+    "close_relatives": "特記すべき近親馬は確認できず"
+  },
+  "スワーヴリチャード": {
+    "father": "ハーツクライ",
+    "mother": "ピラミマ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "特記すべき近親馬は確認できず"
+  },
+  "ソウルスターリング": {
+    "father": "Frankel",
+    "mother": "Stacelita",
+    "sire_line": "ガリレオ系",
+    "close_relatives": "母スタセリタは仏オークス（プリドヴィナ賞）優勝馬"
+  },
+  "ウインブライト": {
+    "father": "ステイゴールド",
+    "mother": "サマーエタニティ",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": "母父アドマイヤコジーン"
+  },
+  "アエロリット": {
+    "father": "クロフネ",
+    "mother": "アステリックス",
+    "sire_line": "フレンチデピュティ系",
+    "close_relatives": "母系にラッキーライラック、ミッキーアイル（NHKマイルカップ優勝馬）"
+  },
+  "ペルシアンナイト": {
+    "father": "ハービンジャー",
+    "mother": "オリエントチャーム",
+    "sire_line": "デインヒル系",
+    "close_relatives": "伯父にゴールドアリュール"
+  },
+  "モズカッチャン": {
+    "father": "ハービンジャー",
+    "mother": "サイトディーラー",
+    "sire_line": "デインヒル系",
+    "close_relatives": "未検証"
+  },
+  "キセキ": {
+    "father": "ルーラーシップ",
+    "mother": "ブリッツフィナーレ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "全妹ビッグリボン（2023年マーメイドステークス優勝馬）"
   }
 }
