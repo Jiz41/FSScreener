@@ -2128,5 +2128,65 @@
     "mother": "ホッコーオウカ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "ポルトドートウィユ": {
+    "father": "ディープインパクト",
+    "mother": "ポルトフィーノ（母父クロフネ）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "未確認（JBIS基本情報に兄弟馬の記載なし）"
+  },
+  "プリメラアスール": {
+    "father": "スペシャルウィーク",
+    "mother": "リメインフォレスト（母父アジュディケーティング）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半弟ルチャドルアスール（14年セプテンバーステークス〈1600万下〉1着）、半姉エスピナアスール（11年亀田特別〈1000万下〉1着）"
+  },
+  "ブラヴィッシモ": {
+    "father": "Fastnet Rock",
+    "mother": "メイキアシー",
+    "sire_line": "Danzig系",
+    "close_relatives": "半弟スワーヴアーサー（2017年ジャパンカップGI含む重賞複数勝ち）、半弟エストスペリオル"
+  },
+  "ダノングラシアス": {
+    "father": "マンハッタンカフェ",
+    "mother": "サーキットレディ（母父Grand Slam）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半兄サトノアビリティ（15年4歳以上500万下1着ほか中央3勝、地方3勝）"
+  },
+  "アッシュゴールド": {
+    "father": "ステイゴールド",
+    "mother": "オリエンタルアート（母父メジロマックイーン）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "未確認（今回の調査範囲では兄弟馬情報を取得せず）"
+  },
+  "エイシンバッケン": {
+    "father": "ヨハネスブルグ",
+    "mother": "エーシンラージシー",
+    "sire_line": "Storm Bird系",
+    "close_relatives": "エイシンムー、エイシンヴァラー"
+  },
+  "モーニン": {
+    "father": "ヘニーヒューズ",
+    "mother": "Giggly",
+    "sire_line": "Storm Cat系",
+    "close_relatives": ""
+  },
+  "ホワイトフーガ": {
+    "father": "クロフネ",
+    "mother": "マリーンウィナー",
+    "sire_line": "Vice Regent系",
+    "close_relatives": "スペシャルホース、ペイシャバラード"
+  },
+  "ビスカリア": {
+    "father": "ヴァーミリアン",
+    "mother": "フサイチジェット",
+    "sire_line": "Mr. Prospector系",
+    "close_relatives": "ホウオウルバン、シンキングマシーン"
+  },
+  "スーサンジョイ": {
+    "father": "エンパイアメーカー",
+    "mother": "グランジョイ",
+    "sire_line": "Mr. Prospector系",
+    "close_relatives": "カメット、スーサンドン"
   }
 }
