@@ -632,7 +632,7 @@
   "ファイアンクランツ": {
     "father": "ドゥラメンテ",
     "mother": "カラフルブラッサム",
-    "sire_line": "キングカメハメハ系（母父ハーツクライ）",
+    "sire_line": "キングカメハメハ系",
     "close_relatives": ""
   },
   "パラディレーヌ": {
@@ -674,7 +674,7 @@
   "ナルカミ": {
     "father": "サンダースノー(IRE)",
     "mother": "オムニプレゼンス",
-    "sire_line": "Helmet系(豪州血統)、母父ディープインパクト",
+    "sire_line": "Helmet系(豪州血統)",
     "close_relatives": ""
   },
   "シックスペンス": {
@@ -2608,5 +2608,125 @@
     "dam": "スターアイル(IRE)",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "ダイイチターミナル": {
+    "father": "コンデュイット",
+    "mother": "ベルグチケット",
+    "sire_line": "ミルリーフ系",
+    "close_relatives": ""
+  },
+  "ショーウェイ": {
+    "father": "メイショウボーラー",
+    "mother": "リアルメンテ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "シグルーン": {
+    "father": "アイルハヴアナザー",
+    "mother": "ワルキューレ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ガンサリュート": {
+    "father": "ダノンシャンティ",
+    "mother": "ベネディーレ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "ウインガナドル": {
+    "father": "ステイゴールド",
+    "mother": "タイムフェアレディ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "アルメリアブルーム": {
+    "father": "ドリームジャーニー",
+    "mother": "アルメーリヒ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アウトライアーズ": {
+    "father": "ヴィクトワールピサ",
+    "mother": "ウィストラム",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サンライズソア": {
+    "father": "シンボリクリスエス",
+    "mother": "アメーリア",
+    "sire_line": "ロベルト系",
+    "close_relatives": "マスクトディーヴァ、マスカレードボール、コイウタ"
+  },
+  "アンジュデジール": {
+    "father": "ディープインパクト",
+    "mother": "ティックルピンク",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "アキトクレッセント、オールブラッシュ"
+  },
+  "ヤマニンアンプリメ": {
+    "father": "シニスターミニスター",
+    "mother": "ヤマニンエリプス",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": ""
+  },
+  "モズアトラクション": {
+    "father": "ジャングルポケット",
+    "mother": "エーシンラクーリエ",
+    "sire_line": "ゼダーン系",
+    "close_relatives": ""
+  },
+  "マテラスカイ": {
+    "father": "Speightstown",
+    "mother": "Mostaqeleh",
+    "sire_line": "ゴーンウェスト系（ミスタープロスペクター系統）",
+    "close_relatives": ""
+  },
+  "サンライズノヴァ": {
+    "father": "ゴールドアリュール",
+    "mother": "ブライトサファイヤ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "クイーンマンボ": {
+    "father": "マンハッタンカフェ",
+    "mother": "スズカエルマンボ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "スズカマンボ（天皇賞・春勝ち馬、叔父）"
+  },
+  "アンデスクイーン": {
+    "father": "タートルボウル",
+    "mother": "レイナカスターニャ",
+    "sire_line": "ノーザンダンサー系",
+    "close_relatives": ""
+  },
+  "ユラノト": {
+    "father": "キングカメハメハ",
+    "mother": "コイウタ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ファッショニスタ": {
+    "father": "ストリートセンス",
+    "mother": "アクアリスト",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": "リッスン、タッチングスピーチ、マジシャン、ヘンリーザナビゲーター、アスコリピチェーノ（いずれも3代母Brigidの子孫）"
+  },
+  "サクセスエナジー": {
+    "father": "キンシャサノキセキ",
+    "mother": "サクセスアイニー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "サクセスブロッケン（フェブラリーステークス・東京大賞典・ジャパンダートダービー勝ち馬、母の半姉サクセスビューティの産駒）、マカニビスティー（東京ダービー勝ち馬、母の半姉サクセスウィッチの産駒）"
+  },
+  "インティ": {
+    "father": "ケイムホーム",
+    "mother": "キティ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": "Bernardini、Love and Pride（2012年ゼニヤッタステークス等勝ち馬、ともに5代母Northern Fableの子孫）"
+  },
+  "アイアンテーラー": {
+    "father": "ゴールドアリュール",
+    "mother": "オータムブリーズ",
+    "sire_line": "ヘイロー系（サンデーサイレンス系）",
+    "close_relatives": "半姉の仔にルヴァンスレーヴ（2018年JRA賞最優秀ダートホース）、チュウワウィザード（2019年JBCクラシック優勝）"
   }
 }
