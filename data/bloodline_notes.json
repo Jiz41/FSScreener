@@ -2728,5 +2728,125 @@
     "mother": "オータムブリーズ",
     "sire_line": "ヘイロー系（サンデーサイレンス系）",
     "close_relatives": "半姉の仔にルヴァンスレーヴ（2018年JRA賞最優秀ダートホース）、チュウワウィザード（2019年JBCクラシック優勝）"
+  },
+  "ダノンプレミアム": {
+    "father": "ディープインパクト",
+    "mother": "インディアナギャル",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "グローリーヴェイズ": {
+    "father": "ディープインパクト",
+    "mother": "メジロツボネ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "タワーオブロンドン": {
+    "father": "Raven's Pass",
+    "mother": "スノーパイン",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ブラストワンピース": {
+    "father": "ハービンジャー",
+    "mother": "ツルマルワンピース",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "ジャンダルム": {
+    "father": "Kitten's Joy",
+    "mother": "ビリーヴ",
+    "sire_line": "サドラーズウェルズ系",
+    "close_relatives": "ファリダット、フィドゥーシア"
+  },
+  "ステルヴィオ": {
+    "father": "ロードカナロア",
+    "mother": "ラルケット",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ワグネリアン": {
+    "father": "ディープインパクト",
+    "mother": "ミスアンコール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "モズスーパーフレア": {
+    "father": "Speightstown",
+    "mother": "Christies Treasure",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "エポカドーロ": {
+    "father": "オルフェーヴル",
+    "mother": "ダイワパッション",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ミスターメロディ": {
+    "father": "Scat Daddy",
+    "mother": "Trusty Lady",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "ダイアトニック": {
+    "father": "ロードカナロア",
+    "mother": "トゥハーモニー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ステイフーリッシュ": {
+    "father": "ステイゴールド",
+    "mother": "カウアイレーン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サウンドキアラ": {
+    "father": "ディープインパクト",
+    "mother": "サウンドバリアー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "キョウワハピネス（ファルコンステークス勝ち馬）、マテンロウレオ（きさらぎ賞勝ち馬）、マイスタイル（函館記念勝ち馬）"
+  },
+  "カツジ": {
+    "father": "ディープインパクト",
+    "mother": "メリッサ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ミッキーグローリー（全兄、2018年マイルチャンピオンシップで対戦）"
+  },
+  "ユーキャンスマイル": {
+    "father": "キングカメハメハ",
+    "mother": "ムードインディゴ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "ルビーカサブランカ（全妹、愛知杯勝ち馬）"
+  },
+  "ミッキーチャーム": {
+    "father": "ディープインパクト",
+    "mother": "リプルズメイド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サラキア": {
+    "father": "ディープインパクト",
+    "mother": "サロミナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ギベオン": {
+    "father": "ディープインパクト",
+    "mother": "コンテスティッド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ジェネラーレウーノ": {
+    "father": "スクリーンヒーロー",
+    "mother": "シャンハイロック",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "カンタービレ": {
+    "father": "ディープインパクト",
+    "mother": "シャンロッサ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
