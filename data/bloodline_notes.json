@@ -2848,5 +2848,125 @@
     "mother": "シャンロッサ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "メイショウテッコン": {
+    "father": "マンハッタンカフェ",
+    "mother": "エーシンベロシティ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "リバティハイツ": {
+    "father": "キングカメハメハ",
+    "mother": "ドバウィハイツ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "センテリュオ": {
+    "father": "ディープインパクト",
+    "mother": "アドマイヤキラメキ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "トーセンスターダム（全兄）"
+  },
+  "スカーレットカラー": {
+    "father": "ヴィクトワールピサ",
+    "mother": "ヴェントス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サトノワルキューレ": {
+    "father": "ディープインパクト",
+    "mother": "ヒアトゥウィン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ゴーフォザサミット": {
+    "father": "ハーツクライ",
+    "mother": "ラグジャリー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アフリカンゴールド": {
+    "father": "ステイゴールド",
+    "mother": "ブリクセン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "プリモシーン": {
+    "father": "ディープインパクト",
+    "mother": "モシーン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "レッドガラン": {
+    "father": "ロードカナロア",
+    "mother": "ダンスオンザルーフ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "トロワゼトワル": {
+    "father": "ロードカナロア",
+    "mother": "セコンドピアット",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "マイネルファンロン": {
+    "father": "ステイゴールド",
+    "mother": "マイネテレジア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ユーバーレーベン（半妹、優駿牝馬勝ち馬）、マイネルエンペラー（半弟、日経賞勝ち馬）"
+  },
+  "レイエンダ": {
+    "father": "キングカメハメハ",
+    "mother": "ラドラーダ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": "レイデオロ（全兄、東京優駿・天皇賞秋勝ち馬）"
+  },
+  "ラブカンプー": {
+    "father": "ショウナンカンプ",
+    "mother": "ラブハート",
+    "sire_line": "サクラバクシンオー系",
+    "close_relatives": ""
+  },
+  "ライトオンキュー": {
+    "father": "シャマーダル",
+    "mother": "グレイトタイミング",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "カシアス": {
+    "father": "キンシャサノキセキ",
+    "mother": "ラブディラン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サンレイポケット": {
+    "father": "ジャングルポケット",
+    "mother": "アドマイヤパンチ",
+    "sire_line": "トニービン系",
+    "close_relatives": ""
+  },
+  "グレイル": {
+    "father": "ハーツクライ",
+    "mother": "プラチナチャリス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ロジチャリス（半兄）、グッドスカイ（半姉）"
+  },
+  "アサクサゲンキ": {
+    "father": "Stormy Atlantic",
+    "mother": "Amelia",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "ロックディスタウン": {
+    "father": "オルフェーヴル",
+    "mother": "ストレイキャット",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "メイケイダイハード": {
+    "father": "ハードスパン",
+    "mother": "メイケイソフィア",
+    "sire_line": "ダンジグ系",
+    "close_relatives": ""
   }
 }
