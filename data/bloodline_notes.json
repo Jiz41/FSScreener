@@ -3088,5 +3088,125 @@
     "mother": "アンフィルージュ",
     "sire_line": "キングカメハメハ系",
     "close_relatives": ""
+  },
+  "キタノコマンドール": {
+    "father": "ディープインパクト",
+    "mother": "ベネンシアドール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "デニムアンドルビー（全姉、フローラS・ローズS勝ち馬）"
+  },
+  "オールフォーラヴ": {
+    "father": "ディープインパクト",
+    "mother": "レディアルバローザ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アイトーン": {
+    "father": "キングズベスト",
+    "mother": "スペシャルディナー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ジナンボー": {
+    "father": "ディープインパクト",
+    "mother": "アパパネ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "リュヌルージュ": {
+    "father": "モンテロッソ",
+    "mother": "ムーンハウリング",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ファストアプローチ": {
+    "father": "Dawn Approach",
+    "mother": "ジョリージョコンド",
+    "sire_line": "ガリレオ系",
+    "close_relatives": ""
+  },
+  "サトノソルタス": {
+    "father": "ディープインパクト",
+    "mother": "アイランドファッション",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "コーディエライト": {
+    "father": "ダイワメジャー",
+    "mother": "ダークサファイア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エントシャイデン": {
+    "father": "ディープインパクト",
+    "mother": "ルシュクル",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "レッドランディーニ": {
+    "father": "ディープインパクト",
+    "mother": "レッドメデューサ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ルーカス": {
+    "father": "スクリーンヒーロー",
+    "mother": "メジロフランシス",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ラテュロス": {
+    "father": "ディープインパクト",
+    "mother": "スウィートハース",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "マウレア": {
+    "father": "ディープインパクト",
+    "mother": "バイザキャット",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "フィニフティ": {
+    "father": "ディープインパクト",
+    "mother": "ココシュニック",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "トーセンブレス": {
+    "father": "ディープインパクト",
+    "mother": "ブルーミンバー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ツヅミモン": {
+    "father": "ストロングリターン",
+    "mother": "カタマチボタン",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "シャルルマーニュ": {
+    "father": "ヴィクトワールピサ",
+    "mother": "エイブルアロー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サヤカチャン": {
+    "father": "リーチザクラウン",
+    "mother": "アップルトウショウ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アルーシャ": {
+    "father": "ディープインパクト",
+    "mother": "ザズー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サクラアリュール": {
+    "father": "ゴールドアリュール",
+    "mother": "シロガネーゼカフェ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
