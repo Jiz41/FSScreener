@@ -2968,5 +2968,125 @@
     "mother": "メイケイソフィア",
     "sire_line": "ダンジグ系",
     "close_relatives": ""
+  },
+  "フロンティア": {
+    "father": "ダイワメジャー",
+    "mother": "グレースランド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ドリームパスポート（半兄、神戸新聞杯・きさらぎ賞勝ち馬）"
+  },
+  "テトラドラクマ": {
+    "father": "ルーラーシップ",
+    "mother": "リビングプルーフ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "サトノガーネット": {
+    "father": "ディープインパクト",
+    "mother": "ビートリックスキッド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "グロンディオーズ": {
+    "father": "ルーラーシップ",
+    "mother": "シェリール",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "ムスカテール（半兄、2013年目黒記念勝ち馬）"
+  },
+  "アンヴァル": {
+    "father": "ロードカナロア",
+    "mother": "アルーリングボイス",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ポンデザール": {
+    "father": "ハーツクライ",
+    "mother": "ジョコンダ2",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ダブルシャープ": {
+    "father": "ベーカバド",
+    "mother": "メジロルーシュバー",
+    "sire_line": "ダンジグ系",
+    "close_relatives": ""
+  },
+  "ランドネ": {
+    "father": "Blame",
+    "mother": "Loure",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ウラヌスチャーム": {
+    "father": "ルーラーシップ",
+    "mother": "アメジストリング",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "アマルフィコースト": {
+    "father": "ダイワメジャー",
+    "mother": "ジプシーハイウェイ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "レッドヴェイロン": {
+    "father": "キングカメハメハ",
+    "mother": "エリモピクシー",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "モルトアレグロ": {
+    "father": "スペイツタウン",
+    "mother": "モーシュール",
+    "sire_line": "ゴーンウエスト系",
+    "close_relatives": ""
+  },
+  "トゥラヴェスーラ": {
+    "father": "ドリームジャーニー",
+    "mother": "ジャジャマーチャン",
+    "sire_line": "ステイゴールド系",
+    "close_relatives": ""
+  },
+  "ケイティクレバー": {
+    "father": "ハービンジャー",
+    "mother": "モルトフェリーチェ",
+    "sire_line": "デインヒル系",
+    "close_relatives": "マジカルポケット（2010年函館2歳ステークス勝ち馬）"
+  },
+  "レッドサクヤ": {
+    "father": "ディープインパクト",
+    "mother": "サクラサクII",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "レグルドール": {
+    "father": "アドマイヤマックス",
+    "mother": "コスモパルムドール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ミスマンマミーア": {
+    "father": "タニノギムレット",
+    "mother": "サンデーメモリー",
+    "sire_line": "ブライアンズタイム系",
+    "close_relatives": ""
+  },
+  "マドモアゼル": {
+    "father": "ブラックタイド",
+    "mother": "ポールポジション",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ハーレムライン": {
+    "father": "マンハッタンカフェ",
+    "mother": "マクリス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "サンリヴァル": {
+    "father": "ルーラーシップ",
+    "mother": "アンフィルージュ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
   }
 }
