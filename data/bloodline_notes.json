@@ -3568,5 +3568,125 @@
     "mother": "マラコスタムブラダ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "ソングライン": {
+    "father": "キズナ",
+    "mother": "ルミナスパレード",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シュネルマイスター": {
+    "father": "Kingman",
+    "mother": "セリエンホルデ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ジャックドール": {
+    "father": "モーリス",
+    "mother": "ラヴァリーノ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "テーオーロイヤル": {
+    "father": "リオンディーズ",
+    "mother": "メイショウオウヒ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ダノンザキッド": {
+    "father": "ジャスタウェイ",
+    "mother": "エピックラヴ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ジェラルディーナ": {
+    "father": "モーリス",
+    "mother": "ジェンティルドンナ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "グレナディアガーズ": {
+    "father": "Frankel",
+    "mother": "ウェイヴェルアベニュー",
+    "sire_line": "サドラーズウェルズ系",
+    "close_relatives": "クイーンズウォーク（半妹、クイーンカップ・ローズステークス・金鯱賞勝ち馬）"
+  },
+  "アカイトリノムスメ": {
+    "father": "ディープインパクト",
+    "mother": "アパパネ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ラインベック（全兄、東風ステークス・中京2歳ステークス勝ち馬）"
+  },
+  "ピクシーナイト": {
+    "father": "モーリス",
+    "mother": "ピクシーホロウ",
+    "sire_line": "ロベルト系",
+    "close_relatives": "フェーングロッテン（半弟、ラジオNIKKEI賞勝ち馬）"
+  },
+  "テンハッピーローズ": {
+    "father": "エピファネイア",
+    "mother": "フェータルローズ",
+    "sire_line": "ロベルト系",
+    "close_relatives": "ドゥレッツァ（近親、菊花賞勝ち馬）、サマーセント（近親、マーメイドステークス勝ち馬）"
+  },
+  "ユーバーレーベン": {
+    "father": "ゴールドシップ",
+    "mother": "マイネテレジア",
+    "sire_line": "ステイゴールド系",
+    "close_relatives": ""
+  },
+  "メイケイエール": {
+    "father": "ミッキーアイル",
+    "mother": "シロインジャー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "シラユキヒメ（曾祖母、白毛馬一族）"
+  },
+  "プログノーシス": {
+    "father": "ディープインパクト",
+    "mother": "ヴェルダ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ヨーホーレイク": {
+    "father": "ディープインパクト",
+    "mother": "クロウキャニオン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ノースブリッジ": {
+    "father": "モーリス",
+    "mother": "アメージングムーン",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "バスラットレオン": {
+    "father": "キズナ",
+    "mother": "バスラットアマル",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シュヴァリエローズ": {
+    "father": "ディープインパクト",
+    "mother": "ヴィアンローズ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ステラヴェローチェ": {
+    "father": "バゴ",
+    "mother": "オーマイベイビー",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ワンダフルタウン": {
+    "father": "ルーラーシップ",
+    "mother": "シーオブラブ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ロングラン": {
+    "father": "ヴィクトワールピサ",
+    "mother": "ノッテビアンカ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
