@@ -3208,5 +3208,125 @@
     "mother": "シロガネーゼカフェ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "アルクトス": {
+    "father": "アドマイヤオーラ",
+    "mother": "ホシニイノリヲ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ルヴァンスレーヴ": {
+    "father": "シンボリクリスエス",
+    "mother": "マエストラーレ",
+    "sire_line": "不明",
+    "close_relatives": "チュウワウィザード（従兄弟）"
+  },
+  "チュウワウィザード": {
+    "father": "キングカメハメハ",
+    "mother": "チュウワブロッサム",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "ルヴァンスレーヴ（従兄弟）"
+  },
+  "コパノキッキング": {
+    "father": "Spring At Last",
+    "mother": "Celadon",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "オメガパフューム": {
+    "father": "スウェプトオーヴァーボード",
+    "mother": "オメガフレグランス",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "アドマイヤマーズ": {
+    "father": "ダイワメジャー",
+    "mother": "ヴィアメディチ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ダノンファンタジー": {
+    "father": "ディープインパクト",
+    "mother": "ライフフォーセール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ダノンキングリー": {
+    "father": "ディープインパクト",
+    "mother": "マイグッドネス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ファストフォース": {
+    "father": "ロードカナロア",
+    "mother": "ラッシュライフ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ナランフレグ": {
+    "father": "ゴールドアリュール",
+    "mother": "ケリーズビューティ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ロジャーバローズ": {
+    "father": "ディープインパクト",
+    "mother": "リトルブック",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ジェンティルドンナ（8分の7同血の従兄弟）"
+  },
+  "ヒシイグアス": {
+    "father": "ハーツクライ",
+    "mother": "ラリズ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "リオンリオン": {
+    "father": "ルーラーシップ",
+    "mother": "アゲヒバリ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "メドウラーク（半兄、七夕賞・阪神ジャンプステークス勝ち馬）"
+  },
+  "ケイデンスコール": {
+    "father": "ロードカナロア",
+    "mother": "インダクティ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "インダストリア（半弟、ダービー卿チャレンジトロフィー勝ち馬）"
+  },
+  "キングオブコージ": {
+    "father": "ロードカナロア",
+    "mother": "ファイノメナ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ボッケリーニ": {
+    "father": "キングカメハメハ",
+    "mother": "ポップコーンジャズ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": "ラブリーデイ（全兄、宝塚記念・天皇賞秋勝ち馬）"
+  },
+  "モズベッロ": {
+    "father": "ディープブリランテ",
+    "mother": "ハーランズルビー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シルヴァーソニック": {
+    "father": "オルフェーヴル",
+    "mother": "エアトゥーレ",
+    "sire_line": "ステイゴールド系",
+    "close_relatives": ""
+  },
+  "ヴァンドギャルド": {
+    "father": "ディープインパクト",
+    "mother": "スキア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ファンタジスト": {
+    "father": "ロードカナロア",
+    "mother": "ディープインアスク",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
   }
 }
