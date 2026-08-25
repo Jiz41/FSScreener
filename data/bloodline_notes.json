@@ -3448,5 +3448,125 @@
     "mother": "マルセリーナ",
     "sire_line": "不明",
     "close_relatives": ""
+  },
+  "ハッピーアワー": {
+    "father": "ハービンジャー",
+    "mother": "サクセスシルエット",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "グルーヴィット": {
+    "father": "ロードカナロア",
+    "mother": "スペシャルグルーヴ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "トーラスジェミニ": {
+    "father": "キングズベスト",
+    "mother": "エリモエトワール",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "カテドラル": {
+    "father": "ハーツクライ",
+    "mother": "アビラ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ブレイキングドーン": {
+    "father": "ヴィクトワールピサ",
+    "mother": "アグネスサクラ",
+    "sire_line": "ネオユニヴァース系",
+    "close_relatives": "アグネスフライト（血縁、東京優駿勝ち馬）、アグネスタキオン（血縁、皐月賞勝ち馬）"
+  },
+  "クラージュゲリエ": {
+    "father": "キングカメハメハ",
+    "mother": "ジュモー",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "レッドアネモス": {
+    "father": "ヴィクトワールピサ",
+    "mother": "マチカネハヤテ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ランブリングアレー": {
+    "father": "ディープインパクト",
+    "mother": "ブルーミングアレー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ブラヴァス": {
+    "father": "キングカメハメハ",
+    "mother": "ヴィルシーナ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": "ディヴィーナ（半妹、府中牝馬ステークス勝ち馬）、シュヴァルグラン（母の半弟、ジャパンカップ勝ち馬）、ヴィブロス（母の全妹、秋華賞・ドバイターフ勝ち馬）"
+  },
+  "フィリアプーラ": {
+    "father": "ハービンジャー",
+    "mother": "プリンセスカメリア",
+    "sire_line": "デインヒル系",
+    "close_relatives": "アルフレード（半兄、朝日杯フューチュリティステークス勝ち馬）"
+  },
+  "ヒンドゥタイムズ": {
+    "father": "ハービンジャー",
+    "mother": "マハーバーラタ",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "パッシングスルー": {
+    "father": "ルーラーシップ",
+    "mother": "マイティースルー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ダノンチェイサー": {
+    "father": "ディープインパクト",
+    "mother": "サミター",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "シェーングランツ": {
+    "father": "ディープインパクト",
+    "mother": "スタセリタ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ソウルスターリング（半姉、阪神ジュベナイルフィリーズ・オークス勝ち馬）"
+  },
+  "アドマイヤジャスタ": {
+    "father": "ジャスタウェイ",
+    "mother": "アドマイヤテレサ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アスターペガサス": {
+    "father": "Giant's Causeway",
+    "mother": "R Heat Lightning",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "カリボール": {
+    "father": "ジャスタウェイ",
+    "mother": "レイズアンドコール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ミッキーブリランテ": {
+    "father": "ディープブリランテ",
+    "mother": "エピックラヴ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ロードアクア": {
+    "father": "ロードカナロア",
+    "mother": "オーシュペール",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ミッキーブラック": {
+    "father": "ブラックタイド",
+    "mother": "マラコスタムブラダ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
   }
 }
