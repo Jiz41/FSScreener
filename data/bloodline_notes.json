@@ -3328,5 +3328,125 @@
     "mother": "ディープインアスク",
     "sire_line": "キングカメハメハ系",
     "close_relatives": ""
+  },
+  "レッドジェニアル": {
+    "father": "キングカメハメハ",
+    "mother": "レッドアゲート",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "メイショウテンゲン": {
+    "father": "ディープインパクト",
+    "mother": "メイショウベルーガ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "プールヴィル": {
+    "father": "Le Havre",
+    "mother": "ケンホープ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ノーワン": {
+    "father": "ハーツクライ",
+    "mother": "プレイガール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ディバインフォース": {
+    "father": "ワークフォース",
+    "mother": "ツクバビューティ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "シャドウディーヴァ": {
+    "father": "ハーツクライ",
+    "mother": "ダイヤモンドディーバ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "オセアグレイト": {
+    "father": "オルフェーヴル",
+    "mother": "ブルーダヌーブ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "タワーオブロンドン（従兄弟、重賞5勝）、ディーマジェスティ（従兄弟、重賞3勝）"
+  },
+  "ウィクトーリア": {
+    "father": "ヴィクトワールピサ",
+    "mother": "ブラックエンブレム",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ブライトエンブレム（兄、札幌2歳ステークス優勝）"
+  },
+  "ハヤヤッコ": {
+    "father": "キングカメハメハ",
+    "mother": "マシュマロ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": "ソダシ（いとこ、2022年ヴィクトリアマイル優勝）"
+  },
+  "カラテ": {
+    "father": "トゥザグローリー",
+    "mother": "レディーノパンチ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "コントラチェック": {
+    "father": "ディープインパクト",
+    "mother": "リッチダンサー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ザダル": {
+    "father": "トーセンラー",
+    "mother": "シーザシー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "イベリス": {
+    "father": "ロードカナロア",
+    "mother": "セレブラール",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ユニコーンライオン": {
+    "father": "No Nay Never",
+    "mother": "Muravka",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "フェアリーポルカ": {
+    "father": "ルーラーシップ",
+    "mother": "フェアリーダンス",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ニシノデイジー": {
+    "father": "ハービンジャー",
+    "mother": "ニシノヒナギク",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "エイティーンガール": {
+    "father": "ヨハネスブルグ",
+    "mother": "センターグランタス",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "ディアンドル": {
+    "father": "ルーラーシップ",
+    "mother": "グリューネワルト",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "アウィルアウェイ": {
+    "father": "ジャスタウェイ",
+    "mother": "ウィルパワー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "インディチャンプ（半兄、安田記念・マイルチャンピオンシップ勝ち馬）"
+  },
+  "ラストドラフト": {
+    "father": "ノヴェリスト",
+    "mother": "マルセリーナ",
+    "sire_line": "不明",
+    "close_relatives": ""
   }
 }
