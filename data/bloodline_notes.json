@@ -3688,5 +3688,125 @@
     "mother": "ノッテビアンカ",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "スタニングローズ": {
+    "father": "キングカメハメハ",
+    "mother": "ローザブランカ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "スターズオンアース": {
+    "father": "ドゥラメンテ",
+    "mother": "サザンスターズ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "セリフォス": {
+    "father": "ダイワメジャー",
+    "mother": "シーフロント",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ナミュール": {
+    "father": "ハービンジャー",
+    "mother": "サンブルエミューズ",
+    "sire_line": "デインヒル系",
+    "close_relatives": "マルシュロレーヌ（叔母、ブリーダーズカップ・ディスタフ勝ち馬）、ラヴェル（半妹、アルテミスステークス勝ち馬）"
+  },
+  "ジャスティンパレス": {
+    "father": "ディープインパクト",
+    "mother": "パレスルーマー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "パレスマリス（半兄、ベルモントステークス・メトロポリタンハンデキャップ勝ち馬）、アイアンバローズ（半兄、ステイヤーズステークス勝ち馬）"
+  },
+  "サトノレーヴ": {
+    "father": "ロードカナロア",
+    "mother": "チリエージェ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ブローザホーン": {
+    "father": "エピファネイア",
+    "mother": "オートクレール",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "アスクビクターモア": {
+    "father": "ディープインパクト",
+    "mother": "カルティカ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "マッドクール": {
+    "father": "Dark Angel",
+    "mother": "Mad About You",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ママコチャ": {
+    "father": "クロフネ",
+    "mother": "ブチコ",
+    "sire_line": "フレンチデピュティ系",
+    "close_relatives": ""
+  },
+  "ダノンスコーピオン": {
+    "father": "ロードカナロア",
+    "mother": "レキシールー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ジオグリフ": {
+    "father": "ドレフォン",
+    "mother": "アロマティコ",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
+  },
+  "サークルオブライフ": {
+    "father": "エピファネイア",
+    "mother": "シーブリーズライフ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "トウシンマカオ": {
+    "father": "ビッグアーサー",
+    "mother": "ユキノマーメイド",
+    "sire_line": "テスコボーイ系",
+    "close_relatives": ""
+  },
+  "ウインマーベル": {
+    "father": "アイルハヴアナザー",
+    "mother": "コスモマーベラス",
+    "sire_line": "フォーティナイナー系",
+    "close_relatives": ""
+  },
+  "プラダリア": {
+    "father": "ディープインパクト",
+    "mother": "シャッセロール",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ナムラクレア": {
+    "father": "ミッキーアイル",
+    "mother": "サンクイーンII",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ガイアフォース": {
+    "father": "キタサンブラック",
+    "mother": "ナターレ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ローシャムパーク": {
+    "father": "ハービンジャー",
+    "mother": "レネットグルーヴ",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "シュトルーヴェ": {
+    "father": "キングカメハメハ",
+    "mother": "アンチュラス",
+    "sire_line": "不明",
+    "close_relatives": ""
   }
 }
