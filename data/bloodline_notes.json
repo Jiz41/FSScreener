@@ -3808,5 +3808,125 @@
     "mother": "アンチュラス",
     "sire_line": "不明",
     "close_relatives": ""
+  },
+  "キラーアビリティ": {
+    "father": "ディープインパクト",
+    "mother": "キラーグレイシス",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "テイエムスパーダ": {
+    "father": "レッドスパーダ",
+    "mother": "トシザコジーン",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "アートハウス": {
+    "father": "スクリーンヒーロー",
+    "mother": "パールコード",
+    "sire_line": "ロベルト系",
+    "close_relatives": "シャマル（母の半姉の孫、かしわ記念・さきたま杯勝ち馬）"
+  },
+  "レッドモンレーヴ": {
+    "father": "ロードカナロア",
+    "mother": "ラストグルーヴ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": "ドゥラメンテ（従兄弟、皐月賞・東京優駿勝ち馬）"
+  },
+  "マテンロウスカイ": {
+    "father": "モーリス",
+    "mother": "レッドラヴィータ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ビーアストニッシド": {
+    "father": "アメリカンペイトリオット",
+    "mother": "マオリオ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ジュンブロッサム": {
+    "father": "ワールドエース",
+    "mother": "エンプレスティアラ",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ジャングロ": {
+    "father": "More Than Ready",
+    "mother": "Goodbye Stranger",
+    "sire_line": "サザンヘイロー系",
+    "close_relatives": "Tom's Ready（全兄、米G2ウッディスティーヴンスステークス等重賞3勝）"
+  },
+  "サブライムアンセム": {
+    "father": "ロードカナロア",
+    "mother": "パストフォリア",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "サウンドビバーチェ": {
+    "father": "ドゥラメンテ",
+    "mother": "スクービドゥー",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "キングエルメス": {
+    "father": "ロードカナロア",
+    "mother": "ステラリード",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "エリカヴィータ": {
+    "father": "キングカメハメハ",
+    "mother": "マルシアーノ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "アスクワイルドモア": {
+    "father": "キズナ",
+    "mother": "ラセレシオン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ドロップオブライト": {
+    "father": "トーセンラー",
+    "mother": "プレシャスドロップ",
+    "sire_line": "ヘイロー系",
+    "close_relatives": ""
+  },
+  "セイウンハーデス": {
+    "father": "シルバーステート",
+    "mother": "ハイノリッジ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ジャスパークローネ": {
+    "father": "Frosted",
+    "mother": "Fancy Kitten",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "アルナシーム": {
+    "father": "モーリス",
+    "mother": "ジュベルアリ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ラーグルフ": {
+    "father": "モーリス",
+    "mother": "アバンドーネ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "マテンロウレオ": {
+    "father": "ハーツクライ",
+    "mother": "サラトガヴィーナス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "アグリ": {
+    "father": "カラヴァッジオ",
+    "mother": "オールドタイムワルツ",
+    "sire_line": "ストームキャット系",
+    "close_relatives": ""
   }
 }
