@@ -4163,5 +4163,120 @@
     "father": "キンシャサノキセキ",
     "mother": "ハワイアンウインド",
     "sire_line": "サンデーサイレンス系（フジキセキ系）"
+  },
+  "ウインキートス": {
+    "father": "ゴールドシップ",
+    "mother": "イクスキューズ",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": ""
+  },
+  "イズジョーノキセキ": {
+    "father": "エピファネイア",
+    "mother": "キングダンサー",
+    "sire_line": "ロベルト系（シンボリクリスエス系）",
+    "close_relatives": ""
+  },
+  "アイアンバローズ": {
+    "father": "オルフェーヴル",
+    "mother": "パレスルーマー(USA)",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": ""
+  },
+  "テルツェット": {
+    "father": "ディープインパクト",
+    "mother": "ラッドルチェンド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ダーリントンホール": {
+    "father": "New Approach(IRE)",
+    "mother": "Miss Kenton(IRE)",
+    "sire_line": "サドラーズウェルズ系（ガリレオ系）",
+    "close_relatives": ""
+  },
+  "メイショウミモザ": {
+    "father": "ハーツクライ",
+    "mother": "メイショウベルーガ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ヒートオンビート": {
+    "father": "キングカメハメハ",
+    "mother": "マルセリーナ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "デゼル": {
+    "father": "ディープインパクト",
+    "mother": "アヴニールセルタン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エーポス": {
+    "father": "ジャスタウェイ",
+    "mother": "ストライクルート",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ウイングレイテスト": {
+    "father": "スクリーンヒーロー",
+    "mother": "グレートキャティ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "シャムロックヒル": {
+    "father": "キズナ",
+    "mother": "ララア(USA)",
+    "sire_line": "ディープインパクト系（サンデーサイレンス系）",
+    "close_relatives": "半姉サラス（2019年マーメイドステークス勝ち馬）"
+  },
+  "シャインガーネット": {
+    "father": "オルフェーヴル",
+    "mother": "ベルベットローブ(USA)",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": ""
+  },
+  "サトノインプレッサ": {
+    "father": "ディープインパクト",
+    "mother": "サプレザ(USA)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "コルテジア": {
+    "father": "シンボリクリスエス(USA)",
+    "mother": "シェルエメール",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "クリノプレミアム": {
+    "father": "オルフェーヴル",
+    "mother": "ダンシングクイーン",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": ""
+  },
+  "クリスタルブラック": {
+    "father": "キズナ",
+    "mother": "アッシュケーク",
+    "sire_line": "サンデーサイレンス系"
+  },
+  "ケープコッド": {
+    "father": "ダイワメジャー",
+    "mother": "ハーロンベイ",
+    "sire_line": "サンデーサイレンス系"
+  },
+  "ラインベック": {
+    "father": "ディープインパクト",
+    "mother": "アパパネ",
+    "sire_line": "サンデーサイレンス系"
+  },
+  "ディアスティマ": {
+    "father": "ディープインパクト",
+    "mother": "スウィートリーズン(USA)",
+    "sire_line": "サンデーサイレンス系"
+  },
+  "サンライズオネスト": {
+    "father": "ダイワメジャー",
+    "mother": "サイモンドルチェ",
+    "sire_line": "サンデーサイレンス系"
   }
 }
