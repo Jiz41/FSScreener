@@ -4048,5 +4048,120 @@
     "mother": "テディーズプロミス",
     "sire_line": "サンデーサイレンス系",
     "close_relatives": ""
+  },
+  "サリオス": {
+    "father": "ハーツクライ",
+    "mother": "サロミナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "レシステンシア": {
+    "father": "ダイワメジャー",
+    "mother": "マラコスタムブラダ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ウインマリリン": {
+    "father": "スクリーンヒーロー",
+    "mother": "コスモチェーロ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "ウインカーネリアン": {
+    "father": "スクリーンヒーロー",
+    "mother": "コスモクリスタル",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "レイパパレ": {
+    "father": "ディープインパクト",
+    "mother": "シェルズレイ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ラウダシオン": {
+    "father": "リアルインパクト",
+    "mother": "アンティフォナ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "グロリアラウス、アンブロジオ"
+  },
+  "ポタジェ": {
+    "father": "ディープインパクト",
+    "mother": "ジンジャーパンチ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ルージュバック、テンカハル"
+  },
+  "ヴェラアズール": {
+    "father": "エイシンフラッシュ",
+    "mother": "ヴェラブランカ",
+    "sire_line": "Mr. Prospector系",
+    "close_relatives": "テイクザヘルム、シルバーコンパス"
+  },
+  "アカイイト": {
+    "father": "キズナ",
+    "mother": "ウアジェト",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "アイサンサン、エニシノウタ"
+  },
+  "ディープボンド": {
+    "father": "キズナ",
+    "mother": "ゼフィランサス",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ダンケシェーン、マテンロウノカゼ"
+  },
+  "オーソリティ": {
+    "father": "オルフェーヴル",
+    "mother": "ロザリンド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ヴェルトライゼンデ": {
+    "father": "ドリームジャーニー",
+    "mother": "マンデラ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "ワールドエース、ワールドプレミア"
+  },
+  "マルターズディオサ": {
+    "father": "キズナ",
+    "mother": "トップオブドーラ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "タイセイビジョン": {
+    "father": "タートルボウル",
+    "mother": "ソムニア",
+    "sire_line": "ノーザンダンサー系",
+    "close_relatives": ""
+  },
+  "リアアメリア": {
+    "father": "ディープインパクト",
+    "mother": "リアアントニア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "バビット": {
+    "father": "ナカヤマフェスタ",
+    "mother": "アートリョウコ",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）"
+  },
+  "アリストテレス": {
+    "father": "エピファネイア",
+    "mother": "ブルーダイアモンド",
+    "sire_line": "ロベルト系（シンボリクリスエス系）"
+  },
+  "サトノフラッグ": {
+    "father": "ディープインパクト",
+    "mother": "バラダセール",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）"
+  },
+  "ガロアクリーク": {
+    "father": "キンシャサノキセキ",
+    "mother": "ゴールドレリック",
+    "sire_line": "サンデーサイレンス系（フジキセキ系）"
+  },
+  "ルフトシュトローム": {
+    "father": "キンシャサノキセキ",
+    "mother": "ハワイアンウインド",
+    "sire_line": "サンデーサイレンス系（フジキセキ系）"
   }
 }
