@@ -4278,5 +4278,125 @@
     "father": "ダイワメジャー",
     "mother": "サイモンドルチェ",
     "sire_line": "サンデーサイレンス系"
+  },
+  "ルーチェデラヴィタ": {
+    "father": "キズナ",
+    "mother": "トウカイライフ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ホウオウピースフル": {
+    "father": "オルフェーヴル",
+    "mother": "ツルマルワンピース",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ディアマンミノル": {
+    "father": "オルフェーヴル",
+    "mother": "イソノスワロー",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "オパールシャルム": {
+    "father": "ダイワメジャー",
+    "mother": "ジルコニア",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "オータムレッド": {
+    "father": "ワールドエース",
+    "mother": "ティッカーコード",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エレナアヴァンティ": {
+    "father": "アドマイヤムーン",
+    "mother": "ドリームカムカム",
+    "sire_line": "エンドスウィープ系（フォーティナイナー系）",
+    "close_relatives": ""
+  },
+  "クラヴェル": {
+    "father": "エピファネイア",
+    "mother": "ディアデラマドレ",
+    "sire_line": "ロベルト系（シンボリクリスエス系統）",
+    "close_relatives": "エルディアマンテ"
+  },
+  "アルジャンナ": {
+    "father": "ディープインパクト",
+    "mother": "コンドコマンド",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "チェーンオブラブ": {
+    "father": "ハーツクライ",
+    "mother": "フェアエレン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ストーンリッジ": {
+    "father": "ディープインパクト",
+    "mother": "クロウキャニオン",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "トリプルエース": {
+    "father": "シャマーダル(USA)",
+    "mother": "トリプルピルエット(USA)",
+    "sire_line": "ストームキャット系（ジャイアンツコーズウェイ系）",
+    "close_relatives": ""
+  },
+  "ディヴィナシオン": {
+    "father": "ヴィクトワールピサ",
+    "mother": "フギン(AUS)",
+    "sire_line": "サンデーサイレンス系（ネオユニヴァース系）",
+    "close_relatives": ""
+  },
+  "ソフトフルート": {
+    "father": "ディープインパクト",
+    "mother": "ストロベリーフェア(GB)",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エアロロノア": {
+    "father": "キングカメハメハ",
+    "mother": "エアワンピース",
+    "sire_line": "キングマンボ系（キングカメハメハ系）",
+    "close_relatives": ""
+  },
+  "ハギノアレグリアス": {
+    "father": "キズナ",
+    "mother": "タニノカリス",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "クラヴァシュドール": {
+    "father": "ハーツクライ",
+    "mother": "パスオブドリームズ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "メイショウチタン": {
+    "father": "ロードカナロア",
+    "mother": "ラルティスタ",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
+  },
+  "ペールエール": {
+    "father": "ダイワメジャー",
+    "mother": "アピールⅡ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ビターエンダー": {
+    "father": "オルフェーヴル",
+    "mother": "ビタースウィート",
+    "sire_line": "サンデーサイレンス系（ステイゴールド系）",
+    "close_relatives": ""
+  },
+  "パラスアテナ": {
+    "father": "ルーラーシップ",
+    "mother": "ステラリード",
+    "sire_line": "キングマンボ系",
+    "close_relatives": ""
   }
 }
