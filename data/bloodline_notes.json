@@ -1,4 +1,29 @@
 {
+  "キングズパレス": {
+    "father": "キングカメハメハ",
+    "mother": "ドバウィハイツ",
+    "sire_line": "キングカメハメハ系（Mr. Prospector系）"
+  },
+  "ベルクレスタ": {
+    "father": "ドゥラメンテ",
+    "mother": "ベルアリュールII",
+    "sire_line": "キングカメハメハ系（Mr. Prospector系）"
+  },
+  "タイセイディバイン": {
+    "father": "ルーラーシップ",
+    "mother": "ダイワスピリット",
+    "sire_line": "キングカメハメハ系（Mr. Prospector系）"
+  },
+  "コムストックロード": {
+    "father": "シルバーステート",
+    "mother": "ニシノムーンライト",
+    "sire_line": "ディープインパクト系（Halo系）"
+  },
+  "アネゴハダ": {
+    "father": "キズナ",
+    "mother": "イニシャルダブル",
+    "sire_line": "ディープインパクト系（Halo系）"
+  },
   "ヒュミドール": {
     "father": "オルフェーヴル",
     "mother": "アヴェクトワ",
@@ -5123,6 +5148,84 @@
     "father": "ベーカバド",
     "mother": "スマートシンパシー",
     "sire_line": "ダンジグ系（ノーザンダンサー系）",
+    "close_relatives": ""
+  },
+  "ヒノクニ": {
+    "father": "カレンブラックヒル",
+    "mother": "トワイスアップ",
+    "sire_line": "サンデーサイレンス系（ダイワメジャー系）",
+    "close_relatives": ""
+  },
+  "ワープスピード": {
+    "father": "ドレフォン",
+    "mother": "ディープラヴ",
+    "sire_line": "ノーザンダンサー系（ストームキャット系）",
+    "close_relatives": ""
+  },
+  "ルージュエヴァイユ": {
+    "father": "ジャスタウェイ",
+    "mother": "ナッシングバットドリームズ",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "ボーンディスウェイ": {
+    "father": "ハーツクライ",
+    "mother": "ウィンドハック",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "フィデル": {
+    "father": "ハーツクライ",
+    "mother": "ラッキートゥビーミー(USA)",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "ピンハイ": {
+    "father": "ミッキーアイル",
+    "mother": "レイテッド",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "ダンテスヴュー": {
+    "father": "キングカメハメハ",
+    "mother": "クロウキャニオン",
+    "sire_line": "キングマンボ系（キングカメハメハ産駒）",
+    "close_relatives": ""
+  },
+  "ソリタリオ": {
+    "father": "モーリス",
+    "mother": "サブトゥエンティ",
+    "sire_line": "ロベルト系（スクリーンヒーロー系）",
+    "close_relatives": ""
+  },
+  "ニシノラブウインク": {
+    "father": "エピファネイア",
+    "mother": "ニシノシルエット",
+    "sire_line": "ロベルト系（シンボリクリスエス系）",
+    "close_relatives": ""
+  },
+  "セレシオン": {
+    "father": "ハーツクライ",
+    "mother": "クルソラ（ARG）",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "サリエラ": {
+    "father": "ディープインパクト",
+    "mother": "サロミナ（GER）",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "ステルナティーア": {
+    "father": "ロードカナロア",
+    "mother": "ラルケット",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "サトノヘリオス": {
+    "father": "エピファネイア",
+    "mother": "エアマグダラ",
+    "sire_line": "ロベルト系（シンボリクリスエス系）",
     "close_relatives": ""
   }
 }
