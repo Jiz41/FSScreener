@@ -5239,5 +5239,101 @@
     "mother": "ワイルドラズベリー",
     "sire_line": "キングカメハメハ系（Mr. Prospector系）",
     "close_relatives": ""
+  },
+  "ドンフランキー": {
+    "father": "ダイワメジャー",
+    "mother": "ウィーミスフランキー(USA)",
+    "sire_line": "サンデーサイレンス系（ダイワメジャー系）",
+    "close_relatives": ""
+  },
+  "テーオードレフォン": {
+    "father": "ドレフォン(USA)",
+    "mother": "エミネントシチー",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "セキフウ": {
+    "father": "ヘニーヒューズ(USA)",
+    "mother": "シヤボナ(USA)",
+    "sire_line": "不明",
+    "close_relatives": ""
+  },
+  "ウィルソンテソーロ": {
+    "father": "キタサンブラック",
+    "mother": "チェストケローズ(USA)",
+    "sire_line": "サンデーサイレンス系（キタサンブラック系）",
+    "close_relatives": ""
+  },
+  "アーテルアストレア": {
+    "father": "リーチザクラウン",
+    "mother": "スターズインヘヴン",
+    "sire_line": "サンデーサイレンス系（スペシャルウィーク系）",
+    "close_relatives": ""
+  },
+  "ゴールドエクリプス": {
+    "father": "ドゥラメンテ",
+    "mother": "ゴールドグローリー",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ヴェローナシチー": {
+    "father": "エピファネイア",
+    "mother": "アモーレエテルノ",
+    "sire_line": "ロベルト系（シンボリクリスエス系）",
+    "close_relatives": ""
+  },
+  "インプレス": {
+    "father": "キズナ",
+    "mother": "ベアトリスⅡ(GB)",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "ハピ": {
+    "father": "キズナ",
+    "mother": "クイーンパイレーツ",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "ノットゥルノ": {
+    "father": "ハーツクライ",
+    "mother": "シェイクズセレナーデ(USA)",
+    "sire_line": "サンデーサイレンス系（ハーツクライ系）",
+    "close_relatives": ""
+  },
+  "メイクアリープ": {
+    "father": "シニスターミニスター(USA)",
+    "mother": "スペシャルクイン（母父スペシャルウィーク）",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": ""
+  },
+  "ペイシャエス": {
+    "father": "エスポワールシチー",
+    "mother": "リサプシュケ（母父ワイルドラッシュ）",
+    "sire_line": "サンデーサイレンス系（ゴールドアリュール系）",
+    "close_relatives": ""
+  },
+  "ドライスタウト": {
+    "father": "シニスターミニスター(USA)",
+    "mother": "マストバイアイテム（母父アフリート）",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": ""
+  },
+  "クラウンプライド": {
+    "father": "リーチザクラウン",
+    "mother": "エミーズプライド（母父キングカメハメハ）",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "キングズソード": {
+    "father": "シニスターミニスター(USA)",
+    "mother": "キングスベリー（母父キングヘイロー）",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": "全兄にキングズガード（2011年生、同じ日進牧場・寺島良厩舎所属、プロキオンステークス（GIII）等で重賞を制覇）"
+  },
+  "アルファマム": {
+    "father": "マジェスティックウォリアー(USA)",
+    "mother": "ダイオプサイド（母父フジキセキ）",
+    "sire_line": "シアトルスルー系",
+    "close_relatives": ""
   }
 }
