@@ -5227,5 +5227,17 @@
     "mother": "エアマグダラ",
     "sire_line": "ロベルト系（シンボリクリスエス系）",
     "close_relatives": ""
+  },
+  "ルージュスティリア": {
+    "father": "ディープインパクト",
+    "mother": "ドライヴンスノー",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": ""
+  },
+  "ラズベリームース": {
+    "father": "ルーラーシップ",
+    "mother": "ワイルドラズベリー",
+    "sire_line": "キングカメハメハ系（Mr. Prospector系）",
+    "close_relatives": ""
   }
 }
