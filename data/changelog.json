@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-09-05",
+    "text": "配色をやや現代的な落ち着いたトーンに微調整しました（背景グラデーション・アクセントカラー）",
+    "text_en": "Made subtle adjustments to the color palette for a more modern, muted tone (background gradient, accent colors)"
+  },
+  {
     "date": "2026-08-01",
     "text": "馬の詳細画面に8軸ステータス（加速力・スタート・コーナリング・坂・重馬場・闘争心・安定感・健康）のレーダーチャートを追加しました",
     "text_en": "Added an 8-axis stats radar chart to the horse detail view"
