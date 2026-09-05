@@ -1,54 +1,54 @@
 :root {
   /* light = 淡く柔らかい配色 */
   --bg: #FBF3F2;
-  --bg-grad: linear-gradient(160deg, #FCE7EC 0%, #FAF1FC 45%, #E7EAFB 100%);
+  --bg-grad: linear-gradient(160deg, #F3DCD8 0%, #F8EFEA 55%, #F3DCD8 100%);
   --bg-panel: #FFFFFF;
   --ink: #3B2C33;
   --muted: #6F5A64;
   --line: #3B2C33;
-  --hair: #ECDEE2;
-  --blue: #7C93F0;
-  --gold: #F0B15C;
-  --red: #EF8A93;
-  --green: #7FC29B;
+  --hair: #E4D9D5;
+  --blue: #6C81CC;
+  --gold: #D89F52;
+  --red: #D67D85;
+  --green: #6EA987;
   --radar-accent: #EF8A93;
-  --glass-panel: rgba(255, 255, 255, 0.3);
+  --glass-panel: rgba(255, 255, 255, 0.45);
 }
 
 :root[data-theme="dark"] {
   /* dark = 締まった濃色 */
   --bg: #12151C;
-  --bg-grad: linear-gradient(160deg, #0D0F14 0%, #1C2440 45%, #141018 100%);
+  --bg-grad: linear-gradient(160deg, #15121A 0%, #1E1A26 55%, #15121A 100%);
   --bg-panel: #1B2029;
   --ink: #E7EAF0;
   --muted: #A3ACB9;
   --line: #E7EAF0;
-  --hair: #2B313C;
-  --blue: #4C6FE0;
-  --gold: #D9932E;
-  --red: #D1505C;
-  --green: #2E9468;
+  --hair: #2D2833;
+  --blue: #5A75CB;
+  --gold: #C6893E;
+  --red: #C25A63;
+  --green: #388F6B;
   --active: #A8C24E;
   --radar-accent: #6EC9E8;
-  --glass-panel: rgba(27, 32, 41, 0.3);
+  --glass-panel: rgba(40, 34, 48, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #12151C;
-    --bg-grad: linear-gradient(160deg, #0D0F14 0%, #1C2440 45%, #141018 100%);
+    --bg-grad: linear-gradient(160deg, #15121A 0%, #1E1A26 55%, #15121A 100%);
     --bg-panel: #1B2029;
     --ink: #E7EAF0;
     --muted: #A3ACB9;
     --line: #E7EAF0;
-    --hair: #2B313C;
-    --blue: #4C6FE0;
-    --gold: #D9932E;
-    --red: #D1505C;
-    --green: #2E9468;
+    --hair: #2D2833;
+    --blue: #5A75CB;
+    --gold: #C6893E;
+    --red: #C25A63;
+    --green: #388F6B;
     --active: #A8C24E;
     --radar-accent: #6EC9E8;
-    --glass-panel: rgba(27, 32, 41, 0.3);
+    --glass-panel: rgba(40, 34, 48, 0.5);
   }
 }
 
