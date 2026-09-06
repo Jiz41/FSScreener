@@ -354,6 +354,7 @@ let historyData = {};
 let datasetMaxRating = 80;
 let currentResults = [];
 let currentCriteria = null;
+let searchLoadingTimers = [];
 
 // ---- CSV parsing (handles quoted fields) ----
 function parseCSV(text) {
@@ -932,7 +933,73 @@ function runSearch() {
   const criteria = { styleVal, distance, surface, statFilters };
   currentResults = results;
   currentCriteria = criteria;
-  renderResults(currentResults, currentCriteria);
+  playSearchLoadingThenRender();
+}
+
+// ---- Search loading演出 ----
+const BASE_PHASES = ["検索中…", "該当馬を検出", "検索結果一覧を生成"];
+const JOKE_PHASES = [
+  "馬房内の寝藁を更新中",
+  "新鮮な飼葉を準備中",
+  "馬体のツヤを確認中",
+  "蹄鉄の保守点検中",
+  "馬房内のボロを清掃中"
+];
+
+function playSearchLoadingThenRender() {
+  const resultsPanel = document.getElementById("results-panel");
+  const loadingEl = document.getElementById("search-loading");
+  const statusEl = document.getElementById("loading-status");
+  const barFillEl = document.getElementById("loading-bar-fill");
+
+  searchLoadingTimers.forEach(id => clearTimeout(id));
+  searchLoadingTimers = [];
+
+  resultsPanel.scrollIntoView({ behavior: "auto", block: "start" });
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    renderResults(currentResults, currentCriteria);
+    return;
+  }
+
+  let phases = BASE_PHASES.slice();
+  if (Math.random() < 0.3) {
+    const joke = JOKE_PHASES[Math.floor(Math.random() * JOKE_PHASES.length)];
+    const insertAt = Math.floor(Math.random() * 4); // 0,1,2,3
+    phases.splice(insertAt, 0, joke);
+  }
+
+  const totalMs = phases.length === 4 ? 1100 : 900;
+  const perPhaseMs = totalMs / phases.length;
+
+  loadingEl.classList.remove("hidden");
+  loadingEl.style.opacity = "1";
+  barFillEl.style.transition = "none";
+  barFillEl.style.width = "0%";
+  statusEl.textContent = phases[0];
+
+  requestAnimationFrame(() => {
+    barFillEl.style.transition = `width ${totalMs}ms linear`;
+    barFillEl.style.width = "100%";
+  });
+
+  for (let i = 1; i < phases.length; i++) {
+    const id = setTimeout(() => {
+      statusEl.textContent = phases[i];
+    }, perPhaseMs * i);
+    searchLoadingTimers.push(id);
+  }
+
+  const finalId = setTimeout(() => {
+    loadingEl.style.opacity = "0";
+    renderResults(currentResults, currentCriteria);
+    const cleanupId = setTimeout(() => {
+      loadingEl.classList.add("hidden");
+      loadingEl.style.opacity = "1";
+    }, 150);
+    searchLoadingTimers.push(cleanupId);
+  }, totalMs);
+  searchLoadingTimers.push(finalId);
 }
 
 // ---- Sorting ----

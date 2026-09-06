@@ -1054,8 +1054,58 @@ footer a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card {
+  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card, .gallop-sprite {
     transition: none !important;
     animation: none !important;
   }
+}
+
+.search-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 8px;
+  transition: opacity 150ms ease-out;
+}
+
+.search-loading.hidden {
+  display: none;
+}
+
+.gallop-sprite {
+  width: 48px;
+  height: 100px;
+  background-image: url("images/horse-gallop.png");
+  background-repeat: no-repeat;
+  background-size: 384px 100px;
+  background-position: 0 0;
+  animation: fscGallop 480ms steps(8) infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes fscGallop {
+  from { background-position-x: 0; }
+  to { background-position-x: -384px; }
+}
+
+.loading-bar {
+  width: 200px;
+  height: 6px;
+  border: 1px solid var(--line);
+  background: var(--hair);
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--line);
+}
+
+.loading-status {
+  font-size: 0.62em;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
 }

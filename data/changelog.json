@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-09-06",
+    "text": "検索実行時に馬がギャロップするローディング演出を追加しました",
+    "text_en": "Added a galloping-horse loading animation when running a search"
+  },
+  {
     "date": "2026-09-05",
     "text": "配色をやや現代的な落ち着いたトーンに微調整しました（背景グラデーション・アクセントカラー）",
     "text_en": "Made subtle adjustments to the color palette for a more modern, muted tone (background gradient, accent colors)"
