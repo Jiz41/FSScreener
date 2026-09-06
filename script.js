@@ -969,7 +969,7 @@ function playSearchLoadingThenRender() {
     phases.splice(insertAt, 0, joke);
   }
 
-  const totalMs = phases.length === 4 ? 1100 : 900;
+  const totalMs = 2000;
   const perPhaseMs = totalMs / phases.length;
 
   loadingEl.classList.remove("hidden");
