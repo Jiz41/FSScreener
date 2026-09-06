@@ -1158,10 +1158,36 @@ function showDetail(horse) {
   body.querySelector(".price-line").after(stableBtn);
 
   modal.classList.remove("hidden");
+  const modalContent = modal.querySelector(".modal-content");
+  if (modalContent) {
+    if (modal.__fscHideTimer) {
+      clearTimeout(modal.__fscHideTimer);
+      modal.__fscHideTimer = null;
+    }
+    modalContent.classList.remove("is-visible");
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        modalContent.classList.add("is-visible");
+      });
+    });
+  }
 }
 
 function hideModal() {
-  document.getElementById("detail-modal").classList.add("hidden");
+  const modal = document.getElementById("detail-modal");
+  const modalContent = modal.querySelector(".modal-content");
+  if (modalContent) {
+    modalContent.classList.remove("is-visible");
+    if (modal.__fscHideTimer) {
+      clearTimeout(modal.__fscHideTimer);
+    }
+    modal.__fscHideTimer = setTimeout(() => {
+      modal.classList.add("hidden");
+      modal.__fscHideTimer = null;
+    }, 180);
+  } else {
+    modal.classList.add("hidden");
+  }
 }
 
 // ---- Chip interactions ----
