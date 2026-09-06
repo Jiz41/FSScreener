@@ -1071,8 +1071,31 @@ footer a {
   margin-bottom: 0;
 }
 
+@keyframes fscSlideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+@keyframes fscSlideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+.card-stack.slide-next {
+  animation: fscSlideInRight 260ms ease-out;
+}
+
+.card-stack.slide-prev {
+  animation: fscSlideInLeft 260ms ease-out;
+}
+
+.card-stack.slide-next .horse-card,
+.card-stack.slide-prev .horse-card {
+  animation: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card, .gallop-sprite {
+  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card, .gallop-sprite, .card-stack.slide-next, .card-stack.slide-prev {
     transition: none !important;
     animation: none !important;
   }

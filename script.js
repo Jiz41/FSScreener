@@ -1119,8 +1119,15 @@ function starsText(stars) {
   return "🥕".repeat(stars) + ` (${stars}/10)`;
 }
 
-function renderResults(results, criteria) {
+function renderResults(results, criteria, direction) {
   const container = document.getElementById("results");
+  container.classList.remove("slide-next", "slide-prev");
+  void container.offsetWidth; // 強制リフローでアニメーションを再トリガーさせる
+  if (direction === "next") {
+    container.classList.add("slide-next");
+  } else if (direction === "prev") {
+    container.classList.add("slide-prev");
+  }
   const countEl = document.getElementById("result-count");
   const lang = currentLang();
   countEl.textContent = lang === "en" ? `${results.length} ${t("result_unit")}` : `${results.length}${t("result_unit")}`;
@@ -1197,11 +1204,12 @@ function renderPagination(totalPages) {
   `;
   pager.querySelectorAll(".page-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      if (btn.dataset.page === "first") currentPage = 1;
-      else if (btn.dataset.page === "prev") currentPage = Math.max(1, currentPage - 1);
-      else if (btn.dataset.page === "next") currentPage = Math.min(totalPages, currentPage + 1);
-      else if (btn.dataset.page === "last") currentPage = totalPages;
-      renderResults(currentResults, currentCriteria);
+      let direction;
+      if (btn.dataset.page === "first") { currentPage = 1; direction = "prev"; }
+      else if (btn.dataset.page === "prev") { currentPage = Math.max(1, currentPage - 1); direction = "prev"; }
+      else if (btn.dataset.page === "next") { currentPage = Math.min(totalPages, currentPage + 1); direction = "next"; }
+      else if (btn.dataset.page === "last") { currentPage = totalPages; direction = "next"; }
+      renderResults(currentResults, currentCriteria, direction);
       fastScrollTo(document.getElementById("results-panel"));
     });
   });
