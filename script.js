@@ -887,6 +887,12 @@ function clearSearchConditions() {
   STAT_AXES.forEach(axis => { statTierState[axis.key] = 0; });
   updateRadarDynamic();
 
+  currentResults = [];
+  currentCriteria = null;
+  resultsPlaceholderState = { type: "prompt" };
+  renderResultsPlaceholder();
+  document.getElementById("result-count").textContent = "";
+
   window.scrollTo(0, 0);
 }
 
