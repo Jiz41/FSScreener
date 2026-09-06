@@ -356,6 +356,8 @@ let historyData = {};
 let datasetMaxRating = 80;
 let currentResults = [];
 let currentCriteria = null;
+let currentPage = 1;
+const RESULTS_PAGE_SIZE = 5;
 let searchLoadingTimers = [];
 
 // ---- CSV parsing (handles quoted fields) ----
@@ -889,6 +891,7 @@ function clearSearchConditions() {
 
   currentResults = [];
   currentCriteria = null;
+  currentPage = 1;
   resultsPlaceholderState = { type: "prompt" };
   renderResultsPlaceholder();
   document.getElementById("result-count").textContent = "";
@@ -960,6 +963,7 @@ function runSearch() {
 
   const criteria = { styleVal, distance, surface, statFilters };
   currentResults = results;
+  currentPage = 1;
   currentCriteria = criteria;
   playSearchLoadingThenRender();
 }
@@ -1124,13 +1128,21 @@ function renderResults(results, criteria) {
 
   if (results.length === 0) {
     container.innerHTML = `<div class="no-results">${t("no_results")}</div>`;
+    renderPagination(0);
     return;
   }
 
   const sortKey = document.getElementById("sort-select").value;
   const sorted = sortResults(results, criteria, sortKey);
 
-  sorted.forEach((h, idx) => {
+  const totalPages = Math.max(1, Math.ceil(sorted.length / RESULTS_PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  const startIdx = (currentPage - 1) * RESULTS_PAGE_SIZE;
+  const pageItems = sorted.slice(startIdx, startIdx + RESULTS_PAGE_SIZE);
+
+  pageItems.forEach((h, relIdx) => {
+    const idx = startIdx + relIdx;
     const { stars } = computeScore(h, criteria);
     const stubClass = "stub-" + ((idx % 4) + 1);
     const peakText = isNaN(h.peak_age) ? "-" : formatPeakSeason(h.peak_age);
@@ -1162,6 +1174,36 @@ function renderResults(results, criteria) {
     `;
     card.addEventListener("click", () => showDetail(h));
     container.appendChild(card);
+  });
+
+  renderPagination(totalPages);
+}
+
+function renderPagination(totalPages) {
+  const pager = document.getElementById("pagination");
+  if (!pager) return;
+  if (totalPages <= 1) {
+    pager.style.display = "none";
+    pager.innerHTML = "";
+    return;
+  }
+  pager.style.display = "flex";
+  pager.innerHTML = `
+    <button type="button" class="page-btn" data-page="first" ${currentPage === 1 ? "disabled" : ""}>&laquo;</button>
+    <button type="button" class="page-btn" data-page="prev" ${currentPage === 1 ? "disabled" : ""}>&lsaquo;</button>
+    <span class="page-indicator">${currentPage}/${totalPages}</span>
+    <button type="button" class="page-btn" data-page="next" ${currentPage === totalPages ? "disabled" : ""}>&rsaquo;</button>
+    <button type="button" class="page-btn" data-page="last" ${currentPage === totalPages ? "disabled" : ""}>&raquo;</button>
+  `;
+  pager.querySelectorAll(".page-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (btn.dataset.page === "first") currentPage = 1;
+      else if (btn.dataset.page === "prev") currentPage = Math.max(1, currentPage - 1);
+      else if (btn.dataset.page === "next") currentPage = Math.min(totalPages, currentPage + 1);
+      else if (btn.dataset.page === "last") currentPage = totalPages;
+      renderResults(currentResults, currentCriteria);
+      fastScrollTo(document.getElementById("results-panel"));
+    });
   });
 }
 
@@ -1954,6 +1996,7 @@ async function init() {
   document.getElementById("clear-search-btn").addEventListener("click", clearSearchConditions);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
+      currentPage = 1;
       renderResults(currentResults, currentCriteria);
     }
   });

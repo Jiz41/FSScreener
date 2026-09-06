@@ -1127,3 +1127,40 @@ footer a {
   font-family: "IBM Plex Mono", monospace;
   margin: 0;
 }
+
+.pagination {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.page-btn {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 150ms ease-out, color 150ms ease-out, transform 100ms ease-out;
+}
+
+.page-btn:active {
+  transform: scale(0.95);
+}
+
+.page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85em;
+  color: var(--muted);
+  min-width: 3.5em;
+  text-align: center;
+}

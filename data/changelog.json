@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-06",
+    "text": "検索結果を1ページ5件のページ送り表示に変更しました",
+    "text_en": "Search results are now paginated at 5 per page"
+  },
+  {
+    "date": "2026-09-06",
     "text": "検索条件を一括で初期化する「検索条件をクリア」ボタンを追加しました",
     "text_en": "Added a \"Clear conditions\" button to reset all search fields at once"
   },
