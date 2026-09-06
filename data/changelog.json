@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-06",
+    "text": "馬データの取得に失敗した場合に、保存済みの直近データで検索を継続できるようにしました",
+    "text_en": "Search now falls back to the last saved data when the live horse data fails to load"
+  },
+  {
+    "date": "2026-09-06",
     "text": "検索結果を1ページ5件のページ送り表示に変更しました",
     "text_en": "Search results are now paginated at 5 per page"
   },

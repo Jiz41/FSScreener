@@ -467,12 +467,42 @@ function formatPeakSeason(peakAge) {
 }
 
 // ---- Data loading ----
+const HORSES_CACHE_CSV_KEY = "fsc_horses_cache_csv";
+const HORSES_CACHE_TIME_KEY = "fsc_horses_cache_time";
+window.__fscUsedCache = false;
+window.__fscCacheTime = null;
+
 async function loadHorses() {
-  const res = await fetch(SHEET_URL);
-  if (!res.ok) {
-    throw new Error("シート取得失敗: HTTP " + res.status);
+  window.__fscUsedCache = false;
+  window.__fscCacheTime = null;
+  let text = null;
+
+  try {
+    const res = await fetch(SHEET_URL);
+    if (!res.ok) {
+      throw new Error("シート取得失敗: HTTP " + res.status);
+    }
+    text = await res.text();
+    try {
+      localStorage.setItem(HORSES_CACHE_CSV_KEY, text);
+      localStorage.setItem(HORSES_CACHE_TIME_KEY, new Date().toISOString());
+    } catch (e) { /* 保存できなくてもロードは継続 */ }
+  } catch (fetchErr) {
+    let cachedCsv = null;
+    let cachedTime = null;
+    try {
+      cachedCsv = localStorage.getItem(HORSES_CACHE_CSV_KEY);
+      cachedTime = localStorage.getItem(HORSES_CACHE_TIME_KEY);
+    } catch (e) { /* localStorage不可の場合はキャッシュなし扱い */ }
+
+    if (!cachedCsv) {
+      throw fetchErr;
+    }
+    text = cachedCsv;
+    window.__fscUsedCache = true;
+    window.__fscCacheTime = cachedTime;
   }
-  const text = await res.text();
+
   const rows = parseCSV(text);
   const objs = rowsToObjects(rows);
 
@@ -2030,6 +2060,25 @@ async function init() {
     await Promise.all([loadHorses(), loadHistory(), loadChangelog(), loadHorseAdditions()]);
     renderStable();
     updateColumnProgress();
+    if (window.__fscUsedCache) {
+      try {
+        const existingNotice = document.getElementById("cache-notice");
+        if (existingNotice) existingNotice.remove();
+        const noticeEl = document.createElement("div");
+        noticeEl.id = "cache-notice";
+        let timeLabel = "";
+        if (window.__fscCacheTime) {
+          const d = new Date(window.__fscCacheTime);
+          if (!isNaN(d.getTime())) {
+            timeLabel = `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日${d.getHours()}時${d.getMinutes()}分`;
+          }
+        }
+        noticeEl.textContent = timeLabel
+          ? `最新データの取得に失敗したため、${timeLabel}時点のデータで表示しています`
+          : "最新データの取得に失敗したため、保存済みのデータで表示しています";
+        resultsPanel.parentNode.insertBefore(noticeEl, resultsPanel);
+      } catch (e) { /* 通知表示に失敗しても検索機能自体は継続 */ }
+    }
     resultsPlaceholderState = { type: "prompt" };
     resultsPanel.innerHTML = `<div class="no-results">${t("prompt_search")}</div>`;
   } catch (e) {
