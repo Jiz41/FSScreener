@@ -1079,7 +1079,7 @@ footer a {
   background-repeat: no-repeat;
   background-size: 384px 100px;
   background-position: 0 0;
-  animation: fscGallop 480ms steps(8) infinite;
+  animation: fscGallop 680ms steps(8) infinite;
   margin-bottom: 10px;
 }
 

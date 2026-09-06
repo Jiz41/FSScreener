@@ -946,6 +946,21 @@ const JOKE_PHASES = [
   "馬房内のボロを清掃中"
 ];
 
+function fastScrollTo(el) {
+  const target = el.getBoundingClientRect().top + window.scrollY;
+  const start = window.scrollY;
+  const distance = target - start;
+  const duration = 220;
+  const startTime = performance.now();
+  function step(now) {
+    const t = Math.min(1, (now - startTime) / duration);
+    const eased = 1 - Math.pow(1 - t, 3);
+    window.scrollTo(0, start + distance * eased);
+    if (t < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
 function playSearchLoadingThenRender() {
   const resultsPanel = document.getElementById("results-panel");
   const loadingEl = document.getElementById("search-loading");
@@ -955,12 +970,13 @@ function playSearchLoadingThenRender() {
   searchLoadingTimers.forEach(id => clearTimeout(id));
   searchLoadingTimers = [];
 
-  resultsPanel.scrollIntoView({ behavior: "auto", block: "start" });
-
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    resultsPanel.scrollIntoView({ behavior: "auto", block: "start" });
     renderResults(currentResults, currentCriteria);
     return;
   }
+
+  fastScrollTo(resultsPanel);
 
   let phases = BASE_PHASES.slice();
   if (Math.random() < 0.3) {
