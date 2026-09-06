@@ -337,7 +337,7 @@ header {
 main {
   max-width: 480px;
   margin: 0 auto;
-  padding: 18px 14px 40px;
+  padding: 0 14px 40px;
   display: flex;
   flex-direction: column;
   gap: 22px;
