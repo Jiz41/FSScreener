@@ -1187,30 +1187,39 @@ function renderResults(results, criteria, direction) {
 }
 
 function renderPagination(totalPages) {
-  const pager = document.getElementById("pagination");
-  if (!pager) return;
+  const pagers = [document.getElementById("pagination-top"), document.getElementById("pagination")]
+    .filter(Boolean);
+  if (pagers.length === 0) return;
+
   if (totalPages <= 1) {
-    pager.style.display = "none";
-    pager.innerHTML = "";
+    pagers.forEach(pager => {
+      pager.style.display = "none";
+      pager.innerHTML = "";
+    });
     return;
   }
-  pager.style.display = "flex";
-  pager.innerHTML = `
+
+  const html = `
     <button type="button" class="page-btn" data-page="first" ${currentPage === 1 ? "disabled" : ""}>&laquo;</button>
     <button type="button" class="page-btn" data-page="prev" ${currentPage === 1 ? "disabled" : ""}>&lsaquo;</button>
     <span class="page-indicator">${currentPage}/${totalPages}</span>
     <button type="button" class="page-btn" data-page="next" ${currentPage === totalPages ? "disabled" : ""}>&rsaquo;</button>
     <button type="button" class="page-btn" data-page="last" ${currentPage === totalPages ? "disabled" : ""}>&raquo;</button>
   `;
-  pager.querySelectorAll(".page-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      let direction;
-      if (btn.dataset.page === "first") { currentPage = 1; direction = "prev"; }
-      else if (btn.dataset.page === "prev") { currentPage = Math.max(1, currentPage - 1); direction = "prev"; }
-      else if (btn.dataset.page === "next") { currentPage = Math.min(totalPages, currentPage + 1); direction = "next"; }
-      else if (btn.dataset.page === "last") { currentPage = totalPages; direction = "next"; }
-      renderResults(currentResults, currentCriteria, direction);
-      fastScrollTo(document.getElementById("results-panel"));
+
+  pagers.forEach(pager => {
+    pager.style.display = "flex";
+    pager.innerHTML = html;
+    pager.querySelectorAll(".page-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        let direction;
+        if (btn.dataset.page === "first") { currentPage = 1; direction = "prev"; }
+        else if (btn.dataset.page === "prev") { currentPage = Math.max(1, currentPage - 1); direction = "prev"; }
+        else if (btn.dataset.page === "next") { currentPage = Math.min(totalPages, currentPage + 1); direction = "next"; }
+        else if (btn.dataset.page === "last") { currentPage = totalPages; direction = "next"; }
+        renderResults(currentResults, currentCriteria, direction);
+        fastScrollTo(document.getElementById("results-panel"));
+      });
     });
   });
 }
