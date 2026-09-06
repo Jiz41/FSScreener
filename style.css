@@ -1115,13 +1115,13 @@ footer a {
 
 .gallop-sprite {
   width: 48px;
-  height: 100px;
+  height: 81px;
   background-image: url("images/horse-gallop.png");
   background-repeat: no-repeat;
-  background-size: 384px 100px;
+  background-size: 384px 81px;
   background-position: 0 0;
   animation: fscGallop 680ms steps(8) infinite;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 @keyframes fscGallop {
