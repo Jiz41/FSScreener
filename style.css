@@ -482,6 +482,24 @@ select {
   transform: scale(0.97);
 }
 
+.clear-search-btn {
+  display: block;
+  width: fit-content;
+  margin: 10px 0 0 auto;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.8em;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 2px;
+  font-family: inherit;
+}
+
+.clear-search-btn:active {
+  color: var(--ink);
+}
+
 .results-head {
   display: flex;
   justify-content: space-between;

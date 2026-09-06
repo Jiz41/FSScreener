@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-06",
+    "text": "検索条件を一括で初期化する「検索条件をクリア」ボタンを追加しました",
+    "text_en": "Added a \"Clear conditions\" button to reset all search fields at once"
+  },
+  {
+    "date": "2026-09-06",
     "text": "検索実行時に馬がギャロップするローディング演出を追加しました",
     "text_en": "Added a galloping-horse loading animation when running a search"
   },

@@ -99,6 +99,7 @@ const I18N = {
     stat_section_title: "8軸ステータス（任意・N以上で抽出）",
     stat_hint: "グラフをタップ／ドラッグして下限値（1〜5）を指定できます。中心まで戻すと指定なしになります。",
     stat_reset: "リセット",
+    clear_search_btn: "検索条件をクリア",
     tab_search: "検索",
     tab_stable: "マイ厩舎",
     stable_title: "マイ厩舎",
@@ -212,6 +213,7 @@ const I18N = {
     stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
     stat_hint: "Tap or drag on the chart to set a minimum value (1-5). Drag back to the center to clear.",
     stat_reset: "Reset",
+    clear_search_btn: "Clear conditions",
     tab_search: "Search",
     tab_stable: "My Stable",
     stable_title: "My Stable",
@@ -866,6 +868,26 @@ function computeScore(h, criteria) {
   const f = computeMatchStrength(h, criteria);
   const stars = Math.max(1, Math.min(10, Math.round(f * 10)));
   return { score: f, stars };
+}
+
+function clearSearchConditions() {
+  document.getElementById("budget").value = "";
+  document.getElementById("distance").value = "";
+  document.getElementById("surface").value = "";
+  document.getElementById("horse-gender").value = "";
+  document.getElementById("horse-color").value = "";
+
+  const styleContainer = document.getElementById("running-style-chips");
+  styleContainer.dataset.value = "";
+  styleContainer.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+  styleContainer.querySelector('.chip[data-value=""]').classList.add("active");
+
+  document.querySelectorAll("#growth-chips .chip").forEach(c => c.classList.remove("active"));
+
+  STAT_AXES.forEach(axis => { statTierState[axis.key] = 0; });
+  updateRadarDynamic();
+
+  window.scrollTo(0, 0);
 }
 
 // ---- Filtering ----
@@ -1923,6 +1945,7 @@ async function init() {
   setupLangToggle();
   setupInstallButton();
   document.getElementById("search-btn").addEventListener("click", runSearch);
+  document.getElementById("clear-search-btn").addEventListener("click", clearSearchConditions);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
       renderResults(currentResults, currentCriteria);
