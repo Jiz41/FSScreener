@@ -712,8 +712,9 @@ function buildDetailRadarSVG(horse) {
 
   axes.forEach((axis, i) => {
     const lp = pointAt(i, 1);
-    const lx = DETAIL_RADAR_CX + (lp.x - DETAIL_RADAR_CX) * 1.0;
-    const ly = DETAIL_RADAR_CY + (lp.y - DETAIL_RADAR_CY) * 1.0;
+    // ラベルは頂点の外側へ押し出す（検索画面側のupdateRadarDynamicと同じ倍率）
+    const lx = DETAIL_RADAR_CX + (lp.x - DETAIL_RADAR_CX) * 1.22;
+    const ly = DETAIL_RADAR_CY + (lp.y - DETAIL_RADAR_CY) * 1.22;
     let anchor = "middle";
     if (lx < DETAIL_RADAR_CX - 5) anchor = "end";
     else if (lx > DETAIL_RADAR_CX + 5) anchor = "start";
