@@ -900,6 +900,7 @@ footer .fnote {
   flex-direction: column;
   gap: 10px;
   text-align: left;
+  counter-reset: disclaimer-count;
 }
 
 .disclaimer-section {
@@ -907,7 +908,17 @@ footer .fnote {
   border: 1px solid var(--hair);
   border-radius: 8px;
   padding: 10px 12px;
+  animation: fscFadeIn 320ms ease-out backwards;
 }
+
+.disclaimer-section:nth-child(1) { animation-delay: 0ms; }
+.disclaimer-section:nth-child(2) { animation-delay: 40ms; }
+.disclaimer-section:nth-child(3) { animation-delay: 80ms; }
+.disclaimer-section:nth-child(4) { animation-delay: 120ms; }
+.disclaimer-section:nth-child(5) { animation-delay: 160ms; }
+.disclaimer-section:nth-child(6) { animation-delay: 200ms; }
+.disclaimer-section:nth-child(7) { animation-delay: 240ms; }
+.disclaimer-section:nth-child(8) { animation-delay: 280ms; }
 
 .disclaimer-section h4 {
   margin: 0 0 6px;
@@ -916,6 +927,13 @@ footer .fnote {
   color: var(--ink);
   border-left: 3px solid var(--blue);
   padding-left: 8px;
+  counter-increment: disclaimer-count;
+}
+
+.disclaimer-section h4::before {
+  content: counter(disclaimer-count, decimal-leading-zero) " ";
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--blue);
 }
 
 .disclaimer-section p {
@@ -1125,7 +1143,7 @@ footer a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card, .gallop-sprite, .card-stack.slide-next, .card-stack.slide-prev {
+  .tab-btn, .search-btn, .chip, .stable-toggle-btn, .modal-content.detail-preview, .horse-card, .disclaimer-section, .gallop-sprite, .card-stack.slide-next, .card-stack.slide-prev {
     transition: none !important;
     animation: none !important;
   }
