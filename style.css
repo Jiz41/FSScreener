@@ -1,7 +1,7 @@
 :root {
   /* light = 晴れた競馬場（白基調・青空・芝の緑・黒） */
   --bg: #FAFCFB;
-  --bg-grad: linear-gradient(160deg, #EAF4F7 0%, #FFFFFF 50%, #EDF6EC 100%);
+  --bg-grad: linear-gradient(112deg, #E4F1F6 0%, #FFFFFF 34%, #FFFFFF 70%, #E9F5EA 100%);
   --bg-panel: #FFFFFF;
   --ink: #1E1E1E;
   --muted: #6B6F6D;
@@ -18,7 +18,7 @@
 :root[data-theme="dark"] {
   /* dark = 締まった濃色 */
   --bg: #12151C;
-  --bg-grad: linear-gradient(160deg, #15121A 0%, #1E1A26 55%, #15121A 100%);
+  --bg-grad: linear-gradient(112deg, #15121A 0%, #1E1A26 28%, #1B1822 65%, #100E16 100%);
   --bg-panel: #1B2029;
   --ink: #E7EAF0;
   --muted: #A3ACB9;
@@ -36,7 +36,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #12151C;
-    --bg-grad: linear-gradient(160deg, #15121A 0%, #1E1A26 55%, #15121A 100%);
+    --bg-grad: linear-gradient(112deg, #15121A 0%, #1E1A26 28%, #1B1822 65%, #100E16 100%);
     --bg-panel: #1B2029;
     --ink: #E7EAF0;
     --muted: #A3ACB9;
