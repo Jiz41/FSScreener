@@ -432,6 +432,8 @@ fetch('data.json?v=' + Date.now())
     var monthly = data.monthly;
     var news = data.news;
     var TARGET = 216;
+    var updatedMonthMatch = data.updated.match(/(\d+)月/);
+    var currentMonthIndex = updatedMonthMatch ? (parseInt(updatedMonthMatch[1], 10) - 1) : -1;
 
     document.getElementById('winsNumber').textContent = wins;
     var zan = TARGET - wins;
@@ -456,10 +458,12 @@ fetch('data.json?v=' + Date.now())
       total += v;
       var cell = document.getElementById('m' + j);
       cell.textContent = v;
-      if (v >= 18) {
-        cell.className = 'month-win achieved';
-      } else if (v > 0) {
-        cell.className = 'month-win below-pace';
+      if (j < currentMonthIndex) {
+        if (v >= 18) {
+          cell.className = 'month-win achieved';
+        } else if (v > 0) {
+          cell.className = 'month-win below-pace';
+        }
       }
     }
     document.getElementById('mTotal').textContent = total;
