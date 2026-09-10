@@ -6151,5 +6151,89 @@
     "mother": "コパノマルコリーニ",
     "sire_line": "サンデーサイレンス系（ブラックタイド産駒）",
     "close_relatives": ""
+  },
+  "マリアライト": {
+    "father": "ディープインパクト",
+    "mother": "クリソプレーズ",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": "母父エルコンドルパサー"
+  },
+  "ミッキーアイル": {
+    "father": "ディープインパクト",
+    "mother": "スターアイル",
+    "sire_line": "サンデーサイレンス系（ディープインパクト系）",
+    "close_relatives": "母父ロックオブジブラルタル"
+  },
+  "グレイスフルリープ": {
+    "father": "ゴールドアリュール",
+    "mother": "ラビットフット",
+    "sire_line": "サンデーサイレンス系（ゴールドアリュール系）",
+    "close_relatives": ""
+  },
+  "マスカレードボール": {
+    "father": "ドゥラメンテ",
+    "mother": "マスクオフ",
+    "sire_line": "キングカメハメハ系（ミスタープロスペクター系）",
+    "close_relatives": ""
+  },
+  "ジャンタルマンタル": {
+    "father": "パレスマリス",
+    "mother": "インディアマントゥアナ",
+    "sire_line": "ミスタープロスペクター系",
+    "close_relatives": ""
+  },
+  "ダノンデサイル": {
+    "father": "エピファネイア",
+    "mother": "トップデサイル",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "メイショウタバル": {
+    "father": "ゴールドシップ",
+    "mother": "メイショウツバクロ",
+    "sire_line": "ステイゴールド系",
+    "close_relatives": ""
+  },
+  "レガレイラ": {
+    "father": "スワーヴリチャード",
+    "mother": "ロカ",
+    "sire_line": "ハーツクライ系",
+    "close_relatives": ""
+  },
+  "アスコリピチェーノ": {
+    "father": "ダイワメジャー",
+    "mother": "アスコルティ",
+    "sire_line": "サンデーサイレンス系（ダイワメジャー系）",
+    "close_relatives": ""
+  },
+  "チェルヴィニア": {
+    "father": "ハービンジャー",
+    "mother": "チェッキーノ",
+    "sire_line": "デインヒル系",
+    "close_relatives": ""
+  },
+  "ヘデントール": {
+    "father": "ルーラーシップ",
+    "mother": "コルコバード",
+    "sire_line": "キングカメハメハ系（ミスタープロスペクター系）",
+    "close_relatives": ""
+  },
+  "ステレンボッシュ": {
+    "father": "エピファネイア",
+    "mother": "ブルークランズ",
+    "sire_line": "ロベルト系",
+    "close_relatives": ""
+  },
+  "レッドファルクス": {
+    "father": "スウェプトオーヴァーボード",
+    "mother": "ベルモット",
+    "sire_line": "エンドスウィープ系（ストームキャット系）",
+    "close_relatives": ""
+  },
+  "サングレアル": {
+    "father": "ゼンノロブロイ",
+    "mother": "ビワハイジ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": "半姉にブエナビスタ（GI6勝）"
   }
 }
