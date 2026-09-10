@@ -231,6 +231,10 @@ a:visited { color: #660099; text-decoration: underline; }
   background-color: #FFFF00;
   font-weight: bold;
 }
+.monthly-table td.below-pace {
+  background-color: #CCE5FF;
+  color: #003399;
+}
 .monthly-table tr.total-row td {
   background-color: #FF3399;
   color: #FFFFFF;
@@ -454,6 +458,8 @@ fetch('data.json?v=' + Date.now())
       cell.textContent = v;
       if (v >= 18) {
         cell.className = 'month-win achieved';
+      } else if (v > 0) {
+        cell.className = 'month-win below-pace';
       }
     }
     document.getElementById('mTotal').textContent = total;
