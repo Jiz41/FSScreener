@@ -21,4 +21,4 @@ Full Stride の馬市場を検索するファンメイドツールです。
 『FULL STRIDE』の名称は BLUE BULLET の商標または登録商標です。
 価格は独自の推定式によるものであり、実際のショップ価格とは多少異なる場合があります。
 
-Created by ©[Musyn Reagan](https://x.com/Mushyn_Reagan) / [華耀東夷堂](https://x.com/Kayoutouidou01)
+Created by ©[Musyn Reagan](https://x.com/Mushyn_Reagan)
