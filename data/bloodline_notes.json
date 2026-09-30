@@ -540,7 +540,7 @@
     "father": "キングカメハメハ",
     "mother": "シーザリオ",
     "sire_line": "キングカメハメハ系（Kingmambo系＝Mr. Prospector系）",
-    "close_relatives": "母シーザリオの半弟にエピファネイア、サートゥルナーリア（いずれもGI馬）"
+    "close_relatives": "母シーザリオの半兄にエピファネイア、半弟にサートゥルナーリア（いずれもGI馬）"
   },
   "ジュエラー": {
     "father": "ヴィクトワールピサ",
@@ -6528,5 +6528,65 @@
     "mother": "パルティトゥーラ",
     "sire_line": "ノーザンダンサー系（ラストタイクーン系）",
     "close_relatives": ""
+  },
+  "ダイワマッジョーレ": {
+    "father": "ダイワメジャー",
+    "mother": "ファンジカ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "エキストラエンド": {
+    "father": "ディープインパクト",
+    "mother": "カーリング",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ブライトライン": {
+    "father": "フジキセキ",
+    "mother": "シェリーズスマイル",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "クリールカイザー": {
+    "father": "キングヘイロー",
+    "mother": "スマイルコンテスト",
+    "sire_line": "ノーザンダンサー系（リファール系）",
+    "close_relatives": ""
+  },
+  "ワイドバッハ": {
+    "father": "アジュディケーティング",
+    "mother": "グリーンヒルレッド",
+    "sire_line": "ノーザンダンサー系（ダンジグ系）",
+    "close_relatives": ""
+  },
+  "ラブイズブーシェ": {
+    "father": "マンハッタンカフェ",
+    "mother": "ローリエ",
+    "sire_line": "サンデーサイレンス系",
+    "close_relatives": ""
+  },
+  "ケイアイエレガント": {
+    "father": "キングカメハメハ",
+    "mother": "ポストパレード",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ベルシャザール": {
+    "father": "キングカメハメハ",
+    "mother": "マルカキャンディ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "ラブリーデイ": {
+    "father": "キングカメハメハ",
+    "mother": "ポップコーンジャズ",
+    "sire_line": "キングカメハメハ系",
+    "close_relatives": ""
+  },
+  "エピファネイア": {
+    "father": "シンボリクリスエス",
+    "mother": "シーザリオ",
+    "sire_line": "ロベルト系",
+    "close_relatives": "サートゥルナーリア（半弟）、リオンディーズ（半弟）"
   }
 }
