@@ -179,6 +179,19 @@ const I18N = {
     install_guide_title: "ホーム画面に追加",
     install_guide_ios: "共有ボタン（□に↑のアイコン）をタップ→「ホーム画面に追加」を選ぶと、アプリのように使えます",
     no_results: "条件に合致する馬が見つかりませんでした。",
+    alert_budget: "予算上限を入力してください",
+    sheet_fetch_failed: "シート取得失敗: HTTP ",
+    achievements_etc: "など",
+    cache_notice_time: "最新データの取得に失敗したため、{time}時点のデータで表示しています",
+    cache_notice_plain: "最新データの取得に失敗したため、保存済みのデータで表示しています",
+    phase_search: "検索中…",
+    phase_found: "該当馬を検出",
+    phase_build: "検索結果一覧を生成",
+    joke_bedding: "馬房内の寝藁を更新中",
+    joke_hay: "新鮮な飼葉を準備中",
+    joke_coat: "馬体のツヤを確認中",
+    joke_shoes: "蹄鉄の保守点検中",
+    joke_stall: "馬房内のボロを清掃中",
     loading: "馬データを読み込み中...",
     prompt_search: "検索条件を入力して「検索する」を押してください。",
     load_failed: "馬データの読み込みに失敗しました: "
@@ -307,6 +320,19 @@ const I18N = {
     install_guide_title: "Add to Home Screen",
     install_guide_ios: "Tap the Share button (square with an up arrow), then choose \"Add to Home Screen\" to use this like an app.",
     no_results: "No horses matched your search conditions.",
+    alert_budget: "Please enter a budget limit",
+    sheet_fetch_failed: "Failed to fetch sheet: HTTP ",
+    achievements_etc: " etc.",
+    cache_notice_time: "Failed to fetch the latest data, so showing data as of {time}",
+    cache_notice_plain: "Failed to fetch the latest data, so showing saved data",
+    phase_search: "Searching…",
+    phase_found: "Horses found",
+    phase_build: "Building results list",
+    joke_bedding: "Refreshing the stall bedding",
+    joke_hay: "Preparing fresh hay",
+    joke_coat: "Checking the coat shine",
+    joke_shoes: "Inspecting the horseshoes",
+    joke_stall: "Cleaning the stall",
     loading: "Loading horse data...",
     prompt_search: "Enter your search conditions and press \"Search\".",
     load_failed: "Failed to load horse data: "
@@ -509,7 +535,7 @@ async function loadHorses() {
   try {
     const res = await fetch(SHEET_URL);
     if (!res.ok) {
-      throw new Error("シート取得失敗: HTTP " + res.status);
+      throw new Error(t("sheet_fetch_failed") + res.status);
     }
     text = await res.text();
     try {
@@ -965,7 +991,7 @@ function runSearch() {
   const budget = budgetInput === "" ? null : parseFloat(budgetInput);
 
   if (budget === null || isNaN(budget)) {
-    alert("予算上限を入力してください");
+    alert(t("alert_budget"));
     return;
   }
 
@@ -1029,14 +1055,8 @@ function runSearch() {
 }
 
 // ---- Search loading演出 ----
-const BASE_PHASES = ["検索中…", "該当馬を検出", "検索結果一覧を生成"];
-const JOKE_PHASES = [
-  "馬房内の寝藁を更新中",
-  "新鮮な飼葉を準備中",
-  "馬体のツヤを確認中",
-  "蹄鉄の保守点検中",
-  "馬房内のボロを清掃中"
-];
+const BASE_PHASES = ["phase_search", "phase_found", "phase_build"];
+const JOKE_PHASES = ["joke_bedding", "joke_hay", "joke_coat", "joke_shoes", "joke_stall"];
 
 function fastScrollTo(el) {
   const target = el.getBoundingClientRect().top + window.scrollY;
@@ -1070,9 +1090,9 @@ function playSearchLoadingThenRender() {
 
   fastScrollTo(resultsPanel);
 
-  let phases = BASE_PHASES.slice();
+  let phases = BASE_PHASES.map(k => t(k));
   if (Math.random() < 0.3) {
-    const joke = JOKE_PHASES[Math.floor(Math.random() * JOKE_PHASES.length)];
+    const joke = t(JOKE_PHASES[Math.floor(Math.random() * JOKE_PHASES.length)]);
     const insertAt = Math.floor(Math.random() * 4); // 0,1,2,3
     phases.splice(insertAt, 0, joke);
   }
@@ -1321,7 +1341,7 @@ function showDetail(horse) {
     }
     const achievementsHtml = displayLines.length
       ? displayLines.map((line, i) => {
-          const text = (achievementsTruncated && i === displayLines.length - 1) ? `${line}など` : line;
+          const text = (achievementsTruncated && i === displayLines.length - 1) ? `${line}${t("achievements_etc")}` : line;
           return `<p class="achievement-line">${text}</p>`;
         }).join("")
       : `<p>${hist.achievements || ""}</p>`;
@@ -2100,12 +2120,14 @@ async function init() {
         if (window.__fscCacheTime) {
           const d = new Date(window.__fscCacheTime);
           if (!isNaN(d.getTime())) {
-            timeLabel = `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日${d.getHours()}時${d.getMinutes()}分`;
+            timeLabel = currentLang() === "en"
+              ? `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`
+              : `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日${d.getHours()}時${d.getMinutes()}分`;
           }
         }
         noticeEl.textContent = timeLabel
-          ? `最新データの取得に失敗したため、${timeLabel}時点のデータで表示しています`
-          : "最新データの取得に失敗したため、保存済みのデータで表示しています";
+          ? t("cache_notice_time").replace("{time}", timeLabel)
+          : t("cache_notice_plain");
         resultsPanel.parentNode.insertBefore(noticeEl, resultsPanel);
       } catch (e) { /* 通知表示に失敗しても検索機能自体は継続 */ }
     }
