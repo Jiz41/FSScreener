@@ -381,6 +381,7 @@ function applyLanguage(lang) {
 
 let horses = [];
 let historyData = {};
+const COLUMN_PAUSED = true;
 let datasetMaxRating = 80;
 let currentResults = [];
 let currentCriteria = null;
@@ -1329,10 +1330,10 @@ function showDetail(horse) {
         <h4>${t("achievements_title")}</h4>
         ${achievementsHtml}
       </div>
-      <div class="detail-block">
+      ${COLUMN_PAUSED ? "" : `<div class="detail-block">
         <h4>${t("column_title")}</h4>
         <p>${hist.column || ""}</p>
-      </div>
+      </div>`}
       <div class="detail-block">
         <p class="source-link">${t("sources_label")}<br>${sourcesHtml}</p>
       </div>
