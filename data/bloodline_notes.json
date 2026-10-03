@@ -119,36 +119,31 @@
     "father": "キングカメハメハ",
     "mother": "アサカプティット",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "オリービン": {
     "father": "ダイワメジャー",
     "mother": "シャンクシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アロマティコ": {
     "father": "キングカメハメハ",
     "mother": "ナスカ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アンコイルド": {
-    "father": "Giant's Causeway",
-    "mother": "Tanzania",
+    "father": "ジャイアンツコーズウェイ",
+    "mother": "タンザニア",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ゴールデンナンバー": {
     "father": "ダイワメジャー",
     "mother": "アークティックシルク",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ティソーナ": {
     "father": "ダイワメジャー",
@@ -159,63 +154,56 @@
   },
   "マイネグレヴィル": {
     "father": "ブライアンズタイム",
-    "mother": "マイネポリーヌ（母父スペシャルウィーク）",
+    "mother": "マイネポリーヌ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ショウナンバッハ": {
     "father": "ステイゴールド",
-    "mother": "シュガーハート（母父サクラバクシンオー）",
+    "mother": "シュガーハート",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "近親にキタサンブラック（keibalab「兄弟馬」表記のみ、続柄未確認）"
   },
   "ヴォルシェーブ": {
     "father": "ネオユニヴァース",
-    "mother": "ヴェイルオブアヴァロン（父Thunder Gulch）",
+    "mother": "ヴェイルオブアヴァロン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "モズハツコイ": {
     "father": "クロフネ",
     "mother": "クールアンフルール",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "ベルルミエール": {
     "father": "スウェプトオーヴァーボード",
     "mother": "フレンチビキニ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "パシフィックギャル": {
     "father": "ゼンノロブロイ",
     "mother": "不明",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "キングズオブザサン": {
     "father": "チチカステナンゴ",
     "mother": "スティンガー",
     "sire_line": "カロ系",
-    "sire_line_en": "Caro",
-    "close_relatives": ""
+    "sire_line_en": "Caro"
   },
   "ウインフェニックス": {
     "father": "スズカフェニックス",
     "mother": "シャインプレジャー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルマエルナト": {
     "father": "ネオユニヴァース",
-    "mother": "キャメロンガール(USA)（母父With Approval）",
+    "mother": "キャメロンガール",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半兄アルマスティング、ゴーズオン"
@@ -224,8 +212,7 @@
     "father": "スタチューオブリバティ",
     "mother": "ノッティングギャル",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "レッドアルヴィス": {
     "father": "ゴールドアリュール",
@@ -238,155 +225,133 @@
     "father": "ゴールドアリュール",
     "mother": "ムゲン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ニシケンモノノフ": {
     "father": "メイショウボーラー",
-    "mother": "グリーンヒルコマチ（母父Afleet(USA)）",
+    "mother": "グリーンヒルコマチ",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "コーリンベリー": {
-    "father": "サウスヴィグラス(USA)",
-    "mother": "コーリンラヴィアン（母父ミシックトライブ(USA)）",
+    "father": "サウスヴィグラス",
+    "mother": "コーリンラヴィアン",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "カゼノコ": {
-    "father": "アグネスデジタル(USA)",
-    "mother": "タフネススター（母父ラグビーボール）",
+    "father": "アグネスデジタル",
+    "mother": "タフネススター",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "エキマエ": {
     "father": "メイショウボーラー",
-    "mother": "ローレルシャイン（母父コマンダーインチーフ(GB)）",
+    "mother": "ローレルシャイン",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "アスカノロマン": {
-    "father": "アグネスデジタル(USA)",
-    "mother": "アスカノヒミコ（母父タバスコキャット(USA)）",
+    "father": "アグネスデジタル",
+    "mother": "アスカノヒミコ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "キングズガード": {
-    "father": "シニスターミニスター(USA)",
-    "mother": "キングスベリー（母父キングヘイロー）",
+    "father": "シニスターミニスター",
+    "mother": "キングスベリー",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "ショウナンアンセム": {
     "father": "ジャングルポケット",
     "mother": "ヴォラドーレス",
     "sire_line": "ゼダーン系",
-    "sire_line_en": "Zeddaan",
-    "close_relatives": ""
+    "sire_line_en": "Zeddaan"
   },
   "シャドウアプローチ": {
     "father": "ジャングルポケット",
     "mother": "マルカアイチャン",
     "sire_line": "ゼダーン系",
-    "sire_line_en": "Zeddaan",
-    "close_relatives": ""
+    "sire_line_en": "Zeddaan"
   },
   "ジェラシー": {
     "father": "ハービンジャー",
     "mother": "グローリアスデイズ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "アドマイヤダイオウ": {
     "father": "ディープインパクト",
     "mother": "アドマイヤマリン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アジュールローズ": {
     "father": "ヴィクトワールピサ",
     "mother": "ヴィアンローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ワントゥワン": {
     "father": "ディープインパクト",
     "mother": "ワンカラット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レイホーロマンス": {
     "father": "ハービンジャー",
     "mother": "スズカローラン",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ダイワドレッサー": {
     "father": "ネオユニヴァース",
     "mother": "リバティープリント",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シゲルノコギリザメ": {
     "father": "スーパーホーネット",
     "mother": "シアトルビューティ",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ラベンダーヴァレイ": {
     "father": "ディープインパクト",
     "mother": "クロウキャニオン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウインファビラス": {
     "father": "ステイゴールド",
     "mother": "",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "イモータル": {
     "father": "マンハッタンカフェ",
     "mother": "ショアー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リスペクトアース": {
     "father": "マンハッタンカフェ",
-    "mother": "Earthgreen（USA）",
+    "mother": "アースグリーン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ラニ": {
-    "father": "Tapit（USA）",
+    "father": "タピット",
     "mother": "ヘヴンリーロマンス",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "ヨシオ": {
-    "father": "Johannesburg（USA）",
+    "father": "ヨハネスブルグ",
     "mother": "フローラルホーム",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "サトノティターン": {
     "father": "シンボリクリスエス",
@@ -406,89 +371,77 @@
     "father": "カネヒキリ",
     "mother": "フェアリーバニヤン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "プリンシアコメータ": {
     "father": "スパイキュール",
     "mother": "ベルモントフェリス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴェンジェンス": {
     "father": "カジノドライヴ",
     "mother": "スペシャルクイン",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "サトノクラウン": {
-    "father": "Marju",
+    "father": "マルジュ",
     "mother": "ジョコンダII",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "クイーンズリング": {
     "father": "マンハッタンカフェ",
     "mother": "アクアリング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シュヴァルグラン": {
     "father": "ハーツクライ",
     "mother": "ハルーワスウィート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リアルスティール": {
     "father": "ディープインパクト",
     "mother": "ラヴズオンリーミー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メジャータイフーン": {
     "father": "ダイワメジャー",
     "mother": "マザイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メジェルダ": {
     "father": "ディープインパクト",
     "mother": "メリュジーヌ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ストーミーシー": {
     "father": "アドマイヤムーン",
     "mother": "リーベストラウム",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "サイモンゼーレ": {
     "father": "キンシャサノキセキ",
     "mother": "ポールポジションII",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ゲッカコウ": {
     "father": "ロージズインメイ",
     "mother": "チューベローズ",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "アスクシュタイン": {
     "father": "ドゥラメンテ",
-    "mother": "ヴィクトリアズワイルドキャット(USA)",
+    "mother": "ヴィクトリアズワイルドキャット",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo"
   },
@@ -506,7 +459,7 @@
     "close_relatives": "伯父アドミラブル（2017年青葉賞勝ち馬）、祖母スカーレットの半兄ヴィクトリー（2007年皐月賞馬）"
   },
   "イミグラントソング": {
-    "father": "マクフィ(GB)",
+    "father": "マクフィ",
     "mother": "エルノルテ",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector"
@@ -554,7 +507,7 @@
     "sire_line_en": "Kingmambo"
   },
   "クラスペディア": {
-    "father": "ミスターメロディ(USA)",
+    "father": "ミスターメロディ",
     "mother": "ウンベラータ",
     "sire_line": "ストームキャット系",
     "sire_line_en": "Storm Cat"
@@ -572,7 +525,7 @@
     "sire_line_en": "Kingmambo"
   },
   "ゲルチュタール": {
-    "father": "ブリックスアンドモルタル(USA)",
+    "father": "ブリックスアンドモルタル",
     "mother": "キラービューティ",
     "sire_line": "ストームキャット系",
     "sire_line_en": "Storm Cat"
@@ -586,41 +539,41 @@
   },
   "ゴーソーファー": {
     "father": "キズナ",
-    "mother": "ゴーマギーゴー(USA)",
+    "mother": "ゴーマギーゴー",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母父Ghostzapper（米国血統）"
   },
   "サトノカルナバル": {
     "father": "キタサンブラック",
-    "mother": "リアリサトリス(FR)",
+    "mother": "リアリサトリス",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母父Numerous（仏国血統）"
   },
   "サトノシャイニング": {
     "father": "キズナ",
-    "mother": "スウィーティーガール(ARG)",
+    "mother": "スウィーティーガール",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母父Star Dabbler（アルゼンチン血統）"
   },
   "ショウナンザナドゥ": {
     "father": "キズナ",
-    "mother": "ミスエーニョ(USA)",
+    "mother": "ミスエーニョ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半姉ミスエルテ（父フランケル）、半姉ミアネーロ（父ドゥラメンテ）"
   },
   "セイウンコウセイ": {
     "father": "アドマイヤムーン",
-    "mother": "オブザーヴァント(USA)",
+    "mother": "オブザーヴァント",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector"
   },
   "ミッキーロケット": {
     "father": "キングカメハメハ",
-    "mother": "マネーキャントバイミーラヴ(IRE)",
+    "mother": "マネーキャントバイミーラヴ",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo"
   },
@@ -639,44 +592,40 @@
   },
   "ジュエラー": {
     "father": "ヴィクトワールピサ",
-    "mother": "バルドウィナ(FR)",
+    "mother": "バルドウィナ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "ファウストラーゼン": {
-    "father": "モズアスコット（父フランケル、フランケル系＝ガリレオ系）",
-    "mother": "ペイシャフェリス（母父スペシャルウィーク）",
+    "father": "モズアスコット",
+    "mother": "ペイシャフェリス",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ショウヘイ": {
-    "father": "サートゥルナーリア（父ロードカナロア、皐月賞馬・菊花賞馬）",
-    "mother": "オーロトラジェ（母父オルフェーヴル）",
+    "father": "サートゥルナーリア",
+    "mother": "オーロトラジェ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ランフォーヴァウ": {
-    "father": "ロードカナロア（2008年生、香港含む短距離GI7勝の名スプリンター）",
-    "mother": "キネオダンサー（母父ディープインパクト）",
+    "father": "ロードカナロア",
+    "mother": "キネオダンサー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ピコチャンブラック": {
-    "father": "キタサンブラック（2015年スプリングS・皐月賞・天皇賞春秋等GI7勝の名馬）",
-    "mother": "トランプクイーン（母父ネオユニヴァース）",
+    "father": "キタサンブラック",
+    "mother": "トランプクイーン",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "祖父ブラックタイド（2004年スプリングS優勝）の全弟に無敗の三冠馬ディープインパクトがいる血統背景を持つ"
   },
   "ランスオブカオス": {
-    "father": "シルバーステート（父ディープインパクト）",
-    "mother": "ハイドラン（母父ローエングリン）",
+    "father": "シルバーステート",
+    "mother": "ハイドラン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヤンキーバローズ": {
     "father": "エピファネイア",
@@ -687,20 +636,20 @@
   },
   "レーゼドラマ": {
     "father": "キズナ",
-    "mother": "シアードラマ(USA)",
+    "mother": "シアードラマ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "ルージュアベリア、ピクシレーション"
   },
   "リラエンブレム": {
     "father": "キズナ",
-    "mother": "デルフィニアⅡ(IRE)",
+    "mother": "デルフィニアⅡ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "ベストミーエヴァー、エムズビギン"
   },
   "マピュース": {
-    "father": "マインドユアビスケッツ(USA)",
+    "father": "マインドユアビスケッツ",
     "mother": "フィルムフランセ",
     "sire_line": "デピュティミニスター系",
     "sire_line_en": "Deputy Minister",
@@ -715,10 +664,9 @@
   },
   "ブラウンラチェット": {
     "father": "キズナ",
-    "mother": "フォエヴァーダーリング(USA)",
+    "mother": "フォエヴァーダーリング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファンダム": {
     "father": "サートゥルナーリア",
@@ -731,11 +679,10 @@
     "father": "イスラボニータ",
     "mother": "ビクトリアスマイル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トータルクラリティ": {
-    "father": "バゴ(FR)",
+    "father": "バゴ",
     "mother": "ビットレート",
     "sire_line": "ブラッシンググルーム系",
     "sire_line_en": "Blushing Groom",
@@ -743,7 +690,7 @@
   },
   "ダンツエラン": {
     "father": "ロードカナロア",
-    "mother": "ミスチヴァスミスティ(USA)",
+    "mother": "ミスチヴァスミスティ",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "コナゴールド等（グレイフライト系近親）"
@@ -752,78 +699,67 @@
     "father": "モズアスコット",
     "mother": "ハイリリー",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ニタモノドウシ": {
     "father": "ディーマジェスティ",
-    "mother": "ジェラスガール(USA)",
+    "mother": "ジェラスガール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "スリールミニョン": {
-    "father": "ミスターメロディ(USA)",
+    "father": "ミスターメロディ",
     "mother": "ルミノハレブタイ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ジェットマグナム": {
     "father": "ヘンリーバローズ",
     "mother": "ビビットオレンジ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミニトランザット": {
     "father": "エピファネイア",
     "mother": "イチオクノホシ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "リンクスティップ": {
     "father": "キタサンブラック",
-    "mother": "ダンスウィズキトゥン(USA)",
+    "mother": "ダンスウィズキトゥン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "モンドデラモーレ": {
     "father": "ワールドエース",
     "mother": "ヒカルアモーレ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "モズナナスター": {
-    "father": "モズアスコット(USA)",
+    "father": "モズアスコット",
     "mother": "グランプリエンゼル",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ミストレス": {
     "father": "キズナ",
-    "mother": "チェロキーメイドン(USA)",
+    "mother": "チェロキーメイドン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マイネルチケット": {
     "father": "ダノンバラード",
     "mother": "エントリーチケット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファイアンクランツ": {
     "father": "ドゥラメンテ",
     "mother": "カラフルブラッサム",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "パラディレーヌ": {
     "father": "キズナ",
@@ -855,28 +791,26 @@
   },
   "ジョバンニ": {
     "father": "エピファネイア",
-    "mother": "ベアフットレディ(IRE)",
+    "mother": "ベアフットレディ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ルクソールカフェ": {
-    "father": "American Pharoah(USA)",
-    "mother": "Mary's Follies(USA)",
+    "father": "アメリカンファラオ",
+    "mother": "メアリーズフォリーズ",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector",
     "close_relatives": "全兄カフェファラオ(フェブラリーステークス2021・2022連覇、重賞5勝)"
   },
   "ナルカミ": {
-    "father": "サンダースノー(IRE)",
+    "father": "サンダースノー",
     "mother": "オムニプレゼンス",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "シックスペンス": {
     "father": "キズナ",
-    "mother": "フィンレイズラッキーチャーム(USA)",
+    "mother": "フィンレイズラッキーチャーム",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母父Twirling Candy(USA)"
@@ -892,8 +826,7 @@
     "father": "キズナ",
     "mother": "ウェイヴェルアベニュー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シンエンペラー": {
     "father": "シユーニ",
@@ -906,29 +839,25 @@
     "father": "アルアイン",
     "mother": "",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダノンマッキンリー": {
     "father": "モーリス",
     "mother": "ホームカミングクイーン",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "オフトレイル": {
-    "father": "Farhh",
+    "father": "ファー",
     "mother": "ローズトレイル",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "コラソンビート": {
     "father": "スワーヴリチャード",
     "mother": "ルシェルドール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アドマイヤテラ": {
     "father": "レイデオロ",
@@ -955,15 +884,13 @@
     "father": "スワーヴリチャード",
     "mother": "ビジュートウショウ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シュトラウス": {
     "father": "モーリス",
     "mother": "ブルーメンブラット",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "シュガークン": {
     "father": "ドゥラメンテ",
@@ -976,106 +903,91 @@
     "father": "キズナ",
     "mother": "アドマイヤサブリナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サンライズアース": {
     "father": "レイデオロ",
     "mother": "シャンドランジュ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "サフィラ": {
     "father": "ハーツクライ",
-    "mother": "サロミナ(GER)",
+    "mother": "サロミナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クリスマスパレード": {
     "father": "キタサンブラック",
-    "mother": "ミスエリカ（USA）",
+    "mother": "ミスエリカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エトヴプレ": {
-    "father": "Too Darn Hot",
-    "mother": "Nahoodh",
+    "father": "トゥーダーンホット",
+    "mother": "ナフード",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "アドマイヤベル": {
     "father": "スワーヴリチャード",
     "mother": "ベルアリュールII",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ピューロマジック": {
-    "father": "アジアエクスプレス（USA）",
+    "father": "アジアエクスプレス",
     "mother": "メジェルダ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "セキトバイースト": {
     "father": "デクラレーションオブウォー",
     "mother": "ベアフットレディ",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "シリウスコルト": {
     "father": "マクフィ",
     "mother": "オールドフレイム",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ワイドラトゥール": {
     "father": "カリフォルニアクローム",
     "mother": "ワイドサファイア",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "ミアネーロ": {
     "father": "ドゥラメンテ",
     "mother": "ミスエーニョ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ノーブルロジャー": {
-    "father": "Palace Malice",
-    "mother": "Noble Ready",
+    "father": "パレスマリス",
+    "mother": "ノーブルレディ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "カルチャーデイ": {
     "father": "ファインニードル",
     "mother": "ラルティスタ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ヤマニンアルリフラ": {
     "father": "イスラボニータ",
     "mother": "ヤマニンパピオネ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トロヴァトーレ": {
     "father": "レイデオロ",
     "mother": "シャルマント",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ディスペランツァ": {
     "father": "ルーラーシップ",
@@ -1088,71 +1000,61 @@
     "father": "デクラレーションオブウォー",
     "mother": "",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "コガネノソラ": {
     "father": "ゴールドシップ",
     "mother": "",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "カピリナ": {
-    "father": "ダンカーク(USA)",
+    "father": "ダンカーク",
     "mother": "ライトリーチューン",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ウォーターリヒト": {
-    "father": "ドレフォン(USA)",
+    "father": "ドレフォン",
     "mother": "ウォーターピオニー",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "イフェイオン": {
     "father": "エピファネイア",
     "mother": "イチオクノホシ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "アドマイヤマツリ": {
     "father": "キタサンブラック",
     "mother": "",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アスクワンタイム": {
     "father": "ロードカナロア",
     "mother": "ディープインアスク",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ナナオ": {
     "father": "ロードカナロア",
     "mother": "レディブラッサム",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ドナベティ": {
     "father": "リアルスティール",
-    "mother": "ドナルチア(USA)",
+    "mother": "ドナルチア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シカゴスティング": {
     "father": "ロゴタイプ",
     "mother": "マルチスクリーン",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "エコロヴァルツ": {
     "father": "ブラックタイド",
@@ -1163,45 +1065,39 @@
   },
   "ヴェロキラプトル": {
     "father": "スワーヴリチャード",
-    "mother": "ルーヴインペリアル(USA)",
+    "mother": "ルーヴインペリアル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ボンドガール": {
     "father": "ダイワメジャー",
-    "mother": "コーステッド(USA)",
+    "mother": "コーステッド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ペアポルックス": {
-    "father": "キンシャサノキセキ(AUS)",
+    "father": "キンシャサノキセキ",
     "mother": "ミラクルアスク",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジューンブレア": {
-    "father": "アメリカンファラオ(USA)",
-    "mother": "Lap of Luxury(IRE)",
+    "father": "アメリカンファラオ",
+    "mother": "ラップオブラグジュアリー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "コスモディナー": {
     "father": "ダノンバラード",
     "mother": "コスモミール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロジリオン": {
     "father": "リオンディーズ",
     "mother": "ビービーバーレル",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "クイックバイオ": {
     "father": "ブリックスアンドモルタル",
@@ -1242,36 +1138,31 @@
     "father": "ウインバリアシオン",
     "mother": "サクラインスパイア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "チャンネルトンネル": {
     "father": "グレーターロンドン",
-    "mother": "ギャルソンヌ(GB)",
+    "mother": "ギャルソンヌ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ショウナンマヌエラ": {
     "father": "ジャスタウェイ",
     "mother": "ダイアゴナルクロス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クリーンエア": {
     "father": "リアルインパクト",
-    "mother": "シルヴァンソング(USA)",
+    "mother": "シルヴァンソング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アレンジャー": {
     "father": "リアルスティール",
     "mother": "キーウエスト",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルセナール": {
     "father": "エピファネイア",
@@ -1309,7 +1200,7 @@
     "close_relatives": "グルーヴィット（半兄、2019年中京記念）、ジュンライトボルト（半兄、2022年チャンピオンズカップ）"
   },
   "テンカジョウ": {
-    "father": "サンダースノー(IRE)",
+    "father": "サンダースノー",
     "mother": "フィオレロ",
     "sire_line": "デインヒル系",
     "sire_line_en": "Danehill",
@@ -1317,21 +1208,21 @@
   },
   "ダブルハートボンド": {
     "father": "キズナ",
-    "mother": "パーシステントリー(USA)",
+    "mother": "パーシステントリー",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母パーシステントリーは2010年パーソナルエンスンステークス（米GI）勝ち馬。3代母Heavenly Prizeは米GI・8勝馬。近親にGood Reward（ハリウッドダービー等）、Instilled Regard（マンハッタンS等）、Oh What a Windfall（メイトロンS等）、Dancing Forever（マンハッタンハンデキャップ等）、スシトレインなど"
   },
   "ソールオリエンス": {
     "father": "キタサンブラック",
-    "mother": "スキア(FR)",
+    "mother": "スキア",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半兄ヴァンドギャルド（父ディープインパクト、富士ステークス勝ち・ドバイターフ2着3着）、半妹フィロステファニ（父エピファネイア、アルテミスステークス勝ち）、従姉妹Love（英1000ギニー・英オークスなどGI5勝）"
   },
   "ルガル": {
     "father": "ドゥラメンテ",
-    "mother": "アタブ(IRE)",
+    "mother": "アタブ",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "近親にキングマンボ、アルファセントーリ、カラコンティ、リアルスティール、ラヴズオンリーユー、スタディオブマンなど"
@@ -1345,14 +1236,14 @@
   },
   "ドゥレッツァ": {
     "father": "ドゥラメンテ",
-    "mother": "モアザンセイクリッド(AUS)",
+    "mother": "モアザンセイクリッド",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "母モアザンセイクリッドはニュージーランドオークス（G1）勝ち馬"
   },
   "シャンパンカラー": {
     "father": "ドゥラメンテ",
-    "mother": "メモリアルライフ(GB)",
+    "mother": "メモリアルライフ",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "祖母バルドウィナ（仏G3ペネロープ賞勝ち馬）の産駒にワンカラット（重賞4勝）、ジュエラー（2016年桜花賞馬）"
@@ -1424,15 +1315,13 @@
     "father": "ビッグアーサー",
     "mother": "クェスタボルタ",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "モリアーナ": {
     "father": "エピファネイア",
     "mother": "ガルデルスリール",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "マイネルエンペラー": {
     "father": "ゴールドシップ",
@@ -1450,31 +1339,28 @@
   },
   "シングザットソング": {
     "father": "ドゥラメンテ",
-    "mother": "ザガールインザットソング(USA)",
+    "mother": "ザガールインザットソング",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "母ザガールインザットソングは米GIIラカニャーダステークス勝ち馬"
   },
   "ゴールデンハインド": {
     "father": "ゴールドシップ",
-    "mother": "オレゴンレディ(IRE)",
+    "mother": "オレゴンレディ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ガストリック": {
     "father": "ジャスタウェイ",
-    "mother": "エーシンエポナ(USA)",
+    "mother": "エーシンエポナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エエヤン": {
     "father": "シルバーステート",
     "mother": "シルクヴィーナス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルジーヌ": {
     "father": "ロードカナロア",
@@ -1487,8 +1373,7 @@
     "father": "デクラレーションオブウォー",
     "mother": "フェアブルーム",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "ラヴェル": {
     "father": "キタサンブラック",
@@ -1522,15 +1407,13 @@
     "father": "ビッグアーサー",
     "mother": "アンナペレンナ",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "ファントムシーフ": {
     "father": "ハービンジャー",
     "mother": "ルパンII",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "フリームファクシ": {
     "father": "ルーラーシップ",
@@ -1550,47 +1433,41 @@
     "father": "ファインニードル",
     "mother": "エーシンパナギア",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "リバーラ": {
     "father": "キンシャサノキセキ",
     "mother": "インドリヤ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ライトクオンタム": {
     "father": "ディープインパクト",
     "mother": "イルミナント",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミッキーゴージャス": {
     "father": "ミッキーロケット",
     "mother": "ミッキークイーン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ブトンドール": {
     "father": "ビッグアーサー",
     "mother": "プリンセスロック",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "フェアエールング": {
     "father": "ゴールドシップ",
     "mother": "マイネポリーヌ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ハーパー": {
     "father": "ハーツクライ",
-    "mother": "セレスタ(ARG)",
+    "mother": "セレスタ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半姉ヴァレーデラルナ（2022年JBCレディスクラシック勝ち馬、父ドゥラメンテ）"
@@ -1603,7 +1480,7 @@
     "close_relatives": "半妹チェルヴィニア（2024年優駿牝馬・秋華賞勝ち馬、父ハービンジャー）、近親にミュージアムマイル（2025年皐月賞・有馬記念勝ち馬）"
   },
   "タマモブラックタイ": {
-    "father": "デクラレーションオブウォー(USA)",
+    "father": "デクラレーションオブウォー",
     "mother": "タマモイヤリング",
     "sire_line": "ダンジグ系",
     "sire_line_en": "Danzig",
@@ -1624,165 +1501,144 @@
     "close_relatives": "祖母ラシャルマンテはアルゼンチンGⅡラプラタ1000ギニーなど重賞5勝馬"
   },
   "コンクシェル": {
-    "father": "キズナ（青鹿毛、2010年生、父ディープインパクト）",
-    "mother": "ザナ(IRE)（黒鹿毛、2008年生、母父Galileo(IRE)）",
+    "father": "キズナ",
+    "mother": "ザナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "コレペティトール": {
-    "father": "ジャスタウェイ（鹿毛、2009年生、父ハーツクライ）",
-    "mother": "ベガスナイト(USA)（栗毛、2000年生、母父コロナドズクエスト(USA)）",
+    "father": "ジャスタウェイ",
+    "mother": "ベガスナイト",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半兄アメリカズカップ（2017年きさらぎ賞勝ち馬）"
   },
   "グリューネグリーン": {
-    "father": "ラブリーデイ（黒鹿毛、2010年生、父キングカメハメハ）",
-    "mother": "レディーダービー（栗毛、2002年生、母父スペシャルウィーク）",
+    "father": "ラブリーデイ",
+    "mother": "レディーダービー",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "半兄ヴェルデグリーン（2013年オールカマー・2014年アメリカジョッキークラブカップ勝ち馬）"
   },
   "エミュー": {
-    "father": "ハービンジャー(GB)（鹿毛、2006年生、父Dansili(GB)）",
-    "mother": "スーリール（鹿毛、2011年生、母父スペシャルウィーク）",
+    "father": "ハービンジャー",
+    "mother": "スーリール",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "イングランドアイズ": {
-    "father": "Kingman(GB)（鹿毛、2011年生、父Invincible Spirit(IRE)）",
-    "mother": "ヌーヴォレコルト（栗毛、2011年生、母父ハーツクライ、2014年優駿牝馬（オークス）勝ち馬）",
+    "father": "キングマン",
+    "mother": "ヌーヴォレコルト",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "アリスヴェリテ": {
     "father": "キズナ",
-    "mother": "ルミエールヴェリテ（USA）",
+    "mother": "ルミエールヴェリテ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ビヨンドザヴァレー": {
     "father": "イスラボニータ",
-    "mother": "リリーオブザヴァレー（FR、現役時代にオペラ賞GI含む重賞3勝）",
+    "mother": "リリーオブザヴァレー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ショウナンバシット": {
     "father": "シルバーステート",
     "mother": "ギエム",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウンブライル": {
     "father": "ロードカナロア",
-    "mother": "ラルケット（母の父ファルブラヴ）",
+    "mother": "ラルケット",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "シルトホルン": {
     "father": "スクリーンヒーロー",
     "mother": "シンメイミヤビ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "シーウィザード": {
     "father": "ビーチパトロール",
     "mother": "メリーウェザー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "カルロヴェローチェ": {
     "father": "シルバーステート",
     "mother": "スサーナトウショウ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミシシッピテソーロ": {
     "father": "ダノンバラード",
     "mother": "ハピネスフォーユー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジェイパームス": {
     "father": "ジャスタウェイ",
     "mother": "キラーグレイシス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クルゼイロドスル": {
     "father": "ファインニードル",
     "mother": "スタリア",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ウメムスビ": {
     "father": "ファインニードル",
     "mother": "ヴィオレッタ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "アロマデローサ": {
     "father": "キンシャサノキセキ",
     "mother": "ローズウィスパー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ドゥアイズ": {
     "father": "ルーラーシップ",
     "mother": "ローズマンブリッジ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "セッション": {
     "father": "シルバーステート",
     "mother": "ミスドバウィ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ホールネス": {
-    "father": "Lope de Vega",
-    "mother": "Missunited",
+    "father": "ロペデヴェガ",
+    "mother": "ミスユナイテッド",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ヒップホップソウル": {
     "father": "キタサンブラック",
     "mother": "ダンスファンタジア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タッチウッド": {
     "father": "ドゥラメンテ",
     "mother": "アメージングムーン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "セブンマジシャン": {
     "father": "ジャスタウェイ",
     "mother": "ハピネスダンサー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "スズハローム": {
     "father": "サトノダイヤモンド",
@@ -1792,32 +1648,28 @@
     "close_relatives": "エキマエ、ワンダーディーン"
   },
   "ショーモン": {
-    "father": "マインドユアビスケッツ(USA)",
+    "father": "マインドユアビスケッツ",
     "mother": "エポキシ",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "サダムパテック": {
     "father": "フジキセキ",
     "mother": "サマーナイトシティ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グレープブランデー": {
     "father": "マンハッタンカフェ",
     "mother": "ワインアンドローゼズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "カレンミロティック": {
     "father": "ハーツクライ",
     "mother": "スターミー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オーシャンブルー": {
     "father": "ステイゴールド",
@@ -1871,72 +1723,67 @@
   "ショウナンマイティ": {
     "father": "マンハッタンカフェ",
     "mother": "ラグジャリー",
-    "close_relatives": "母の父はStorm Cat（米）",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence"
+    "sire_line_en": "Sunday Silence",
+    "close_relatives": "母の父はStorm Cat（米）"
   },
   "リトルゲルダ": {
-    "father": "Closing Argument（米）",
+    "father": "クロージングアーギュメント",
     "mother": "ビシューミス",
-    "close_relatives": "母の父はBuddha（米）。米国産（生産：Dapple Bloodstock）",
     "sire_line": "インリアリティ系",
-    "sire_line_en": "In Reality"
+    "sire_line_en": "In Reality",
+    "close_relatives": "母の父はBuddha（米）。米国産（生産：Dapple Bloodstock）"
   },
   "アンバルブライベン": {
     "father": "ルールオブロー",
     "mother": "チェリーコウマン",
-    "close_relatives": "母の父はスプレンディドモーメント",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo"
+    "sire_line_en": "Kingmambo",
+    "close_relatives": "母の父はスプレンディドモーメント"
   },
   "ヴァンセンヌ": {
     "father": "ディープインパクト",
     "mother": "フラワーパーク",
-    "close_relatives": "母の父はニホンピロウイナー。母フラワーパークはスプリントGI2勝馬で、ヴァンセンヌの東京新聞杯制覇は同馬にとって産駒初の重賞勝利だった",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence"
+    "sire_line_en": "Sunday Silence",
+    "close_relatives": "母の父はニホンピロウイナー。母フラワーパークはスプリントGI2勝馬で、ヴァンセンヌの東京新聞杯制覇は同馬にとって産駒初の重賞勝利だった"
   },
   "フーラブライド": {
     "father": "ゴールドアリュール",
     "mother": "ヒカルカリーナ",
-    "close_relatives": "母の父はメジロマックイーン。半弟にエーティータラント（同厩舎、ダートから芝転向組）",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence"
+    "sire_line_en": "Sunday Silence",
+    "close_relatives": "母の父はメジロマックイーン。半弟にエーティータラント（同厩舎、ダートから芝転向組）"
   },
   "ジューンオレンジ": {
     "father": "ジャスタウェイ",
     "mother": "アドマイヤサブリナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ココナッツブラウン": {
     "father": "キタサンブラック",
     "mother": "ルアーズストリート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グラニット": {
     "father": "ダノンバラード",
     "mother": "インティワタナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴェルミセル": {
     "father": "ゴールドシップ",
     "mother": "マルーンドロップ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴェルテンベルク": {
     "father": "キタサンブラック",
     "mother": "マルカアイチャン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウインオーディン": {
     "father": "エピファネイア",
@@ -2012,8 +1859,7 @@
     "father": "ロゴタイプ",
     "mother": "スタートアップ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ダノンプラチナ": {
     "father": "ディープインパクト",
@@ -2040,43 +1886,37 @@
     "father": "キングカメハメハ",
     "mother": "ヤマカツマリリン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ルージュバック": {
     "father": "マンハッタンカフェ",
     "mother": "ジンジャーパンチ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "パフォーマプロミス": {
     "father": "ステイゴールド",
     "mother": "アイルビーバウンド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レーヴミストラル": {
     "father": "キングカメハメハ",
     "mother": "レーヴドスカー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アルビアーノ": {
-    "father": "Harlan's Holiday",
-    "mother": "Antics",
+    "father": "ハーランズホリデー",
+    "mother": "アンティクス",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "クルーガー": {
     "father": "キングカメハメハ",
     "mother": "アディクティド",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "シングウィズジョイ": {
     "father": "マンハッタンカフェ",
@@ -2094,7 +1934,7 @@
   },
   "サトノラーゼン": {
     "father": "ディープインパクト",
-    "mother": "トゥーピー(GB)",
+    "mother": "トゥーピー",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母トゥーピーは仏GIIIアランベール賞優勝、仏1000ギニー2着の実績を持つ"
@@ -2103,12 +1943,11 @@
     "father": "ディープインパクト",
     "mother": "カーニバルソング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タッチングスピーチ": {
     "father": "ディープインパクト",
-    "mother": "リッスン(IRE)",
+    "mother": "リッスン",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母リッスンは英GIフィリーズマイル勝ち馬"
@@ -2117,29 +1956,25 @@
     "father": "ディープインパクト",
     "mother": "シルクユニバーサル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タンタアレグリア": {
     "father": "ゼンノロブロイ",
-    "mother": "タンタスエルテ(CHI)",
+    "mother": "タンタスエルテ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タガノエスプレッソ": {
     "father": "ブラックタイド",
     "mother": "タガノレヴェントン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "セカンドテーブル": {
-    "father": "トワイニング(USA)",
+    "father": "トワイニング",
     "mother": "モカサンデー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "リアファル": {
     "father": "ゼンノロブロイ",
@@ -2159,15 +1994,13 @@
     "father": "ゴスホークケン",
     "mother": "マルターズヒート",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "アルバートドック": {
     "father": "ディープインパクト",
     "mother": "ゴールデンドックエー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マキシマムドパリ": {
     "father": "キングカメハメハ",
@@ -2180,8 +2013,7 @@
     "father": "マーベラスサンデー",
     "mother": "ニシノプルメリア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ココロノアイ": {
     "father": "ステイゴールド",
@@ -2194,36 +2026,31 @@
     "father": "ディープインパクト",
     "mother": "タイセイエトワール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グァンチャーレ": {
     "father": "スクリーンヒーロー",
     "mother": "チュウオーサーヤ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ミュゼエイリアン": {
     "father": "スクリーンヒーロー",
     "mother": "エールスタンス",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ダッシングブレイズ": {
-    "father": "Kitten's Joy",
-    "mother": "Blazing Bliss",
+    "father": "キトゥンズジョイ",
+    "mother": "ブレイジングブリス",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ウインガニオン": {
     "father": "ステイゴールド",
     "mother": "チャンネルワン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グレーターロンドン": {
     "father": "ディープインパクト",
@@ -2236,22 +2063,19 @@
     "father": "ステイゴールド",
     "mother": "ルシルク",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メラグラーナ": {
-    "father": "Fastnet Rock(AUS)",
-    "mother": "Ghaliah(AUS)",
+    "father": "ファストネットロック",
+    "mother": "ガリア",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ブライトエンブレム": {
     "father": "ネオユニヴァース",
     "mother": "ブラックエンブレム",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トーセンビクトリー": {
     "father": "キングカメハメハ",
@@ -2264,29 +2088,25 @@
     "father": "キングカメハメハ",
     "mother": "アスクデピュティ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ベルラップ": {
     "father": "ハーツクライ",
     "mother": "ベルスリーブ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ベルーフ": {
     "father": "ハービンジャー",
     "mother": "レクレドール",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ノットフォーマル": {
     "father": "ヴァーミリアン",
     "mother": "リミッターブレイク",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "タガノアザガル": {
     "father": "バゴ",
@@ -2299,64 +2119,55 @@
     "father": "マツリダゴッホ",
     "mother": "プラセール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "キャットコイン": {
     "father": "ステイゴールド",
     "mother": "ストレイキャット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オーミアリス": {
     "father": "ホワイトマズル",
     "mother": "ポットアカデミー",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ウェスタールンド": {
     "father": "ネオユニヴァース",
     "mother": "ユーアンミー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トウショウピスト": {
     "father": "ヨハネスブルグ",
     "mother": "シーイズトウショウ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "レンイングランド": {
     "father": "クロフネ",
     "mother": "マリンフェスタ",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "レオパルディナ": {
     "father": "スニッツェル",
     "mother": "ビオンドパンテーラ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "マテンロウハピネス": {
     "father": "ダイワメジャー",
     "mother": "レディハピネス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ナヴィオン": {
     "father": "ハーツクライ",
     "mother": "ユキノスイトピー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アンドリエッテ": {
     "father": "ディープインパクト",
@@ -2376,214 +2187,186 @@
     "father": "キングカメハメハ",
     "mother": "スカーレットベル",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ダノンメジャー": {
     "father": "ダイワメジャー",
     "mother": "ヴィヤダーナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クインズミラーグロ": {
     "father": "マンハッタンカフェ",
     "mother": "ジャストトゥートゥー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フミノムーン": {
     "father": "アドマイヤムーン",
     "mother": "フミノシンデレラ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "フィドゥーシア": {
-    "father": "Medaglia d'Oro",
+    "father": "メダグリアドーロ",
     "mother": "ビリーヴ",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ペイシャオブロー": {
     "father": "ルールオブロー",
     "mother": "ダンスレッスン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ジャストドゥイング": {
     "father": "ゼンノロブロイ",
     "mother": "ストラテジー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ケツァルテナンゴ": {
     "father": "チチカステナンゴ",
     "mother": "ダイワオンディーヌ",
     "sire_line": "カロ系",
-    "sire_line_en": "Caro",
-    "close_relatives": ""
+    "sire_line_en": "Caro"
   },
   "トーセンラーク": {
-    "father": "Aldebaran(米)",
+    "father": "アルデバランII",
     "mother": "タケイチゼット",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ケントオー": {
     "father": "ダンスインザダーク",
     "mother": "ポポチャン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "テンダリーヴォイス": {
     "father": "ディープインパクト",
     "mother": "ミスアンコール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ムーンクレスト": {
     "father": "アドマイヤムーン",
-    "mother": "Beauty Contest(愛)",
+    "mother": "ビューティーコンテスト",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "マサハヤドリーム": {
     "father": "メイショウサムソン",
     "mother": "ランペイア",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ベステンダンク": {
     "father": "タイキシャトル",
     "mother": "ユキノマーメイド",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "ディープジュエリー": {
     "father": "ディープインパクト",
-    "mother": "ジュエルオブザナイト(USA)",
+    "mother": "ジュエルオブザナイト",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "スピリッツミノル": {
     "father": "ディープスカイ",
     "mother": "バアゼルクローバー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "コンテッサトゥーレ": {
     "father": "ディープインパクト",
     "mother": "エアトゥーレ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クルミナル": {
     "father": "ディープインパクト",
-    "mother": "クルソラ(ARG)",
+    "mother": "クルソラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エフェクト": {
-    "father": "スクワートルスクワート(USA)",
+    "father": "スクワートルスクワート",
     "mother": "スペシャルビビー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "アダムスブリッジ": {
     "father": "ゼンノロブロイ",
-    "mother": "シンハリーズ(GB)",
+    "mother": "シンハリーズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アスカビレン": {
     "father": "ブラックタイド",
     "mother": "スウェプトレジーナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ソールインパクト": {
     "father": "ディープインパクト",
-    "mother": "クリームオンリー(USA)",
+    "mother": "クリームオンリー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アースライズ": {
     "father": "マンハッタンカフェ",
-    "mother": "ライジングクロス(GB)",
+    "mother": "ライジングクロス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シャルール": {
     "father": "ゼンノロブロイ",
     "mother": "グレイトフィーヴァー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "キャンベルジュニア": {
-    "father": "Encosta De Lago",
+    "father": "エンコスタデラーゴ",
     "mother": "メリート",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "アヴニールマルシェ": {
     "father": "ディープインパクト",
     "mother": "ヴィートマルシェ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロカ": {
     "father": "ハービンジャー",
     "mother": "ランズエッジ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ローデッド": {
     "father": "ディープインパクト",
     "mother": "ホッコーオウカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ポルトドートウィユ": {
     "father": "ディープインパクト",
-    "mother": "ポルトフィーノ（母父クロフネ）",
+    "mother": "ポルトフィーノ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "未確認（JBIS基本情報に兄弟馬の記載なし）"
   },
   "プリメラアスール": {
     "father": "スペシャルウィーク",
-    "mother": "リメインフォレスト（母父アジュディケーティング）",
+    "mother": "リメインフォレスト",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半弟ルチャドルアスール（14年セプテンバーステークス〈1600万下〉1着）、半姉エスピナアスール（11年亀田特別〈1000万下〉1着）"
   },
   "ブラヴィッシモ": {
-    "father": "Fastnet Rock",
+    "father": "ファストネットロック",
     "mother": "メイキアシー",
     "sire_line": "デインヒル系",
     "sire_line_en": "Danehill",
@@ -2591,14 +2374,14 @@
   },
   "ダノングラシアス": {
     "father": "マンハッタンカフェ",
-    "mother": "サーキットレディ（母父Grand Slam）",
+    "mother": "サーキットレディ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半兄サトノアビリティ（15年4歳以上500万下1着ほか中央3勝、地方3勝）"
   },
   "アッシュゴールド": {
     "father": "ステイゴールド",
-    "mother": "オリエンタルアート（母父メジロマックイーン）",
+    "mother": "オリエンタルアート",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "未確認（今回の調査範囲では兄弟馬情報を取得せず）"
@@ -2612,10 +2395,9 @@
   },
   "モーニン": {
     "father": "ヘニーヒューズ",
-    "mother": "Giggly",
+    "mother": "ギグリー",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ホワイトフーガ": {
     "father": "クロフネ",
@@ -2639,8 +2421,8 @@
     "close_relatives": "カメット、スーサンドン"
   },
   "アポロケンタッキー": {
-    "father": "Langfuhr",
-    "mother": "Dixiana Delight",
+    "father": "ラングフール",
+    "mother": "ディキシアナディライト",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector",
     "close_relatives": "特記すべき近親馬は確認できず"
@@ -2667,8 +2449,8 @@
     "close_relatives": "特記すべき近親馬は確認できず"
   },
   "ソウルスターリング": {
-    "father": "Frankel",
-    "mother": "Stacelita",
+    "father": "フランケル",
+    "mother": "スタセリタ",
     "sire_line": "サドラーズウェルズ系",
     "sire_line_en": "Sadler's Wells",
     "close_relatives": "母スタセリタは仏オークス（プリドヴィナ賞）優勝馬"
@@ -2712,8 +2494,7 @@
     "father": "ダイワメジャー",
     "mother": "ダイワエンジェル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サトノアレス": {
     "father": "ディープインパクト",
@@ -2752,7 +2533,7 @@
   },
   "スティッフェリオ": {
     "father": "ステイゴールド",
-    "mother": "シリアスアティテュード(IRE)",
+    "mother": "シリアスアティテュード",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母シリアスアティテュードは英GIチェヴァリーパークステークス・加GIニアークティックステークスの勝ち馬。半妹バスラットアマルの産駒には海外重賞級の活躍馬がいる。"
@@ -2766,13 +2547,13 @@
   },
   "カデナ": {
     "father": "ディープインパクト",
-    "mother": "フレンチリヴィエラ(USA)",
+    "mother": "フレンチリヴィエラ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "母フレンチリヴィエラは米国でGIII・1勝を含む6戦4勝の成績。半兄スズカコーズウェイは2009年京王杯スプリングカップ(GII)の勝ち馬。"
   },
   "モンドキャンノ": {
-    "father": "キンシャサノキセキ(AUS)",
+    "father": "キンシャサノキセキ",
     "mother": "レイズアンドコール",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
@@ -2782,8 +2563,7 @@
     "father": "クロフネ",
     "mother": "ルミナスポイント",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "アドミラブル": {
     "father": "ディープインパクト",
@@ -2796,22 +2576,19 @@
     "father": "ルーラーシップ",
     "mother": "ピサノグラフ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "カラクレナイ": {
     "father": "ローエングリン",
     "mother": "バーニングレッド",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "リエノテソーロ": {
-    "father": "Speightstown",
-    "mother": "Akilina",
+    "father": "スペイツタウン",
+    "mother": "アキリナ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "トリオンフ": {
     "father": "タートルボウル",
@@ -2824,15 +2601,13 @@
     "father": "キングカメハメハ",
     "mother": "トリプレックス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "レッドアンシェル": {
     "father": "マンハッタンカフェ",
     "mother": "スタイルリスティック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サトノアーサー": {
     "father": "ディープインパクト",
@@ -2842,340 +2617,293 @@
     "close_relatives": "母キングスローズはニュージーランド1000ギニー（GI）などニュージーランド・オーストラリアで重賞計6勝"
   },
   "フィアーノロマーノ": {
-    "father": "Fastnet Rock",
-    "mother": "Heart Ashley",
+    "father": "ファストネットロック",
+    "mother": "ハートアシュレイ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "サトノクロニクル": {
-    "sire": "ハーツクライ",
-    "dam": "ダイヤモンドバービー",
+    "father": "ハーツクライ",
+    "mother": "ダイヤモンドバービー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クレッシェンドラヴ": {
-    "sire": "ステイゴールド",
-    "dam": "ハイアーラヴ",
+    "father": "ステイゴールド",
+    "mother": "ハイアーラヴ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アメリカズカップ": {
-    "sire": "マンハッタンカフェ",
-    "dam": "ベガスナイト",
+    "father": "マンハッタンカフェ",
+    "mother": "ベガスナイト",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マイスタイル": {
-    "sire": "ハーツクライ",
-    "dam": "ファーストナイナー",
+    "father": "ハーツクライ",
+    "mother": "ファーストナイナー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エアウィンザー": {
-    "sire": "キングカメハメハ",
-    "dam": "エアメサイア",
+    "father": "キングカメハメハ",
+    "mother": "エアメサイア",
     "sire_line": "キングマンボ系",
     "sire_line_en": "Kingmambo",
     "close_relatives": "全兄エアスピネル（2016年クラシック戦線で活躍）"
   },
   "ライジングリーズン": {
-    "sire": "ブラックタイド",
-    "dam": "ジョウノファミリー",
+    "father": "ブラックタイド",
+    "mother": "ジョウノファミリー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "カワキタエンカ": {
-    "sire": "ディープインパクト",
-    "dam": "カワキタラブポップ",
+    "father": "ディープインパクト",
+    "mother": "カワキタラブポップ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミスエルテ": {
-    "sire": "フランケル",
-    "dam": "ミスエーニョ",
+    "father": "フランケル",
+    "mother": "ミスエーニョ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ファンディーナ": {
-    "sire": "ディープインパクト",
-    "dam": "ドリームオブジェニー",
+    "father": "ディープインパクト",
+    "mother": "ドリームオブジェニー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トラスト": {
-    "sire": "スクリーンヒーロー",
-    "dam": "グローリサンディ",
+    "father": "スクリーンヒーロー",
+    "mother": "グローリサンディ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "デアレガーロ": {
-    "sire": "マンハッタンカフェ",
-    "dam": "スーヴェニアギフト",
+    "father": "マンハッタンカフェ",
+    "mother": "スーヴェニアギフト",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "コマノインパルス": {
-    "sire": "バゴ",
-    "dam": "コマノアクラ",
+    "father": "バゴ",
+    "mother": "コマノアクラ",
     "sire_line": "ブラッシンググルーム系",
-    "sire_line_en": "Blushing Groom",
-    "close_relatives": ""
+    "sire_line_en": "Blushing Groom"
   },
   "ヴゼットジョリー": {
-    "sire": "ローエングリン",
-    "dam": "フレンチビキニ",
+    "father": "ローエングリン",
+    "mother": "フレンチビキニ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "アドマイヤミヤビ": {
-    "sire": "ハーツクライ",
-    "dam": "レディスキッパー",
+    "father": "ハーツクライ",
+    "mother": "レディスキッパー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トリコロールブルー": {
-    "sire": "ステイゴールド",
-    "dam": "ペンカナプリンセス",
+    "father": "ステイゴールド",
+    "mother": "ペンカナプリンセス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ラヴィングアンサー": {
-    "sire": "ダイワメジャー",
-    "dam": "ラブレター",
+    "father": "ダイワメジャー",
+    "mother": "ラブレター",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アダムバローズ": {
-    "sire": "ハーツクライ",
-    "dam": "チャチャリーノ",
+    "father": "ハーツクライ",
+    "mother": "チャチャリーノ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リナーテ": {
-    "sire": "ステイゴールド",
-    "dam": "マルペンサ",
+    "father": "ステイゴールド",
+    "mother": "マルペンサ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ボンセルヴィーソ": {
-    "sire": "ダイワメジャー",
-    "dam": "バイモユリ",
+    "father": "ダイワメジャー",
+    "mother": "バイモユリ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ベストアプローチ": {
-    "sire": "New Approach",
-    "dam": "Sant Elena",
+    "father": "ニューアプローチ",
+    "mother": "サンテレナ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ブラックオニキス": {
-    "sire": "ブラックタイド",
-    "dam": "ラリマー",
+    "father": "ブラックタイド",
+    "mother": "ラリマー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディバインコード": {
-    "sire": "マツリダゴッホ",
-    "dam": "ツーデイズノーチス",
+    "father": "マツリダゴッホ",
+    "mother": "ツーデイズノーチス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ブラックスビーチ": {
-    "sire": "ディープインパクト",
-    "dam": "ビジュアルショック",
+    "father": "ディープインパクト",
+    "mother": "ビジュアルショック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ハローユニコーン": {
-    "sire": "ハーツクライ",
-    "dam": "サンタローズ",
+    "father": "ハーツクライ",
+    "mother": "サンタローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ナイトバナレット": {
-    "sire": "ディープブリランテ",
-    "dam": "ナイキフェイバー",
+    "father": "ディープブリランテ",
+    "mother": "ナイキフェイバー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディーパワンサ": {
-    "sire": "ディープブリランテ",
-    "dam": "ポロンナルワ",
+    "father": "ディープブリランテ",
+    "mother": "ポロンナルワ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サロニカ": {
-    "sire": "ディープインパクト",
-    "dam": "サロミナ",
+    "father": "ディープインパクト",
+    "mother": "サロミナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サトノアリシア": {
-    "sire": "ハービンジャー",
-    "dam": "ラルーチェ",
+    "father": "ハービンジャー",
+    "mother": "ラルーチェ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "クインズサリナ": {
-    "sire": "ダノンシャンティ",
-    "dam": "ケイアイギャラリー",
+    "father": "ダノンシャンティ",
+    "mother": "ケイアイギャラリー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "キングズラッシュ": {
-    "sire": "ルーラーシップ",
-    "dam": "リコリス",
+    "father": "ルーラーシップ",
+    "mother": "リコリス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アロンザモナ": {
-    "sire": "ストリートセンス(米)",
-    "dam": "リザーブシート",
+    "father": "ストリートセンス",
+    "mother": "リザーブシート",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "アリンナ": {
-    "sire": "マツリダゴッホ",
-    "dam": "ヴンダーゾンネ",
+    "father": "マツリダゴッホ",
+    "mother": "ヴンダーゾンネ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フローレスマジック": {
-    "sire": "ディープインパクト",
-    "dam": "マジックストーム(米)",
+    "father": "ディープインパクト",
+    "mother": "マジックストーム",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディメンシオン": {
-    "sire": "ディープインパクト",
-    "dam": "ミスペンバリー(愛)",
+    "father": "ディープインパクト",
+    "mother": "ミスペンバリー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レッドオルガ": {
-    "sire": "ディープインパクト",
-    "dam": "エリモピクシー",
+    "father": "ディープインパクト",
+    "mother": "エリモピクシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "カリビアンゴールド": {
-    "sire": "ステイゴールド",
-    "dam": "サバナパディーダ(IRE)",
+    "father": "ステイゴールド",
+    "mother": "サバナパディーダ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイショウグロッケ": {
-    "sire": "メイショウサムソン",
-    "dam": "メイショウグラナダ",
+    "father": "メイショウサムソン",
+    "mother": "メイショウグラナダ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "マイネルスフェーン": {
-    "sire": "ステイゴールド",
-    "dam": "マイネジャーダ",
+    "father": "ステイゴールド",
+    "mother": "マイネジャーダ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ポールヴァンドル": {
-    "sire": "ダイワメジャー",
-    "dam": "レディドーヴィル(FR)",
+    "father": "ダイワメジャー",
+    "mother": "レディドーヴィル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タイセイスターリー": {
-    "sire": "マンハッタンカフェ",
-    "dam": "スターアイル(IRE)",
+    "father": "マンハッタンカフェ",
+    "mother": "スターアイル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダイイチターミナル": {
     "father": "コンデュイット",
     "mother": "ベルグチケット",
     "sire_line": "ミルリーフ系",
-    "sire_line_en": "Mill Reef",
-    "close_relatives": ""
+    "sire_line_en": "Mill Reef"
   },
   "ショーウェイ": {
     "father": "メイショウボーラー",
     "mother": "リアルメンテ",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "シグルーン": {
     "father": "アイルハヴアナザー",
     "mother": "ワルキューレ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ガンサリュート": {
     "father": "ダノンシャンティ",
     "mother": "ベネディーレ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウインガナドル": {
     "father": "ステイゴールド",
     "mother": "タイムフェアレディ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルメリアブルーム": {
     "father": "ドリームジャーニー",
     "mother": "アルメーリヒ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アウトライアーズ": {
     "father": "ヴィクトワールピサ",
     "mother": "ウィストラム",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サンライズソア": {
     "father": "シンボリクリスエス",
@@ -3195,29 +2923,25 @@
     "father": "シニスターミニスター",
     "mother": "ヤマニンエリプス",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "モズアトラクション": {
     "father": "ジャングルポケット",
     "mother": "エーシンラクーリエ",
     "sire_line": "ゼダーン系",
-    "sire_line_en": "Zeddaan",
-    "close_relatives": ""
+    "sire_line_en": "Zeddaan"
   },
   "マテラスカイ": {
-    "father": "Speightstown",
-    "mother": "Mostaqeleh",
+    "father": "スペイツタウン",
+    "mother": "モスタケレー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "サンライズノヴァ": {
     "father": "ゴールドアリュール",
     "mother": "ブライトサファイヤ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クイーンマンボ": {
     "father": "マンハッタンカフェ",
@@ -3230,15 +2954,13 @@
     "father": "タートルボウル",
     "mother": "レイナカスターニャ",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ユラノト": {
     "father": "キングカメハメハ",
     "mother": "コイウタ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ファッショニスタ": {
     "father": "ストリートセンス",
@@ -3272,32 +2994,28 @@
     "father": "ディープインパクト",
     "mother": "インディアナギャル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グローリーヴェイズ": {
     "father": "ディープインパクト",
     "mother": "メジロツボネ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タワーオブロンドン": {
-    "father": "Raven's Pass",
+    "father": "レイヴンズパス",
     "mother": "スノーパイン",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ブラストワンピース": {
     "father": "ハービンジャー",
     "mother": "ツルマルワンピース",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ジャンダルム": {
-    "father": "Kitten's Joy",
+    "father": "キトゥンズジョイ",
     "mother": "ビリーヴ",
     "sire_line": "サドラーズウェルズ系",
     "sire_line_en": "Sadler's Wells",
@@ -3307,50 +3025,43 @@
     "father": "ロードカナロア",
     "mother": "ラルケット",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ワグネリアン": {
     "father": "ディープインパクト",
     "mother": "ミスアンコール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "モズスーパーフレア": {
-    "father": "Speightstown",
-    "mother": "Christies Treasure",
+    "father": "スペイツタウン",
+    "mother": "クリスティーズトレジャー",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "エポカドーロ": {
     "father": "オルフェーヴル",
     "mother": "ダイワパッション",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミスターメロディ": {
-    "father": "Scat Daddy",
-    "mother": "Trusty Lady",
+    "father": "スキャットダディ",
+    "mother": "トラスティレディ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ダイアトニック": {
     "father": "ロードカナロア",
     "mother": "トゥハーモニー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ステイフーリッシュ": {
     "father": "ステイゴールド",
     "mother": "カウアイレーン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サウンドキアラ": {
     "father": "ディープインパクト",
@@ -3377,50 +3088,43 @@
     "father": "ディープインパクト",
     "mother": "リプルズメイド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サラキア": {
     "father": "ディープインパクト",
     "mother": "サロミナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ギベオン": {
     "father": "ディープインパクト",
     "mother": "コンテスティッド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジェネラーレウーノ": {
     "father": "スクリーンヒーロー",
     "mother": "シャンハイロック",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "カンタービレ": {
     "father": "ディープインパクト",
     "mother": "シャンロッサ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイショウテッコン": {
     "father": "マンハッタンカフェ",
     "mother": "エーシンベロシティ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リバティハイツ": {
     "father": "キングカメハメハ",
     "mother": "ドバウィハイツ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "センテリュオ": {
     "father": "ディープインパクト",
@@ -3433,50 +3137,43 @@
     "father": "ヴィクトワールピサ",
     "mother": "ヴェントス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サトノワルキューレ": {
     "father": "ディープインパクト",
     "mother": "ヒアトゥウィン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ゴーフォザサミット": {
     "father": "ハーツクライ",
     "mother": "ラグジャリー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アフリカンゴールド": {
     "father": "ステイゴールド",
     "mother": "ブリクセン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "プリモシーン": {
     "father": "ディープインパクト",
     "mother": "モシーン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レッドガラン": {
     "father": "ロードカナロア",
     "mother": "ダンスオンザルーフ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "トロワゼトワル": {
     "father": "ロードカナロア",
     "mother": "セコンドピアット",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "マイネルファンロン": {
     "father": "ステイゴールド",
@@ -3496,29 +3193,25 @@
     "father": "ショウナンカンプ",
     "mother": "ラブハート",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "ライトオンキュー": {
     "father": "シャマーダル",
     "mother": "グレイトタイミング",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "カシアス": {
     "father": "キンシャサノキセキ",
     "mother": "ラブディラン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サンレイポケット": {
     "father": "ジャングルポケット",
     "mother": "アドマイヤパンチ",
     "sire_line": "ゼダーン系",
-    "sire_line_en": "Zeddaan",
-    "close_relatives": ""
+    "sire_line_en": "Zeddaan"
   },
   "グレイル": {
     "father": "ハーツクライ",
@@ -3528,25 +3221,22 @@
     "close_relatives": "ロジチャリス（半兄）、グッドスカイ（半姉）"
   },
   "アサクサゲンキ": {
-    "father": "Stormy Atlantic",
-    "mother": "Amelia",
+    "father": "ストーミーアトランティック",
+    "mother": "アメリア",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ロックディスタウン": {
     "father": "オルフェーヴル",
     "mother": "ストレイキャット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイケイダイハード": {
     "father": "ハードスパン",
     "mother": "メイケイソフィア",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "フロンティア": {
     "father": "ダイワメジャー",
@@ -3559,15 +3249,13 @@
     "father": "ルーラーシップ",
     "mother": "リビングプルーフ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "サトノガーネット": {
     "father": "ディープインパクト",
     "mother": "ビートリックスキッド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グロンディオーズ": {
     "father": "ルーラーシップ",
@@ -3580,64 +3268,55 @@
     "father": "ロードカナロア",
     "mother": "アルーリングボイス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ポンデザール": {
     "father": "ハーツクライ",
     "mother": "ジョコンダ2",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダブルシャープ": {
     "father": "ベーカバド",
     "mother": "メジロルーシュバー",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "ランドネ": {
-    "father": "Blame",
-    "mother": "Loure",
+    "father": "ブレイム",
+    "mother": "ルーレ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ウラヌスチャーム": {
     "father": "ルーラーシップ",
     "mother": "アメジストリング",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アマルフィコースト": {
     "father": "ダイワメジャー",
     "mother": "ジプシーハイウェイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レッドヴェイロン": {
     "father": "キングカメハメハ",
     "mother": "エリモピクシー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "モルトアレグロ": {
     "father": "スペイツタウン",
     "mother": "モーシュール",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "トゥラヴェスーラ": {
     "father": "ドリームジャーニー",
     "mother": "ジャジャマーチャン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ケイティクレバー": {
     "father": "ハービンジャー",
@@ -3650,43 +3329,37 @@
     "father": "ディープインパクト",
     "mother": "サクラサクII",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レグルドール": {
     "father": "アドマイヤマックス",
     "mother": "コスモパルムドール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミスマンマミーア": {
     "father": "タニノギムレット",
     "mother": "サンデーメモリー",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "マドモアゼル": {
     "father": "ブラックタイド",
     "mother": "ポールポジション",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ハーレムライン": {
     "father": "マンハッタンカフェ",
     "mother": "マクリス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サンリヴァル": {
     "father": "ルーラーシップ",
     "mother": "アンフィルージュ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "キタノコマンドール": {
     "father": "ディープインパクト",
@@ -3699,141 +3372,121 @@
     "father": "ディープインパクト",
     "mother": "レディアルバローザ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アイトーン": {
     "father": "キングズベスト",
     "mother": "スペシャルディナー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ジナンボー": {
     "father": "ディープインパクト",
     "mother": "アパパネ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リュヌルージュ": {
     "father": "モンテロッソ",
     "mother": "ムーンハウリング",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ファストアプローチ": {
-    "father": "Dawn Approach",
+    "father": "ドーンアプローチ",
     "mother": "ジョリージョコンド",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "サトノソルタス": {
     "father": "ディープインパクト",
     "mother": "アイランドファッション",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "コーディエライト": {
     "father": "ダイワメジャー",
     "mother": "ダークサファイア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エントシャイデン": {
     "father": "ディープインパクト",
     "mother": "ルシュクル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レッドランディーニ": {
     "father": "ディープインパクト",
     "mother": "レッドメデューサ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ルーカス": {
     "father": "スクリーンヒーロー",
     "mother": "メジロフランシス",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ラテュロス": {
     "father": "ディープインパクト",
     "mother": "スウィートハース",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マウレア": {
     "father": "ディープインパクト",
     "mother": "バイザキャット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フィニフティ": {
     "father": "ディープインパクト",
     "mother": "ココシュニック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トーセンブレス": {
     "father": "ディープインパクト",
     "mother": "ブルーミンバー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ツヅミモン": {
     "father": "ストロングリターン",
     "mother": "カタマチボタン",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "シャルルマーニュ": {
     "father": "ヴィクトワールピサ",
     "mother": "エイブルアロー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サヤカチャン": {
     "father": "リーチザクラウン",
     "mother": "アップルトウショウ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルーシャ": {
     "father": "ディープインパクト",
     "mother": "ザズー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サクラアリュール": {
     "father": "ゴールドアリュール",
     "mother": "シロガネーゼカフェ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルクトス": {
     "father": "アドマイヤオーラ",
     "mother": "ホシニイノリヲ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ルヴァンスレーヴ": {
     "father": "シンボリクリスエス",
@@ -3850,53 +3503,46 @@
     "close_relatives": "ルヴァンスレーヴ（従兄弟）"
   },
   "コパノキッキング": {
-    "father": "Spring At Last",
-    "mother": "Celadon",
+    "father": "スプリングアットラスト",
+    "mother": "セラドン",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "オメガパフューム": {
     "father": "スウェプトオーヴァーボード",
     "mother": "オメガフレグランス",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "アドマイヤマーズ": {
     "father": "ダイワメジャー",
     "mother": "ヴィアメディチ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダノンファンタジー": {
     "father": "ディープインパクト",
     "mother": "ライフフォーセール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダノンキングリー": {
     "father": "ディープインパクト",
     "mother": "マイグッドネス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファストフォース": {
     "father": "ロードカナロア",
     "mother": "ラッシュライフ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ナランフレグ": {
     "father": "ゴールドアリュール",
     "mother": "ケリーズビューティ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロジャーバローズ": {
     "father": "ディープインパクト",
@@ -3909,8 +3555,7 @@
     "father": "ハーツクライ",
     "mother": "ラリズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "リオンリオン": {
     "father": "ルーラーシップ",
@@ -3930,8 +3575,7 @@
     "father": "ロードカナロア",
     "mother": "ファイノメナ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ボッケリーニ": {
     "father": "キングカメハメハ",
@@ -3944,71 +3588,61 @@
     "father": "ディープブリランテ",
     "mother": "ハーランズルビー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シルヴァーソニック": {
     "father": "オルフェーヴル",
     "mother": "エアトゥーレ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴァンドギャルド": {
     "father": "ディープインパクト",
     "mother": "スキア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファンタジスト": {
     "father": "ロードカナロア",
     "mother": "ディープインアスク",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "レッドジェニアル": {
     "father": "キングカメハメハ",
     "mother": "レッドアゲート",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "メイショウテンゲン": {
     "father": "ディープインパクト",
     "mother": "メイショウベルーガ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "プールヴィル": {
-    "father": "Le Havre",
+    "father": "ルアーヴル",
     "mother": "ケンホープ",
     "sire_line": "ブラッシンググルーム系",
-    "sire_line_en": "Blushing Groom",
-    "close_relatives": ""
+    "sire_line_en": "Blushing Groom"
   },
   "ノーワン": {
     "father": "ハーツクライ",
     "mother": "プレイガール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディバインフォース": {
     "father": "ワークフォース",
     "mother": "ツクバビューティ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "シャドウディーヴァ": {
     "father": "ハーツクライ",
     "mother": "ダイヤモンドディーバ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オセアグレイト": {
     "father": "オルフェーヴル",
@@ -4035,64 +3669,55 @@
     "father": "トゥザグローリー",
     "mother": "レディーノパンチ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "コントラチェック": {
     "father": "ディープインパクト",
     "mother": "リッチダンサー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ザダル": {
     "father": "トーセンラー",
     "mother": "シーザシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "イベリス": {
     "father": "ロードカナロア",
     "mother": "セレブラール",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ユニコーンライオン": {
-    "father": "No Nay Never",
-    "mother": "Muravka",
+    "father": "ノーネイネヴァー",
+    "mother": "ムラフカ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "フェアリーポルカ": {
     "father": "ルーラーシップ",
     "mother": "フェアリーダンス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ニシノデイジー": {
     "father": "ハービンジャー",
     "mother": "ニシノヒナギク",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "エイティーンガール": {
     "father": "ヨハネスブルグ",
     "mother": "センターグランタス",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ディアンドル": {
     "father": "ルーラーシップ",
     "mother": "グリューネワルト",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アウィルアウェイ": {
     "father": "ジャスタウェイ",
@@ -4105,36 +3730,31 @@
     "father": "ノヴェリスト",
     "mother": "マルセリーナ",
     "sire_line": "バーラム系",
-    "sire_line_en": "Bahram",
-    "close_relatives": ""
+    "sire_line_en": "Bahram"
   },
   "ハッピーアワー": {
     "father": "ハービンジャー",
     "mother": "サクセスシルエット",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "グルーヴィット": {
     "father": "ロードカナロア",
     "mother": "スペシャルグルーヴ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "トーラスジェミニ": {
     "father": "キングズベスト",
     "mother": "エリモエトワール",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "カテドラル": {
     "father": "ハーツクライ",
     "mother": "アビラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ブレイキングドーン": {
     "father": "ヴィクトワールピサ",
@@ -4147,22 +3767,19 @@
     "father": "キングカメハメハ",
     "mother": "ジュモー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "レッドアネモス": {
     "father": "ヴィクトワールピサ",
     "mother": "マチカネハヤテ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ランブリングアレー": {
     "father": "ディープインパクト",
     "mother": "ブルーミングアレー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ブラヴァス": {
     "father": "キングカメハメハ",
@@ -4182,22 +3799,19 @@
     "father": "ハービンジャー",
     "mother": "マハーバーラタ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "パッシングスルー": {
     "father": "ルーラーシップ",
     "mother": "マイティースルー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ダノンチェイサー": {
     "father": "ディープインパクト",
     "mother": "サミター",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シェーングランツ": {
     "father": "ディープインパクト",
@@ -4210,88 +3824,76 @@
     "father": "ジャスタウェイ",
     "mother": "アドマイヤテレサ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アスターペガサス": {
-    "father": "Giant's Causeway",
-    "mother": "R Heat Lightning",
+    "father": "ジャイアンツコーズウェイ",
+    "mother": "アールヒートライトニング",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "カリボール": {
     "father": "ジャスタウェイ",
     "mother": "レイズアンドコール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ミッキーブリランテ": {
     "father": "ディープブリランテ",
     "mother": "エピックラヴ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロードアクア": {
     "father": "ロードカナロア",
     "mother": "オーシュペール",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ミッキーブラック": {
     "father": "ブラックタイド",
     "mother": "マラコスタムブラダ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ソングライン": {
     "father": "キズナ",
     "mother": "ルミナスパレード",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シュネルマイスター": {
-    "father": "Kingman",
+    "father": "キングマン",
     "mother": "セリエンホルデ",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "ジャックドール": {
     "father": "モーリス",
     "mother": "ラヴァリーノ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "テーオーロイヤル": {
     "father": "リオンディーズ",
     "mother": "メイショウオウヒ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ダノンザキッド": {
     "father": "ジャスタウェイ",
     "mother": "エピックラヴ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジェラルディーナ": {
     "father": "モーリス",
     "mother": "ジェンティルドンナ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "グレナディアガーズ": {
-    "father": "Frankel",
+    "father": "フランケル",
     "mother": "ウェイヴェルアベニュー",
     "sire_line": "サドラーズウェルズ系",
     "sire_line_en": "Sadler's Wells",
@@ -4322,8 +3924,7 @@
     "father": "ゴールドシップ",
     "mother": "マイネテレジア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイケイエール": {
     "father": "ミッキーアイル",
@@ -4336,78 +3937,67 @@
     "father": "ディープインパクト",
     "mother": "ヴェルダ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヨーホーレイク": {
     "father": "ディープインパクト",
     "mother": "クロウキャニオン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ノースブリッジ": {
     "father": "モーリス",
     "mother": "アメージングムーン",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "バスラットレオン": {
     "father": "キズナ",
     "mother": "バスラットアマル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "シュヴァリエローズ": {
     "father": "ディープインパクト",
     "mother": "ヴィアンローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ステラヴェローチェ": {
     "father": "バゴ",
     "mother": "オーマイベイビー",
     "sire_line": "ブラッシンググルーム系",
-    "sire_line_en": "Blushing Groom",
-    "close_relatives": ""
+    "sire_line_en": "Blushing Groom"
   },
   "ワンダフルタウン": {
     "father": "ルーラーシップ",
     "mother": "シーオブラブ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ロングラン": {
     "father": "ヴィクトワールピサ",
     "mother": "ノッテビアンカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "スタニングローズ": {
     "father": "キングカメハメハ",
     "mother": "ローザブランカ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "スターズオンアース": {
     "father": "ドゥラメンテ",
     "mother": "サザンスターズ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "セリフォス": {
     "father": "ダイワメジャー",
     "mother": "シーフロント",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ナミュール": {
     "father": "ハービンジャー",
@@ -4427,120 +4017,103 @@
     "father": "ロードカナロア",
     "mother": "チリエージェ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ブローザホーン": {
     "father": "エピファネイア",
     "mother": "オートクレール",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "アスクビクターモア": {
     "father": "ディープインパクト",
     "mother": "カルティカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マッドクール": {
-    "father": "Dark Angel",
-    "mother": "Mad About You",
+    "father": "ダークエンジェル",
+    "mother": "マッドアバウトユー",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ママコチャ": {
     "father": "クロフネ",
     "mother": "ブチコ",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "ダノンスコーピオン": {
     "father": "ロードカナロア",
     "mother": "レキシールー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ジオグリフ": {
     "father": "ドレフォン",
     "mother": "アロマティコ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "サークルオブライフ": {
     "father": "エピファネイア",
     "mother": "シーブリーズライフ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "トウシンマカオ": {
     "father": "ビッグアーサー",
     "mother": "ユキノマーメイド",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "ウインマーベル": {
     "father": "アイルハヴアナザー",
     "mother": "コスモマーベラス",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "プラダリア": {
     "father": "ディープインパクト",
     "mother": "シャッセロール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ナムラクレア": {
     "father": "ミッキーアイル",
     "mother": "サンクイーンII",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ガイアフォース": {
     "father": "キタサンブラック",
     "mother": "ナターレ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ローシャムパーク": {
     "father": "ハービンジャー",
     "mother": "レネットグルーヴ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "シュトルーヴェ": {
     "father": "キングカメハメハ",
     "mother": "アンチュラス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "キラーアビリティ": {
     "father": "ディープインパクト",
     "mother": "キラーグレイシス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "テイエムスパーダ": {
     "father": "レッドスパーダ",
     "mother": "トシザコジーン",
     "sire_line": "ヘイロー系",
-    "sire_line_en": "Halo",
-    "close_relatives": ""
+    "sire_line_en": "Halo"
   },
   "アートハウス": {
     "father": "スクリーンヒーロー",
@@ -4560,26 +4133,23 @@
     "father": "モーリス",
     "mother": "レッドラヴィータ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ビーアストニッシド": {
     "father": "アメリカンペイトリオット",
     "mother": "マオリオ",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "ジュンブロッサム": {
     "father": "ワールドエース",
     "mother": "エンプレスティアラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジャングロ": {
-    "father": "More Than Ready",
-    "mother": "Goodbye Stranger",
+    "father": "モアザンレディ",
+    "mother": "グッバイストレンジャー",
     "sire_line": "ヘイロー系",
     "sire_line_en": "Halo",
     "close_relatives": "Tom's Ready（全兄、米G2ウッディスティーヴンスステークス等重賞3勝）"
@@ -4588,85 +4158,73 @@
     "father": "ロードカナロア",
     "mother": "パストフォリア",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "サウンドビバーチェ": {
     "father": "ドゥラメンテ",
     "mother": "スクービドゥー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "キングエルメス": {
     "father": "ロードカナロア",
     "mother": "ステラリード",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "エリカヴィータ": {
     "father": "キングカメハメハ",
     "mother": "マルシアーノ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "アスクワイルドモア": {
     "father": "キズナ",
     "mother": "ラセレシオン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ドロップオブライト": {
     "father": "トーセンラー",
     "mother": "プレシャスドロップ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "セイウンハーデス": {
     "father": "シルバーステート",
     "mother": "ハイノリッジ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ジャスパークローネ": {
-    "father": "Frosted",
-    "mother": "Fancy Kitten",
+    "father": "フロステッド",
+    "mother": "ファンシーキトゥン",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "アルナシーム": {
     "father": "モーリス",
     "mother": "ジュベルアリ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ラーグルフ": {
     "father": "モーリス",
     "mother": "アバンドーネ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "マテンロウレオ": {
     "father": "ハーツクライ",
     "mother": "サラトガヴィーナス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アグリ": {
     "father": "カラヴァッジオ",
     "mother": "オールドタイムワルツ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ビアンフェ": {
     "father": "キズナ",
@@ -4679,29 +4237,25 @@
     "father": "ネオユニヴァース",
     "mother": "サクラレーヌ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エヒト": {
     "father": "ルーラーシップ",
     "mother": "ヒーラ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ロータスランド": {
-    "father": "Point of Entry",
-    "mother": "Little Miss Muffet",
+    "father": "ポイントオブエントリー",
+    "mother": "リトルミスマフェット",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ミスニューヨーク": {
     "father": "キングズベスト",
     "mother": "マンハッタンミート",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "スマイルカナ": {
     "father": "ディープインパクト",
@@ -4721,15 +4275,13 @@
     "father": "タートルボウル",
     "mother": "ランウェイスナップ",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "アラタ": {
     "father": "キングカメハメハ",
     "mother": "サンシャイン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "マジックキャッスル": {
     "father": "ディープインパクト",
@@ -4756,8 +4308,7 @@
     "father": "キズナ",
     "mother": "エディン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファルコニア": {
     "father": "ディープインパクト",
@@ -4770,8 +4321,7 @@
     "father": "ゴールドシップ",
     "mother": "アオバコリン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ルビーカサブランカ": {
     "father": "キングカメハメハ",
@@ -4798,50 +4348,43 @@
     "father": "ゴールドシップ",
     "mother": "ヴィーヴァブーケ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マイラプソディ": {
     "father": "ハーツクライ",
     "mother": "テディーズプロミス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サリオス": {
     "father": "ハーツクライ",
     "mother": "サロミナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レシステンシア": {
     "father": "ダイワメジャー",
     "mother": "マラコスタムブラダ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウインマリリン": {
     "father": "スクリーンヒーロー",
     "mother": "コスモチェーロ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ウインカーネリアン": {
     "father": "スクリーンヒーロー",
     "mother": "コスモクリスタル",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "レイパパレ": {
     "father": "ディープインパクト",
     "mother": "シェルズレイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ラウダシオン": {
     "father": "リアルインパクト",
@@ -4882,8 +4425,7 @@
     "father": "オルフェーヴル",
     "mother": "ロザリンド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴェルトライゼンデ": {
     "father": "ドリームジャーニー",
@@ -4896,22 +4438,19 @@
     "father": "キズナ",
     "mother": "トップオブドーラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タイセイビジョン": {
     "father": "タートルボウル",
     "mother": "ソムニア",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "リアアメリア": {
     "father": "ディープインパクト",
     "mother": "リアアントニア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "バビット": {
     "father": "ナカヤマフェスタ",
@@ -4947,106 +4486,92 @@
     "father": "ゴールドシップ",
     "mother": "イクスキューズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "イズジョーノキセキ": {
     "father": "エピファネイア",
     "mother": "キングダンサー",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "アイアンバローズ": {
     "father": "オルフェーヴル",
-    "mother": "パレスルーマー(USA)",
+    "mother": "パレスルーマー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "テルツェット": {
     "father": "ディープインパクト",
     "mother": "ラッドルチェンド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダーリントンホール": {
-    "father": "New Approach(IRE)",
-    "mother": "Miss Kenton(IRE)",
+    "father": "ニューアプローチ",
+    "mother": "ミスケントン",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "メイショウミモザ": {
     "father": "ハーツクライ",
     "mother": "メイショウベルーガ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヒートオンビート": {
     "father": "キングカメハメハ",
     "mother": "マルセリーナ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "デゼル": {
     "father": "ディープインパクト",
     "mother": "アヴニールセルタン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エーポス": {
     "father": "ジャスタウェイ",
     "mother": "ストライクルート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ウイングレイテスト": {
     "father": "スクリーンヒーロー",
     "mother": "グレートキャティ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "シャムロックヒル": {
     "father": "キズナ",
-    "mother": "ララア(USA)",
+    "mother": "ララア",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence",
     "close_relatives": "半姉サラス（2019年マーメイドステークス勝ち馬）"
   },
   "シャインガーネット": {
     "father": "オルフェーヴル",
-    "mother": "ベルベットローブ(USA)",
+    "mother": "ベルベットローブ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サトノインプレッサ": {
     "father": "ディープインパクト",
-    "mother": "サプレザ(USA)",
+    "mother": "サプレザ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "コルテジア": {
-    "father": "シンボリクリスエス(USA)",
+    "father": "シンボリクリスエス",
     "mother": "シェルエメール",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "クリノプレミアム": {
     "father": "オルフェーヴル",
     "mother": "ダンシングクイーン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クリスタルブラック": {
     "father": "キズナ",
@@ -5068,7 +4593,7 @@
   },
   "ディアスティマ": {
     "father": "ディープインパクト",
-    "mother": "スウィートリーズン(USA)",
+    "mother": "スウィートリーズン",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -5082,43 +4607,37 @@
     "father": "キズナ",
     "mother": "トウカイライフ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ホウオウピースフル": {
     "father": "オルフェーヴル",
     "mother": "ツルマルワンピース",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディアマンミノル": {
     "father": "オルフェーヴル",
     "mother": "イソノスワロー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オパールシャルム": {
     "father": "ダイワメジャー",
     "mother": "ジルコニア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オータムレッド": {
     "father": "ワールドエース",
     "mother": "ティッカーコード",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エレナアヴァンティ": {
     "father": "アドマイヤムーン",
     "mother": "ドリームカムカム",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "クラヴェル": {
     "father": "エピファネイア",
@@ -5131,92 +4650,79 @@
     "father": "ディープインパクト",
     "mother": "コンドコマンド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "チェーンオブラブ": {
     "father": "ハーツクライ",
     "mother": "フェアエレン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ストーンリッジ": {
     "father": "ディープインパクト",
     "mother": "クロウキャニオン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "トリプルエース": {
-    "father": "シャマーダル(USA)",
-    "mother": "トリプルピルエット(USA)",
+    "father": "シャマーダル",
+    "mother": "トリプルピルエット",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ディヴィナシオン": {
     "father": "ヴィクトワールピサ",
-    "mother": "フギン(AUS)",
+    "mother": "フギン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ソフトフルート": {
     "father": "ディープインパクト",
-    "mother": "ストロベリーフェア(GB)",
+    "mother": "ストロベリーフェア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エアロロノア": {
     "father": "キングカメハメハ",
     "mother": "エアワンピース",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ハギノアレグリアス": {
     "father": "キズナ",
     "mother": "タニノカリス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クラヴァシュドール": {
     "father": "ハーツクライ",
     "mother": "パスオブドリームズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイショウチタン": {
     "father": "ロードカナロア",
     "mother": "ラルティスタ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ペールエール": {
     "father": "ダイワメジャー",
     "mother": "アピールⅡ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ビターエンダー": {
     "father": "オルフェーヴル",
     "mother": "ビタースウィート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "パラスアテナ": {
     "father": "ルーラーシップ",
     "mother": "ステラリード",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "タガノビューティー": {
     "father": "ヘニーヒューズ",
@@ -5231,8 +4737,8 @@
     "sire_line_en": "Sunday Silence"
   },
   "カフェファラオ": {
-    "father": "American Pharoah（アメリカンファラオ）",
-    "mother": "Mary's Follies",
+    "father": "アメリカンファラオ",
+    "mother": "メアリーズフォリーズ",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector"
   },
@@ -5257,7 +4763,7 @@
   },
   "マリアズハート": {
     "father": "シャンハイボビー",
-    "mother": "Maria's Dance",
+    "mother": "マリアズダンス",
     "sire_line": "ストームキャット系",
     "sire_line_en": "Storm Cat"
   },
@@ -5311,7 +4817,7 @@
   },
   "ホウオウカトリーヌ": {
     "father": "マツリダゴッホ",
-    "mother": "ターネヴュー(USA)",
+    "mother": "ターネヴュー",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -5343,31 +4849,31 @@
   },
   "トーセンカンビーナ": {
     "father": "ディープインパクト",
-    "mother": "カンビーナ(IRE)",
+    "mother": "カンビーナ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "ジョディー": {
     "father": "ダイワメジャー",
-    "mother": "ミスティークII(GER)",
+    "mother": "ミスティークII",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "サトノダムゼル": {
     "father": "ディープインパクト",
-    "mother": "ダリシア(GER)",
+    "mother": "ダリシア",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "サヴォワールエメ": {
     "father": "ダイワメジャー",
-    "mother": "ニアメ(GB)",
+    "mother": "ニアメ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "カレンブーケドール": {
     "father": "ディープインパクト",
-    "mother": "ソラリア(CHI)",
+    "mother": "ソラリア",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -5435,7 +4941,7 @@
   },
   "チャックネイト": {
     "father": "ハーツクライ",
-    "mother": "ゴシップガール(USA)",
+    "mother": "ゴシップガール",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -5454,8 +4960,8 @@
     "close_relatives": "半兄トリオンフ（小倉大賞典・小倉記念・中山金杯勝ち馬）、5代母アサマユリ（メジロ牧場の基礎繁殖牝馬）"
   },
   "エリザベスタワー": {
-    "father": "Kingman",
-    "mother": "Turfdonna",
+    "father": "キングマン",
+    "mother": "ターフドンナ",
     "sire_line": "ダンジグ系",
     "sire_line_en": "Danzig"
   },
@@ -5467,18 +4973,18 @@
   },
   "モントライゼ": {
     "father": "ダイワメジャー",
-    "mother": "ムーングロウ(GB)",
+    "mother": "ムーングロウ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "ミステリーウェイ": {
     "father": "ジャスタウェイ",
-    "mother": "ジプシーハイウェイ(IRE)",
+    "mother": "ジプシーハイウェイ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
   "ブレークアップ": {
-    "father": "ノヴェリスト(IRE)",
+    "father": "ノヴェリスト",
     "mother": "リトルジュン",
     "sire_line": "バーラム系",
     "sire_line_en": "Bahram"
@@ -5492,7 +4998,7 @@
   },
   "ディープモンスター": {
     "father": "ディープインパクト",
-    "mother": "シスタリーラヴ(USA)",
+    "mother": "シスタリーラヴ",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -5583,8 +5089,8 @@
     "sire_line_en": "Sunday Silence"
   },
   "ショックアクション": {
-    "father": "Gleneagles",
-    "mother": "Reset In Blue",
+    "father": "グレンイーグルス",
+    "mother": "リセットインブルー",
     "sire_line": "サドラーズウェルズ系",
     "sire_line_en": "Sadler's Wells"
   },
@@ -5715,7 +5221,7 @@
     "sire_line_en": "Sunday Silence"
   },
   "エアサージュ": {
-    "father": "Point of Entry",
+    "father": "ポイントオブエントリー",
     "mother": "ノカゼ",
     "sire_line": "ロベルト系",
     "sire_line_en": "Roberto"
@@ -5952,358 +5458,308 @@
     "father": "レモンドロップキッド",
     "mother": "アンリーチャブル",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "シャマル": {
     "father": "スマートファルコン",
     "mother": "ネイティヴコード",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "インダストリア": {
     "father": "リオンディーズ",
     "mother": "インダクティ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "デシエルト": {
     "father": "ドレフォン",
     "mother": "アドマイヤセプター",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ドゥラドーレス": {
     "father": "ドゥラメンテ",
     "mother": "ロカ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "エイシンスポッター": {
     "father": "エイシンヒカリ",
     "mother": "マーゼリン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "オタルエバー": {
     "father": "リオンディーズ",
     "mother": "ルージュクール",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "トーセンヴァンノ": {
     "father": "ヴァンキッシュラン",
     "mother": "トーセンソニア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ストーリア": {
     "father": "リオンディーズ",
     "mother": "フェリス",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ラブリイユアアイズ": {
     "father": "ロゴタイプ",
     "mother": "オープンユアアイズ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "メイショウブレゲ": {
     "father": "ゴールドシップ",
     "mother": "メイショウスイヅキ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ドーブネ": {
     "father": "ディープインパクト",
     "mother": "プレミアステップス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "カジュフェイス": {
     "father": "エイシンヒカリ",
     "mother": "タイキアプローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴィアドロローサ": {
     "father": "ロードカナロア",
     "mother": "ロイヤルストリート",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "フィールシンパシー": {
     "father": "ベーカバド",
     "mother": "スマートシンパシー",
     "sire_line": "ダンジグ系",
-    "sire_line_en": "Danzig",
-    "close_relatives": ""
+    "sire_line_en": "Danzig"
   },
   "ヒノクニ": {
     "father": "カレンブラックヒル",
     "mother": "トワイスアップ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ワープスピード": {
     "father": "ドレフォン",
     "mother": "ディープラヴ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ルージュエヴァイユ": {
     "father": "ジャスタウェイ",
     "mother": "ナッシングバットドリームズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ボーンディスウェイ": {
     "father": "ハーツクライ",
     "mother": "ウィンドハック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フィデル": {
     "father": "ハーツクライ",
-    "mother": "ラッキートゥビーミー(USA)",
+    "mother": "ラッキートゥビーミー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ピンハイ": {
     "father": "ミッキーアイル",
     "mother": "レイテッド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダンテスヴュー": {
     "father": "キングカメハメハ",
     "mother": "クロウキャニオン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ソリタリオ": {
     "father": "モーリス",
     "mother": "サブトゥエンティ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ニシノラブウインク": {
     "father": "エピファネイア",
     "mother": "ニシノシルエット",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "セレシオン": {
     "father": "ハーツクライ",
-    "mother": "クルソラ（ARG）",
+    "mother": "クルソラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サリエラ": {
     "father": "ディープインパクト",
-    "mother": "サロミナ（GER）",
+    "mother": "サロミナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ステルナティーア": {
     "father": "ロードカナロア",
     "mother": "ラルケット",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "サトノヘリオス": {
     "father": "エピファネイア",
     "mother": "エアマグダラ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "ルージュスティリア": {
     "father": "ディープインパクト",
     "mother": "ドライヴンスノー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ラズベリームース": {
     "father": "ルーラーシップ",
     "mother": "ワイルドラズベリー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ドンフランキー": {
     "father": "ダイワメジャー",
-    "mother": "ウィーミスフランキー(USA)",
+    "mother": "ウィーミスフランキー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "テーオードレフォン": {
-    "father": "ドレフォン(USA)",
+    "father": "ドレフォン",
     "mother": "エミネントシチー",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "セキフウ": {
-    "father": "ヘニーヒューズ(USA)",
-    "mother": "シヤボナ(USA)",
+    "father": "ヘニーヒューズ",
+    "mother": "シヤボナ",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ウィルソンテソーロ": {
     "father": "キタサンブラック",
-    "mother": "チェストケローズ(USA)",
+    "mother": "チェストケローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アーテルアストレア": {
     "father": "リーチザクラウン",
     "mother": "スターズインヘヴン",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ゴールドエクリプス": {
     "father": "ドゥラメンテ",
     "mother": "ゴールドグローリー",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ヴェローナシチー": {
     "father": "エピファネイア",
     "mother": "アモーレエテルノ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "インプレス": {
     "father": "キズナ",
-    "mother": "ベアトリスⅡ(GB)",
+    "mother": "ベアトリスⅡ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ハピ": {
     "father": "キズナ",
     "mother": "クイーンパイレーツ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ノットゥルノ": {
     "father": "ハーツクライ",
-    "mother": "シェイクズセレナーデ(USA)",
+    "mother": "シェイクズセレナーデ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メイクアリープ": {
-    "father": "シニスターミニスター(USA)",
-    "mother": "スペシャルクイン（母父スペシャルウィーク）",
+    "father": "シニスターミニスター",
+    "mother": "スペシャルクイン",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "ペイシャエス": {
     "father": "エスポワールシチー",
-    "mother": "リサプシュケ（母父ワイルドラッシュ）",
+    "mother": "リサプシュケ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ドライスタウト": {
-    "father": "シニスターミニスター(USA)",
-    "mother": "マストバイアイテム（母父アフリート）",
+    "father": "シニスターミニスター",
+    "mother": "マストバイアイテム",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "クラウンプライド": {
     "father": "リーチザクラウン",
-    "mother": "エミーズプライド（母父キングカメハメハ）",
+    "mother": "エミーズプライド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "キングズソード": {
-    "father": "シニスターミニスター(USA)",
-    "mother": "キングスベリー（母父キングヘイロー）",
+    "father": "シニスターミニスター",
+    "mother": "キングスベリー",
     "sire_line": "シアトルスルー系",
     "sire_line_en": "Seattle Slew",
     "close_relatives": "全兄にキングズガード（2011年生、同じ日進牧場・寺島良厩舎所属、プロキオンステークス（GIII）等で重賞を制覇）"
   },
   "アルファマム": {
-    "father": "マジェスティックウォリアー(USA)",
-    "mother": "ダイオプサイド（母父フジキセキ）",
+    "father": "マジェスティックウォリアー",
+    "mother": "ダイオプサイド",
     "sire_line": "シアトルスルー系",
-    "sire_line_en": "Seattle Slew",
-    "close_relatives": ""
+    "sire_line_en": "Seattle Slew"
   },
   "サトノダイヤモンド": {
     "father": "ディープインパクト",
     "mother": "マルペンサ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "メジャーエンブレム": {
     "father": "ダイワメジャー",
     "mother": "キャッチータイトル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ヴィブロス": {
     "father": "ディープインパクト",
     "mother": "ハルーワスウィート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ファインニードル": {
     "father": "アドマイヤムーン",
     "mother": "ニードルクラフト",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "マカヒキ": {
     "father": "ディープインパクト",
     "mother": "ウィキウィキ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ゴールドドリーム": {
     "father": "ゴールドアリュール",
@@ -6373,7 +5829,7 @@
   },
   "ラヴズオンリーユー": {
     "father": "ディープインパクト",
-    "mother": "Loves Only Me(USA)",
+    "mother": "ラヴズオンリーミー",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -6593,15 +6049,13 @@
     "father": "ナカヤマフェスタ",
     "mother": "シングアップロック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ガルボ": {
     "father": "マンハッタンカフェ",
     "mother": "ヤマトダマシイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レッドデイヴィス": {
     "father": "アグネスタキオン",
@@ -6921,11 +6375,10 @@
     "close_relatives": "全姉に1997年エリザベス女王杯優勝馬エリモシック、半兄にクラレント（重賞6勝）・レッドアリオン（マイラーズカップ、関屋記念）"
   },
   "モズアスコット": {
-    "father": "Frankel",
-    "mother": "India",
+    "father": "フランケル",
+    "mother": "インディア",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "サンレイレーザー": {
     "father": "ラスカルスズカ",
@@ -6958,39 +6411,34 @@
     "sire_line_en": "Sunday Silence"
   },
   "エーシントップ": {
-    "father": "Tale of the Cat",
-    "mother": "Ecology",
+    "father": "テイルオブザキャット",
+    "mother": "エコロジー",
     "sire_line": "ストームキャット系",
-    "sire_line_en": "Storm Cat",
-    "close_relatives": ""
+    "sire_line_en": "Storm Cat"
   },
   "ディアデラマドレ": {
     "father": "キングカメハメハ",
     "mother": "ディアデラノビア",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "レッドアリオン": {
     "father": "アグネスタキオン",
     "mother": "エリモピクシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アウォーディー": {
     "father": "ジャングルポケット",
     "mother": "ヘヴンリーロマンス",
     "sire_line": "ゼダーン系",
-    "sire_line_en": "Zeddaan",
-    "close_relatives": ""
+    "sire_line_en": "Zeddaan"
   },
   "ノボリディアーナ": {
     "father": "フレンチデピュティ",
     "mother": "スターリーロマンス",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "パンサラッサ": {
     "father": "ロードカナロア",
@@ -7018,7 +6466,7 @@
     "close_relatives": "父ブラックタイドはディープインパクトの全兄"
   },
   "マルカフリート": {
-    "father": "アフリート(CAN)",
+    "father": "アフリート",
     "mother": "スプリングアマイン",
     "sire_line": "ミスタープロスペクター系",
     "sire_line_en": "Mr. Prospector"
@@ -7031,7 +6479,7 @@
   },
   "ロジクライ": {
     "father": "ハーツクライ",
-    "mother": "ドリームモーメント(GB)",
+    "mother": "ドリームモーメント",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
   },
@@ -7106,120 +6554,103 @@
     "father": "サクラバクシンオー",
     "mother": "シャイニングピアス",
     "sire_line": "テスコボーイ系",
-    "sire_line_en": "Tesco Boy",
-    "close_relatives": ""
+    "sire_line_en": "Tesco Boy"
   },
   "ナックビーナス": {
     "father": "ダイワメジャー",
     "mother": "レディトゥプリーズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ラキシス": {
     "father": "ディープインパクト",
     "mother": "マジックストーム",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ノームコア": {
     "father": "ハービンジャー",
     "mother": "クロノロジスト",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ミッキークイーン": {
     "father": "ディープインパクト",
     "mother": "ミュージカルウェイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フロンテアクイーン": {
     "father": "メイショウサムソン",
     "mother": "ブルーボックスボウ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ベラジオオペラ": {
     "father": "ロードカナロア",
     "mother": "エアルーティーン",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "エバーブロッサム": {
     "father": "ディープインパクト",
     "mother": "サクラサクII",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アクションスター": {
     "father": "アグネスタキオン",
     "mother": "レディオブヴェニス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ソロル": {
     "father": "シンボリクリスエス",
     "mother": "ラバヤデール",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "クロフネサプライズ": {
     "father": "クロフネ",
     "mother": "アイアンブリッジ",
     "sire_line": "デピュティミニスター系",
-    "sire_line_en": "Deputy Minister",
-    "close_relatives": ""
+    "sire_line_en": "Deputy Minister"
   },
   "タガノトネール": {
     "father": "ケイムホーム",
     "mother": "タガノレヴェントン",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "レディオブオペラ": {
     "father": "シングスピール",
     "mother": "レディミドルトン",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "サムソンズプライド": {
     "father": "メイショウサムソン",
     "mother": "フェザーレイ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ミナレット": {
     "father": "スズカマンボ",
     "mother": "ノワゼット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アルマディヴァン": {
     "father": "メジロベイリー",
     "mother": "ゲームコンパイラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サイモンラムセス": {
     "father": "ブラックタイド",
     "mother": "コパノマルコリーニ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マリアライト": {
     "father": "ディープインパクト",
@@ -7239,78 +6670,67 @@
     "father": "ゴールドアリュール",
     "mother": "ラビットフット",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マスカレードボール": {
     "father": "ドゥラメンテ",
     "mother": "マスクオフ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ジャンタルマンタル": {
     "father": "パレスマリス",
     "mother": "インディアマントゥアナ",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "ダノンデサイル": {
     "father": "エピファネイア",
     "mother": "トップデサイル",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "メイショウタバル": {
     "father": "ゴールドシップ",
     "mother": "メイショウツバクロ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "レガレイラ": {
     "father": "スワーヴリチャード",
     "mother": "ロカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アスコリピチェーノ": {
     "father": "ダイワメジャー",
     "mother": "アスコルティ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "チェルヴィニア": {
     "father": "ハービンジャー",
     "mother": "チェッキーノ",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ヘデントール": {
     "father": "ルーラーシップ",
     "mother": "コルコバード",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ステレンボッシュ": {
     "father": "エピファネイア",
     "mother": "ブルークランズ",
     "sire_line": "ロベルト系",
-    "sire_line_en": "Roberto",
-    "close_relatives": ""
+    "sire_line_en": "Roberto"
   },
   "レッドファルクス": {
     "father": "スウェプトオーヴァーボード",
     "mother": "ベルモット",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "サングレアル": {
     "father": "ゼンノロブロイ",
@@ -7372,29 +6792,25 @@
     "father": "ダイワメジャー",
     "mother": "ヒガシリンクス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "タニノエポレット": {
     "father": "ダンスインザダーク",
     "mother": "タニノカリス",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディアドラ": {
     "father": "ハービンジャー",
     "mother": "ライツェント",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ドレッドノータス": {
     "father": "ハービンジャー",
     "mother": "ディアデラノビア",
     "sire_line": "デインヒル系",
-    "sire_line_en": "Danehill",
-    "close_relatives": ""
+    "sire_line_en": "Danehill"
   },
   "ラッキーライラック": {
     "father": "オルフェーヴル",
@@ -7458,22 +6874,19 @@
     "father": "ステイゴールド",
     "mother": "エスユーエフシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "マーブルカテドラル": {
     "father": "ダイワメジャー",
     "mother": "ヘルスウォール",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ダイアナヘイロー": {
     "father": "キングヘイロー",
     "mother": "ヤマカツセイレーン",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ラストインパクト": {
     "father": "ディープインパクト",
@@ -7486,8 +6899,7 @@
     "father": "ディープインパクト",
     "mother": "クライウィズジョイ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ワンブレスアウェイ": {
     "father": "ステイゴールド",
@@ -7500,71 +6912,61 @@
     "father": "ディープインパクト",
     "mother": "ハルーワソング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ディサイファ": {
     "father": "ディープインパクト",
     "mother": "ミズナ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "フィエロ": {
     "father": "ディープインパクト",
     "mother": "ルビー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ハナズゴール": {
     "father": "オレハマッテルゼ",
     "mother": "シャンハイジェル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "グランデッツァ": {
     "father": "アグネスタキオン",
     "mother": "マルバイユ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ストレイトガール": {
     "father": "フジキセキ",
     "mother": "ネヴァーピリオド",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ワールドエース": {
     "father": "ディープインパクト",
     "mother": "マンデラ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "スピルバーグ": {
     "father": "ディープインパクト",
     "mother": "プリンセスオリビア",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "サンビスタ": {
     "father": "スズカマンボ",
     "mother": "ホワイトカーニバル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クラレント": {
     "father": "ダンスインザダーク",
     "mother": "エリモピクシー",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロッテンマイヤー": {
     "father": "クロフネ",
@@ -7594,22 +6996,19 @@
     "father": "ブラックタイド",
     "mother": "シュガーハート",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ロゴタイプ": {
     "father": "ローエングリン",
     "mother": "ステレオタイプ",
     "sire_line": "サドラーズウェルズ系",
-    "sire_line_en": "Sadler's Wells",
-    "close_relatives": ""
+    "sire_line_en": "Sadler's Wells"
   },
   "ロサギガンティア": {
     "father": "フジキセキ",
     "mother": "ターフローズ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "バウンスシャッセ": {
     "father": "ゼンノロブロイ",
@@ -7639,92 +7038,79 @@
     "father": "ルーラーシップ",
     "mother": "エターナルブーケ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ステファノス": {
     "father": "ディープインパクト",
     "mother": "ココシュニック",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "アドマイヤデウス": {
     "father": "アドマイヤドン",
     "mother": "ロイヤルカード",
     "sire_line": "ミスタープロスペクター系",
-    "sire_line_en": "Mr. Prospector",
-    "close_relatives": ""
+    "sire_line_en": "Mr. Prospector"
   },
   "タスティエーラ": {
     "father": "サトノクラウン",
     "mother": "パルティトゥーラ",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ダイワマッジョーレ": {
     "father": "ダイワメジャー",
     "mother": "ファンジカ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "エキストラエンド": {
     "father": "ディープインパクト",
     "mother": "カーリング",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ブライトライン": {
     "father": "フジキセキ",
     "mother": "シェリーズスマイル",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "クリールカイザー": {
     "father": "キングヘイロー",
     "mother": "スマイルコンテスト",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ワイドバッハ": {
     "father": "アジュディケーティング",
     "mother": "グリーンヒルレッド",
     "sire_line": "ノーザンダンサー系",
-    "sire_line_en": "Northern Dancer",
-    "close_relatives": ""
+    "sire_line_en": "Northern Dancer"
   },
   "ラブイズブーシェ": {
     "father": "マンハッタンカフェ",
     "mother": "ローリエ",
     "sire_line": "サンデーサイレンス系",
-    "sire_line_en": "Sunday Silence",
-    "close_relatives": ""
+    "sire_line_en": "Sunday Silence"
   },
   "ケイアイエレガント": {
     "father": "キングカメハメハ",
     "mother": "ポストパレード",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ベルシャザール": {
     "father": "キングカメハメハ",
     "mother": "マルカキャンディ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "ラブリーデイ": {
     "father": "キングカメハメハ",
     "mother": "ポップコーンジャズ",
     "sire_line": "キングマンボ系",
-    "sire_line_en": "Kingmambo",
-    "close_relatives": ""
+    "sire_line_en": "Kingmambo"
   },
   "エピファネイア": {
     "father": "シンボリクリスエス",
@@ -7824,5 +7210,125 @@
     "mother": "ライジングクロス",
     "sire_line": "サンデーサイレンス系",
     "sire_line_en": "Sunday Silence"
+  },
+  "ミュージアムマイル": {
+    "father": "リオンディーズ",
+    "mother": "ミュージアムヒル",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "エンブロイダリー": {
+    "father": "アドマイヤマーズ",
+    "mother": "ロッテンマイヤー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "カムニャック": {
+    "father": "ブラックタイド",
+    "mother": "ダンスアミーガ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "パンジャタワー": {
+    "father": "タワーオブロンドン",
+    "mother": "クラークスデール",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
+  },
+  "エネルジコ": {
+    "father": "ドゥラメンテ",
+    "mother": "エノラ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "アルマヴェローチェ": {
+    "father": "ハービンジャー",
+    "mother": "ラクアミ",
+    "sire_line": "デインヒル系",
+    "sire_line_en": "Danehill"
+  },
+  "アドマイヤズーム": {
+    "father": "モーリス",
+    "mother": "ダイワズーム",
+    "sire_line": "ロベルト系",
+    "sire_line_en": "Roberto"
+  },
+  "エリキング": {
+    "father": "キズナ",
+    "mother": "ヤングスター",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ジャスティンミラノ": {
+    "father": "キズナ",
+    "mother": "マーゴットディド",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "アーバンシック": {
+    "father": "スワーヴリチャード",
+    "mother": "エッジースタイル",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "エアスピネル": {
+    "father": "キングカメハメハ",
+    "mother": "エアメサイア",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "スマートオーディン": {
+    "father": "ダノンシャンティ",
+    "mother": "レディアップステージ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "クロコスミア": {
+    "father": "ステイゴールド",
+    "mother": "デヴェロッペ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ソルヴェイグ": {
+    "father": "ダイワメジャー",
+    "mother": "アスドゥクール",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "シュウジ": {
+    "father": "キンシャサノキセキ",
+    "mother": "カストリア",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ウインテンダネス": {
+    "father": "カンパニー",
+    "mother": "モエレメルシー",
+    "sire_line": "ゼダーン系",
+    "sire_line_en": "Zeddaan"
+  },
+  "プロフェット": {
+    "father": "ハービンジャー",
+    "mother": "ジュモー",
+    "sire_line": "デインヒル系",
+    "sire_line_en": "Danehill"
+  },
+  "ビッシュ": {
+    "father": "ディープインパクト",
+    "mother": "バランセラ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ストロングタイタン": {
+    "father": "リーガルランサム",
+    "mother": "タイタンクイーン",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
+  },
+  "キンショーユキヒメ": {
+    "father": "メイショウサムソン",
+    "mother": "アップルティー",
+    "sire_line": "サドラーズウェルズ系",
+    "sire_line_en": "Sadler's Wells"
   }
 }
