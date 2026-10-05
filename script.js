@@ -2141,8 +2141,9 @@ async function init() {
 function updateColumnProgress() {
   const el = document.getElementById("column-progress-text");
   if (!el || horses.length === 0) return;
-  const done = Object.keys(historyData).length;
+  const done = Object.values(historyData).filter(h => h && h.column).length;
   const total = horses.length;
+  if (done === 0) { el.parentElement.hidden = true; return; }
   const pct = (done / total * 100).toFixed(1);
   el.textContent = `${done}/${total} ${t("column_progress_unit")}（${pct}%）`;
 }
