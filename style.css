@@ -234,6 +234,20 @@ header {
   border-bottom: none;
 }
 
+.notice-link {
+  display: block;
+  margin: -4px 16px 18px;
+  padding: 6px 2px;
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-size: 0.78em;
+  text-decoration: underline;
+  text-align: left;
+  cursor: pointer;
+  min-height: 32px;
+}
+
 /* ---- tab bar ---- */
 .tab-bar {
   max-width: 480px;
@@ -1010,6 +1024,30 @@ footer a {
 
 .install-guide .ticket-label {
   margin-bottom: 10px;
+}
+
+.notice-guide h3 {
+  margin: 0 0 10px;
+  font-size: 1.05em;
+  color: var(--ink);
+}
+
+.notice-guide p {
+  margin: 0 0 10px;
+  font-size: 0.88em;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.notice-sign {
+  margin-top: 6px;
+  text-align: right;
+}
+
+.notice-sign p {
+  margin: 0;
+  font-size: 0.78em;
+  color: var(--muted);
 }
 
 /* ---- 厩舎診断 ---- */

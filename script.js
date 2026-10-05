@@ -194,7 +194,15 @@ const I18N = {
     joke_stall: "馬房内のボロを清掃中",
     loading: "馬データを読み込み中...",
     prompt_search: "検索条件を入力して「検索する」を押してください。",
-    load_failed: "馬データの読み込みに失敗しました: "
+    load_failed: "馬データの読み込みに失敗しました: ",
+    notice_link: "ここ数日のミニコラムに関する更新についての調査結果",
+    notice_title: "ここ数日のミニコラムに関する更新についての調査結果",
+    notice_p1: "ミニコラムの内容を精査したところ、事実と異なる情報が一部混じっていることが分かりました。誤った情報を公開し続けるわけにはいかないため、1236頭すべてのミニコラムをいったん取り下げています。",
+    notice_p2: "現在、すべての内容を戦績データと一頭ずつ照合したうえで、新しい版を書き直しています。",
+    notice_p3: "あわせて、各馬の戦績と出典リンクも確認しました。戦績はレース名・着順・年を戦績データと照合し、出典リンクは表示している馬について書かれたページかどうかを一件ずつ確認しています。その結果、別の馬のページを指していたリンク45件を取り除き、確認できなかった賞金額の記載4件を削除しました。",
+    notice_p4: "ご迷惑をおかけして申し訳ありません。新しい版ができ次第、順次公開します。",
+    notice_date: "2026年10月5日",
+    notice_sign: "Mushyn Reagan"
   },
   en: {
     subtitle: "Full Stride Horse Search Tool",
@@ -335,7 +343,15 @@ const I18N = {
     joke_stall: "Cleaning the stall",
     loading: "Loading horse data...",
     prompt_search: "Enter your search conditions and press \"Search\".",
-    load_failed: "Failed to load horse data: "
+    load_failed: "Failed to load horse data: ",
+    notice_link: "Findings on the recent mini column updates",
+    notice_title: "Findings on the recent mini column updates",
+    notice_p1: "After reviewing the mini columns, we found that some of them contained information that did not match the facts. Since we cannot keep incorrect information published, we have temporarily withdrawn the mini columns for all 1,236 horses.",
+    notice_p2: "We are now rewriting a new version, checking every piece of content against the career-record data horse by horse.",
+    notice_p3: "We also checked each horse's career record and source links. We cross-checked race names, finishing positions, and years against the career-record data, and checked one by one whether each source link actually pointed to a page about the horse being displayed. As a result, we removed 45 links that pointed to a different horse's page, and deleted 4 prize-money figures we could not verify.",
+    notice_p4: "We apologize for the inconvenience. We will publish the new version in stages as it is completed.",
+    notice_date: "October 5, 2026",
+    notice_sign: "Mushyn Reagan"
   }
 };
 
@@ -2074,6 +2090,24 @@ function setupInstallButton() {
   });
 }
 
+function showNoticeModal() {
+  const modal = document.getElementById("notice-modal");
+  if (modal) modal.classList.remove("hidden");
+}
+
+function hideNoticeModal() {
+  const modal = document.getElementById("notice-modal");
+  if (modal) modal.classList.add("hidden");
+}
+
+function setupNoticeLink() {
+  document.getElementById("notice-link").addEventListener("click", showNoticeModal);
+  document.getElementById("notice-modal-close").addEventListener("click", hideNoticeModal);
+  document.getElementById("notice-modal").addEventListener("click", (e) => {
+    if (e.target.id === "notice-modal") hideNoticeModal();
+  });
+}
+
 // ---- Init ----
 async function init() {
   const versionMeta = document.querySelector('meta[name="app-version"]');
@@ -2088,6 +2122,7 @@ async function init() {
   setupThemeToggle();
   setupLangToggle();
   setupInstallButton();
+  setupNoticeLink();
   document.getElementById("search-btn").addEventListener("click", runSearch);
   document.getElementById("clear-search-btn").addEventListener("click", clearSearchConditions);
   document.getElementById("sort-select").addEventListener("change", () => {
