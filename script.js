@@ -197,11 +197,11 @@ const I18N = {
     load_failed: "馬データの読み込みに失敗しました: ",
     notice_link: "ミニコラムに関する更新についての調査結果",
     notice_title: "ミニコラムに関する更新についての調査結果",
-    notice_p1: "ミニコラムの内容を精査したところ、事実と異なる情報が一部混じっていることが分かりました。誤った情報を公開し続けるわけにはいかないため、1236頭すべてのミニコラムをいったん取り下げています。",
-    notice_p2: "現在、すべての内容を戦績データと一頭ずつ照合したうえで、新しい版を書き直しています。",
+    notice_p1: "ミニコラムの内容を精査したところ、事実と異なる情報が一部混じっていることが分かったため、1236頭すべてのミニコラムをいったん取り下げていました。このたび、全頭分を書き直した改訂版を公開しました。",
+    notice_p2: "改訂にあたっては、すべての内容を戦績データと一頭ずつ照合し、1頭ずつ内容を精査したうえで、現実に即した文章に書き直しました。",
     notice_p3: "あわせて、各馬の戦績と出典リンクも確認しました。戦績はレース名・着順・年を戦績データと照合し、出典リンクは表示している馬について書かれたページかどうかを一件ずつ確認しています。その結果、別の馬のページを指していたリンク45件を取り除き、確認できなかった賞金額の記載4件を削除しました。",
-    notice_p4: "ご迷惑をおかけして申し訳ありません。新しい版ができ次第、順次公開します。",
-    notice_date: "2026年10月5日",
+    notice_p4: "文章から様子が思い浮かびにくい場合は、各馬のページに掲載している出典リンクなどもあわせてご覧ください。ご迷惑をおかけして申し訳ありませんでした。",
+    notice_date: "2026年10月8日",
     notice_sign: "Mushyn Reagan"
   },
   en: {
@@ -346,11 +346,11 @@ const I18N = {
     load_failed: "Failed to load horse data: ",
     notice_link: "Findings on the mini column updates",
     notice_title: "Findings on the mini column updates",
-    notice_p1: "After reviewing the mini columns, we found that some of them contained information that did not match the facts. Since we cannot keep incorrect information published, we have temporarily withdrawn the mini columns for all 1,236 horses.",
-    notice_p2: "We are now rewriting a new version, checking every piece of content against the career-record data horse by horse.",
+    notice_p1: "After reviewing the mini columns, we found that some of them contained information that did not match the facts, so we had temporarily withdrawn the mini columns for all 1,236 horses. We have now published a revised version in which every column has been rewritten.",
+    notice_p2: "For the revision, we checked every piece of content against the career-record data and reviewed each horse's column one by one, rewriting the text so that it matches the actual record.",
     notice_p3: "We also checked each horse's career record and source links. We cross-checked race names, finishing positions, and years against the career-record data, and checked one by one whether each source link actually pointed to a page about the horse being displayed. As a result, we removed 45 links that pointed to a different horse's page, and deleted 4 prize-money figures we could not verify.",
-    notice_p4: "We apologize for the inconvenience. We will publish the new version in stages as it is completed.",
-    notice_date: "October 5, 2026",
+    notice_p4: "If a passage is hard to picture, please also refer to the source links shown on each horse's page. We apologize for the inconvenience.",
+    notice_date: "October 8, 2026",
     notice_sign: "Mushyn Reagan"
   }
 };
