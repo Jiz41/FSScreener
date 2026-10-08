@@ -97,6 +97,13 @@ const I18N = {
     growth_normal: "普通",
     growth_late: "晩成",
     stat_section_title: "8軸ステータス（任意・N以上で抽出）",
+    detail_section_title: "詳細検索（任意・各項目1つまで選択）",
+    detail_sire_label: "父系",
+    detail_win_label: "GI勝利",
+    detail_win_pick_surface: "先に芝・ダートを選択",
+    detail_run_label: "過去のG1出走",
+    detail_run_pick_year: "先に年を選択",
+    detail_run_hint: "年とレース名の両方を選んだときだけ絞り込まれます。頭数はこのツールの収録馬の中での数です。",
     stat_hint: "グラフをタップ／ドラッグして下限値（1〜5）を指定できます。中心まで戻すと指定なしになります。",
     stat_reset: "リセット",
     clear_search_btn: "検索条件をクリア",
@@ -246,6 +253,13 @@ const I18N = {
     growth_normal: "Normal",
     growth_late: "Late Bloomer",
     stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
+    detail_section_title: "Detailed search (optional, one choice per item)",
+    detail_sire_label: "Sire line",
+    detail_win_label: "G1 win",
+    detail_win_pick_surface: "Choose turf or dirt first",
+    detail_run_label: "Past G1 entry",
+    detail_run_pick_year: "Choose a year first",
+    detail_run_hint: "Applies only when both year and race are chosen. Counts are within the horses in this tool.",
     stat_hint: "Tap or drag on the chart to set a minimum value (1-5). Drag back to the center to clear.",
     stat_reset: "Reset",
     clear_search_btn: "Clear conditions",
@@ -407,6 +421,9 @@ function applyLanguage(lang) {
     engNote.style.display = lang === "en" ? "" : "none";
   }
   buildStatGrid();
+  if (detailData !== null) {
+    populateDetailSelects();
+  }
   if (currentCriteria !== null) {
     renderResults(currentResults, currentCriteria);
   } else {
@@ -423,6 +440,7 @@ function applyLanguage(lang) {
 
 let horses = [];
 let historyData = {};
+let detailData = null;
 let datasetMaxRating = 80;
 let currentResults = [];
 let currentCriteria = null;
@@ -627,6 +645,128 @@ async function loadHistory() {
   } catch (e) {
     historyData = {};
   }
+}
+
+async function loadDetailSearch() {
+  try {
+    const res = await fetch(`data/detail_search.json?v=${APP_VERSION}`);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    detailData = await res.json();
+    populateDetailSelects();
+  } catch (e) {
+    detailData = null;
+    const panel = document.getElementById("detail-search");
+    if (panel) panel.hidden = true;
+  }
+}
+
+function populateDetailSelects() {
+  const panel = document.getElementById("detail-search");
+  if (!detailData) {
+    if (panel) panel.hidden = true;
+    return;
+  }
+  if (panel) panel.hidden = false;
+  const lang = currentLang();
+
+  const sireSel = document.getElementById("detail-sire-line");
+  const winSurfaceSel = document.getElementById("detail-win-surface");
+  const winRaceSel = document.getElementById("detail-win-race");
+  const runYearSel = document.getElementById("detail-run-year");
+  const runRaceSel = document.getElementById("detail-run-race");
+
+  const prevSire = sireSel.value;
+  const prevWinSurface = winSurfaceSel.value;
+  const prevWinRace = winRaceSel.value;
+  const prevRunYear = runYearSel.value;
+  const prevRunRace = runRaceSel.value;
+
+  sireSel.innerHTML = "";
+  const sireNoPref = document.createElement("option");
+  sireNoPref.value = "";
+  sireNoPref.textContent = t("no_pref");
+  sireSel.appendChild(sireNoPref);
+  detailData.sire_lines.forEach(entry => {
+    const opt = document.createElement("option");
+    opt.value = entry.ja;
+    opt.textContent = lang === "en" ? `${entry.en} (${entry.n})` : `${entry.ja}（${entry.n}頭）`;
+    sireSel.appendChild(opt);
+  });
+  sireSel.value = prevSire;
+  if (sireSel.value !== prevSire) sireSel.value = "";
+
+  winRaceSel.innerHTML = "";
+  if (winSurfaceSel.value === "") {
+    winRaceSel.disabled = true;
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = t("detail_win_pick_surface");
+    winRaceSel.appendChild(opt);
+  } else {
+    winRaceSel.disabled = false;
+    const noPref = document.createElement("option");
+    noPref.value = "";
+    noPref.textContent = t("no_pref");
+    winRaceSel.appendChild(noPref);
+    const list = detailData.win_races[winSurfaceSel.value] || [];
+    list.forEach(entry => {
+      const opt = document.createElement("option");
+      opt.value = entry.name;
+      opt.textContent = lang === "en" ? `${entry.name} (${entry.n})` : `${entry.name}（${entry.n}頭）`;
+      winRaceSel.appendChild(opt);
+    });
+  }
+  winRaceSel.value = prevWinRace;
+  if (winRaceSel.value !== prevWinRace) winRaceSel.value = "";
+
+  runYearSel.innerHTML = "";
+  const runYearNoPref = document.createElement("option");
+  runYearNoPref.value = "";
+  runYearNoPref.textContent = t("no_pref");
+  runYearSel.appendChild(runYearNoPref);
+  detailData.run_years.forEach(y => {
+    const opt = document.createElement("option");
+    opt.value = y;
+    opt.textContent = lang === "en" ? y : `${y}年`;
+    runYearSel.appendChild(opt);
+  });
+  runYearSel.value = prevRunYear;
+  if (runYearSel.value !== prevRunYear) runYearSel.value = "";
+
+  runRaceSel.innerHTML = "";
+  if (runYearSel.value === "") {
+    runRaceSel.disabled = true;
+    const opt = document.createElement("option");
+    opt.value = "";
+    opt.textContent = t("detail_run_pick_year");
+    runRaceSel.appendChild(opt);
+  } else {
+    runRaceSel.disabled = false;
+    const noPref = document.createElement("option");
+    noPref.value = "";
+    noPref.textContent = t("no_pref");
+    runRaceSel.appendChild(noPref);
+    const list = detailData.run_races_by_year[runYearSel.value] || [];
+    list.forEach(entry => {
+      const opt = document.createElement("option");
+      opt.value = entry.name;
+      opt.textContent = lang === "en" ? `${entry.name} (${entry.n})` : `${entry.name}（${entry.n}頭）`;
+      runRaceSel.appendChild(opt);
+    });
+  }
+  runRaceSel.value = prevRunRace;
+  if (runRaceSel.value !== prevRunRace) runRaceSel.value = "";
+}
+
+function detailMatch(name, sel) {
+  const runActive = sel.runYear !== "" && sel.runRace !== "";
+  if (sel.sireLine === "" && sel.winRace === "" && !runActive) return true;
+  const rec = detailData && detailData.horses[name];
+  if (!rec) return false;
+  if (sel.sireLine !== "" && rec.s !== sel.sireLine) return false;
+  if (sel.winRace !== "" && !rec.w.includes(sel.winRace)) return false;
+  if (runActive && !rec.r.includes(sel.runYear + "|" + sel.runRace)) return false;
+  return true;
 }
 
 let changelogEntries = [];
@@ -990,6 +1130,11 @@ function clearSearchConditions() {
   STAT_AXES.forEach(axis => { statTierState[axis.key] = 0; });
   updateRadarDynamic();
 
+  document.getElementById("detail-sire-line").value = "";
+  document.getElementById("detail-win-surface").value = "";
+  document.getElementById("detail-run-year").value = "";
+  if (detailData !== null) populateDetailSelects();
+
   currentResults = [];
   currentCriteria = null;
   currentPage = 1;
@@ -1058,6 +1203,14 @@ function runSearch() {
       const lowerBound = tierLowerBound(f.tier);
       if (!(val >= lowerBound)) return false;
     }
+
+    const detailSel = {
+      sireLine: document.getElementById("detail-sire-line").value,
+      winRace: document.getElementById("detail-win-race").value,
+      runYear: document.getElementById("detail-run-year").value,
+      runRace: document.getElementById("detail-run-race").value
+    };
+    if (!detailMatch(h.name_jp, detailSel)) return false;
 
     return true;
   });
@@ -2125,6 +2278,14 @@ async function init() {
   setupNoticeLink();
   document.getElementById("search-btn").addEventListener("click", runSearch);
   document.getElementById("clear-search-btn").addEventListener("click", clearSearchConditions);
+  document.getElementById("detail-win-surface").addEventListener("change", () => {
+    document.getElementById("detail-win-race").value = "";
+    populateDetailSelects();
+  });
+  document.getElementById("detail-run-year").addEventListener("change", () => {
+    document.getElementById("detail-run-race").value = "";
+    populateDetailSelects();
+  });
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
       currentPage = 1;
@@ -2141,7 +2302,7 @@ async function init() {
   resultsPanel.innerHTML = `<div class="no-results">${t("loading")}</div>`;
 
   try {
-    await Promise.all([loadHorses(), loadHistory(), loadChangelog(), loadHorseAdditions()]);
+    await Promise.all([loadHorses(), loadHistory(), loadChangelog(), loadHorseAdditions(), loadDetailSearch()]);
     renderStable();
     updateColumnProgress();
     if (window.__fscUsedCache) {

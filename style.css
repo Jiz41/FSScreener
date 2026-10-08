@@ -408,6 +408,16 @@ main {
   margin-bottom: 12px;
 }
 
+.detail-search h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .detail-search .field-row {
+    flex-wrap: wrap;
+  }
+}
+
 .field-row .field {
   margin-bottom: 0;
 }
