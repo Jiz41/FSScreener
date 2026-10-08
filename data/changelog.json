@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-08",
+    "text": "「詳細検索」を追加しました。父系、GI勝利（芝・ダート別にレース名）、過去のGI出走（年とレース名）で馬を絞り込めます。GI出走は2008〜2025年のレースが対象で、頭数はこのツールの収録馬の中での数です",
+    "text_en": "Added \"Detailed search\". You can now narrow horses by sire line, by G1 win (turf/dirt, by race name), and by past G1 start (year and race name). G1 starts cover races from 2008 to 2025, and the counts refer to the horses included in this tool"
+  },
+  {
+    "date": "2026-10-08",
     "text": "ミニコラム改訂版をアップしました。1236頭すべてを、戦績データと一頭ずつ照合したうえで書き直しています。詳しくは「ミニコラムに関する更新についての調査結果」をご覧ください",
     "text_en": "The revised mini columns are now up. All 1,236 have been rewritten after checking each one against the career-record data horse by horse. For details, see \"Findings on the mini column updates\""
   },

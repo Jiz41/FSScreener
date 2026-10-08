@@ -7330,5 +7330,347 @@
     "mother": "アップルティー",
     "sire_line": "サドラーズウェルズ系",
     "sire_line_en": "Sadler's Wells"
+  },
+  "エンジェルフェイス": {
+    "father": "キングカメハメハ",
+    "mother": "ワンフォーローズ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "エテルナミノル": {
+    "father": "エンパイアメーカー",
+    "mother": "ダイワジェラート",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
+  },
+  "ビービーバーレル": {
+    "father": "パイロ",
+    "mother": "ファインディンプル",
+    "sire_line": "シアトルスルー系",
+    "sire_line_en": "Seattle Slew"
+  },
+  "ワンスインナムーン": {
+    "father": "アドマイヤムーン",
+    "mother": "ツーデイズノーチス",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
+  },
+  "ヴォージュ": {
+    "father": "ナカヤマフェスタ",
+    "mother": "ギュイエンヌ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ミエノサクシード": {
+    "father": "ステイゴールド",
+    "mother": "ハピネスフォーユー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "プロディガルサン": {
+    "father": "ディープインパクト",
+    "mother": "ラヴズオンリーミー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "カフジプリンス": {
+    "father": "ハーツクライ",
+    "mother": "ギンザフローラル",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "アストラエンブレム": {
+    "father": "ダイワメジャー",
+    "mother": "ブラックエンブレム",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "レッドアヴァンセ": {
+    "father": "ディープインパクト",
+    "mother": "エリモピクシー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ペイシャフェリシタ": {
+    "father": "ハーツクライ",
+    "mother": "プレザントケイプ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "タイセイサミット": {
+    "father": "ダイワメジャー",
+    "mother": "ヴァインドレッサー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "メイショウスイヅキ": {
+    "father": "パイロ",
+    "mother": "ヴィトンクイーン",
+    "sire_line": "シアトルスルー系",
+    "sire_line_en": "Seattle Slew"
+  },
+  "マシェリガール": {
+    "father": "トーセンファントム",
+    "mother": "トーセンバスケット",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ペルソナリテ": {
+    "father": "ステイゴールド",
+    "mother": "マイネアルデュール",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "イクイノックス": {
+    "father": "キタサンブラック",
+    "mother": "シャトーブランシュ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ドウデュース": {
+    "father": "ハーツクライ",
+    "mother": "ダストアンドダイヤモンズ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "エフフォーリア": {
+    "father": "エピファネイア",
+    "mother": "ケイティーズハート",
+    "sire_line": "ロベルト系",
+    "sire_line_en": "Roberto"
+  },
+  "レイデオロ": {
+    "father": "キングカメハメハ",
+    "mother": "ラドラーダ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "ドゥラメンテ": {
+    "father": "キングカメハメハ",
+    "mother": "アドマイヤグルーヴ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "デアリングタクト": {
+    "father": "エピファネイア",
+    "mother": "デアリングバード",
+    "sire_line": "ロベルト系",
+    "sire_line_en": "Roberto"
+  },
+  "リバティアイランド": {
+    "father": "ドゥラメンテ",
+    "mother": "ヤンキーローズ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "サートゥルナーリア": {
+    "father": "ロードカナロア",
+    "mother": "シーザリオ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "シャフリヤール": {
+    "father": "ディープインパクト",
+    "mother": "ドバイマジェスティ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ショウナンパンドラ": {
+    "father": "ディープインパクト",
+    "mother": "キューティゴールド",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ネオリアリズム": {
+    "father": "ネオユニヴァース",
+    "mother": "トキオリアリティー",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "トーセンスターダム": {
+    "father": "ディープインパクト",
+    "mother": "アドマイヤキラメキ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ワンアンドオンリー": {
+    "father": "ハーツクライ",
+    "mother": "ヴァーチュ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ビッグアーサー": {
+    "father": "サクラバクシンオー",
+    "mother": "シヤボナ",
+    "sire_line": "テスコボーイ系",
+    "sire_line_en": "Tesco Boy"
+  },
+  "レッドリヴェール": {
+    "father": "ステイゴールド",
+    "mother": "ディソサード",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "トーホウジャッカル": {
+    "father": "スペシャルウィーク",
+    "mother": "トーホウガイア",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "アルバート": {
+    "father": "アドマイヤドン",
+    "mother": "フォルクローレ",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
+  },
+  "ベルカント": {
+    "father": "サクラバクシンオー",
+    "mother": "セレブラール",
+    "sire_line": "テスコボーイ系",
+    "sire_line_en": "Tesco Boy"
+  },
+  "トゥザワールド": {
+    "father": "キングカメハメハ",
+    "mother": "トゥザヴィクトリー",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "ショウナンアチーヴ": {
+    "father": "ショウナンカンプ",
+    "mother": "ショウナンパントル",
+    "sire_line": "テスコボーイ系",
+    "sire_line_en": "Tesco Boy"
+  },
+  "ハギノハイブリッド": {
+    "father": "タニノギムレット",
+    "mother": "ハッピーペインター",
+    "sire_line": "ロベルト系",
+    "sire_line_en": "Roberto"
+  },
+  "サクラアンプルール": {
+    "father": "キングカメハメハ",
+    "mother": "サクラメガ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "アジアエクスプレス": {
+    "father": "ヘニーヒューズ",
+    "mother": "ランニングボブキャッツ",
+    "sire_line": "ストームキャット系",
+    "sire_line_en": "Storm Cat"
+  },
+  "ネロ": {
+    "father": "ヨハネスブルグ",
+    "mother": "ニシノタカラヅカ",
+    "sire_line": "ストームキャット系",
+    "sire_line_en": "Storm Cat"
+  },
+  "スズカデヴィアス": {
+    "father": "キングカメハメハ",
+    "mother": "スズカローラン",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "カラダレジェンド": {
+    "father": "フレンチデピュティ",
+    "mother": "キョウエイワンダー",
+    "sire_line": "デピュティミニスター系",
+    "sire_line_en": "Deputy Minister"
+  },
+  "アズマシャトル": {
+    "father": "ゼンノロブロイ",
+    "mother": "ブレッシング",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "リラヴァティ": {
+    "father": "ゼンノロブロイ",
+    "mother": "シンハリーズ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "トゥインクル": {
+    "father": "ステイゴールド",
+    "mother": "ロングスターダム",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "シュンドルボン": {
+    "father": "ハーツクライ",
+    "mother": "ネイチャーガイド",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "アデイインザライフ": {
+    "father": "ディープインパクト",
+    "mother": "ラッシュライフ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "フォーエバーモア": {
+    "father": "ネオユニヴァース",
+    "mother": "エターナルビート",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "フクノドリーム": {
+    "father": "ヨハネスブルグ",
+    "mother": "キャニオンリリー",
+    "sire_line": "ストームキャット系",
+    "sire_line_en": "Storm Cat"
+  },
+  "ペイシャフェリス": {
+    "father": "スペシャルウィーク",
+    "mother": "プレザントケイプ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "クラリティシチー": {
+    "father": "キングカメハメハ",
+    "mother": "タイキクラリティ",
+    "sire_line": "キングマンボ系",
+    "sire_line_en": "Kingmambo"
+  },
+  "ベルキャニオン": {
+    "father": "ディープインパクト",
+    "mother": "クロウキャニオン",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ヒルノマテーラ": {
+    "father": "マンハッタンカフェ",
+    "mother": "コンサーンナッカ",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "アドマイヤビジン": {
+    "father": "クロフネ",
+    "mother": "スマイルビジン",
+    "sire_line": "デピュティミニスター系",
+    "sire_line_en": "Deputy Minister"
+  },
+  "マイネルディアベル": {
+    "father": "ナイキアディライト",
+    "mother": "ムービースクリーン",
+    "sire_line": "ヘイロー系",
+    "sire_line_en": "Halo"
+  },
+  "ニシノアカツキ": {
+    "father": "オペラハウス",
+    "mother": "ニシノシルエット",
+    "sire_line": "サドラーズウェルズ系",
+    "sire_line_en": "Sadler's Wells"
+  },
+  "リーサルウェポン": {
+    "father": "ディープインパクト",
+    "mother": "クイックコマンド",
+    "sire_line": "サンデーサイレンス系",
+    "sire_line_en": "Sunday Silence"
+  },
+  "ディルガ": {
+    "father": "カーリン",
+    "mother": "バグダリア",
+    "sire_line": "ミスタープロスペクター系",
+    "sire_line_en": "Mr. Prospector"
   }
 }
