@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="app-version" content="1.23.0">
+<meta name="app-version" content="1.23.1">
 <title>FSScreener - フルストライド(FullStride)馬市場検索ツール</title>
 <meta name="description" content="予算・脚質・ステータスでフルストライド(FullStride)の馬市場を検索。史実紹介コラム付きのファン制作ツール">
 <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1.23.0">
+<link rel="stylesheet" href="style.css?v=1.23.1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -168,35 +168,37 @@
       </div>
     </div>
 
-    <div class="field detail-search" id="detail-search">
-      <h3 data-i18n="detail_section_title">詳細検索（任意・各項目1つまで選択）</h3>
+    <details class="field detail-search" id="detail-search">
+      <summary><span data-i18n="detail_section_title">父系・GI実績で絞る（任意）</span><span id="detail-active-badge" class="detail-active-badge" data-i18n="detail_active_badge" hidden>選択中</span></summary>
 
-      <div class="field">
-        <label for="detail-sire-line" data-i18n="detail_sire_label">父系</label>
-        <select id="detail-sire-line"></select>
-      </div>
+      <div class="detail-search-body">
+        <div class="field">
+          <label for="detail-sire-line" data-i18n="detail_sire_label">父系</label>
+          <select id="detail-sire-line"></select>
+        </div>
 
-      <div class="field">
-        <label data-i18n="detail_win_label">GI勝利</label>
-        <div class="field-row">
-          <select id="detail-win-surface">
-            <option value="" data-i18n="no_pref">指定しない</option>
-            <option value="turf" data-i18n="surface_turf">芝</option>
-            <option value="dirt" data-i18n="surface_dirt">ダート</option>
-          </select>
-          <select id="detail-win-race" disabled></select>
+        <div class="field">
+          <label data-i18n="detail_win_label">GI勝利</label>
+          <div class="field-row">
+            <select id="detail-win-surface">
+              <option value="" data-i18n="no_pref">指定しない</option>
+              <option value="turf" data-i18n="surface_turf">芝</option>
+              <option value="dirt" data-i18n="surface_dirt">ダート</option>
+            </select>
+            <select id="detail-win-race" disabled></select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label data-i18n="detail_run_label">過去のGI出走</label>
+          <div class="field-row">
+            <select id="detail-run-year"></select>
+            <select id="detail-run-race" disabled></select>
+          </div>
+          <p class="hint" data-i18n="detail_run_hint">年とレース名の両方を選んだときだけ絞り込まれます。</p>
         </div>
       </div>
-
-      <div class="field">
-        <label data-i18n="detail_run_label">過去のG1出走</label>
-        <div class="field-row">
-          <select id="detail-run-year"></select>
-          <select id="detail-run-race" disabled></select>
-        </div>
-        <p class="hint" data-i18n="detail_run_hint">年とレース名の両方を選んだときだけ絞り込まれます。頭数はこのツールの収録馬の中での数です。</p>
-      </div>
-    </div>
+    </details>
 
     <button id="search-btn" class="search-btn" data-i18n="search_btn">検索する</button>
     <button type="button" id="clear-search-btn" class="clear-search-btn" data-i18n="clear_search_btn">検索条件をクリア</button>
@@ -321,6 +323,6 @@
   <div class="visit-counter"><img src="https://visitor-badge.laobi.icu/badge?page_id=jiz41.FSScreener" alt="visit counter"></div>
 </footer>
 
-<script src="script.js?v=1.23.0"></script>
+<script src="script.js?v=1.23.1"></script>
 </body>
 </html>

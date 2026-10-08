@@ -97,13 +97,14 @@ const I18N = {
     growth_normal: "普通",
     growth_late: "晩成",
     stat_section_title: "8軸ステータス（任意・N以上で抽出）",
-    detail_section_title: "詳細検索（任意・各項目1つまで選択）",
+    detail_section_title: "父系・GI実績で絞る（任意）",
     detail_sire_label: "父系",
     detail_win_label: "GI勝利",
     detail_win_pick_surface: "先に芝・ダートを選択",
-    detail_run_label: "過去のG1出走",
+    detail_run_label: "過去のGI出走",
     detail_run_pick_year: "先に年を選択",
-    detail_run_hint: "年とレース名の両方を選んだときだけ絞り込まれます。頭数はこのツールの収録馬の中での数です。",
+    detail_run_hint: "年とレース名の両方を選んだときだけ絞り込まれます。",
+    detail_active_badge: "選択中",
     stat_hint: "グラフをタップ／ドラッグして下限値（1〜5）を指定できます。中心まで戻すと指定なしになります。",
     stat_reset: "リセット",
     clear_search_btn: "検索条件をクリア",
@@ -253,13 +254,14 @@ const I18N = {
     growth_normal: "Normal",
     growth_late: "Late Bloomer",
     stat_section_title: "8-Axis Stats (optional, filter by \"N or above\")",
-    detail_section_title: "Detailed search (optional, one choice per item)",
+    detail_section_title: "Filter by sire line & G1 record (optional)",
     detail_sire_label: "Sire line",
     detail_win_label: "G1 win",
     detail_win_pick_surface: "Choose turf or dirt first",
     detail_run_label: "Past G1 entry",
     detail_run_pick_year: "Choose a year first",
-    detail_run_hint: "Applies only when both year and race are chosen. Counts are within the horses in this tool.",
+    detail_run_hint: "Applies only when both year and race are chosen.",
+    detail_active_badge: "Active",
     stat_hint: "Tap or drag on the chart to set a minimum value (1-5). Drag back to the center to clear.",
     stat_reset: "Reset",
     clear_search_btn: "Clear conditions",
@@ -660,6 +662,17 @@ async function loadDetailSearch() {
   }
 }
 
+function updateDetailActiveBadge() {
+  const sireLine = document.getElementById("detail-sire-line").value;
+  const winRace = document.getElementById("detail-win-race").value;
+  const runYear = document.getElementById("detail-run-year").value;
+  const runRace = document.getElementById("detail-run-race").value;
+  const runActive = runYear !== "" && runRace !== "";
+  const active = sireLine !== "" || winRace !== "" || runActive;
+  const badge = document.getElementById("detail-active-badge");
+  if (badge) badge.hidden = !active;
+}
+
 function populateDetailSelects() {
   const panel = document.getElementById("detail-search");
   if (!detailData) {
@@ -689,7 +702,7 @@ function populateDetailSelects() {
   detailData.sire_lines.forEach(entry => {
     const opt = document.createElement("option");
     opt.value = entry.ja;
-    opt.textContent = lang === "en" ? `${entry.en} (${entry.n})` : `${entry.ja}（${entry.n}頭）`;
+    opt.textContent = lang === "en" ? entry.en : entry.ja;
     sireSel.appendChild(opt);
   });
   sireSel.value = prevSire;
@@ -712,7 +725,7 @@ function populateDetailSelects() {
     list.forEach(entry => {
       const opt = document.createElement("option");
       opt.value = entry.name;
-      opt.textContent = lang === "en" ? `${entry.name} (${entry.n})` : `${entry.name}（${entry.n}頭）`;
+      opt.textContent = lang === "en" ? entry.en : entry.name;
       winRaceSel.appendChild(opt);
     });
   }
@@ -750,12 +763,14 @@ function populateDetailSelects() {
     list.forEach(entry => {
       const opt = document.createElement("option");
       opt.value = entry.name;
-      opt.textContent = lang === "en" ? `${entry.name} (${entry.n})` : `${entry.name}（${entry.n}頭）`;
+      opt.textContent = lang === "en" ? entry.en : entry.name;
       runRaceSel.appendChild(opt);
     });
   }
   runRaceSel.value = prevRunRace;
   if (runRaceSel.value !== prevRunRace) runRaceSel.value = "";
+
+  updateDetailActiveBadge();
 }
 
 function detailMatch(name, sel) {
@@ -1134,6 +1149,7 @@ function clearSearchConditions() {
   document.getElementById("detail-win-surface").value = "";
   document.getElementById("detail-run-year").value = "";
   if (detailData !== null) populateDetailSelects();
+  updateDetailActiveBadge();
 
   currentResults = [];
   currentCriteria = null;
@@ -2286,6 +2302,9 @@ async function init() {
     document.getElementById("detail-run-race").value = "";
     populateDetailSelects();
   });
+  document.getElementById("detail-sire-line").addEventListener("change", updateDetailActiveBadge);
+  document.getElementById("detail-win-race").addEventListener("change", updateDetailActiveBadge);
+  document.getElementById("detail-run-race").addEventListener("change", updateDetailActiveBadge);
   document.getElementById("sort-select").addEventListener("change", () => {
     if (currentCriteria !== null) {
       currentPage = 1;
