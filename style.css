@@ -408,8 +408,50 @@ main {
   margin-bottom: 12px;
 }
 
-.detail-search h3 {
-  margin-bottom: 10px;
+.detail-search {
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+}
+
+.detail-search summary {
+  padding: 10px 14px;
+  font-size: 0.85em;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.detail-search summary::-webkit-details-marker {
+  display: none;
+}
+
+.detail-search summary::before {
+  content: "▶ ";
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+.detail-search[open] summary::before {
+  content: "▼ ";
+}
+
+.detail-active-badge {
+  margin-left: 8px;
+  padding: 1px 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #fff;
+  background: var(--active, var(--blue));
+  border-radius: 8px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.detail-search-body {
+  padding: 4px 14px 2px;
 }
 
 @media (max-width: 480px) {
