@@ -59,7 +59,7 @@ const I18N = {
     subtitle: "Full Stride 馬情報検索ツール",
     howto_summary: "使い方",
     howto_1: "予算上限を入力します（必須）",
-    howto_2: "脚質・距離・芝ダート・性別・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます",
+    howto_2: "脚質・距離・芝ダート・性別・毛色・成長タイプ・8軸ステータスは、気になる項目だけ任意で絞り込めます。「父系・GI実績で絞る」を開くと、父系、GI勝利のレース名、過去のGI出走（年とレース名の両方を選択）でも絞り込めます",
     howto_3: "「検索する」を押すと、条件に合う候補馬が一覧で出てきます",
     howto_4: "気になる馬をタップすると、現実の競走馬としての戦績やエピソードが見られます",
     howto_5: "気になる馬は詳細画面の「厩舎に入れる」でマイ厩舎に登録できます（最大6頭）。厩舎タブの「タップして分析結果を見る」からは、距離・芝ダート・脚質の傾向を診断できます",
@@ -216,7 +216,7 @@ const I18N = {
     subtitle: "Full Stride Horse Search Tool",
     howto_summary: "How to Use",
     howto_1: "Enter your budget limit (required)",
-    howto_2: "Running style, distance, turf/dirt, sex, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about",
+    howto_2: "Running style, distance, turf/dirt, sex, coat color, growth type, and the 8-axis stats are all optional — narrow down by whichever ones you care about. Open \"Filter by sire line & G1 record\" to also narrow by sire line, G1 win (race name), and past G1 start (choose both year and race)",
     howto_3: "Press \"Search\" to get a list of matching horses",
     howto_4: "Tap a horse you like to see its real-world racing history and story",
     howto_5: "Add horses you like to My Stable via \"Add to Stable\" in the detail view (up to 6). In the Stable tab, \"Tap to see the analysis\" checks your roster's distance, turf/dirt, and running-style balance",
@@ -994,6 +994,9 @@ function updateRadarDynamic() {
   const anySet = STAT_AXES.some(axis => statTierState[axis.key] > 0);
   poly.setAttribute("points", radarPolygonPoints(axis => statTierState[axis.key] / 5));
   poly.style.display = anySet ? "" : "none";
+
+  const sb = document.getElementById("stat-active-badge");
+  if (sb) sb.hidden = !anySet;
 
   let handleHtml = "";
   let labelHtml = "";
