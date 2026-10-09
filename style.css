@@ -436,9 +436,11 @@ main {
 }
 
 .detail-active-badge {
-  margin-left: 8px;
-  padding: 1px 7px;
-  font-size: 0.8em;
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 0.65em;
   font-weight: 700;
   color: #fff;
   background: var(--active, var(--blue));
@@ -448,6 +450,10 @@ main {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+.detail-active-badge[hidden] {
+  display: none;
 }
 
 .detail-search-body {
